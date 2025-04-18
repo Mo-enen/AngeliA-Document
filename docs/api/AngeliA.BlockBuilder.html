@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BlockBuilder | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BlockBuilder | AngeliA ">
+    
+    <meta name="description" content="Item that represent a map block inside inventory. Also handles the build block to map logic">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.BlockBuilder">
+
+
+
+  <h1 id="AngeliA_BlockBuilder" data-uid="AngeliA.BlockBuilder" class="text-break">Class BlockBuilder</h1>
+  <div class="markdown level0 summary"><p>Item that represent a map block inside inventory. Also handles the build block to map logic</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_BlockBuilder__ctor_" data-uid="AngeliA.BlockBuilder.#ctor*"></a>
+  <h4 id="AngeliA_BlockBuilder__ctor_System_Int32_System_String_AngeliA_BlockType_System_Int32_" data-uid="AngeliA.BlockBuilder.#ctor(System.Int32,System.String,AngeliA.BlockType,System.Int32)">BlockBuilder(int, string, BlockType, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockBuilder(int blockID, string blockName, BlockType blockType, int maxStackCount)</code></pre>
+  </div>
+    
+  
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_BlockBuilder_AvailableWhenClimbing_" data-uid="AngeliA.BlockBuilder.AvailableWhenClimbing*"></a>
+  <h4 id="AngeliA_BlockBuilder_AvailableWhenClimbing" data-uid="AngeliA.BlockBuilder.AvailableWhenClimbing">AvailableWhenClimbing</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when climbing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenClimbing { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenClimbing">HandTool.AvailableWhenClimbing</a></div>
+  <a id="AngeliA_BlockBuilder_AvailableWhenSliding_" data-uid="AngeliA.BlockBuilder.AvailableWhenSliding*"></a>
+  <h4 id="AngeliA_BlockBuilder_AvailableWhenSliding" data-uid="AngeliA.BlockBuilder.AvailableWhenSliding">AvailableWhenSliding</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when sliding on wall</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenSliding { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenSliding">HandTool.AvailableWhenSliding</a></div>
+  <a id="AngeliA_BlockBuilder_AvailableWhenSquatting_" data-uid="AngeliA.BlockBuilder.AvailableWhenSquatting*"></a>
+  <h4 id="AngeliA_BlockBuilder_AvailableWhenSquatting" data-uid="AngeliA.BlockBuilder.AvailableWhenSquatting">AvailableWhenSquatting</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when squatting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenSquatting { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenSquatting">HandTool.AvailableWhenSquatting</a></div>
+  <a id="AngeliA_BlockBuilder_AvailableWhenWalking_" data-uid="AngeliA.BlockBuilder.AvailableWhenWalking*"></a>
+  <h4 id="AngeliA_BlockBuilder_AvailableWhenWalking" data-uid="AngeliA.BlockBuilder.AvailableWhenWalking">AvailableWhenWalking</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when walking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenWalking { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenWalking">HandTool.AvailableWhenWalking</a></div>
+  <a id="AngeliA_BlockBuilder_BlockID_" data-uid="AngeliA.BlockBuilder.BlockID*"></a>
+  <h4 id="AngeliA_BlockBuilder_BlockID" data-uid="AngeliA.BlockBuilder.BlockID">BlockID</h4>
+  <div class="markdown level1 summary"><p>ID of the block it holds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BlockID { get; init; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockBuilder_BlockType_" data-uid="AngeliA.BlockBuilder.BlockType*"></a>
+  <h4 id="AngeliA_BlockBuilder_BlockType" data-uid="AngeliA.BlockBuilder.BlockType">BlockType</h4>
+  <div class="markdown level1 summary"><p>Type of the block it holds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockType BlockType { get; init; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockBuilder_DefaultMovementSpeedRateOnUse_" data-uid="AngeliA.BlockBuilder.DefaultMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_BlockBuilder_DefaultMovementSpeedRateOnUse" data-uid="AngeliA.BlockBuilder.DefaultMovementSpeedRateOnUse">DefaultMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? DefaultMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_DefaultMovementSpeedRateOnUse">HandTool.DefaultMovementSpeedRateOnUse</a></div>
+  <a id="AngeliA_BlockBuilder_Duration_" data-uid="AngeliA.BlockBuilder.Duration*"></a>
+  <h4 id="AngeliA_BlockBuilder_Duration" data-uid="AngeliA.BlockBuilder.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>How long does the tool perform it's function for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Duration { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_Duration">HandTool.Duration</a></div>
+  <a id="AngeliA_BlockBuilder_MaxStackCount_" data-uid="AngeliA.BlockBuilder.MaxStackCount*"></a>
+  <h4 id="AngeliA_BlockBuilder_MaxStackCount" data-uid="AngeliA.BlockBuilder.MaxStackCount">MaxStackCount</h4>
+  <div class="markdown level1 summary"><p>Count limitation for multiple items inside one inventory slot</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int MaxStackCount { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Equipment.html#AngeliA_Equipment_MaxStackCount">Equipment.MaxStackCount</a></div>
+  <a id="AngeliA_BlockBuilder_RunningMovementSpeedRateOnUse_" data-uid="AngeliA.BlockBuilder.RunningMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_BlockBuilder_RunningMovementSpeedRateOnUse" data-uid="AngeliA.BlockBuilder.RunningMovementSpeedRateOnUse">RunningMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool when running. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? RunningMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_RunningMovementSpeedRateOnUse">HandTool.RunningMovementSpeedRateOnUse</a></div>
+  <a id="AngeliA_BlockBuilder_WalkingMovementSpeedRateOnUse_" data-uid="AngeliA.BlockBuilder.WalkingMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_BlockBuilder_WalkingMovementSpeedRateOnUse" data-uid="AngeliA.BlockBuilder.WalkingMovementSpeedRateOnUse">WalkingMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool when walking. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? WalkingMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_WalkingMovementSpeedRateOnUse">HandTool.WalkingMovementSpeedRateOnUse</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_BlockBuilder_DrawItem_" data-uid="AngeliA.BlockBuilder.DrawItem*"></a>
+  <h4 id="AngeliA_BlockBuilder_DrawItem_AngeliA_Entity_AngeliA_IRect_AngeliA_Color32_System_Int32_" data-uid="AngeliA.BlockBuilder.DrawItem(AngeliA.Entity,AngeliA.IRect,AngeliA.Color32,System.Int32)">DrawItem(Entity, IRect, Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Call this function to render the item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawItem(Entity holder, IRect rect, Color32 tint, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">holder</span></td>
+        <td><p>Holder that own this item</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Item.html#AngeliA_Item_DrawItem_AngeliA_Entity_AngeliA_IRect_AngeliA_Color32_System_Int32_">Item.DrawItem(Entity, IRect, Color32, int)</a></div>
+  <a id="AngeliA_BlockBuilder_GetHandheldPoseAnimationID_" data-uid="AngeliA.BlockBuilder.GetHandheldPoseAnimationID*"></a>
+  <h4 id="AngeliA_BlockBuilder_GetHandheldPoseAnimationID_AngeliA_Character_" data-uid="AngeliA.BlockBuilder.GetHandheldPoseAnimationID(AngeliA.Character)">GetHandheldPoseAnimationID(Character)</h4>
+  <div class="markdown level1 summary"><p>Get the ID of the pose animation for handheld</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHandheldPoseAnimationID(Character character)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_GetHandheldPoseAnimationID_AngeliA_Character_">HandTool.GetHandheldPoseAnimationID(Character)</a></div>
+  <a id="AngeliA_BlockBuilder_GetPerformPoseAnimationID_" data-uid="AngeliA.BlockBuilder.GetPerformPoseAnimationID*"></a>
+  <h4 id="AngeliA_BlockBuilder_GetPerformPoseAnimationID_AngeliA_Character_" data-uid="AngeliA.BlockBuilder.GetPerformPoseAnimationID(AngeliA.Character)">GetPerformPoseAnimationID(Character)</h4>
+  <div class="markdown level1 summary"><p>Get the ID of the pose animation for using the tool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetPerformPoseAnimationID(Character character)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_GetPerformPoseAnimationID_AngeliA_Character_">HandTool.GetPerformPoseAnimationID(Character)</a></div>
+  <a id="AngeliA_BlockBuilder_OnPoseAnimationUpdate_FromEquipment_" data-uid="AngeliA.BlockBuilder.OnPoseAnimationUpdate_FromEquipment*"></a>
+  <h4 id="AngeliA_BlockBuilder_OnPoseAnimationUpdate_FromEquipment_AngeliA_PoseCharacterRenderer_" data-uid="AngeliA.BlockBuilder.OnPoseAnimationUpdate_FromEquipment(AngeliA.PoseCharacterRenderer)">OnPoseAnimationUpdate_FromEquipment(PoseCharacterRenderer)</h4>
+  <div class="markdown level1 summary"><p>This function is called every frame when a pose-style character equipping this item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPoseAnimationUpdate_FromEquipment(PoseCharacterRenderer rendering)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Item.html#AngeliA_Item_OnPoseAnimationUpdate_FromEquipment_AngeliA_PoseCharacterRenderer_">Item.OnPoseAnimationUpdate_FromEquipment(PoseCharacterRenderer)</a></div>
+  <a id="AngeliA_BlockBuilder_OnToolPerform_" data-uid="AngeliA.BlockBuilder.OnToolPerform*"></a>
+  <h4 id="AngeliA_BlockBuilder_OnToolPerform_AngeliA_Character_" data-uid="AngeliA.BlockBuilder.OnToolPerform(AngeliA.Character)">OnToolPerform(Character)</h4>
+  <div class="markdown level1 summary"><p>This function is called when this tool is used for once by the given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnToolPerform(Character sender)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_OnToolPerform_AngeliA_Character_">HandTool.OnToolPerform(Character)</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

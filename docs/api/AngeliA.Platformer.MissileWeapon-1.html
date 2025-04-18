@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MissileWeapon&lt;B&gt; | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MissileWeapon&lt;B&gt; | AngeliA ">
+    
+    <meta name="description" content="Weapon that shoot a missile to attack">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.MissileWeapon`1">
+
+
+
+  <h1 id="AngeliA_Platformer_MissileWeapon_1" data-uid="AngeliA.Platformer.MissileWeapon`1" class="text-break">Class MissileWeapon&lt;B&gt;</h1>
+  <div class="markdown level0 summary"><p>Weapon that shoot a missile to attack</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">B</span></td>
+        <td><p>Type of the missile bullet</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableInAir_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableInAir*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableInAir" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableInAir">AvailableInAir</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when not touching ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableInAir { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableInAir">HandTool.AvailableInAir</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableInWater_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableInWater*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableInWater" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableInWater">AvailableInWater</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when inside water</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableInWater { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableInWater">HandTool.AvailableInWater</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenClimbing_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenClimbing*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenClimbing" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenClimbing">AvailableWhenClimbing</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when climbing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenClimbing { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenClimbing">HandTool.AvailableWhenClimbing</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenDashing_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenDashing*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenDashing" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenDashing">AvailableWhenDashing</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when dashing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenDashing { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenDashing">HandTool.AvailableWhenDashing</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenFlying_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenFlying*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenFlying" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenFlying">AvailableWhenFlying</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when flying</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenFlying { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenFlying">HandTool.AvailableWhenFlying</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenGrabbing_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenGrabbing*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenGrabbing" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenGrabbing">AvailableWhenGrabbing</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when grabbing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenGrabbing { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenGrabbing">HandTool.AvailableWhenGrabbing</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenPounding_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenPounding*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenPounding" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenPounding">AvailableWhenPounding</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when ground pounding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenPounding { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenPounding">HandTool.AvailableWhenPounding</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenRolling_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenRolling*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenRolling" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenRolling">AvailableWhenRolling</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when rolling</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenRolling { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenRolling">HandTool.AvailableWhenRolling</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenRunning_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenRunning*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenRunning" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenRunning">AvailableWhenRunning</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when running</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenRunning { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenRunning">HandTool.AvailableWhenRunning</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenRushing_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenRushing*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenRushing" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenRushing">AvailableWhenRushing</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when rushing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenRushing { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenRushing">HandTool.AvailableWhenRushing</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenSliding_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenSliding*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenSliding" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenSliding">AvailableWhenSliding</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when sliding on wall</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenSliding { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenSliding">HandTool.AvailableWhenSliding</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenSquatting_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenSquatting*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenSquatting" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenSquatting">AvailableWhenSquatting</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when squatting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenSquatting { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenSquatting">HandTool.AvailableWhenSquatting</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenWalking_" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenWalking*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_AvailableWhenWalking" data-uid="AngeliA.Platformer.MissileWeapon`1.AvailableWhenWalking">AvailableWhenWalking</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when walking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenWalking { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenWalking">HandTool.AvailableWhenWalking</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_Cooldown_" data-uid="AngeliA.Platformer.MissileWeapon`1.Cooldown*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_Cooldown" data-uid="AngeliA.Platformer.MissileWeapon`1.Cooldown">Cooldown</h4>
+  <div class="markdown level1 summary"><p>How long have to wait to use again after the tool being used for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Cooldown { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_Cooldown">HandTool.Cooldown</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_DefaultMovementSpeedRateOnUse_" data-uid="AngeliA.Platformer.MissileWeapon`1.DefaultMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_DefaultMovementSpeedRateOnUse" data-uid="AngeliA.Platformer.MissileWeapon`1.DefaultMovementSpeedRateOnUse">DefaultMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? DefaultMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_DefaultMovementSpeedRateOnUse">HandTool.DefaultMovementSpeedRateOnUse</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_Duration_" data-uid="AngeliA.Platformer.MissileWeapon`1.Duration*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_Duration" data-uid="AngeliA.Platformer.MissileWeapon`1.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>How long does the tool perform it's function for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Duration { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_Duration">HandTool.Duration</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_RunningMovementSpeedRateOnUse_" data-uid="AngeliA.Platformer.MissileWeapon`1.RunningMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_RunningMovementSpeedRateOnUse" data-uid="AngeliA.Platformer.MissileWeapon`1.RunningMovementSpeedRateOnUse">RunningMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool when running. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? RunningMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_RunningMovementSpeedRateOnUse">HandTool.RunningMovementSpeedRateOnUse</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_ValidDirection_" data-uid="AngeliA.Platformer.MissileWeapon`1.ValidDirection*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_ValidDirection" data-uid="AngeliA.Platformer.MissileWeapon`1.ValidDirection">ValidDirection</h4>
+  <div class="markdown level1 summary"><p>Which direction can this weapon attack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override WeaponValidDirection ValidDirection { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Weapon.html#AngeliA_Weapon_ValidDirection">Weapon.ValidDirection</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_WalkingMovementSpeedRateOnUse_" data-uid="AngeliA.Platformer.MissileWeapon`1.WalkingMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_WalkingMovementSpeedRateOnUse" data-uid="AngeliA.Platformer.MissileWeapon`1.WalkingMovementSpeedRateOnUse">WalkingMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool when walking. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? WalkingMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_WalkingMovementSpeedRateOnUse">HandTool.WalkingMovementSpeedRateOnUse</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_MissileWeapon_1_BeforeItemUpdate_FromEquipment_" data-uid="AngeliA.Platformer.MissileWeapon`1.BeforeItemUpdate_FromEquipment*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_BeforeItemUpdate_FromEquipment_AngeliA_Character_" data-uid="AngeliA.Platformer.MissileWeapon`1.BeforeItemUpdate_FromEquipment(AngeliA.Character)">BeforeItemUpdate_FromEquipment(Character)</h4>
+  <div class="markdown level1 summary"><p>This function is called every frame when the holder is equipping this item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeItemUpdate_FromEquipment(Character holder)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Item.html#AngeliA_Item_BeforeItemUpdate_FromEquipment_AngeliA_Character_">Item.BeforeItemUpdate_FromEquipment(Character)</a></div>
+  <a id="AngeliA_Platformer_MissileWeapon_1_SpawnBullet_" data-uid="AngeliA.Platformer.MissileWeapon`1.SpawnBullet*"></a>
+  <h4 id="AngeliA_Platformer_MissileWeapon_1_SpawnBullet_AngeliA_Character_" data-uid="AngeliA.Platformer.MissileWeapon`1.SpawnBullet(AngeliA.Character)">SpawnBullet(Character)</h4>
+  <div class="markdown level1 summary"><p>Spawn the bullet entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Bullet SpawnBullet(Character sender)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>Character that use the weapon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Bullet.html">Bullet</a></td>
+        <td><p>Instance of the spawned bullet entity. Return null when invalid</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Weapon.html#AngeliA_Weapon_SpawnBullet_AngeliA_Character_">Weapon.SpawnBullet(Character)</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

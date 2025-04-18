@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BlockPicker | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BlockPicker | AngeliA ">
+    
+    <meta name="description" content="Item that represent a map tool inside inventory. Also handles the pick block from map logic">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.BlockPicker">
+
+
+
+  <h1 id="AngeliA_BlockPicker" data-uid="AngeliA.BlockPicker" class="text-break">Class BlockPicker</h1>
+  <div class="markdown level0 summary"><p>Item that represent a map tool inside inventory. Also handles the pick block from map logic</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_BlockPicker_AllowPickBackgroundBlock_" data-uid="AngeliA.BlockPicker.AllowPickBackgroundBlock*"></a>
+  <h4 id="AngeliA_BlockPicker_AllowPickBackgroundBlock" data-uid="AngeliA.BlockPicker.AllowPickBackgroundBlock">AllowPickBackgroundBlock</h4>
+  <div class="markdown level1 summary"><p>True if the tool can pick background blocks from map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowPickBackgroundBlock { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockPicker_AllowPickBlockEntity_" data-uid="AngeliA.BlockPicker.AllowPickBlockEntity*"></a>
+  <h4 id="AngeliA_BlockPicker_AllowPickBlockEntity" data-uid="AngeliA.BlockPicker.AllowPickBlockEntity">AllowPickBlockEntity</h4>
+  <div class="markdown level1 summary"><p>True if the tool can pick entity blocks from map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowPickBlockEntity { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockPicker_AllowPickLevelBlock_" data-uid="AngeliA.BlockPicker.AllowPickLevelBlock*"></a>
+  <h4 id="AngeliA_BlockPicker_AllowPickLevelBlock" data-uid="AngeliA.BlockPicker.AllowPickLevelBlock">AllowPickLevelBlock</h4>
+  <div class="markdown level1 summary"><p>True if the tool can pick level blocks from map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowPickLevelBlock { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockPicker_AvailableWhenSliding_" data-uid="AngeliA.BlockPicker.AvailableWhenSliding*"></a>
+  <h4 id="AngeliA_BlockPicker_AvailableWhenSliding" data-uid="AngeliA.BlockPicker.AvailableWhenSliding">AvailableWhenSliding</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when sliding on wall</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenSliding { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenSliding">HandTool.AvailableWhenSliding</a></div>
+  <a id="AngeliA_BlockPicker_AvailableWhenSquatting_" data-uid="AngeliA.BlockPicker.AvailableWhenSquatting*"></a>
+  <h4 id="AngeliA_BlockPicker_AvailableWhenSquatting" data-uid="AngeliA.BlockPicker.AvailableWhenSquatting">AvailableWhenSquatting</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when squatting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenSquatting { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenSquatting">HandTool.AvailableWhenSquatting</a></div>
+  <a id="AngeliA_BlockPicker_AvailableWhenWalking_" data-uid="AngeliA.BlockPicker.AvailableWhenWalking*"></a>
+  <h4 id="AngeliA_BlockPicker_AvailableWhenWalking" data-uid="AngeliA.BlockPicker.AvailableWhenWalking">AvailableWhenWalking</h4>
+  <div class="markdown level1 summary"><p>True if character can use this tool when walking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AvailableWhenWalking { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_AvailableWhenWalking">HandTool.AvailableWhenWalking</a></div>
+  <a id="AngeliA_BlockPicker_DefaultMovementSpeedRateOnUse_" data-uid="AngeliA.BlockPicker.DefaultMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_BlockPicker_DefaultMovementSpeedRateOnUse" data-uid="AngeliA.BlockPicker.DefaultMovementSpeedRateOnUse">DefaultMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? DefaultMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_DefaultMovementSpeedRateOnUse">HandTool.DefaultMovementSpeedRateOnUse</a></div>
+  <a id="AngeliA_BlockPicker_DropItemAfterPicked_" data-uid="AngeliA.BlockPicker.DropItemAfterPicked*"></a>
+  <h4 id="AngeliA_BlockPicker_DropItemAfterPicked" data-uid="AngeliA.BlockPicker.DropItemAfterPicked">DropItemAfterPicked</h4>
+  <div class="markdown level1 summary"><p>True if the tool create an ItemHolder holds the block after pick the block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool DropItemAfterPicked { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockPicker_Duration_" data-uid="AngeliA.BlockPicker.Duration*"></a>
+  <h4 id="AngeliA_BlockPicker_Duration" data-uid="AngeliA.BlockPicker.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>How long does the tool perform it's function for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Duration { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_Duration">HandTool.Duration</a></div>
+  <a id="AngeliA_BlockPicker_MaxStackCount_" data-uid="AngeliA.BlockPicker.MaxStackCount*"></a>
+  <h4 id="AngeliA_BlockPicker_MaxStackCount" data-uid="AngeliA.BlockPicker.MaxStackCount">MaxStackCount</h4>
+  <div class="markdown level1 summary"><p>Count limitation for multiple items inside one inventory slot</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int MaxStackCount { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Equipment.html#AngeliA_Equipment_MaxStackCount">Equipment.MaxStackCount</a></div>
+  <a id="AngeliA_BlockPicker_MouseUnitRange_" data-uid="AngeliA.BlockPicker.MouseUnitRange*"></a>
+  <h4 id="AngeliA_BlockPicker_MouseUnitRange" data-uid="AngeliA.BlockPicker.MouseUnitRange">MouseUnitRange</h4>
+  <div class="markdown level1 summary"><p>Range limitation for mouse in unit space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MouseUnitRange { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockPicker_PerformDelayRate_" data-uid="AngeliA.BlockPicker.PerformDelayRate*"></a>
+  <h4 id="AngeliA_BlockPicker_PerformDelayRate" data-uid="AngeliA.BlockPicker.PerformDelayRate">PerformDelayRate</h4>
+  <div class="markdown level1 summary"><p>How many frame based on &quot;duration&quot; does the internal tool logic invoke after character start to use the tool. (0 means immediately invoke. 1000 means invoke after &quot;duration&quot; frames)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int PerformDelayRate { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_PerformDelayRate">HandTool.PerformDelayRate</a></div>
+  <a id="AngeliA_BlockPicker_RunningMovementSpeedRateOnUse_" data-uid="AngeliA.BlockPicker.RunningMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_BlockPicker_RunningMovementSpeedRateOnUse" data-uid="AngeliA.BlockPicker.RunningMovementSpeedRateOnUse">RunningMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool when running. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? RunningMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_RunningMovementSpeedRateOnUse">HandTool.RunningMovementSpeedRateOnUse</a></div>
+  <a id="AngeliA_BlockPicker_UseMouseToPick_" data-uid="AngeliA.BlockPicker.UseMouseToPick*"></a>
+  <h4 id="AngeliA_BlockPicker_UseMouseToPick" data-uid="AngeliA.BlockPicker.UseMouseToPick">UseMouseToPick</h4>
+  <div class="markdown level1 summary"><p>True if the tool allow user to use mouse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool UseMouseToPick { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BlockPicker_UseStackAsUsage_" data-uid="AngeliA.BlockPicker.UseStackAsUsage*"></a>
+  <h4 id="AngeliA_BlockPicker_UseStackAsUsage" data-uid="AngeliA.BlockPicker.UseStackAsUsage">UseStackAsUsage</h4>
+  <div class="markdown level1 summary"><p>True if this tool treat it's inventory stack count as durability bar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool UseStackAsUsage { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_UseStackAsUsage">HandTool.UseStackAsUsage</a></div>
+  <a id="AngeliA_BlockPicker_WalkingMovementSpeedRateOnUse_" data-uid="AngeliA.BlockPicker.WalkingMovementSpeedRateOnUse*"></a>
+  <h4 id="AngeliA_BlockPicker_WalkingMovementSpeedRateOnUse" data-uid="AngeliA.BlockPicker.WalkingMovementSpeedRateOnUse">WalkingMovementSpeedRateOnUse</h4>
+  <div class="markdown level1 summary"><p>How fast can the character move when using this tool when walking. (0 means do not move. 1000 means move as normal speed. null means do not effect movement speed.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int? WalkingMovementSpeedRateOnUse { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_WalkingMovementSpeedRateOnUse">HandTool.WalkingMovementSpeedRateOnUse</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_BlockPicker_DrawPickTargetHighlight_" data-uid="AngeliA.BlockPicker.DrawPickTargetHighlight*"></a>
+  <h4 id="AngeliA_BlockPicker_DrawPickTargetHighlight_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.BlockPicker.DrawPickTargetHighlight(System.Int32,System.Int32,System.Boolean)">DrawPickTargetHighlight(int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Draw the UI cursor for target block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawPickTargetHighlight(int unitX, int unitY, bool hasTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">hasTarget</span></td>
+        <td><p>True if target map block founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_BlockPicker_OnPoseAnimationUpdate_FromEquipment_" data-uid="AngeliA.BlockPicker.OnPoseAnimationUpdate_FromEquipment*"></a>
+  <h4 id="AngeliA_BlockPicker_OnPoseAnimationUpdate_FromEquipment_AngeliA_PoseCharacterRenderer_" data-uid="AngeliA.BlockPicker.OnPoseAnimationUpdate_FromEquipment(AngeliA.PoseCharacterRenderer)">OnPoseAnimationUpdate_FromEquipment(PoseCharacterRenderer)</h4>
+  <div class="markdown level1 summary"><p>This function is called every frame when a pose-style character equipping this item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPoseAnimationUpdate_FromEquipment(PoseCharacterRenderer rendering)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Item.html#AngeliA_Item_OnPoseAnimationUpdate_FromEquipment_AngeliA_PoseCharacterRenderer_">Item.OnPoseAnimationUpdate_FromEquipment(PoseCharacterRenderer)</a></div>
+  <a id="AngeliA_BlockPicker_OnToolPerform_" data-uid="AngeliA.BlockPicker.OnToolPerform*"></a>
+  <h4 id="AngeliA_BlockPicker_OnToolPerform_AngeliA_Character_" data-uid="AngeliA.BlockPicker.OnToolPerform(AngeliA.Character)">OnToolPerform(Character)</h4>
+  <div class="markdown level1 summary"><p>This function is called when this tool is used for once by the given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnToolPerform(Character sender)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.HandTool.html#AngeliA_HandTool_OnToolPerform_AngeliA_Character_">HandTool.OnToolPerform(Character)</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

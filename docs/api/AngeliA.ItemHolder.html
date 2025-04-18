@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ItemHolder | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ItemHolder | AngeliA ">
+    
+    <meta name="description" content="Entity that represent an item on map">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.ItemHolder">
+
+
+
+  <h1 id="AngeliA_ItemHolder" data-uid="AngeliA.ItemHolder" class="text-break">Class ItemHolder</h1>
+  <div class="markdown level0 summary"><p>Entity that represent an item on map</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.ICarrier.html">ICarrier</a></div>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_ItemHolder_TYPE_ID" data-uid="AngeliA.ItemHolder.TYPE_ID">TYPE_ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TYPE_ID</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_ItemHolder_CarryOtherOnTop_" data-uid="AngeliA.ItemHolder.CarryOtherOnTop*"></a>
+  <h4 id="AngeliA_ItemHolder_CarryOtherOnTop" data-uid="AngeliA.ItemHolder.CarryOtherOnTop">CarryOtherOnTop</h4>
+  <div class="markdown level1 summary"><p>Trhe if this entity can carry other ICarrier on top</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CarryOtherOnTop { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_CarryOtherOnTop">Rigidbody.CarryOtherOnTop</a></div>
+  <a id="AngeliA_ItemHolder_ItemCount_" data-uid="AngeliA.ItemHolder.ItemCount*"></a>
+  <h4 id="AngeliA_ItemHolder_ItemCount" data-uid="AngeliA.ItemHolder.ItemCount">ItemCount</h4>
+  <div class="markdown level1 summary"><p>How many items does this holder contains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ItemCount { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_ItemHolder_ItemID_" data-uid="AngeliA.ItemHolder.ItemID*"></a>
+  <h4 id="AngeliA_ItemHolder_ItemID" data-uid="AngeliA.ItemHolder.ItemID">ItemID</h4>
+  <div class="markdown level1 summary"><p>Item ID from inventory system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ItemID { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_ItemHolder_PhysicalLayer_" data-uid="AngeliA.ItemHolder.PhysicalLayer*"></a>
+  <h4 id="AngeliA_ItemHolder_PhysicalLayer" data-uid="AngeliA.ItemHolder.PhysicalLayer">PhysicalLayer</h4>
+  <div class="markdown level1 summary"><p>Which physical layer should this entity fill it's collider in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int PhysicalLayer { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_PhysicalLayer">Rigidbody.PhysicalLayer</a></div>
+  <a id="AngeliA_ItemHolder_SelfCollisionMask_" data-uid="AngeliA.ItemHolder.SelfCollisionMask*"></a>
+  <h4 id="AngeliA_ItemHolder_SelfCollisionMask" data-uid="AngeliA.ItemHolder.SelfCollisionMask">SelfCollisionMask</h4>
+  <div class="markdown level1 summary"><p>Intrinsic physics layers this entity should collide with</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SelfCollisionMask { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_SelfCollisionMask">Rigidbody.SelfCollisionMask</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_ItemHolder_BeforeUpdate_" data-uid="AngeliA.ItemHolder.BeforeUpdate*"></a>
+  <h4 id="AngeliA_ItemHolder_BeforeUpdate" data-uid="AngeliA.ItemHolder.BeforeUpdate">BeforeUpdate()</h4>
+  <div class="markdown level1 summary"><p>[2/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_BeforeUpdate">Entity.BeforeUpdate()</a></div>
+  <a id="AngeliA_ItemHolder_ClearHoldingPool_" data-uid="AngeliA.ItemHolder.ClearHoldingPool*"></a>
+  <h4 id="AngeliA_ItemHolder_ClearHoldingPool" data-uid="AngeliA.ItemHolder.ClearHoldingPool">ClearHoldingPool()</h4>
+  <div class="markdown level1 summary"><p>Reset the internal data of the items that's exists outside player's view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearHoldingPool()</code></pre>
+  </div>
+  <a id="AngeliA_ItemHolder_Collect_" data-uid="AngeliA.ItemHolder.Collect*"></a>
+  <h4 id="AngeliA_ItemHolder_Collect_AngeliA_Character_" data-uid="AngeliA.ItemHolder.Collect(AngeliA.Character)">Collect(Character)</h4>
+  <div class="markdown level1 summary"><p>Collect the item holded inside this container</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Collect(Character character)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the item has been collected</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_ItemHolder_FirstUpdate_" data-uid="AngeliA.ItemHolder.FirstUpdate*"></a>
+  <h4 id="AngeliA_ItemHolder_FirstUpdate" data-uid="AngeliA.ItemHolder.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_FirstUpdate">Rigidbody.FirstUpdate()</a></div>
+  <a id="AngeliA_ItemHolder_InsideGroundCheck_" data-uid="AngeliA.ItemHolder.InsideGroundCheck*"></a>
+  <h4 id="AngeliA_ItemHolder_InsideGroundCheck" data-uid="AngeliA.ItemHolder.InsideGroundCheck">InsideGroundCheck()</h4>
+  <div class="markdown level1 summary"><p>Function that holds the stuck inside ground checking logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InsideGroundCheck()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_InsideGroundCheck">Rigidbody.InsideGroundCheck()</a></div>
+  <a id="AngeliA_ItemHolder_Jump_" data-uid="AngeliA.ItemHolder.Jump*"></a>
+  <h4 id="AngeliA_ItemHolder_Jump_System_Int32_" data-uid="AngeliA.ItemHolder.Jump(System.Int32)">Jump(int)</h4>
+  <div class="markdown level1 summary"><p>Perform a jump for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Jump(int velocity = 42)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">velocity</span></td>
+        <td><p>Initial speed Y</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_ItemHolder_LateUpdate_" data-uid="AngeliA.ItemHolder.LateUpdate*"></a>
+  <h4 id="AngeliA_ItemHolder_LateUpdate" data-uid="AngeliA.ItemHolder.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_ItemHolder_OnActivated_" data-uid="AngeliA.ItemHolder.OnActivated*"></a>
+  <h4 id="AngeliA_ItemHolder_OnActivated" data-uid="AngeliA.ItemHolder.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_OnActivated">Rigidbody.OnActivated()</a></div>
+  <a id="AngeliA_ItemHolder_OnInactivated_" data-uid="AngeliA.ItemHolder.OnInactivated*"></a>
+  <h4 id="AngeliA_ItemHolder_OnInactivated" data-uid="AngeliA.ItemHolder.OnInactivated">OnInactivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity leave the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInactivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_OnInactivated">Entity.OnInactivated()</a></div>
+  <a id="AngeliA_ItemHolder_Update_" data-uid="AngeliA.ItemHolder.Update*"></a>
+  <h4 id="AngeliA_ItemHolder_Update" data-uid="AngeliA.ItemHolder.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>[3/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_Update">Rigidbody.Update()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

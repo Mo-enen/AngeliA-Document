@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CharacterAttackness | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CharacterAttackness | AngeliA ">
+    
+    <meta name="description" content="Behavior class that handles attack logic for character">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.CharacterAttackness">
+
+
+
+  <h1 id="AngeliA_CharacterAttackness" data-uid="AngeliA.CharacterAttackness" class="text-break">Class CharacterAttackness</h1>
+  <div class="markdown level0 summary"><p>Behavior class that handles attack logic for character</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_CharacterAttackness__ctor_" data-uid="AngeliA.CharacterAttackness.#ctor*"></a>
+  <h4 id="AngeliA_CharacterAttackness__ctor_AngeliA_Character_" data-uid="AngeliA.CharacterAttackness.#ctor(AngeliA.Character)">CharacterAttackness(Character)</h4>
+  <div class="markdown level1 summary"><p>Behavior class that handles attack logic for character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterAttackness(Character character)</code></pre>
+  </div>
+    
+  
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_CharacterAttackness_AirSpeedRateOnAttack" data-uid="AngeliA.CharacterAttackness.AirSpeedRateOnAttack">AirSpeedRateOnAttack</h4>
+  <div class="markdown level1 summary"><p>Moving speed will be mutiply be this rate when character is attacking while not grounded (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt AirSpeedRateOnAttack</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackComboGap" data-uid="AngeliA.CharacterAttackness.AttackComboGap">AttackComboGap</h4>
+  <div class="markdown level1 summary"><p>Attack happens between this many frames should be combo attacks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt AttackComboGap</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackInAir" data-uid="AngeliA.CharacterAttackness.AttackInAir">AttackInAir</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when not grounded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackInAir</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackInWater" data-uid="AngeliA.CharacterAttackness.AttackInWater">AttackInWater</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when inside water</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackInWater</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenClimbing" data-uid="AngeliA.CharacterAttackness.AttackWhenClimbing">AttackWhenClimbing</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when climbing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenClimbing</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenDashing" data-uid="AngeliA.CharacterAttackness.AttackWhenDashing">AttackWhenDashing</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when dashing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenDashing</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenFlying" data-uid="AngeliA.CharacterAttackness.AttackWhenFlying">AttackWhenFlying</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when flying</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenFlying</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenGrabbing" data-uid="AngeliA.CharacterAttackness.AttackWhenGrabbing">AttackWhenGrabbing</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when grabbing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenGrabbing</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenPounding" data-uid="AngeliA.CharacterAttackness.AttackWhenPounding">AttackWhenPounding</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when pounding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenPounding</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenRolling" data-uid="AngeliA.CharacterAttackness.AttackWhenRolling">AttackWhenRolling</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when rolling</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenRolling</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenRunning" data-uid="AngeliA.CharacterAttackness.AttackWhenRunning">AttackWhenRunning</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when running</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenRunning</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenRush" data-uid="AngeliA.CharacterAttackness.AttackWhenRush">AttackWhenRush</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when rushing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenRush</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenSliding" data-uid="AngeliA.CharacterAttackness.AttackWhenSliding">AttackWhenSliding</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when sliding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenSliding</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenSquatting" data-uid="AngeliA.CharacterAttackness.AttackWhenSquatting">AttackWhenSquatting</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when squatting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenSquatting</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_AttackWhenWalking" data-uid="AngeliA.CharacterAttackness.AttackWhenWalking">AttackWhenWalking</h4>
+  <div class="markdown level1 summary"><p>Allow character attack when walking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool AttackWhenWalking</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_CancelAttackOnJump" data-uid="AngeliA.CharacterAttackness.CancelAttackOnJump">CancelAttackOnJump</h4>
+  <div class="markdown level1 summary"><p>When character jumps, unfinished attack will be cancel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool CancelAttackOnJump</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_DefaultSpeedRateOnAttack" data-uid="AngeliA.CharacterAttackness.DefaultSpeedRateOnAttack">DefaultSpeedRateOnAttack</h4>
+  <div class="markdown level1 summary"><p>Moving speed will be mutiply be this rate when character is attacking (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt DefaultSpeedRateOnAttack</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_HoldAttackPunishFrame" data-uid="AngeliA.CharacterAttackness.HoldAttackPunishFrame">HoldAttackPunishFrame</h4>
+  <div class="markdown level1 summary"><p>If hold attack button to perform multiple attacks, the cooldown will be add this frames longer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt HoldAttackPunishFrame</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_RunningSpeedRateOnAttack" data-uid="AngeliA.CharacterAttackness.RunningSpeedRateOnAttack">RunningSpeedRateOnAttack</h4>
+  <div class="markdown level1 summary"><p>Moving speed will be mutiply be this rate when character is attacking while running (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt RunningSpeedRateOnAttack</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_TargetCharacter" data-uid="AngeliA.CharacterAttackness.TargetCharacter">TargetCharacter</h4>
+  <div class="markdown level1 summary"><p>Character hosting this attackness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Character TargetCharacter</code></pre>
+  </div>
+  <h4 id="AngeliA_CharacterAttackness_WalkingSpeedRateOnAttack" data-uid="AngeliA.CharacterAttackness.WalkingSpeedRateOnAttack">WalkingSpeedRateOnAttack</h4>
+  <div class="markdown level1 summary"><p>Moving speed will be mutiply be this rate when character is attacking while walking (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt WalkingSpeedRateOnAttack</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_CharacterAttackness_AimingDirection_" data-uid="AngeliA.CharacterAttackness.AimingDirection*"></a>
+  <h4 id="AngeliA_CharacterAttackness_AimingDirection" data-uid="AngeliA.CharacterAttackness.AimingDirection">AimingDirection</h4>
+  <div class="markdown level1 summary"><p>Which direction does the character attacks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Direction8 AimingDirection { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_AttackChargeStartFrame_" data-uid="AngeliA.CharacterAttackness.AttackChargeStartFrame*"></a>
+  <h4 id="AngeliA_CharacterAttackness_AttackChargeStartFrame" data-uid="AngeliA.CharacterAttackness.AttackChargeStartFrame">AttackChargeStartFrame</h4>
+  <div class="markdown level1 summary"><p>The start frame of the last attack charging</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AttackChargeStartFrame { get; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_AttackCooldown_" data-uid="AngeliA.CharacterAttackness.AttackCooldown*"></a>
+  <h4 id="AngeliA_CharacterAttackness_AttackCooldown" data-uid="AngeliA.CharacterAttackness.AttackCooldown">AttackCooldown</h4>
+  <div class="markdown level1 summary"><p>How many frames should be wait from the prev attack end to the next attack start</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AttackCooldown { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_AttackDuration_" data-uid="AngeliA.CharacterAttackness.AttackDuration*"></a>
+  <h4 id="AngeliA_CharacterAttackness_AttackDuration" data-uid="AngeliA.CharacterAttackness.AttackDuration">AttackDuration</h4>
+  <div class="markdown level1 summary"><p>How many frames should be the current attack last</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AttackDuration { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_AttackStartFacingRight_" data-uid="AngeliA.CharacterAttackness.AttackStartFacingRight*"></a>
+  <h4 id="AngeliA_CharacterAttackness_AttackStartFacingRight" data-uid="AngeliA.CharacterAttackness.AttackStartFacingRight">AttackStartFacingRight</h4>
+  <div class="markdown level1 summary"><p>True if character facing right when the current attack start</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AttackStartFacingRight { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_AttackStyleIndex_" data-uid="AngeliA.CharacterAttackness.AttackStyleIndex*"></a>
+  <h4 id="AngeliA_CharacterAttackness_AttackStyleIndex" data-uid="AngeliA.CharacterAttackness.AttackStyleIndex">AttackStyleIndex</h4>
+  <div class="markdown level1 summary"><p>Attack style index of the current attack, indicate what kind of rendering style should be apply to the current attack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AttackStyleIndex { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_HoldingAttack_" data-uid="AngeliA.CharacterAttackness.HoldingAttack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_HoldingAttack" data-uid="AngeliA.CharacterAttackness.HoldingAttack">HoldingAttack</h4>
+  <div class="markdown level1 summary"><p>True if the character is holding attack button</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HoldingAttack { get; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_IsAttackIgnored_" data-uid="AngeliA.CharacterAttackness.IsAttackIgnored*"></a>
+  <h4 id="AngeliA_CharacterAttackness_IsAttackIgnored" data-uid="AngeliA.CharacterAttackness.IsAttackIgnored">IsAttackIgnored</h4>
+  <div class="markdown level1 summary"><p>True if the character is not allow to attack at the current frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAttackIgnored { get; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_IsAttacking_" data-uid="AngeliA.CharacterAttackness.IsAttacking*"></a>
+  <h4 id="AngeliA_CharacterAttackness_IsAttacking" data-uid="AngeliA.CharacterAttackness.IsAttacking">IsAttacking</h4>
+  <div class="markdown level1 summary"><p>True if the character is attacking at the current frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAttacking { get; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_IsChargingAttack_" data-uid="AngeliA.CharacterAttackness.IsChargingAttack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_IsChargingAttack" data-uid="AngeliA.CharacterAttackness.IsChargingAttack">IsChargingAttack</h4>
+  <div class="markdown level1 summary"><p>True if the character is charging attack at the current frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsChargingAttack { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_LastAttackCharged_" data-uid="AngeliA.CharacterAttackness.LastAttackCharged*"></a>
+  <h4 id="AngeliA_CharacterAttackness_LastAttackCharged" data-uid="AngeliA.CharacterAttackness.LastAttackCharged">LastAttackCharged</h4>
+  <div class="markdown level1 summary"><p>True if the last performed attack is charged</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LastAttackCharged { get; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_LastAttackFrame_" data-uid="AngeliA.CharacterAttackness.LastAttackFrame*"></a>
+  <h4 id="AngeliA_CharacterAttackness_LastAttackFrame" data-uid="AngeliA.CharacterAttackness.LastAttackFrame">LastAttackFrame</h4>
+  <div class="markdown level1 summary"><p>The start frame of the last attack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastAttackFrame { get; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_LockFacingOnAttack_" data-uid="AngeliA.CharacterAttackness.LockFacingOnAttack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_LockFacingOnAttack" data-uid="AngeliA.CharacterAttackness.LockFacingOnAttack">LockFacingOnAttack</h4>
+  <div class="markdown level1 summary"><p>True if the character can not change it's facing direction when attacking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LockFacingOnAttack { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_MinimalChargeAttackDuration_" data-uid="AngeliA.CharacterAttackness.MinimalChargeAttackDuration*"></a>
+  <h4 id="AngeliA_CharacterAttackness_MinimalChargeAttackDuration" data-uid="AngeliA.CharacterAttackness.MinimalChargeAttackDuration">MinimalChargeAttackDuration</h4>
+  <div class="markdown level1 summary"><p>Charge attack longer than this frame should be count as attack charged</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinimalChargeAttackDuration { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_RepeatAttackWhenHolding_" data-uid="AngeliA.CharacterAttackness.RepeatAttackWhenHolding*"></a>
+  <h4 id="AngeliA_CharacterAttackness_RepeatAttackWhenHolding" data-uid="AngeliA.CharacterAttackness.RepeatAttackWhenHolding">RepeatAttackWhenHolding</h4>
+  <div class="markdown level1 summary"><p>True if the character can hold attack button to keep attacking multiple times</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RepeatAttackWhenHolding { get; set; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_CharacterAttackness_Attack_" data-uid="AngeliA.CharacterAttackness.Attack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_Attack_System_Boolean_System_Boolean_" data-uid="AngeliA.CharacterAttackness.Attack(System.Boolean,System.Boolean)">Attack(bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Perform an attack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Attack(bool facingRight, bool charged = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">facingRight</span></td>
+        <td><p>True if the attack is performed when character facing right</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">charged</span></td>
+        <td><p>True if the attack is charged</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_CharacterAttackness_CancelAttack_" data-uid="AngeliA.CharacterAttackness.CancelAttack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_CancelAttack" data-uid="AngeliA.CharacterAttackness.CancelAttack">CancelAttack()</h4>
+  <div class="markdown level1 summary"><p>Cancel current performing attack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelAttack()</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_CancelIgnoreAttack_" data-uid="AngeliA.CharacterAttackness.CancelIgnoreAttack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_CancelIgnoreAttack" data-uid="AngeliA.CharacterAttackness.CancelIgnoreAttack">CancelIgnoreAttack()</h4>
+  <div class="markdown level1 summary"><p>Allowing attack which ignored by IgnoreAttack function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelIgnoreAttack()</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_IgnoreAimingDirection_" data-uid="AngeliA.CharacterAttackness.IgnoreAimingDirection*"></a>
+  <h4 id="AngeliA_CharacterAttackness_IgnoreAimingDirection_AngeliA_Direction8_System_Int32_" data-uid="AngeliA.CharacterAttackness.IgnoreAimingDirection(AngeliA.Direction8,System.Int32)">IgnoreAimingDirection(Direction8, int)</h4>
+  <div class="markdown level1 summary"><p>Do not allow aiming at given direction for specified frames</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IgnoreAimingDirection(Direction8 dir, int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CharacterAttackness_IgnoreAttack_" data-uid="AngeliA.CharacterAttackness.IgnoreAttack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_IgnoreAttack_System_Int32_" data-uid="AngeliA.CharacterAttackness.IgnoreAttack(System.Int32)">IgnoreAttack(int)</h4>
+  <div class="markdown level1 summary"><p>Do not allow attack for specified frames</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IgnoreAttack(int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CharacterAttackness_IsAimingDirectionIgnored_" data-uid="AngeliA.CharacterAttackness.IsAimingDirectionIgnored*"></a>
+  <h4 id="AngeliA_CharacterAttackness_IsAimingDirectionIgnored_AngeliA_Direction8_" data-uid="AngeliA.CharacterAttackness.IsAimingDirectionIgnored(AngeliA.Direction8)">IsAimingDirectionIgnored(Direction8)</h4>
+  <div class="markdown level1 summary"><p>True if the given aiming direction is currently ignored</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAimingDirectionIgnored(Direction8 dir)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CharacterAttackness_OnActivated_" data-uid="AngeliA.CharacterAttackness.OnActivated*"></a>
+  <h4 id="AngeliA_CharacterAttackness_OnActivated" data-uid="AngeliA.CharacterAttackness.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>Callback for character entity get activated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnActivated()</code></pre>
+  </div>
+  <a id="AngeliA_CharacterAttackness_PhysicsUpdate_Attack_" data-uid="AngeliA.CharacterAttackness.PhysicsUpdate_Attack*"></a>
+  <h4 id="AngeliA_CharacterAttackness_PhysicsUpdate_Attack" data-uid="AngeliA.CharacterAttackness.PhysicsUpdate_Attack">PhysicsUpdate_Attack()</h4>
+  <div class="markdown level1 summary"><p>Callback for update the attackness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PhysicsUpdate_Attack()</code></pre>
+  </div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

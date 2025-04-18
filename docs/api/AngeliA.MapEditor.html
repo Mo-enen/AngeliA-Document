@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MapEditor | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MapEditor | AngeliA ">
+    
+    <meta name="description" content="Entity for edit the map in run-time">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.MapEditor">
+
+
+
+  <h1 id="AngeliA_MapEditor" data-uid="AngeliA.MapEditor" class="text-break">Class MapEditor</h1>
+  <div class="markdown level0 summary"><p>Entity for edit the map in run-time</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.IWindowEntityUI.html">IWindowEntityUI</a></div>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_MapEditor__ctor_" data-uid="AngeliA.MapEditor.#ctor*"></a>
+  <h4 id="AngeliA_MapEditor__ctor" data-uid="AngeliA.MapEditor.#ctor">MapEditor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapEditor()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_MapEditor_SETTING_QUICK_PLAYER_DROP" data-uid="AngeliA.MapEditor.SETTING_QUICK_PLAYER_DROP">SETTING_QUICK_PLAYER_DROP</h4>
+  <div class="markdown level1 summary"><p>ID for send/receive remote setting with the engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SETTING_QUICK_PLAYER_DROP = 921761</code></pre>
+  </div>
+  <h4 id="AngeliA_MapEditor_SETTING_SHOW_BEHIND" data-uid="AngeliA.MapEditor.SETTING_SHOW_BEHIND">SETTING_SHOW_BEHIND</h4>
+  <div class="markdown level1 summary"><p>ID for send/receive remote setting with the engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SETTING_SHOW_BEHIND = 921762</code></pre>
+  </div>
+  <h4 id="AngeliA_MapEditor_SETTING_SHOW_GRID_GIZMOS" data-uid="AngeliA.MapEditor.SETTING_SHOW_GRID_GIZMOS">SETTING_SHOW_GRID_GIZMOS</h4>
+  <div class="markdown level1 summary"><p>ID for send/receive remote setting with the engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SETTING_SHOW_GRID_GIZMOS = 921764</code></pre>
+  </div>
+  <h4 id="AngeliA_MapEditor_SETTING_SHOW_STATE" data-uid="AngeliA.MapEditor.SETTING_SHOW_STATE">SETTING_SHOW_STATE</h4>
+  <div class="markdown level1 summary"><p>ID for send/receive remote setting with the engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SETTING_SHOW_STATE = 921763</code></pre>
+  </div>
+  <h4 id="AngeliA_MapEditor_TYPE_ID" data-uid="AngeliA.MapEditor.TYPE_ID">TYPE_ID</h4>
+  <div class="markdown level1 summary"><p>Map editor's type id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int TYPE_ID</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_MapEditor_BackgroundRect_" data-uid="AngeliA.MapEditor.BackgroundRect*"></a>
+  <h4 id="AngeliA_MapEditor_BackgroundRect" data-uid="AngeliA.MapEditor.BackgroundRect">BackgroundRect</h4>
+  <div class="markdown level1 summary"><p>Rect position of the background part in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IRect BackgroundRect { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.WindowUI.html#AngeliA_WindowUI_BackgroundRect">WindowUI.BackgroundRect</a></div>
+  <a id="AngeliA_MapEditor_CurrentZ_" data-uid="AngeliA.MapEditor.CurrentZ*"></a>
+  <h4 id="AngeliA_MapEditor_CurrentZ" data-uid="AngeliA.MapEditor.CurrentZ">CurrentZ</h4>
+  <div class="markdown level1 summary"><p>Current position Z value for the camera view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentZ { get; }</code></pre>
+  </div>
+  <a id="AngeliA_MapEditor_Instance_" data-uid="AngeliA.MapEditor.Instance*"></a>
+  <h4 id="AngeliA_MapEditor_Instance" data-uid="AngeliA.MapEditor.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>Single instance of the map editor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MapEditor Instance { get; }</code></pre>
+  </div>
+  <a id="AngeliA_MapEditor_IsActived_" data-uid="AngeliA.MapEditor.IsActived*"></a>
+  <h4 id="AngeliA_MapEditor_IsActived" data-uid="AngeliA.MapEditor.IsActived">IsActived</h4>
+  <div class="markdown level1 summary"><p>True if the map editor entity is actived</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsActived { get; }</code></pre>
+  </div>
+  <a id="AngeliA_MapEditor_IsEditing_" data-uid="AngeliA.MapEditor.IsEditing*"></a>
+  <h4 id="AngeliA_MapEditor_IsEditing" data-uid="AngeliA.MapEditor.IsEditing">IsEditing</h4>
+  <div class="markdown level1 summary"><p>True if the map editor is in edit mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEditing { get; }</code></pre>
+  </div>
+  <a id="AngeliA_MapEditor_IsEditorNavigating_" data-uid="AngeliA.MapEditor.IsEditorNavigating*"></a>
+  <h4 id="AngeliA_MapEditor_IsEditorNavigating" data-uid="AngeliA.MapEditor.IsEditorNavigating">IsEditorNavigating</h4>
+  <div class="markdown level1 summary"><p>True if the map editor entity is in navigating mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEditorNavigating { get; }</code></pre>
+  </div>
+  <a id="AngeliA_MapEditor_IsPlaying_" data-uid="AngeliA.MapEditor.IsPlaying*"></a>
+  <h4 id="AngeliA_MapEditor_IsPlaying" data-uid="AngeliA.MapEditor.IsPlaying">IsPlaying</h4>
+  <div class="markdown level1 summary"><p>True if the map editor entity is in play mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPlaying { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_MapEditor_OnActivated_" data-uid="AngeliA.MapEditor.OnActivated*"></a>
+  <h4 id="AngeliA_MapEditor_OnActivated" data-uid="AngeliA.MapEditor.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_OnActivated">Entity.OnActivated()</a></div>
+  <a id="AngeliA_MapEditor_Save_" data-uid="AngeliA.MapEditor.Save*"></a>
+  <h4 id="AngeliA_MapEditor_Save_System_Boolean_" data-uid="AngeliA.MapEditor.Save(System.Boolean)">Save(bool)</h4>
+  <div class="markdown level1 summary"><p>Require save the data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Save(bool forceSave = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forceSave</span></td>
+        <td><p>True if this save performs without dirty checks</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.WindowUI.html#AngeliA_WindowUI_Save_System_Boolean_">WindowUI.Save(bool)</a></div>
+  <a id="AngeliA_MapEditor_SetViewZ_" data-uid="AngeliA.MapEditor.SetViewZ*"></a>
+  <h4 id="AngeliA_MapEditor_SetViewZ_System_Int32_" data-uid="AngeliA.MapEditor.SetViewZ(System.Int32)">SetViewZ(int)</h4>
+  <div class="markdown level1 summary"><p>Set view position Z for map editor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewZ(int newZ)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_MapEditor_UpdateWindowUI_" data-uid="AngeliA.MapEditor.UpdateWindowUI*"></a>
+  <h4 id="AngeliA_MapEditor_UpdateWindowUI" data-uid="AngeliA.MapEditor.UpdateWindowUI">UpdateWindowUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateWindowUI()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.WindowUI.html#AngeliA_WindowUI_UpdateWindowUI">WindowUI.UpdateWindowUI()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2465 @@
+### YamlMime:ManagedReference
+items:
+- uid: AngeliA.Float3
+  commentId: T:AngeliA.Float3
+  id: Float3
+  parent: AngeliA
+  children:
+  - AngeliA.Float3.#ctor(System.Single,System.Single)
+  - AngeliA.Float3.#ctor(System.Single,System.Single,System.Single)
+  - AngeliA.Float3.Angle(AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.Back
+  - AngeliA.Float3.Deconstruct(System.Single@,System.Single@,System.Single@)
+  - AngeliA.Float3.Distance(AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.Dot(AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.Down
+  - AngeliA.Float3.Equals(AngeliA.Float3)
+  - AngeliA.Float3.Equals(System.Object)
+  - AngeliA.Float3.Forward
+  - AngeliA.Float3.GetHashCode
+  - AngeliA.Float3.Item(System.Int32)
+  - AngeliA.Float3.Left
+  - AngeliA.Float3.Lerp(AngeliA.Float3,AngeliA.Float3,System.Single)
+  - AngeliA.Float3.LerpUnclamped(AngeliA.Float3,AngeliA.Float3,System.Single)
+  - AngeliA.Float3.Magnitude
+  - AngeliA.Float3.MoveTowards(AngeliA.Float3,AngeliA.Float3,System.Single)
+  - AngeliA.Float3.Normalize
+  - AngeliA.Float3.Normalize(AngeliA.Float3)
+  - AngeliA.Float3.Normalized
+  - AngeliA.Float3.One
+  - AngeliA.Float3.Right
+  - AngeliA.Float3.Set(System.Single,System.Single,System.Single)
+  - AngeliA.Float3.SignedAngle(AngeliA.Float3,AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.SqrMagnitude
+  - AngeliA.Float3.ToString
+  - AngeliA.Float3.Up
+  - AngeliA.Float3.Zero
+  - AngeliA.Float3.op_Addition(AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.op_Division(AngeliA.Float3,System.Single)
+  - AngeliA.Float3.op_Equality(AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.op_Inequality(AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.op_Multiply(AngeliA.Float3,System.Single)
+  - AngeliA.Float3.op_Multiply(System.Single,AngeliA.Float3)
+  - AngeliA.Float3.op_Subtraction(AngeliA.Float3,AngeliA.Float3)
+  - AngeliA.Float3.op_UnaryNegation(AngeliA.Float3)
+  - AngeliA.Float3.x
+  - AngeliA.Float3.y
+  - AngeliA.Float3.z
+  langs:
+  - csharp
+  - vb
+  name: Float3
+  nameWithType: Float3
+  fullName: AngeliA.Float3
+  type: Struct
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Float3
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 11
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: 3D vector with float data values
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct Float3 : IEquatable<Float3>
+    content.vb: >-
+      <Serializable>
+
+      Public Structure Float3 Implements IEquatable(Of Float3)
+  implements:
+  - System.IEquatable{AngeliA.Float3}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - AngeliA.Float3.AngeliA.Extension.Almost(AngeliA.Float3)
+  - AngeliA.Float3.AngeliA.Extension.NotAlmost(AngeliA.Float3)
+  - AngeliA.Float3.AngeliA.Extension.Rotate(System.Single)
+  - System.Object.AngeliA.Extension.ForAllFields``1(System.Reflection.BindingFlags,System.Boolean)
+  - System.Object.AngeliA.Extension.ForAllProperties``1
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: AngeliA.Float3.Zero
+  commentId: F:AngeliA.Float3.Zero
+  id: Zero
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Float3.Zero
+  fullName: AngeliA.Float3.Zero
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Zero
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 15
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 Zero
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly Zero As Float3
+- uid: AngeliA.Float3.One
+  commentId: F:AngeliA.Float3.One
+  id: One
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Float3.One
+  fullName: AngeliA.Float3.One
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: One
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 16
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 One
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly One As Float3
+- uid: AngeliA.Float3.Up
+  commentId: F:AngeliA.Float3.Up
+  id: Up
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: Float3.Up
+  fullName: AngeliA.Float3.Up
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Up
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 17
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 Up
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly Up As Float3
+- uid: AngeliA.Float3.Down
+  commentId: F:AngeliA.Float3.Down
+  id: Down
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: Float3.Down
+  fullName: AngeliA.Float3.Down
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Down
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 18
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 Down
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly Down As Float3
+- uid: AngeliA.Float3.Left
+  commentId: F:AngeliA.Float3.Left
+  id: Left
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: Float3.Left
+  fullName: AngeliA.Float3.Left
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Left
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 19
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 Left
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly Left As Float3
+- uid: AngeliA.Float3.Right
+  commentId: F:AngeliA.Float3.Right
+  id: Right
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: Float3.Right
+  fullName: AngeliA.Float3.Right
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Right
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 20
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 Right
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly Right As Float3
+- uid: AngeliA.Float3.Forward
+  commentId: F:AngeliA.Float3.Forward
+  id: Forward
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Forward
+  nameWithType: Float3.Forward
+  fullName: AngeliA.Float3.Forward
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Forward
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 21
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 Forward
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly Forward As Float3
+- uid: AngeliA.Float3.Back
+  commentId: F:AngeliA.Float3.Back
+  id: Back
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: Float3.Back
+  fullName: AngeliA.Float3.Back
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Back
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 22
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static readonly Float3 Back
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared ReadOnly Back As Float3
+- uid: AngeliA.Float3.x
+  commentId: F:AngeliA.Float3.x
+  id: x
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Float3.x
+  fullName: AngeliA.Float3.x
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: x
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 29
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float x
+    return:
+      type: System.Single
+    content.vb: Public x As Single
+- uid: AngeliA.Float3.y
+  commentId: F:AngeliA.Float3.y
+  id: y
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Float3.y
+  fullName: AngeliA.Float3.y
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: y
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 30
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float y
+    return:
+      type: System.Single
+    content.vb: Public y As Single
+- uid: AngeliA.Float3.z
+  commentId: F:AngeliA.Float3.z
+  id: z
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: z
+  nameWithType: Float3.z
+  fullName: AngeliA.Float3.z
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: z
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 31
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float z
+    return:
+      type: System.Single
+    content.vb: Public z As Single
+- uid: AngeliA.Float3.Item(System.Int32)
+  commentId: P:AngeliA.Float3.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: Float3.this[int]
+  fullName: AngeliA.Float3.this[int]
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: this[]
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 37
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get float data inside with given index. (0 means x, 1 means y, 2 means z)
+  example: []
+  syntax:
+    content: public float this[int index] { readonly get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Default Property this[](index As Integer) As Single
+  overload: AngeliA.Float3.Item*
+  nameWithType.vb: Float3.this[](Integer)
+  fullName.vb: AngeliA.Float3.this[](Integer)
+  name.vb: this[](Integer)
+- uid: AngeliA.Float3.Normalized
+  commentId: P:AngeliA.Float3.Normalized
+  id: Normalized
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Normalized
+  nameWithType: Float3.Normalized
+  fullName: AngeliA.Float3.Normalized
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Normalized
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 66
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get a vector that has a length of 1, while maintaining the same direction as the original vector.
+  example: []
+  syntax:
+    content: public readonly Float3 Normalized { get; }
+    parameters: []
+    return:
+      type: AngeliA.Float3
+    content.vb: Public ReadOnly Property Normalized As Float3
+  overload: AngeliA.Float3.Normalized*
+- uid: AngeliA.Float3.Magnitude
+  commentId: P:AngeliA.Float3.Magnitude
+  id: Magnitude
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Magnitude
+  nameWithType: Float3.Magnitude
+  fullName: AngeliA.Float3.Magnitude
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Magnitude
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 71
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Length of this vector
+  example: []
+  syntax:
+    content: public readonly float Magnitude { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Magnitude As Single
+  overload: AngeliA.Float3.Magnitude*
+- uid: AngeliA.Float3.SqrMagnitude
+  commentId: P:AngeliA.Float3.SqrMagnitude
+  id: SqrMagnitude
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: SqrMagnitude
+  nameWithType: Float3.SqrMagnitude
+  fullName: AngeliA.Float3.SqrMagnitude
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SqrMagnitude
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 76
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Square of the length of this vector
+  example: []
+  syntax:
+    content: public readonly float SqrMagnitude { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property SqrMagnitude As Single
+  overload: AngeliA.Float3.SqrMagnitude*
+- uid: AngeliA.Float3.Lerp(AngeliA.Float3,AngeliA.Float3,System.Single)
+  commentId: M:AngeliA.Float3.Lerp(AngeliA.Float3,AngeliA.Float3,System.Single)
+  id: Lerp(AngeliA.Float3,AngeliA.Float3,System.Single)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Lerp(Float3, Float3, float)
+  nameWithType: Float3.Lerp(Float3, Float3, float)
+  fullName: AngeliA.Float3.Lerp(AngeliA.Float3, AngeliA.Float3, float)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Lerp
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 84
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find a value transform between two given float smoothly
+  example: []
+  syntax:
+    content: public static Float3 Lerp(Float3 a, Float3 b, float t)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+      description: ''
+    - id: b
+      type: AngeliA.Float3
+      description: ''
+    - id: t
+      type: System.Single
+      description: Representation of the position. 0 means value A, 1 means value B.
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Function Lerp(a As Float3, b As Float3, t As Single) As Float3
+  overload: AngeliA.Float3.Lerp*
+  nameWithType.vb: Float3.Lerp(Float3, Float3, Single)
+  fullName.vb: AngeliA.Float3.Lerp(AngeliA.Float3, AngeliA.Float3, Single)
+  name.vb: Lerp(Float3, Float3, Single)
+- uid: AngeliA.Float3.LerpUnclamped(AngeliA.Float3,AngeliA.Float3,System.Single)
+  commentId: M:AngeliA.Float3.LerpUnclamped(AngeliA.Float3,AngeliA.Float3,System.Single)
+  id: LerpUnclamped(AngeliA.Float3,AngeliA.Float3,System.Single)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: LerpUnclamped(Float3, Float3, float)
+  nameWithType: Float3.LerpUnclamped(Float3, Float3, float)
+  fullName: AngeliA.Float3.LerpUnclamped(AngeliA.Float3, AngeliA.Float3, float)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: LerpUnclamped
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 95
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find a value transform between two given float smoothly without limit the t value
+  example: []
+  syntax:
+    content: public static Float3 LerpUnclamped(Float3 a, Float3 b, float t)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+      description: ''
+    - id: b
+      type: AngeliA.Float3
+      description: ''
+    - id: t
+      type: System.Single
+      description: Representation of the position. 0 means value A, 1 means value B.
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Function LerpUnclamped(a As Float3, b As Float3, t As Single) As Float3
+  overload: AngeliA.Float3.LerpUnclamped*
+  nameWithType.vb: Float3.LerpUnclamped(Float3, Float3, Single)
+  fullName.vb: AngeliA.Float3.LerpUnclamped(AngeliA.Float3, AngeliA.Float3, Single)
+  name.vb: LerpUnclamped(Float3, Float3, Single)
+- uid: AngeliA.Float3.MoveTowards(AngeliA.Float3,AngeliA.Float3,System.Single)
+  commentId: M:AngeliA.Float3.MoveTowards(AngeliA.Float3,AngeliA.Float3,System.Single)
+  id: MoveTowards(AngeliA.Float3,AngeliA.Float3,System.Single)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: MoveTowards(Float3, Float3, float)
+  nameWithType: Float3.MoveTowards(Float3, Float3, float)
+  fullName: AngeliA.Float3.MoveTowards(AngeliA.Float3, AngeliA.Float3, float)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: MoveTowards
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 106
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Moves a point towards the target with distance limitation
+  example: []
+  syntax:
+    content: public static Float3 MoveTowards(Float3 current, Float3 target, float maxDistanceDelta)
+    parameters:
+    - id: current
+      type: AngeliA.Float3
+      description: Starting position
+    - id: target
+      type: AngeliA.Float3
+      description: Target end position
+    - id: maxDistanceDelta
+      type: System.Single
+      description: Distance limit
+    return:
+      type: AngeliA.Float3
+      description: The new position
+    content.vb: Public Shared Function MoveTowards(current As Float3, target As Float3, maxDistanceDelta As Single) As Float3
+  overload: AngeliA.Float3.MoveTowards*
+  nameWithType.vb: Float3.MoveTowards(Float3, Float3, Single)
+  fullName.vb: AngeliA.Float3.MoveTowards(AngeliA.Float3, AngeliA.Float3, Single)
+  name.vb: MoveTowards(Float3, Float3, Single)
+- uid: AngeliA.Float3.#ctor(System.Single,System.Single,System.Single)
+  commentId: M:AngeliA.Float3.#ctor(System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single)'
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Float3(float, float, float)
+  nameWithType: Float3.Float3(float, float, float)
+  fullName: AngeliA.Float3.Float3(float, float, float)
+  type: Constructor
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: .ctor
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 122
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: 3D vector with float data values
+  example: []
+  syntax:
+    content: public Float3(float x, float y, float z)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single, z As Single)
+  overload: AngeliA.Float3.#ctor*
+  nameWithType.vb: Float3.New(Single, Single, Single)
+  fullName.vb: AngeliA.Float3.New(Single, Single, Single)
+  name.vb: New(Single, Single, Single)
+- uid: AngeliA.Float3.#ctor(System.Single,System.Single)
+  commentId: M:AngeliA.Float3.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Float3(float, float)
+  nameWithType: Float3.Float3(float, float)
+  fullName: AngeliA.Float3.Float3(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: .ctor
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 131
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: 3D vector with float data values. z = 0
+  example: []
+  syntax:
+    content: public Float3(float x, float y)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single)
+  overload: AngeliA.Float3.#ctor*
+  nameWithType.vb: Float3.New(Single, Single)
+  fullName.vb: AngeliA.Float3.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: AngeliA.Float3.Set(System.Single,System.Single,System.Single)
+  commentId: M:AngeliA.Float3.Set(System.Single,System.Single,System.Single)
+  id: Set(System.Single,System.Single,System.Single)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Set(float, float, float)
+  nameWithType: Float3.Set(float, float, float)
+  fullName: AngeliA.Float3.Set(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Set
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 143
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Set all values of this vector
+  example: []
+  syntax:
+    content: public void Set(float newX, float newY, float newZ)
+    parameters:
+    - id: newX
+      type: System.Single
+      description: ''
+    - id: newY
+      type: System.Single
+      description: ''
+    - id: newZ
+      type: System.Single
+      description: ''
+    content.vb: Public Sub [Set](newX As Single, newY As Single, newZ As Single)
+  overload: AngeliA.Float3.Set*
+  nameWithType.vb: Float3.Set(Single, Single, Single)
+  fullName.vb: AngeliA.Float3.Set(Single, Single, Single)
+  name.vb: Set(Single, Single, Single)
+- uid: AngeliA.Float3.Deconstruct(System.Single@,System.Single@,System.Single@)
+  commentId: M:AngeliA.Float3.Deconstruct(System.Single@,System.Single@,System.Single@)
+  id: Deconstruct(System.Single@,System.Single@,System.Single@)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out float, out float, out float)
+  nameWithType: Float3.Deconstruct(out float, out float, out float)
+  fullName: AngeliA.Float3.Deconstruct(out float, out float, out float)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Deconstruct
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 149
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public readonly void Deconstruct(out float x, out float y, out float z)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    content.vb: Public Sub Deconstruct(x As Single, y As Single, z As Single)
+  overload: AngeliA.Float3.Deconstruct*
+  nameWithType.vb: Float3.Deconstruct(Single, Single, Single)
+  fullName.vb: AngeliA.Float3.Deconstruct(Single, Single, Single)
+  name.vb: Deconstruct(Single, Single, Single)
+- uid: AngeliA.Float3.GetHashCode
+  commentId: M:AngeliA.Float3.GetHashCode
+  id: GetHashCode
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Float3.GetHashCode()
+  fullName: AngeliA.Float3.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetHashCode
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 155
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: AngeliA.Float3.GetHashCode*
+- uid: AngeliA.Float3.Equals(System.Object)
+  commentId: M:AngeliA.Float3.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Float3.Equals(object)
+  fullName: AngeliA.Float3.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Equals
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 159
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: AngeliA.Float3.Equals*
+  nameWithType.vb: Float3.Equals(Object)
+  fullName.vb: AngeliA.Float3.Equals(Object)
+  name.vb: Equals(Object)
+- uid: AngeliA.Float3.Equals(AngeliA.Float3)
+  commentId: M:AngeliA.Float3.Equals(AngeliA.Float3)
+  id: Equals(AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Equals(Float3)
+  nameWithType: Float3.Equals(Float3)
+  fullName: AngeliA.Float3.Equals(AngeliA.Float3)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Equals
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 167
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public readonly bool Equals(Float3 other)
+    parameters:
+    - id: other
+      type: AngeliA.Float3
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Float3) As Boolean
+  overload: AngeliA.Float3.Equals*
+  implements:
+  - System.IEquatable{AngeliA.Float3}.Equals(AngeliA.Float3)
+- uid: AngeliA.Float3.ToString
+  commentId: M:AngeliA.Float3.ToString
+  id: ToString
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Float3.ToString()
+  fullName: AngeliA.Float3.ToString()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ToString
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 171
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: AngeliA.Float3.ToString*
+- uid: AngeliA.Float3.Normalize(AngeliA.Float3)
+  commentId: M:AngeliA.Float3.Normalize(AngeliA.Float3)
+  id: Normalize(AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Normalize(Float3)
+  nameWithType: Float3.Normalize(Float3)
+  fullName: AngeliA.Float3.Normalize(AngeliA.Float3)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Normalize
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 173
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static Float3 Normalize(Float3 value)
+    parameters:
+    - id: value
+      type: AngeliA.Float3
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Function Normalize(value As Float3) As Float3
+  overload: AngeliA.Float3.Normalize*
+- uid: AngeliA.Float3.Normalize
+  commentId: M:AngeliA.Float3.Normalize
+  id: Normalize
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: Float3.Normalize()
+  fullName: AngeliA.Float3.Normalize()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Normalize
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 185
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Make the vector have length of 1 while maintaining the same direction as original.
+  example: []
+  syntax:
+    content: public void Normalize()
+    content.vb: Public Sub Normalize()
+  overload: AngeliA.Float3.Normalize*
+- uid: AngeliA.Float3.Dot(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.Dot(AngeliA.Float3,AngeliA.Float3)
+  id: Dot(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Dot(Float3, Float3)
+  nameWithType: Float3.Dot(Float3, Float3)
+  fullName: AngeliA.Float3.Dot(AngeliA.Float3, AngeliA.Float3)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Dot
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 197
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: The dot product of two vectors returns a float value representing the cosine of the angle between them
+  example: []
+  syntax:
+    content: public static float Dot(Float3 lhs, Float3 rhs)
+    parameters:
+    - id: lhs
+      type: AngeliA.Float3
+    - id: rhs
+      type: AngeliA.Float3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Dot(lhs As Float3, rhs As Float3) As Single
+  overload: AngeliA.Float3.Dot*
+- uid: AngeliA.Float3.Angle(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.Angle(AngeliA.Float3,AngeliA.Float3)
+  id: Angle(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Angle(Float3, Float3)
+  nameWithType: Float3.Angle(Float3, Float3)
+  fullName: AngeliA.Float3.Angle(AngeliA.Float3, AngeliA.Float3)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Angle
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 202
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Angle in degrees between from and to
+  example: []
+  syntax:
+    content: public static float Angle(Float3 from, Float3 to)
+    parameters:
+    - id: from
+      type: AngeliA.Float3
+    - id: to
+      type: AngeliA.Float3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Angle(from As Float3, [to] As Float3) As Single
+  overload: AngeliA.Float3.Angle*
+- uid: AngeliA.Float3.SignedAngle(AngeliA.Float3,AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.SignedAngle(AngeliA.Float3,AngeliA.Float3,AngeliA.Float3)
+  id: SignedAngle(AngeliA.Float3,AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: SignedAngle(Float3, Float3, Float3)
+  nameWithType: Float3.SignedAngle(Float3, Float3, Float3)
+  fullName: AngeliA.Float3.SignedAngle(AngeliA.Float3, AngeliA.Float3, AngeliA.Float3)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SignedAngle
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 214
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Signed angle in degrees between from and to in axis
+  example: []
+  syntax:
+    content: public static float SignedAngle(Float3 from, Float3 to, Float3 axis)
+    parameters:
+    - id: from
+      type: AngeliA.Float3
+    - id: to
+      type: AngeliA.Float3
+    - id: axis
+      type: AngeliA.Float3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function SignedAngle(from As Float3, [to] As Float3, axis As Float3) As Single
+  overload: AngeliA.Float3.SignedAngle*
+- uid: AngeliA.Float3.Distance(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.Distance(AngeliA.Float3,AngeliA.Float3)
+  id: Distance(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: Distance(Float3, Float3)
+  nameWithType: Float3.Distance(Float3, Float3)
+  fullName: AngeliA.Float3.Distance(AngeliA.Float3, AngeliA.Float3)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Distance
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 226
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Distance between to points
+  example: []
+  syntax:
+    content: public static float Distance(Float3 a, Float3 b)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+    - id: b
+      type: AngeliA.Float3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As Float3, b As Float3) As Single
+  overload: AngeliA.Float3.Distance*
+- uid: AngeliA.Float3.op_Addition(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.op_Addition(AngeliA.Float3,AngeliA.Float3)
+  id: op_Addition(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator +(Float3, Float3)
+  nameWithType: Float3.operator +(Float3, Float3)
+  fullName: AngeliA.Float3.operator +(AngeliA.Float3, AngeliA.Float3)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_Addition
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 234
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static Float3 operator +(Float3 a, Float3 b)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+    - id: b
+      type: AngeliA.Float3
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Operator +(a As Float3, b As Float3) As Float3
+  overload: AngeliA.Float3.op_Addition*
+  nameWithType.vb: Float3.+(Float3, Float3)
+  fullName.vb: AngeliA.Float3.+(AngeliA.Float3, AngeliA.Float3)
+  name.vb: +(Float3, Float3)
+- uid: AngeliA.Float3.op_Subtraction(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.op_Subtraction(AngeliA.Float3,AngeliA.Float3)
+  id: op_Subtraction(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator -(Float3, Float3)
+  nameWithType: Float3.operator -(Float3, Float3)
+  fullName: AngeliA.Float3.operator -(AngeliA.Float3, AngeliA.Float3)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_Subtraction
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 238
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static Float3 operator -(Float3 a, Float3 b)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+    - id: b
+      type: AngeliA.Float3
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Operator -(a As Float3, b As Float3) As Float3
+  overload: AngeliA.Float3.op_Subtraction*
+  nameWithType.vb: Float3.-(Float3, Float3)
+  fullName.vb: AngeliA.Float3.-(AngeliA.Float3, AngeliA.Float3)
+  name.vb: -(Float3, Float3)
+- uid: AngeliA.Float3.op_UnaryNegation(AngeliA.Float3)
+  commentId: M:AngeliA.Float3.op_UnaryNegation(AngeliA.Float3)
+  id: op_UnaryNegation(AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator -(Float3)
+  nameWithType: Float3.operator -(Float3)
+  fullName: AngeliA.Float3.operator -(AngeliA.Float3)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_UnaryNegation
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 242
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static Float3 operator -(Float3 a)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Operator -(a As Float3) As Float3
+  overload: AngeliA.Float3.op_UnaryNegation*
+  nameWithType.vb: Float3.-(Float3)
+  fullName.vb: AngeliA.Float3.-(AngeliA.Float3)
+  name.vb: -(Float3)
+- uid: AngeliA.Float3.op_Multiply(AngeliA.Float3,System.Single)
+  commentId: M:AngeliA.Float3.op_Multiply(AngeliA.Float3,System.Single)
+  id: op_Multiply(AngeliA.Float3,System.Single)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator *(Float3, float)
+  nameWithType: Float3.operator *(Float3, float)
+  fullName: AngeliA.Float3.operator *(AngeliA.Float3, float)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_Multiply
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 246
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static Float3 operator *(Float3 a, float d)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+    - id: d
+      type: System.Single
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Operator *(a As Float3, d As Single) As Float3
+  overload: AngeliA.Float3.op_Multiply*
+  nameWithType.vb: Float3.*(Float3, Single)
+  fullName.vb: AngeliA.Float3.*(AngeliA.Float3, Single)
+  name.vb: '*(Float3, Single)'
+- uid: AngeliA.Float3.op_Multiply(System.Single,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.op_Multiply(System.Single,AngeliA.Float3)
+  id: op_Multiply(System.Single,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator *(float, Float3)
+  nameWithType: Float3.operator *(float, Float3)
+  fullName: AngeliA.Float3.operator *(float, AngeliA.Float3)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_Multiply
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 250
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static Float3 operator *(float d, Float3 a)
+    parameters:
+    - id: d
+      type: System.Single
+    - id: a
+      type: AngeliA.Float3
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Operator *(d As Single, a As Float3) As Float3
+  overload: AngeliA.Float3.op_Multiply*
+  nameWithType.vb: Float3.*(Single, Float3)
+  fullName.vb: AngeliA.Float3.*(Single, AngeliA.Float3)
+  name.vb: '*(Single, Float3)'
+- uid: AngeliA.Float3.op_Division(AngeliA.Float3,System.Single)
+  commentId: M:AngeliA.Float3.op_Division(AngeliA.Float3,System.Single)
+  id: op_Division(AngeliA.Float3,System.Single)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator /(Float3, float)
+  nameWithType: Float3.operator /(Float3, float)
+  fullName: AngeliA.Float3.operator /(AngeliA.Float3, float)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_Division
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 254
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static Float3 operator /(Float3 a, float d)
+    parameters:
+    - id: a
+      type: AngeliA.Float3
+    - id: d
+      type: System.Single
+    return:
+      type: AngeliA.Float3
+    content.vb: Public Shared Operator /(a As Float3, d As Single) As Float3
+  overload: AngeliA.Float3.op_Division*
+  nameWithType.vb: Float3./(Float3, Single)
+  fullName.vb: AngeliA.Float3./(AngeliA.Float3, Single)
+  name.vb: /(Float3, Single)
+- uid: AngeliA.Float3.op_Equality(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.op_Equality(AngeliA.Float3,AngeliA.Float3)
+  id: op_Equality(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Float3, Float3)
+  nameWithType: Float3.operator ==(Float3, Float3)
+  fullName: AngeliA.Float3.operator ==(AngeliA.Float3, AngeliA.Float3)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_Equality
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 258
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static bool operator ==(Float3 lhs, Float3 rhs)
+    parameters:
+    - id: lhs
+      type: AngeliA.Float3
+    - id: rhs
+      type: AngeliA.Float3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(lhs As Float3, rhs As Float3) As Boolean
+  overload: AngeliA.Float3.op_Equality*
+  nameWithType.vb: Float3.=(Float3, Float3)
+  fullName.vb: AngeliA.Float3.=(AngeliA.Float3, AngeliA.Float3)
+  name.vb: =(Float3, Float3)
+- uid: AngeliA.Float3.op_Inequality(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Float3.op_Inequality(AngeliA.Float3,AngeliA.Float3)
+  id: op_Inequality(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Float3
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Float3, Float3)
+  nameWithType: Float3.operator !=(Float3, Float3)
+  fullName: AngeliA.Float3.operator !=(AngeliA.Float3, AngeliA.Float3)
+  type: Operator
+  source:
+    remote:
+      path: AngeliA Framework/src/Structure/Float3.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: op_Inequality
+    path: ../../AngeliA/AngeliA Framework/src/Structure/Float3.cs
+    startLine: 266
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public static bool operator !=(Float3 lhs, Float3 rhs)
+    parameters:
+    - id: lhs
+      type: AngeliA.Float3
+    - id: rhs
+      type: AngeliA.Float3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(lhs As Float3, rhs As Float3) As Boolean
+  overload: AngeliA.Float3.op_Inequality*
+  nameWithType.vb: Float3.<>(Float3, Float3)
+  fullName.vb: AngeliA.Float3.<>(AngeliA.Float3, AngeliA.Float3)
+  name.vb: <>(Float3, Float3)
+references:
+- uid: AngeliA
+  commentId: N:AngeliA
+  href: AngeliA.html
+  name: AngeliA
+  nameWithType: AngeliA
+  fullName: AngeliA
+- uid: System.IEquatable{AngeliA.Float3}
+  commentId: T:System.IEquatable{AngeliA.Float3}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Float3>
+  nameWithType: IEquatable<Float3>
+  fullName: System.IEquatable<AngeliA.Float3>
+  nameWithType.vb: IEquatable(Of Float3)
+  fullName.vb: System.IEquatable(Of AngeliA.Float3)
+  name.vb: IEquatable(Of Float3)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AngeliA.Float3.AngeliA.Extension.Almost(AngeliA.Float3)
+  commentId: M:AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+  href: AngeliA.Extension.html#AngeliA_Extension_Almost_AngeliA_Float3_AngeliA_Float3_
+  name: Almost(Float3, Float3)
+  nameWithType: Extension.Almost(Float3, Float3)
+  fullName: AngeliA.Extension.Almost(AngeliA.Float3, AngeliA.Float3)
+  spec.csharp:
+  - uid: AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+    name: Almost
+    href: AngeliA.Extension.html#AngeliA_Extension_Almost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+    name: Almost
+    href: AngeliA.Extension.html#AngeliA_Extension_Almost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+- uid: AngeliA.Float3.AngeliA.Extension.NotAlmost(AngeliA.Float3)
+  commentId: M:AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+  href: AngeliA.Extension.html#AngeliA_Extension_NotAlmost_AngeliA_Float3_AngeliA_Float3_
+  name: NotAlmost(Float3, Float3)
+  nameWithType: Extension.NotAlmost(Float3, Float3)
+  fullName: AngeliA.Extension.NotAlmost(AngeliA.Float3, AngeliA.Float3)
+  spec.csharp:
+  - uid: AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+    name: NotAlmost
+    href: AngeliA.Extension.html#AngeliA_Extension_NotAlmost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+    name: NotAlmost
+    href: AngeliA.Extension.html#AngeliA_Extension_NotAlmost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+- uid: AngeliA.Float3.AngeliA.Extension.Rotate(System.Single)
+  commentId: M:AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+  href: AngeliA.Extension.html#AngeliA_Extension_Rotate_AngeliA_Float3_System_Single_
+  name: Rotate(Float3, float)
+  nameWithType: Extension.Rotate(Float3, float)
+  fullName: AngeliA.Extension.Rotate(AngeliA.Float3, float)
+  nameWithType.vb: Extension.Rotate(Float3, Single)
+  fullName.vb: AngeliA.Extension.Rotate(AngeliA.Float3, Single)
+  name.vb: Rotate(Float3, Single)
+  spec.csharp:
+  - uid: AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+    name: Rotate
+    href: AngeliA.Extension.html#AngeliA_Extension_Rotate_AngeliA_Float3_System_Single_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+    name: Rotate
+    href: AngeliA.Extension.html#AngeliA_Extension_Rotate_AngeliA_Float3_System_Single_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Object.AngeliA.Extension.ForAllFields``1(System.Reflection.BindingFlags,System.Boolean)
+  commentId: M:AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  name: ForAllFields<T>(object, BindingFlags, bool)
+  nameWithType: Extension.ForAllFields<T>(object, BindingFlags, bool)
+  fullName: AngeliA.Extension.ForAllFields<T>(object, System.Reflection.BindingFlags, bool)
+  nameWithType.vb: Extension.ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  fullName.vb: AngeliA.Extension.ForAllFields(Of T)(Object, System.Reflection.BindingFlags, Boolean)
+  name.vb: ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.AngeliA.Extension.ForAllProperties``1
+  commentId: M:AngeliA.Extension.ForAllProperties``1(System.Object)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.ForAllProperties``1(System.Object)
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  name: ForAllProperties<T>(object)
+  nameWithType: Extension.ForAllProperties<T>(object)
+  fullName: AngeliA.Extension.ForAllProperties<T>(object)
+  nameWithType.vb: Extension.ForAllProperties(Of T)(Object)
+  fullName.vb: AngeliA.Extension.ForAllProperties(Of T)(Object)
+  name.vb: ForAllProperties(Of T)(Object)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+  href: AngeliA.Extension.html#AngeliA_Extension_Almost_AngeliA_Float3_AngeliA_Float3_
+  name: Almost(Float3, Float3)
+  nameWithType: Extension.Almost(Float3, Float3)
+  fullName: AngeliA.Extension.Almost(AngeliA.Float3, AngeliA.Float3)
+  spec.csharp:
+  - uid: AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+    name: Almost
+    href: AngeliA.Extension.html#AngeliA_Extension_Almost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.Almost(AngeliA.Float3,AngeliA.Float3)
+    name: Almost
+    href: AngeliA.Extension.html#AngeliA_Extension_Almost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+- uid: AngeliA.Extension
+  commentId: T:AngeliA.Extension
+  parent: AngeliA
+  href: AngeliA.Extension.html
+  name: Extension
+  nameWithType: Extension
+  fullName: AngeliA.Extension
+- uid: AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+  commentId: M:AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+  href: AngeliA.Extension.html#AngeliA_Extension_NotAlmost_AngeliA_Float3_AngeliA_Float3_
+  name: NotAlmost(Float3, Float3)
+  nameWithType: Extension.NotAlmost(Float3, Float3)
+  fullName: AngeliA.Extension.NotAlmost(AngeliA.Float3, AngeliA.Float3)
+  spec.csharp:
+  - uid: AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+    name: NotAlmost
+    href: AngeliA.Extension.html#AngeliA_Extension_NotAlmost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.NotAlmost(AngeliA.Float3,AngeliA.Float3)
+    name: NotAlmost
+    href: AngeliA.Extension.html#AngeliA_Extension_NotAlmost_AngeliA_Float3_AngeliA_Float3_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+- uid: AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+  commentId: M:AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+  isExternal: true
+  href: AngeliA.Extension.html#AngeliA_Extension_Rotate_AngeliA_Float3_System_Single_
+  name: Rotate(Float3, float)
+  nameWithType: Extension.Rotate(Float3, float)
+  fullName: AngeliA.Extension.Rotate(AngeliA.Float3, float)
+  nameWithType.vb: Extension.Rotate(Float3, Single)
+  fullName.vb: AngeliA.Extension.Rotate(AngeliA.Float3, Single)
+  name.vb: Rotate(Float3, Single)
+  spec.csharp:
+  - uid: AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+    name: Rotate
+    href: AngeliA.Extension.html#AngeliA_Extension_Rotate_AngeliA_Float3_System_Single_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.Rotate(AngeliA.Float3,System.Single)
+    name: Rotate
+    href: AngeliA.Extension.html#AngeliA_Extension_Rotate_AngeliA_Float3_System_Single_
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  commentId: M:AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  isExternal: true
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  name: ForAllFields<T>(object, BindingFlags, bool)
+  nameWithType: Extension.ForAllFields<T>(object, BindingFlags, bool)
+  fullName: AngeliA.Extension.ForAllFields<T>(object, System.Reflection.BindingFlags, bool)
+  nameWithType.vb: Extension.ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  fullName.vb: AngeliA.Extension.ForAllFields(Of T)(Object, System.Reflection.BindingFlags, Boolean)
+  name.vb: ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+  commentId: M:AngeliA.Extension.ForAllProperties``1(System.Object)
+  isExternal: true
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  name: ForAllProperties<T>(object)
+  nameWithType: Extension.ForAllProperties<T>(object)
+  fullName: AngeliA.Extension.ForAllProperties<T>(object)
+  nameWithType.vb: Extension.ForAllProperties(Of T)(Object)
+  fullName.vb: AngeliA.Extension.ForAllProperties(Of T)(Object)
+  name.vb: ForAllProperties(Of T)(Object)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AngeliA.Float3
+  commentId: T:AngeliA.Float3
+  parent: AngeliA
+  href: AngeliA.Float3.html
+  name: Float3
+  nameWithType: Float3
+  fullName: AngeliA.Float3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: AngeliA.Float3.Item*
+  commentId: Overload:AngeliA.Float3.Item
+  href: AngeliA.Float3.html#AngeliA_Float3_Item_System_Int32_
+  name: this
+  nameWithType: Float3.this
+  fullName: AngeliA.Float3.this
+  nameWithType.vb: Float3.this[]
+  fullName.vb: AngeliA.Float3.this[]
+  name.vb: this[]
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AngeliA.Float3.Normalized*
+  commentId: Overload:AngeliA.Float3.Normalized
+  href: AngeliA.Float3.html#AngeliA_Float3_Normalized
+  name: Normalized
+  nameWithType: Float3.Normalized
+  fullName: AngeliA.Float3.Normalized
+- uid: AngeliA.Float3.Magnitude*
+  commentId: Overload:AngeliA.Float3.Magnitude
+  href: AngeliA.Float3.html#AngeliA_Float3_Magnitude
+  name: Magnitude
+  nameWithType: Float3.Magnitude
+  fullName: AngeliA.Float3.Magnitude
+- uid: AngeliA.Float3.SqrMagnitude*
+  commentId: Overload:AngeliA.Float3.SqrMagnitude
+  href: AngeliA.Float3.html#AngeliA_Float3_SqrMagnitude
+  name: SqrMagnitude
+  nameWithType: Float3.SqrMagnitude
+  fullName: AngeliA.Float3.SqrMagnitude
+- uid: AngeliA.Float3.Lerp*
+  commentId: Overload:AngeliA.Float3.Lerp
+  href: AngeliA.Float3.html#AngeliA_Float3_Lerp_AngeliA_Float3_AngeliA_Float3_System_Single_
+  name: Lerp
+  nameWithType: Float3.Lerp
+  fullName: AngeliA.Float3.Lerp
+- uid: AngeliA.Float3.LerpUnclamped*
+  commentId: Overload:AngeliA.Float3.LerpUnclamped
+  href: AngeliA.Float3.html#AngeliA_Float3_LerpUnclamped_AngeliA_Float3_AngeliA_Float3_System_Single_
+  name: LerpUnclamped
+  nameWithType: Float3.LerpUnclamped
+  fullName: AngeliA.Float3.LerpUnclamped
+- uid: AngeliA.Float3.MoveTowards*
+  commentId: Overload:AngeliA.Float3.MoveTowards
+  href: AngeliA.Float3.html#AngeliA_Float3_MoveTowards_AngeliA_Float3_AngeliA_Float3_System_Single_
+  name: MoveTowards
+  nameWithType: Float3.MoveTowards
+  fullName: AngeliA.Float3.MoveTowards
+- uid: AngeliA.Float3.#ctor*
+  commentId: Overload:AngeliA.Float3.#ctor
+  href: AngeliA.Float3.html#AngeliA_Float3__ctor_System_Single_System_Single_System_Single_
+  name: Float3
+  nameWithType: Float3.Float3
+  fullName: AngeliA.Float3.Float3
+  nameWithType.vb: Float3.New
+  fullName.vb: AngeliA.Float3.New
+  name.vb: New
+- uid: AngeliA.Float3.Set*
+  commentId: Overload:AngeliA.Float3.Set
+  href: AngeliA.Float3.html#AngeliA_Float3_Set_System_Single_System_Single_System_Single_
+  name: Set
+  nameWithType: Float3.Set
+  fullName: AngeliA.Float3.Set
+- uid: AngeliA.Float3.Deconstruct*
+  commentId: Overload:AngeliA.Float3.Deconstruct
+  href: AngeliA.Float3.html#AngeliA_Float3_Deconstruct_System_Single__System_Single__System_Single__
+  name: Deconstruct
+  nameWithType: Float3.Deconstruct
+  fullName: AngeliA.Float3.Deconstruct
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: AngeliA.Float3.GetHashCode*
+  commentId: Overload:AngeliA.Float3.GetHashCode
+  href: AngeliA.Float3.html#AngeliA_Float3_GetHashCode
+  name: GetHashCode
+  nameWithType: Float3.GetHashCode
+  fullName: AngeliA.Float3.GetHashCode
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AngeliA.Float3.Equals*
+  commentId: Overload:AngeliA.Float3.Equals
+  href: AngeliA.Float3.html#AngeliA_Float3_Equals_System_Object_
+  name: Equals
+  nameWithType: Float3.Equals
+  fullName: AngeliA.Float3.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{AngeliA.Float3}.Equals(AngeliA.Float3)
+  commentId: M:System.IEquatable{AngeliA.Float3}.Equals(AngeliA.Float3)
+  parent: System.IEquatable{AngeliA.Float3}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Float3)
+  nameWithType: IEquatable<Float3>.Equals(Float3)
+  fullName: System.IEquatable<AngeliA.Float3>.Equals(AngeliA.Float3)
+  nameWithType.vb: IEquatable(Of Float3).Equals(Float3)
+  fullName.vb: System.IEquatable(Of AngeliA.Float3).Equals(AngeliA.Float3)
+  spec.csharp:
+  - uid: System.IEquatable{AngeliA.Float3}.Equals(AngeliA.Float3)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{AngeliA.Float3}.Equals(AngeliA.Float3)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: AngeliA.Float3
+    name: Float3
+    href: AngeliA.Float3.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: AngeliA.Float3.ToString*
+  commentId: Overload:AngeliA.Float3.ToString
+  href: AngeliA.Float3.html#AngeliA_Float3_ToString
+  name: ToString
+  nameWithType: Float3.ToString
+  fullName: AngeliA.Float3.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AngeliA.Float3.Normalize*
+  commentId: Overload:AngeliA.Float3.Normalize
+  href: AngeliA.Float3.html#AngeliA_Float3_Normalize_AngeliA_Float3_
+  name: Normalize
+  nameWithType: Float3.Normalize
+  fullName: AngeliA.Float3.Normalize
+- uid: AngeliA.Float3.Dot*
+  commentId: Overload:AngeliA.Float3.Dot
+  href: AngeliA.Float3.html#AngeliA_Float3_Dot_AngeliA_Float3_AngeliA_Float3_
+  name: Dot
+  nameWithType: Float3.Dot
+  fullName: AngeliA.Float3.Dot
+- uid: AngeliA.Float3.Angle*
+  commentId: Overload:AngeliA.Float3.Angle
+  href: AngeliA.Float3.html#AngeliA_Float3_Angle_AngeliA_Float3_AngeliA_Float3_
+  name: Angle
+  nameWithType: Float3.Angle
+  fullName: AngeliA.Float3.Angle
+- uid: AngeliA.Float3.SignedAngle*
+  commentId: Overload:AngeliA.Float3.SignedAngle
+  href: AngeliA.Float3.html#AngeliA_Float3_SignedAngle_AngeliA_Float3_AngeliA_Float3_AngeliA_Float3_
+  name: SignedAngle
+  nameWithType: Float3.SignedAngle
+  fullName: AngeliA.Float3.SignedAngle
+- uid: AngeliA.Float3.Distance*
+  commentId: Overload:AngeliA.Float3.Distance
+  href: AngeliA.Float3.html#AngeliA_Float3_Distance_AngeliA_Float3_AngeliA_Float3_
+  name: Distance
+  nameWithType: Float3.Distance
+  fullName: AngeliA.Float3.Distance
+- uid: AngeliA.Float3.op_Addition*
+  commentId: Overload:AngeliA.Float3.op_Addition
+  href: AngeliA.Float3.html#AngeliA_Float3_op_Addition_AngeliA_Float3_AngeliA_Float3_
+  name: operator +
+  nameWithType: Float3.operator +
+  fullName: AngeliA.Float3.operator +
+  nameWithType.vb: Float3.+
+  fullName.vb: AngeliA.Float3.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: AngeliA.Float3.op_Addition*
+    name: +
+    href: AngeliA.Float3.html#AngeliA_Float3_op_Addition_AngeliA_Float3_AngeliA_Float3_
+- uid: AngeliA.Float3.op_Subtraction*
+  commentId: Overload:AngeliA.Float3.op_Subtraction
+  href: AngeliA.Float3.html#AngeliA_Float3_op_Subtraction_AngeliA_Float3_AngeliA_Float3_
+  name: operator -
+  nameWithType: Float3.operator -
+  fullName: AngeliA.Float3.operator -
+  nameWithType.vb: Float3.-
+  fullName.vb: AngeliA.Float3.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: AngeliA.Float3.op_Subtraction*
+    name: '-'
+    href: AngeliA.Float3.html#AngeliA_Float3_op_Subtraction_AngeliA_Float3_AngeliA_Float3_
+- uid: AngeliA.Float3.op_UnaryNegation*
+  commentId: Overload:AngeliA.Float3.op_UnaryNegation
+  href: AngeliA.Float3.html#AngeliA_Float3_op_UnaryNegation_AngeliA_Float3_
+  name: operator -
+  nameWithType: Float3.operator -
+  fullName: AngeliA.Float3.operator -
+  nameWithType.vb: Float3.-
+  fullName.vb: AngeliA.Float3.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: AngeliA.Float3.op_UnaryNegation*
+    name: '-'
+    href: AngeliA.Float3.html#AngeliA_Float3_op_UnaryNegation_AngeliA_Float3_
+- uid: AngeliA.Float3.op_Multiply*
+  commentId: Overload:AngeliA.Float3.op_Multiply
+  href: AngeliA.Float3.html#AngeliA_Float3_op_Multiply_AngeliA_Float3_System_Single_
+  name: operator *
+  nameWithType: Float3.operator *
+  fullName: AngeliA.Float3.operator *
+  nameWithType.vb: Float3.*
+  fullName.vb: AngeliA.Float3.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: AngeliA.Float3.op_Multiply*
+    name: '*'
+    href: AngeliA.Float3.html#AngeliA_Float3_op_Multiply_AngeliA_Float3_System_Single_
+- uid: AngeliA.Float3.op_Division*
+  commentId: Overload:AngeliA.Float3.op_Division
+  href: AngeliA.Float3.html#AngeliA_Float3_op_Division_AngeliA_Float3_System_Single_
+  name: operator /
+  nameWithType: Float3.operator /
+  fullName: AngeliA.Float3.operator /
+  nameWithType.vb: Float3./
+  fullName.vb: AngeliA.Float3./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: AngeliA.Float3.op_Division*
+    name: /
+    href: AngeliA.Float3.html#AngeliA_Float3_op_Division_AngeliA_Float3_System_Single_
+- uid: AngeliA.Float3.op_Equality*
+  commentId: Overload:AngeliA.Float3.op_Equality
+  href: AngeliA.Float3.html#AngeliA_Float3_op_Equality_AngeliA_Float3_AngeliA_Float3_
+  name: operator ==
+  nameWithType: Float3.operator ==
+  fullName: AngeliA.Float3.operator ==
+  nameWithType.vb: Float3.=
+  fullName.vb: AngeliA.Float3.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: AngeliA.Float3.op_Equality*
+    name: ==
+    href: AngeliA.Float3.html#AngeliA_Float3_op_Equality_AngeliA_Float3_AngeliA_Float3_
+- uid: AngeliA.Float3.op_Inequality*
+  commentId: Overload:AngeliA.Float3.op_Inequality
+  href: AngeliA.Float3.html#AngeliA_Float3_op_Inequality_AngeliA_Float3_AngeliA_Float3_
+  name: operator !=
+  nameWithType: Float3.operator !=
+  fullName: AngeliA.Float3.operator !=
+  nameWithType.vb: Float3.<>
+  fullName.vb: AngeliA.Float3.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: AngeliA.Float3.op_Inequality*
+    name: '!='
+    href: AngeliA.Float3.html#AngeliA_Float3_op_Inequality_AngeliA_Float3_AngeliA_Float3_

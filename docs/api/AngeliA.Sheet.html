@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Sheet | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Sheet | AngeliA ">
+    
+    <meta name="description" content="Artwork sheet that holds sprites, sprite groups, atlas and textures data for rendering">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Sheet">
+
+
+
+  <h1 id="AngeliA_Sheet" data-uid="AngeliA.Sheet" class="text-break">Class Sheet</h1>
+  <div class="markdown level0 summary"><p>Artwork sheet that holds sprites, sprite groups, atlas and textures data for rendering</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_Sheet__ctor_" data-uid="AngeliA.Sheet.#ctor*"></a>
+  <h4 id="AngeliA_Sheet__ctor_System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.Sheet.#ctor(System.Boolean,System.Boolean,System.Boolean)">Sheet(bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Artwork sheet that holds sprites, sprite groups, atlas and textures data for rendering</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sheet(bool ignoreGroups = false, bool ignoreSpriteWithPaletteTag = true, bool ignoreTextureAndPixels = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreGroups</span></td>
+        <td><p>True if do not require sprite group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreSpriteWithPaletteTag</span></td>
+        <td><p>True if do not load sprites with Tag.Palette</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreTextureAndPixels</span></td>
+        <td><p>True if do not load pixel data and do not create textures</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Sheet__ctor_" data-uid="AngeliA.Sheet.#ctor*"></a>
+  <h4 id="AngeliA_Sheet__ctor_System_Collections_Generic_List_AngeliA_AngeSprite__System_Collections_Generic_List_AngeliA_Atlas__System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.Sheet.#ctor(System.Collections.Generic.List{AngeliA.AngeSprite},System.Collections.Generic.List{AngeliA.Atlas},System.Boolean,System.Boolean,System.Boolean)">Sheet(List&lt;AngeSprite&gt;, List&lt;Atlas&gt;, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Create a sheet with given data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sheet(List&lt;AngeSprite&gt; sprites, List&lt;Atlas&gt; atlasInfo, bool ignoreGroups = false, bool ignoreSpriteWithIgnoreTag = true, bool ignoreTextureAndPixels = false)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreGroups</span></td>
+        <td><p>True if do not require sprite group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreSpriteWithIgnoreTag</span></td>
+        <td><p>True if do not load sprites with Tag.Palette</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreTextureAndPixels</span></td>
+        <td><p>True if do not load pixel data and do not create textures</p>
+</td>
+      </tr>
+    
+  
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_Sheet_Atlas" data-uid="AngeliA.Sheet.Atlas">Atlas</h4>
+  <div class="markdown level1 summary"><p>All atlas instances inside this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;Atlas&gt; Atlas</code></pre>
+  </div>
+  <h4 id="AngeliA_Sheet_AtlasPool" data-uid="AngeliA.Sheet.AtlasPool">AtlasPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;int, Atlas&gt; AtlasPool</code></pre>
+  </div>
+  <h4 id="AngeliA_Sheet_GroupPool" data-uid="AngeliA.Sheet.GroupPool">GroupPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;int, SpriteGroup&gt; GroupPool</code></pre>
+  </div>
+  <h4 id="AngeliA_Sheet_Groups" data-uid="AngeliA.Sheet.Groups">Groups</h4>
+  <div class="markdown level1 summary"><p>All sprite group instances inside this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;SpriteGroup&gt; Groups</code></pre>
+  </div>
+  <h4 id="AngeliA_Sheet_SpritePool" data-uid="AngeliA.Sheet.SpritePool">SpritePool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;int, AngeSprite&gt; SpritePool</code></pre>
+  </div>
+  <h4 id="AngeliA_Sheet_Sprites" data-uid="AngeliA.Sheet.Sprites">Sprites</h4>
+  <div class="markdown level1 summary"><p>All sprite instances inside this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;AngeSprite&gt; Sprites</code></pre>
+  </div>
+  <h4 id="AngeliA_Sheet_TexturePool" data-uid="AngeliA.Sheet.TexturePool">TexturePool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;int, object&gt; TexturePool</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Sheet_AddSprite_" data-uid="AngeliA.Sheet.AddSprite*"></a>
+  <h4 id="AngeliA_Sheet_AddSprite_AngeliA_AngeSprite_" data-uid="AngeliA.Sheet.AddSprite(AngeliA.AngeSprite)">AddSprite(AngeSprite)</h4>
+  <div class="markdown level1 summary"><p>Add the given sprite into this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddSprite(AngeSprite sprite)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the sprite is successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Sheet_Clear_" data-uid="AngeliA.Sheet.Clear*"></a>
+  <h4 id="AngeliA_Sheet_Clear" data-uid="AngeliA.Sheet.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear all content inside this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <a id="AngeliA_Sheet_CombineAllSheetInFolder_" data-uid="AngeliA.Sheet.CombineAllSheetInFolder*"></a>
+  <h4 id="AngeliA_Sheet_CombineAllSheetInFolder_System_String_System_Boolean_System_String_" data-uid="AngeliA.Sheet.CombineAllSheetInFolder(System.String,System.Boolean,System.String)">CombineAllSheetInFolder(string, bool, string)</h4>
+  <div class="markdown level1 summary"><p>Add all content from sheets from given folder into this sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CombineAllSheetInFolder(string folderPath, bool topOnly = false, string ignoreNameWithExtension = &quot;&quot;)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">ignoreNameWithExtension</span></td>
+        <td><p>Ignore sheets with this name</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_Sheet_CombineSheet_" data-uid="AngeliA.Sheet.CombineSheet*"></a>
+  <h4 id="AngeliA_Sheet_CombineSheet_AngeliA_Sheet_System_Boolean_" data-uid="AngeliA.Sheet.CombineSheet(AngeliA.Sheet,System.Boolean)">CombineSheet(Sheet, bool)</h4>
+  <div class="markdown level1 summary"><p>Add all content from given sheet into this sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CombineSheet(Sheet sheet, bool renameDuplicateSprites = false)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">renameDuplicateSprites</span></td>
+        <td><p>Set to false to skip the sprite with same name</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_Sheet_ContainGroup_" data-uid="AngeliA.Sheet.ContainGroup*"></a>
+  <h4 id="AngeliA_Sheet_ContainGroup_System_Int32_" data-uid="AngeliA.Sheet.ContainGroup(System.Int32)">ContainGroup(int)</h4>
+  <div class="markdown level1 summary"><p>True if there is a group with given ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainGroup(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_ContainSprite_" data-uid="AngeliA.Sheet.ContainSprite*"></a>
+  <h4 id="AngeliA_Sheet_ContainSprite_System_Int32_" data-uid="AngeliA.Sheet.ContainSprite(System.Int32)">ContainSprite(int)</h4>
+  <div class="markdown level1 summary"><p>True if there is a sprite with given ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainSprite(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_CreateSprite_" data-uid="AngeliA.Sheet.CreateSprite*"></a>
+  <h4 id="AngeliA_Sheet_CreateSprite_System_String_AngeliA_IRect_System_Int32_" data-uid="AngeliA.Sheet.CreateSprite(System.String,AngeliA.IRect,System.Int32)">CreateSprite(string, IRect, int)</h4>
+  <div class="markdown level1 summary"><p>Create a sprite without add into this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AngeSprite CreateSprite(string name, IRect pixelRect, int atlasID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_GetAvailableSpriteName_" data-uid="AngeliA.Sheet.GetAvailableSpriteName*"></a>
+  <h4 id="AngeliA_Sheet_GetAvailableSpriteName_System_String_" data-uid="AngeliA.Sheet.GetAvailableSpriteName(System.String)">GetAvailableSpriteName(string)</h4>
+  <div class="markdown level1 summary"><p>Get a new sprite name that be add into this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAvailableSpriteName(string basicName)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_GetSpriteAnimationDuration_" data-uid="AngeliA.Sheet.GetSpriteAnimationDuration*"></a>
+  <h4 id="AngeliA_Sheet_GetSpriteAnimationDuration_AngeliA_SpriteGroup_" data-uid="AngeliA.Sheet.GetSpriteAnimationDuration(AngeliA.SpriteGroup)">GetSpriteAnimationDuration(SpriteGroup)</h4>
+  <div class="markdown level1 summary"><p>Get how long does the given animation group takes in frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSpriteAnimationDuration(SpriteGroup aniGroup)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_IndexOfGroup_" data-uid="AngeliA.Sheet.IndexOfGroup*"></a>
+  <h4 id="AngeliA_Sheet_IndexOfGroup_System_Int32_" data-uid="AngeliA.Sheet.IndexOfGroup(System.Int32)">IndexOfGroup(int)</h4>
+  <div class="markdown level1 summary"><p>Find the group's index in the list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOfGroup(int id)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>-1 if the group not found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Sheet_IndexOfSprite_" data-uid="AngeliA.Sheet.IndexOfSprite*"></a>
+  <h4 id="AngeliA_Sheet_IndexOfSprite_System_Int32_" data-uid="AngeliA.Sheet.IndexOfSprite(System.Int32)">IndexOfSprite(int)</h4>
+  <div class="markdown level1 summary"><p>Find the sprite's index in the list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOfSprite(int id)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>-1 if the sprite not found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Sheet_LoadFromDisk_" data-uid="AngeliA.Sheet.LoadFromDisk*"></a>
+  <h4 id="AngeliA_Sheet_LoadFromDisk_System_String_" data-uid="AngeliA.Sheet.LoadFromDisk(System.String)">LoadFromDisk(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadFromDisk(string path)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_MoveAtlas_" data-uid="AngeliA.Sheet.MoveAtlas*"></a>
+  <h4 id="AngeliA_Sheet_MoveAtlas_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.Sheet.MoveAtlas(System.Int32,System.Int32,System.Boolean)">MoveAtlas(int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Move the atlas inside the atlas list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveAtlas(int from, int to, bool intoFolder = false)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_RemoveAllAtlasAndSpritesInsideExcept_" data-uid="AngeliA.Sheet.RemoveAllAtlasAndSpritesInsideExcept*"></a>
+  <h4 id="AngeliA_Sheet_RemoveAllAtlasAndSpritesInsideExcept_System_Int32_" data-uid="AngeliA.Sheet.RemoveAllAtlasAndSpritesInsideExcept(System.Int32)">RemoveAllAtlasAndSpritesInsideExcept(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllAtlasAndSpritesInsideExcept(int ignoreAtlasID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_RemoveAtlasAndAllSpritesInside_" data-uid="AngeliA.Sheet.RemoveAtlasAndAllSpritesInside*"></a>
+  <h4 id="AngeliA_Sheet_RemoveAtlasAndAllSpritesInside_System_Int32_" data-uid="AngeliA.Sheet.RemoveAtlasAndAllSpritesInside(System.Int32)">RemoveAtlasAndAllSpritesInside(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAtlasAndAllSpritesInside(int atlasIndex)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_RemoveGroupAndAllSpritesInside_" data-uid="AngeliA.Sheet.RemoveGroupAndAllSpritesInside*"></a>
+  <h4 id="AngeliA_Sheet_RemoveGroupAndAllSpritesInside_System_Int32_" data-uid="AngeliA.Sheet.RemoveGroupAndAllSpritesInside(System.Int32)">RemoveGroupAndAllSpritesInside(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveGroupAndAllSpritesInside(int groupIndex)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_RemoveSprite_" data-uid="AngeliA.Sheet.RemoveSprite*"></a>
+  <h4 id="AngeliA_Sheet_RemoveSprite_System_Int32_" data-uid="AngeliA.Sheet.RemoveSprite(System.Int32)">RemoveSprite(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSprite(int spriteIndex)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_RenameAtlas_" data-uid="AngeliA.Sheet.RenameAtlas*"></a>
+  <h4 id="AngeliA_Sheet_RenameAtlas_System_Int32_System_String_" data-uid="AngeliA.Sheet.RenameAtlas(System.Int32,System.String)">RenameAtlas(int, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RenameAtlas(int atlasID, string newName)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_RenameSprite_" data-uid="AngeliA.Sheet.RenameSprite*"></a>
+  <h4 id="AngeliA_Sheet_RenameSprite_AngeliA_AngeSprite_System_String_" data-uid="AngeliA.Sheet.RenameSprite(AngeliA.AngeSprite,System.String)">RenameSprite(AngeSprite, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RenameSprite(AngeSprite sprite, string newName)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_RenameSprite_" data-uid="AngeliA.Sheet.RenameSprite*"></a>
+  <h4 id="AngeliA_Sheet_RenameSprite_System_Int32_System_String_" data-uid="AngeliA.Sheet.RenameSprite(System.Int32,System.String)">RenameSprite(int, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RenameSprite(int id, string newName)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_SaveToDisk_" data-uid="AngeliA.Sheet.SaveToDisk*"></a>
+  <h4 id="AngeliA_Sheet_SaveToDisk_System_String_" data-uid="AngeliA.Sheet.SaveToDisk(System.String)">SaveToDisk(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToDisk(string path)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_SetData_" data-uid="AngeliA.Sheet.SetData*"></a>
+  <h4 id="AngeliA_Sheet_SetData_System_Collections_Generic_List_AngeliA_AngeSprite__System_Collections_Generic_List_AngeliA_Atlas__" data-uid="AngeliA.Sheet.SetData(System.Collections.Generic.List{AngeliA.AngeSprite},System.Collections.Generic.List{AngeliA.Atlas})">SetData(List&lt;AngeSprite&gt;, List&lt;Atlas&gt;)</h4>
+  <div class="markdown level1 summary"><p>Set the sprites and atlas data of this sheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetData(List&lt;AngeSprite&gt; sprites, List&lt;Atlas&gt; atlasInfo)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_SyncSpritePixelsIntoTexturePool_" data-uid="AngeliA.Sheet.SyncSpritePixelsIntoTexturePool*"></a>
+  <h4 id="AngeliA_Sheet_SyncSpritePixelsIntoTexturePool_AngeliA_AngeSprite_" data-uid="AngeliA.Sheet.SyncSpritePixelsIntoTexturePool(AngeliA.AngeSprite)">SyncSpritePixelsIntoTexturePool(AngeSprite)</h4>
+  <div class="markdown level1 summary"><p>Update rendering texture for the sprite if the pixel content changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SyncSpritePixelsIntoTexturePool(AngeSprite sprite)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sheet_TryGetSpriteFromAnimationFrame_" data-uid="AngeliA.Sheet.TryGetSpriteFromAnimationFrame*"></a>
+  <h4 id="AngeliA_Sheet_TryGetSpriteFromAnimationFrame_AngeliA_SpriteGroup_System_Int32_AngeliA_AngeSprite__System_Int32_" data-uid="AngeliA.Sheet.TryGetSpriteFromAnimationFrame(AngeliA.SpriteGroup,System.Int32,AngeliA.AngeSprite@,System.Int32)">TryGetSpriteFromAnimationFrame(SpriteGroup, int, out AngeSprite, int)</h4>
+  <div class="markdown level1 summary"><p>Get current showing sprite from a animation group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSpriteFromAnimationFrame(SpriteGroup group, int localFrame, out AngeSprite sprite, int loopStart = -1)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localFrame</span></td>
+        <td><p>Animation frame start from 0</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.AngeSprite.html">AngeSprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Result sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">loopStart</span></td>
+        <td><p>Sprite index this animation start to play after it reach the end. Set to -1 to use loop start value from group.</p>
+</td>
+      </tr>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the sprite is successfuly found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Sheet_TryGetTextureFromPool_" data-uid="AngeliA.Sheet.TryGetTextureFromPool*"></a>
+  <h4 id="AngeliA_Sheet_TryGetTextureFromPool_System_Int32_System_Object__" data-uid="AngeliA.Sheet.TryGetTextureFromPool(System.Int32,System.Object@)">TryGetTextureFromPool(int, out object)</h4>
+  <div class="markdown level1 summary"><p>Get texture for rendering from given ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTextureFromPool(int spriteID, out object texture)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

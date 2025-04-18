@@ -71,30 +71,33 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="entity">Entity</h1>
 
-<p>Entities are the core building blocks of game logic in AngeliA. Most interactive objects in a map—such as crates, characters, bullets, and more—exist in the form of <strong>entities</strong>. You can use the <strong>Entity Debugger</strong> to inspect and test entities currently active on the stage.</p>
+<p>An <strong>Entity</strong> is the core carrier of game logic in AngeliA. Within a map, most objects that can interact with the player exist in the form of entities, such as crates, characters, bullets, and more. You can use the <strong>Entity Debugger</strong> to test activated entities on the stage.</p>
 <img src="../../images/EntityTest.png" width="61.8%">
 <img src="../../images/EntityDebuggerTest.gif" width="61.8%">
-<hr>
-<h3 id="callback-methods">Callback Methods</h3>
-<p>Entity classes receive system events via callback methods. You can override these methods to respond to the corresponding events. The available callbacks include:</p>
+<h3 id="entity-layers">Entity Layers</h3>
+<p>Entities on the stage are organized into different layers: <code>UI</code>, <code>Game</code>, <code>Character</code>, <code>Environment</code>, <code>Water</code>, <code>Bullet</code>, <code>Item</code>, and <code>Decorate</code>. You can retrieve the layer value using <code>EntityLayer.XXX</code>.</p>
+<p>The profiler located at the top-right corner of the game window displays the number of entities currently spawned in the stage. The progress bar indicates how close this number is to the maximum allowed.</p>
+<img src="../../images/Profiler-Entity.png" width="50%">
+<p>You can set the maximum capacity for each entity layer using the <code>EntityLayerCapacity</code> attribute:</p>
+<pre><code class="lang-csharp">using AngeliA;
+
+[assembly: EntityLayerCapacity(EntityLayer.GAME, 1024)]
+[assembly: EntityLayerCapacity(EntityLayer.DECORATE, 256)]
+</code></pre>
+<h3 id="callback-functions">Callback Functions</h3>
+<p>Entity classes receive system events through <strong>callback functions</strong>. You can override these functions to handle the corresponding events. The available callbacks are as follows:</p>
 <ul>
-<li><p><strong><code>OnActivated</code></strong>
-Called once when the entity is loaded into the stage.</p>
+<li><p><strong><code>OnActivated</code></strong>: Invoked once when the entity is loaded into the stage.</p>
 </li>
-<li><p><strong><code>OnInactivated</code></strong>
-Called once when the entity is unloaded from the stage.</p>
+<li><p><strong><code>OnInactivated</code></strong>: Invoked once when the entity is removed from the stage.</p>
 </li>
-<li><p><strong><code>FirstUpdate</code></strong>
-First update cycle, typically used to register physics colliders.</p>
+<li><p><strong><code>FirstUpdate</code></strong>: The first update cycle, typically used to initialize physics colliders.</p>
 </li>
-<li><p><strong><code>BeforeUpdate</code></strong>
-Second update cycle, used to handle physics motion logic. <em>(By this time, <code>FirstUpdate</code> has been called for all other entities.)</em></p>
+<li><p><strong><code>BeforeUpdate</code></strong>: The second update cycle, used to process physics movement logic. (By this point, all entities in the stage have completed <code>FirstUpdate</code>.)</p>
 </li>
-<li><p><strong><code>Update</code></strong>
-Third update cycle, used for physics processing and entity-specific behavior.</p>
+<li><p><strong><code>Update</code></strong>: The third update cycle, used for physics updates and entity-specific behavior.</p>
 </li>
-<li><p><strong><code>LateUpdate</code></strong>
-Final update cycle, usually used for rendering the entity.</p>
+<li><p><strong><code>LateUpdate</code></strong>: The final update cycle, used for rendering the entity.</p>
 </li>
 </ul>
 

@@ -72,7 +72,6 @@
 <h1 id="open-world-sandbox">Open World Sandbox</h1>
 
 <p>This section provides a brief overview of map and level-related concepts. For more in-depth usage instructions, please refer to the following chapters.</p>
-<hr>
 <h3 id="map-logic">Map Logic</h3>
 <p>The engine supports seamless stitching of multiple maps, allowing you to create a smooth open-world experience. Only map tiles within the player’s visible range are rendered. Entities that enter the screen are dynamically loaded, while those leaving the screen are automatically unloaded.</p>
 <p>There are several types of map tiles, each serving a distinct purpose:</p>
@@ -83,11 +82,9 @@
 <li><strong>Helper Tiles</strong>: Exist only in backend data. They are neither rendered nor interactive, and are used for tagging or internal logic purposes.</li>
 </ul>
 <img src="../../images/OpenWorldSandbox-Map.png" width="61.8%">
-<hr>
 <h3 id="map-layers">Map Layers</h3>
 <p>Players can travel between adjacent map layers using doors or portals (as shown below). The engine displays nearby background layers in real time. Use the method <code>TeleportTask.TeleportFromDoor</code> to teleport the player character.</p>
 <img src="../../images/GoThroughLayer.gif" width="61.8%">
-<hr>
 <h3 id="map-file-format">Map File Format</h3>
 <p>Map files use the <code>.ibb</code> format, which stands for <code>int byte byte</code>. Each <code>.ibb</code> file represents a map area of 128 × 128 tiles. The filename corresponds to the coordinates of the lower-left corner of that square region in the format <code>x_y_z</code>.</p>
 <p>Each file stores a flat list of values structured as triples: <code>int, byte, byte</code> (e.g., <code>7126723, 0, 0, -467174, 1, 0, 892135, 2, 1, ...</code>).</p>

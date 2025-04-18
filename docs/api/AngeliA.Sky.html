@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Sky | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Sky | AngeliA ">
+    
+    <meta name="description" content="Core system handles background rendering of the game">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Sky">
+
+
+
+  <h1 id="AngeliA_Sky" data-uid="AngeliA.Sky" class="text-break">Class Sky</h1>
+  <div class="markdown level0 summary"><p>Core system handles background rendering of the game</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Sky_GradientBottom_" data-uid="AngeliA.Sky.GradientBottom*"></a>
+  <h4 id="AngeliA_Sky_GradientBottom" data-uid="AngeliA.Sky.GradientBottom">GradientBottom</h4>
+  <div class="markdown level1 summary"><p>Gradient for &quot;SkyTintBottomColor&quot; along in-game time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ColorGradient GradientBottom { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Sky_GradientTop_" data-uid="AngeliA.Sky.GradientTop*"></a>
+  <h4 id="AngeliA_Sky_GradientTop" data-uid="AngeliA.Sky.GradientTop">GradientTop</h4>
+  <div class="markdown level1 summary"><p>Gradient for &quot;SkyTintTopColor&quot; along in-game time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ColorGradient GradientTop { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Sky_InGameDaytime01_" data-uid="AngeliA.Sky.InGameDaytime01*"></a>
+  <h4 id="AngeliA_Sky_InGameDaytime01" data-uid="AngeliA.Sky.InGameDaytime01">InGameDaytime01</h4>
+  <div class="markdown level1 summary"><p>Current in-game time (0 means 0:00. 0.5 means 12:00. 1 means 24:00)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float InGameDaytime01 { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Sky_SkyTintBottomColor_" data-uid="AngeliA.Sky.SkyTintBottomColor*"></a>
+  <h4 id="AngeliA_Sky_SkyTintBottomColor" data-uid="AngeliA.Sky.SkyTintBottomColor">SkyTintBottomColor</h4>
+  <div class="markdown level1 summary"><p>Bottom color of the sky liner gradient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32 SkyTintBottomColor { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Sky_SkyTintTopColor_" data-uid="AngeliA.Sky.SkyTintTopColor*"></a>
+  <h4 id="AngeliA_Sky_SkyTintTopColor" data-uid="AngeliA.Sky.SkyTintTopColor">SkyTintTopColor</h4>
+  <div class="markdown level1 summary"><p>Top color of the sky liner gradient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32 SkyTintTopColor { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Sky_SunlightTint_" data-uid="AngeliA.Sky.SunlightTint*"></a>
+  <h4 id="AngeliA_Sky_SunlightTint" data-uid="AngeliA.Sky.SunlightTint">SunlightTint</h4>
+  <div class="markdown level1 summary"><p>Gradient for &quot;SunlightTintColor&quot; along in-game time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ColorGradient SunlightTint { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Sky_SunlightTintColor_" data-uid="AngeliA.Sky.SunlightTintColor*"></a>
+  <h4 id="AngeliA_Sky_SunlightTintColor" data-uid="AngeliA.Sky.SunlightTintColor">SunlightTintColor</h4>
+  <div class="markdown level1 summary"><p>Tint color for day-light</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32 SunlightTintColor { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Sky_ForceSkyboxTint_" data-uid="AngeliA.Sky.ForceSkyboxTint*"></a>
+  <h4 id="AngeliA_Sky_ForceSkyboxTint_AngeliA_Color32_AngeliA_Color32_System_Int32_" data-uid="AngeliA.Sky.ForceSkyboxTint(AngeliA.Color32,AngeliA.Color32,System.Int32)">ForceSkyboxTint(Color32, Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Make top and bottom sky tint gradient color into given colors for specified frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForceSkyboxTint(Color32 top, Color32 bottom, int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sky_ForceSkyboxTint_" data-uid="AngeliA.Sky.ForceSkyboxTint*"></a>
+  <h4 id="AngeliA_Sky_ForceSkyboxTint_AngeliA_Color32_System_Int32_" data-uid="AngeliA.Sky.ForceSkyboxTint(AngeliA.Color32,System.Int32)">ForceSkyboxTint(Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Make both top and bottom sky tint gradient color into given color for specified frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForceSkyboxTint(Color32 color, int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Sky_GetInGameDaytimeFromRealTime_" data-uid="AngeliA.Sky.GetInGameDaytimeFromRealTime*"></a>
+  <h4 id="AngeliA_Sky_GetInGameDaytimeFromRealTime" data-uid="AngeliA.Sky.GetInGameDaytimeFromRealTime">GetInGameDaytimeFromRealTime()</h4>
+  <div class="markdown level1 summary"><p>Get in-game time from current date time in real world</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetInGameDaytimeFromRealTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>(0 means 0:00. 0.5 means 12:00. 1 means 24:00)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Sky_SetInGameDaytime_" data-uid="AngeliA.Sky.SetInGameDaytime*"></a>
+  <h4 id="AngeliA_Sky_SetInGameDaytime_System_Single_" data-uid="AngeliA.Sky.SetInGameDaytime(System.Single)">SetInGameDaytime(float)</h4>
+  <div class="markdown level1 summary"><p>Set current in-game time. (0 means 0:00. 0.5 means 12:00. 1 means 24:00. -1 means real world time)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInGameDaytime(float newDaytime01)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

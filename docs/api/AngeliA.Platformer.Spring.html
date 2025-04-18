@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Spring | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Spring | AngeliA ">
+    
+    <meta name="description" content="Entity that bounce the touching targets">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.Spring">
+
+
+
+  <h1 id="AngeliA_Platformer_Spring" data-uid="AngeliA.Platformer.Spring" class="text-break">Class Spring</h1>
+  <div class="markdown level0 summary"><p>Entity that bounce the touching targets</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.ICarrier.html">ICarrier</a></div>
+    <div><a class="xref" href="AngeliA.IBlockEntity.html">IBlockEntity</a></div>
+    <div><a class="xref" href="AngeliA.Platformer.IAutoTrackWalker.html">IAutoTrackWalker</a></div>
+    <div><a class="xref" href="AngeliA.IRouteWalker.html">IRouteWalker</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_Spring_AllowBeingPush_" data-uid="AngeliA.Platformer.Spring.AllowBeingPush*"></a>
+  <h4 id="AngeliA_Platformer_Spring_AllowBeingPush" data-uid="AngeliA.Platformer.Spring.AllowBeingPush">AllowBeingPush</h4>
+  <div class="markdown level1 summary"><p>True if this entity can be push by other</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowBeingPush { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_AllowBeingPush">Rigidbody.AllowBeingPush</a></div>
+  <a id="AngeliA_Platformer_Spring_ArtworkRotation_" data-uid="AngeliA.Platformer.Spring.ArtworkRotation*"></a>
+  <h4 id="AngeliA_Platformer_Spring_ArtworkRotation" data-uid="AngeliA.Platformer.Spring.ArtworkRotation">ArtworkRotation</h4>
+  <div class="markdown level1 summary"><p>Current rotation of the artwork sprite</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ArtworkRotation { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Spring_BounceWhenInsideGround_" data-uid="AngeliA.Platformer.Spring.BounceWhenInsideGround*"></a>
+  <h4 id="AngeliA_Platformer_Spring_BounceWhenInsideGround" data-uid="AngeliA.Platformer.Spring.BounceWhenInsideGround">BounceWhenInsideGround</h4>
+  <div class="markdown level1 summary"><p>True if the spring perform bounce when stuck inside ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool BounceWhenInsideGround { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Spring_Horizontal_" data-uid="AngeliA.Platformer.Spring.Horizontal*"></a>
+  <h4 id="AngeliA_Platformer_Spring_Horizontal" data-uid="AngeliA.Platformer.Spring.Horizontal">Horizontal</h4>
+  <div class="markdown level1 summary"><p>True if the spring bounce horizontaly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool Horizontal { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Spring_PhysicalLayer_" data-uid="AngeliA.Platformer.Spring.PhysicalLayer*"></a>
+  <h4 id="AngeliA_Platformer_Spring_PhysicalLayer" data-uid="AngeliA.Platformer.Spring.PhysicalLayer">PhysicalLayer</h4>
+  <div class="markdown level1 summary"><p>Which physical layer should this entity fill it's collider in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int PhysicalLayer { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_PhysicalLayer">Rigidbody.PhysicalLayer</a></div>
+  <a id="AngeliA_Platformer_Spring_Power_" data-uid="AngeliA.Platformer.Spring.Power*"></a>
+  <h4 id="AngeliA_Platformer_Spring_Power" data-uid="AngeliA.Platformer.Spring.Power">Power</h4>
+  <div class="markdown level1 summary"><p>Initial speed this spring gives when bounce</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int Power { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_Spring_BeforeUpdate_" data-uid="AngeliA.Platformer.Spring.BeforeUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Spring_BeforeUpdate" data-uid="AngeliA.Platformer.Spring.BeforeUpdate">BeforeUpdate()</h4>
+  <div class="markdown level1 summary"><p>[2/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_BeforeUpdate">Entity.BeforeUpdate()</a></div>
+  <a id="AngeliA_Platformer_Spring_LateUpdate_" data-uid="AngeliA.Platformer.Spring.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Spring_LateUpdate" data-uid="AngeliA.Platformer.Spring.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_Spring_OnActivated_" data-uid="AngeliA.Platformer.Spring.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_Spring_OnActivated" data-uid="AngeliA.Platformer.Spring.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_OnActivated">Rigidbody.OnActivated()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

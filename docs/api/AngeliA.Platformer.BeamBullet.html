@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BeamBullet | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BeamBullet | AngeliA ">
+    
+    <meta name="description" content="A type of bullet that shoot into straight line">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.BeamBullet">
+
+
+
+  <h1 id="AngeliA_Platformer_BeamBullet" data-uid="AngeliA.Platformer.BeamBullet" class="text-break">Class BeamBullet</h1>
+  <div class="markdown level0 summary"><p>A type of bullet that shoot into straight line</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_BeamBullet_BeamSize_" data-uid="AngeliA.Platformer.BeamBullet.BeamSize*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BeamSize" data-uid="AngeliA.Platformer.BeamBullet.BeamSize">BeamSize</h4>
+  <div class="markdown level1 summary"><p>Thickness of the beam in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int BeamSize { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_BeamSpriteID_" data-uid="AngeliA.Platformer.BeamBullet.BeamSpriteID*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BeamSpriteID" data-uid="AngeliA.Platformer.BeamBullet.BeamSpriteID">BeamSpriteID</h4>
+  <div class="markdown level1 summary"><p>Artwork sprite ID for the beam body</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int BeamSpriteID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_BeamTint_" data-uid="AngeliA.Platformer.BeamBullet.BeamTint*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BeamTint" data-uid="AngeliA.Platformer.BeamBullet.BeamTint">BeamTint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color32 BeamTint { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_BurstRotateSpeed_" data-uid="AngeliA.Platformer.BeamBullet.BurstRotateSpeed*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BurstRotateSpeed" data-uid="AngeliA.Platformer.BeamBullet.BurstRotateSpeed">BurstRotateSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int BurstRotateSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_BurstSize_" data-uid="AngeliA.Platformer.BeamBullet.BurstSize*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BurstSize" data-uid="AngeliA.Platformer.BeamBullet.BurstSize">BurstSize</h4>
+  <div class="markdown level1 summary"><p>Size of the end burst effect in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int BurstSize { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_BurstSpriteID_" data-uid="AngeliA.Platformer.BeamBullet.BurstSpriteID*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BurstSpriteID" data-uid="AngeliA.Platformer.BeamBullet.BurstSpriteID">BurstSpriteID</h4>
+  <div class="markdown level1 summary"><p>Artwork sprite ID for the beam burst effect in the end-side</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int BurstSpriteID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_BurstTint_" data-uid="AngeliA.Platformer.BeamBullet.BurstTint*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BurstTint" data-uid="AngeliA.Platformer.BeamBullet.BurstTint">BurstTint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color32 BurstTint { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_Duration_" data-uid="AngeliA.Platformer.BeamBullet.Duration*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_Duration" data-uid="AngeliA.Platformer.BeamBullet.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>How long can this bullet exists on stage in frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed int Duration { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.MovableBullet.html#AngeliA_Platformer_MovableBullet_Duration">MovableBullet.Duration</a></div>
+  <a id="AngeliA_Platformer_BeamBullet_HandBurstRotateSpeed_" data-uid="AngeliA.Platformer.BeamBullet.HandBurstRotateSpeed*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_HandBurstRotateSpeed" data-uid="AngeliA.Platformer.BeamBullet.HandBurstRotateSpeed">HandBurstRotateSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int HandBurstRotateSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_HandBurstSize_" data-uid="AngeliA.Platformer.BeamBullet.HandBurstSize*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_HandBurstSize" data-uid="AngeliA.Platformer.BeamBullet.HandBurstSize">HandBurstSize</h4>
+  <div class="markdown level1 summary"><p>Size of the hand burst effect in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int HandBurstSize { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_HandBurstSpriteID_" data-uid="AngeliA.Platformer.BeamBullet.HandBurstSpriteID*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_HandBurstSpriteID" data-uid="AngeliA.Platformer.BeamBullet.HandBurstSpriteID">HandBurstSpriteID</h4>
+  <div class="markdown level1 summary"><p>Artwork sprite ID for the beam burst effect in the hand-side</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int HandBurstSpriteID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_HandBurstTint_" data-uid="AngeliA.Platformer.BeamBullet.HandBurstTint*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_HandBurstTint" data-uid="AngeliA.Platformer.BeamBullet.HandBurstTint">HandBurstTint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color32 HandBurstTint { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_IllumanteAmount_" data-uid="AngeliA.Platformer.BeamBullet.IllumanteAmount*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_IllumanteAmount" data-uid="AngeliA.Platformer.BeamBullet.IllumanteAmount">IllumanteAmount</h4>
+  <div class="markdown level1 summary"><p>How bright of the illumante (0 means no illumante. 1000 means general amount)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int IllumanteAmount { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_IllumanteUnitRadius_" data-uid="AngeliA.Platformer.BeamBullet.IllumanteUnitRadius*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_IllumanteUnitRadius" data-uid="AngeliA.Platformer.BeamBullet.IllumanteUnitRadius">IllumanteUnitRadius</h4>
+  <div class="markdown level1 summary"><p>Radius in unit space for the LightingSystem</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int IllumanteUnitRadius { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_MaxRange_" data-uid="AngeliA.Platformer.BeamBullet.MaxRange*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_MaxRange" data-uid="AngeliA.Platformer.BeamBullet.MaxRange">MaxRange</h4>
+  <div class="markdown level1 summary"><p>Bullet get despawn when fly longer than this range in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int MaxRange { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.MovableBullet.html#AngeliA_Platformer_MovableBullet_MaxRange">MovableBullet.MaxRange</a></div>
+  <a id="AngeliA_Platformer_BeamBullet_OnlyShowBurstWhenHitReceiver_" data-uid="AngeliA.Platformer.BeamBullet.OnlyShowBurstWhenHitReceiver*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_OnlyShowBurstWhenHitReceiver" data-uid="AngeliA.Platformer.BeamBullet.OnlyShowBurstWhenHitReceiver">OnlyShowBurstWhenHitReceiver</h4>
+  <div class="markdown level1 summary"><p>True if show burst effect when hit a IDamageReceiver, not just hit the environment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool OnlyShowBurstWhenHitReceiver { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_RenderingLayer_" data-uid="AngeliA.Platformer.BeamBullet.RenderingLayer*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_RenderingLayer" data-uid="AngeliA.Platformer.BeamBullet.RenderingLayer">RenderingLayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int RenderingLayer { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_SparkSize_" data-uid="AngeliA.Platformer.BeamBullet.SparkSize*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_SparkSize" data-uid="AngeliA.Platformer.BeamBullet.SparkSize">SparkSize</h4>
+  <div class="markdown level1 summary"><p>Size of the spark effect in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int SparkSize { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_SparkSpriteID_" data-uid="AngeliA.Platformer.BeamBullet.SparkSpriteID*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_SparkSpriteID" data-uid="AngeliA.Platformer.BeamBullet.SparkSpriteID">SparkSpriteID</h4>
+  <div class="markdown level1 summary"><p>Artwork sprite ID for the beam spark effect</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int SparkSpriteID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_SparkTint_" data-uid="AngeliA.Platformer.BeamBullet.SparkTint*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_SparkTint" data-uid="AngeliA.Platformer.BeamBullet.SparkTint">SparkTint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color32 SparkTint { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BeamBullet_SpeedForward_" data-uid="AngeliA.Platformer.BeamBullet.SpeedForward*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_SpeedForward" data-uid="AngeliA.Platformer.BeamBullet.SpeedForward">SpeedForward</h4>
+  <div class="markdown level1 summary"><p>Movement speed to shooting direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed int SpeedForward { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.MovableBullet.html#AngeliA_Platformer_MovableBullet_SpeedForward">MovableBullet.SpeedForward</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_BeamBullet_BeforeDespawn_" data-uid="AngeliA.Platformer.BeamBullet.BeforeDespawn*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_BeforeDespawn_AngeliA_IDamageReceiver_" data-uid="AngeliA.Platformer.BeamBullet.BeforeDespawn(AngeliA.IDamageReceiver)">BeforeDespawn(IDamageReceiver)</h4>
+  <div class="markdown level1 summary"><p>This function is called before the bullet get despawn by performing damage logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void BeforeDespawn(IDamageReceiver receiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IDamageReceiver.html">IDamageReceiver</a></td>
+        <td><span class="parametername">receiver</span></td>
+        <td><p>The target it hits</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.MovableBullet.html#AngeliA_Platformer_MovableBullet_BeforeDespawn_AngeliA_IDamageReceiver_">MovableBullet.BeforeDespawn(IDamageReceiver)</a></div>
+  <a id="AngeliA_Platformer_BeamBullet_LateUpdate_" data-uid="AngeliA.Platformer.BeamBullet.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_LateUpdate" data-uid="AngeliA.Platformer.BeamBullet.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.MovableBullet.html#AngeliA_Platformer_MovableBullet_LateUpdate">MovableBullet.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_BeamBullet_OnActivated_" data-uid="AngeliA.Platformer.BeamBullet.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_BeamBullet_OnActivated" data-uid="AngeliA.Platformer.BeamBullet.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.MovableBullet.html#AngeliA_Platformer_MovableBullet_OnActivated">MovableBullet.OnActivated()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

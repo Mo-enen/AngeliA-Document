@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RigidbodyNavigation | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RigidbodyNavigation | AngeliA ">
+    
+    <meta name="description" content="Behavior that handles auto movement for a target rigidbody">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.RigidbodyNavigation">
+
+
+
+  <h1 id="AngeliA_Platformer_RigidbodyNavigation" data-uid="AngeliA.Platformer.RigidbodyNavigation" class="text-break">Class RigidbodyNavigation</h1>
+  <div class="markdown level0 summary"><p>Behavior that handles auto movement for a target rigidbody</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_Platformer_RigidbodyNavigation__ctor_" data-uid="AngeliA.Platformer.RigidbodyNavigation.#ctor*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation__ctor_AngeliA_Rigidbody_" data-uid="AngeliA.Platformer.RigidbodyNavigation.#ctor(AngeliA.Rigidbody)">RigidbodyNavigation(Rigidbody)</h4>
+  <div class="markdown level1 summary"><p>Behavior that handles auto movement for a target rigidbody</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidbodyNavigation(Rigidbody target)</code></pre>
+  </div>
+    
+  
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_Target" data-uid="AngeliA.Platformer.RigidbodyNavigation.Target">Target</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Rigidbody Target</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_ClampInSpawnRect_" data-uid="AngeliA.Platformer.RigidbodyNavigation.ClampInSpawnRect*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_ClampInSpawnRect" data-uid="AngeliA.Platformer.RigidbodyNavigation.ClampInSpawnRect">ClampInSpawnRect</h4>
+  <div class="markdown level1 summary"><p>True if the target should only be inside the stage spawn rect</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ClampInSpawnRect { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_DefaultFlySpeed_" data-uid="AngeliA.Platformer.RigidbodyNavigation.DefaultFlySpeed*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_DefaultFlySpeed" data-uid="AngeliA.Platformer.RigidbodyNavigation.DefaultFlySpeed">DefaultFlySpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int DefaultFlySpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_DefaultRunSpeed_" data-uid="AngeliA.Platformer.RigidbodyNavigation.DefaultRunSpeed*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_DefaultRunSpeed" data-uid="AngeliA.Platformer.RigidbodyNavigation.DefaultRunSpeed">DefaultRunSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int DefaultRunSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_EndFlyDistance_" data-uid="AngeliA.Platformer.RigidbodyNavigation.EndFlyDistance*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_EndFlyDistance" data-uid="AngeliA.Platformer.RigidbodyNavigation.EndFlyDistance">EndFlyDistance</h4>
+  <div class="markdown level1 summary"><p>Stop flying when distance between target ans aim position is smaller than this value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int EndFlyDistance { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_EndMoveDistance_" data-uid="AngeliA.Platformer.RigidbodyNavigation.EndMoveDistance*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_EndMoveDistance" data-uid="AngeliA.Platformer.RigidbodyNavigation.EndMoveDistance">EndMoveDistance</h4>
+  <div class="markdown level1 summary"><p>Stop moving when distance between target ans aim position is smaller than this value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int EndMoveDistance { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_EndMoveSlowDown_" data-uid="AngeliA.Platformer.RigidbodyNavigation.EndMoveSlowDown*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_EndMoveSlowDown" data-uid="AngeliA.Platformer.RigidbodyNavigation.EndMoveSlowDown">EndMoveSlowDown</h4>
+  <div class="markdown level1 summary"><p>Duration in frame for slowly stop moving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int EndMoveSlowDown { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_HasPerformableOperation_" data-uid="AngeliA.Platformer.RigidbodyNavigation.HasPerformableOperation*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_HasPerformableOperation" data-uid="AngeliA.Platformer.RigidbodyNavigation.HasPerformableOperation">HasPerformableOperation</h4>
+  <div class="markdown level1 summary"><p>True if there is still any operation to perform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPerformableOperation { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_InstanceShift_" data-uid="AngeliA.Platformer.RigidbodyNavigation.InstanceShift*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_InstanceShift" data-uid="AngeliA.Platformer.RigidbodyNavigation.InstanceShift">InstanceShift</h4>
+  <div class="markdown level1 summary"><p>Position offset for distinguish multiple instance with same type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int InstanceShift { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_JumpSpeed_" data-uid="AngeliA.Platformer.RigidbodyNavigation.JumpSpeed*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_JumpSpeed" data-uid="AngeliA.Platformer.RigidbodyNavigation.JumpSpeed">JumpSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int JumpSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_MaxJumpDuration_" data-uid="AngeliA.Platformer.RigidbodyNavigation.MaxJumpDuration*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_MaxJumpDuration" data-uid="AngeliA.Platformer.RigidbodyNavigation.MaxJumpDuration">MaxJumpDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MaxJumpDuration { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_MinimumFlyDuration_" data-uid="AngeliA.Platformer.RigidbodyNavigation.MinimumFlyDuration*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_MinimumFlyDuration" data-uid="AngeliA.Platformer.RigidbodyNavigation.MinimumFlyDuration">MinimumFlyDuration</h4>
+  <div class="markdown level1 summary"><p>At least fly this frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MinimumFlyDuration { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_NavigationAim_" data-uid="AngeliA.Platformer.RigidbodyNavigation.NavigationAim*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_NavigationAim" data-uid="AngeliA.Platformer.RigidbodyNavigation.NavigationAim">NavigationAim</h4>
+  <div class="markdown level1 summary"><p>Current target position this navigation want to go for</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int2 NavigationAim { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_NavigationAimGrounded_" data-uid="AngeliA.Platformer.RigidbodyNavigation.NavigationAimGrounded*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_NavigationAimGrounded" data-uid="AngeliA.Platformer.RigidbodyNavigation.NavigationAimGrounded">NavigationAimGrounded</h4>
+  <div class="markdown level1 summary"><p>True if the aim position is touching ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NavigationAimGrounded { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_NavigationEnable_" data-uid="AngeliA.Platformer.RigidbodyNavigation.NavigationEnable*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_NavigationEnable" data-uid="AngeliA.Platformer.RigidbodyNavigation.NavigationEnable">NavigationEnable</h4>
+  <div class="markdown level1 summary"><p>True if this behavior should work currently</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool NavigationEnable { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_StartFlyDistance_" data-uid="AngeliA.Platformer.RigidbodyNavigation.StartFlyDistance*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_StartFlyDistance" data-uid="AngeliA.Platformer.RigidbodyNavigation.StartFlyDistance">StartFlyDistance</h4>
+  <div class="markdown level1 summary"><p>Start to fly when distance between target ans aim position is larger than this value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int StartFlyDistance { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_StartMoveDistance_" data-uid="AngeliA.Platformer.RigidbodyNavigation.StartMoveDistance*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_StartMoveDistance" data-uid="AngeliA.Platformer.RigidbodyNavigation.StartMoveDistance">StartMoveDistance</h4>
+  <div class="markdown level1 summary"><p>Start to move when distance between target ans aim position is larger than this value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int StartMoveDistance { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_TeleportWhenCantFly_" data-uid="AngeliA.Platformer.RigidbodyNavigation.TeleportWhenCantFly*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_TeleportWhenCantFly" data-uid="AngeliA.Platformer.RigidbodyNavigation.TeleportWhenCantFly">TeleportWhenCantFly</h4>
+  <div class="markdown level1 summary"><p>True if the target immediately goes to the aim position when they can not fly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TeleportWhenCantFly { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_OnActivated_" data-uid="AngeliA.Platformer.RigidbodyNavigation.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_OnActivated" data-uid="AngeliA.Platformer.RigidbodyNavigation.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnActivated()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_PhysicsUpdate_" data-uid="AngeliA.Platformer.RigidbodyNavigation.PhysicsUpdate*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_PhysicsUpdate" data-uid="AngeliA.Platformer.RigidbodyNavigation.PhysicsUpdate">PhysicsUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PhysicsUpdate()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_ResetNavigation_" data-uid="AngeliA.Platformer.RigidbodyNavigation.ResetNavigation*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_ResetNavigation" data-uid="AngeliA.Platformer.RigidbodyNavigation.ResetNavigation">ResetNavigation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetNavigation()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_RigidbodyNavigation_SetNavigationAim_" data-uid="AngeliA.Platformer.RigidbodyNavigation.SetNavigationAim*"></a>
+  <h4 id="AngeliA_Platformer_RigidbodyNavigation_SetNavigationAim_AngeliA_Int2_System_Boolean_" data-uid="AngeliA.Platformer.RigidbodyNavigation.SetNavigationAim(AngeliA.Int2,System.Boolean)">SetNavigationAim(Int2, bool)</h4>
+  <div class="markdown level1 summary"><p>Set aim position in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNavigationAim(Int2 newAim, bool grounded)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">grounded</span></td>
+        <td><p>True if the new aim position is grounded</p>
+</td>
+      </tr>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

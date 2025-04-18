@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>输入 | AngeliA </title>
+      <title>Input | AngeliA </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="输入 | AngeliA ">
+      <meta name="title" content="Input | AngeliA ">
     
     
       <link rel="shortcut icon" href="../../favicon.ico">
@@ -69,8 +69,59 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="输入">输入</h1>
+<h1 id="input">Input</h1>
 
+<p>AngeliA provides a built-in <strong>frame-based input system</strong>. You can detect whether a specific key on the keyboard, mouse, or gamepad is pressed during the current frame, and also retrieve the global coordinates of the mouse pointer.</p>
+<h3 id="keyboard-input">Keyboard Input</h3>
+<p>The following code displays the pressed state of specific keys at the top of the screen:</p>
+<pre><code class="lang-csharp">using AngeliA;
+
+namespace Test;
+
+public static class InputTest {
+
+	[OnGameUpdateLater(4096)]
+	internal static void OnGameUpdateLater () {
+
+		bool holdingQ = Input.KeyboardHolding(KeyboardKey.Q);
+		bool holdingW = Input.KeyboardHolding(KeyboardKey.W);
+		bool holdingE = Input.KeyboardHolding(KeyboardKey.E);
+
+		GUI.Label(
+			Renderer.CameraRect.TopHalf(),
+			$&quot;{(holdingQ ? &quot;Q&quot; : &quot;-&quot;)}{(holdingW ? &quot;W&quot; : &quot;-&quot;)}{(holdingE ? &quot;E&quot; : &quot;-&quot;)}&quot;,
+			GUI.Skin.AutoCenterLabel
+		);
+	}
+
+}
+</code></pre>
+<p>Output:</p>
+<img src="../../images/CodeResult-InputTest.gif" width="50%">
+<h3 id="game-keys">Game Keys</h3>
+<p>The engine provides <strong>8 predefined game keys</strong>, corresponding to common controls on an NES-style controller: <code>Left</code>, <code>Right</code>, <code>Down</code>, <code>Up</code>, <code>Action</code>, <code>Jump</code>, <code>Select</code>, and <code>Start</code>.<br>
+Players can assign both keyboard and gamepad buttons to these game keys.<br>
+Use <code>Input.GameKeyHolding(GameKey.XXX);</code> to check if a specific game key is pressed in the current frame.</p>
+<img src="../../images/Input-NesGamePad.png" width="20%">
+<img src="../../images/Input-KeyAssign.png" width="40%">
+<h3 id="mouse-position">Mouse Position</h3>
+<p>The following code draws an entity icon at the current mouse pointer position:</p>
+<pre><code class="lang-csharp">using AngeliA;
+
+namespace Test;
+
+public static class InputTest {
+
+	[OnGameUpdateLater(4096)]
+	internal static void OnGameUpdateLater () {
+		var pos = Input.MouseGlobalPosition;
+		Renderer.Draw(BuiltInSprite.ICON_ENTITY, new IRect(pos.x, pos.y, 512, 512));
+	}
+
+}
+</code></pre>
+<p>Output:</p>
+<img src="../../images/Input-TestMouseResult.gif" width="50%">
 
 </article>
           </div>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Language | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Language | AngeliA ">
+    
+    <meta name="description" content="Core system to handle localization logic">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Language">
+
+
+
+  <h1 id="AngeliA_Language" data-uid="AngeliA.Language" class="text-break">Class Language</h1>
+  <div class="markdown level0 summary"><p>Core system to handle localization logic</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Language_CurrentLanguage_" data-uid="AngeliA.Language.CurrentLanguage*"></a>
+  <h4 id="AngeliA_Language_CurrentLanguage" data-uid="AngeliA.Language.CurrentLanguage">CurrentLanguage</h4>
+  <div class="markdown level1 summary"><p>Current selecting language ISO</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CurrentLanguage { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Language_LanguageCount_" data-uid="AngeliA.Language.LanguageCount*"></a>
+  <h4 id="AngeliA_Language_LanguageCount" data-uid="AngeliA.Language.LanguageCount">LanguageCount</h4>
+  <div class="markdown level1 summary"><p>Total count of languages loaded inside the system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LanguageCount { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Language_PoolReady_" data-uid="AngeliA.Language.PoolReady*"></a>
+  <h4 id="AngeliA_Language_PoolReady" data-uid="AngeliA.Language.PoolReady">PoolReady</h4>
+  <div class="markdown level1 summary"><p>True if the system is ready to use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PoolReady { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Language_Get_" data-uid="AngeliA.Language.Get*"></a>
+  <h4 id="AngeliA_Language_Get_System_Int32_System_String_" data-uid="AngeliA.Language.Get(System.Int32,System.String)">Get(int, string)</h4>
+  <div class="markdown level1 summary"><p>Get display content from given ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Get(int id, string failback = &quot;&quot;)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">failback</span></td>
+        <td><p>Default value if content not found in system pool</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_Language_GetLanguageAt_" data-uid="AngeliA.Language.GetLanguageAt*"></a>
+  <h4 id="AngeliA_Language_GetLanguageAt_System_Int32_" data-uid="AngeliA.Language.GetLanguageAt(System.Int32)">GetLanguageAt(int)</h4>
+  <div class="markdown level1 summary"><p>Get ISO of the language from system list at given index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLanguageAt(int index)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Language_SetLanguage_" data-uid="AngeliA.Language.SetLanguage*"></a>
+  <h4 id="AngeliA_Language_SetLanguage_System_String_" data-uid="AngeliA.Language.SetLanguage(System.String)">SetLanguage(string)</h4>
+  <div class="markdown level1 summary"><p>Set current selecting language</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SetLanguage(string language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>ISO of target language</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfuly setted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

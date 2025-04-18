@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Vehicle | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Vehicle | AngeliA ">
+    
+    <meta name="description" content="Entity that allow characters to drive with">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.Vehicle">
+
+
+
+  <h1 id="AngeliA_Platformer_Vehicle" data-uid="AngeliA.Platformer.Vehicle" class="text-break">Class Vehicle</h1>
+  <div class="markdown level0 summary"><p>Entity that allow characters to drive with</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.IDamageReceiver.html">IDamageReceiver</a></div>
+    <div><a class="xref" href="AngeliA.ICarrier.html">ICarrier</a></div>
+    <div><a class="xref" href="AngeliA.IWithCharacterMovement.html">IWithCharacterMovement</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_Vehicle_AirDragX_" data-uid="AngeliA.Platformer.Vehicle.AirDragX*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_AirDragX" data-uid="AngeliA.Platformer.Vehicle.AirDragX">AirDragX</h4>
+  <div class="markdown level1 summary"><p>Amount of horizontal speed lost every frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AirDragX { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_AirDragX">Rigidbody.AirDragX</a></div>
+  <a id="AngeliA_Platformer_Vehicle_AirDragY_" data-uid="AngeliA.Platformer.Vehicle.AirDragY*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_AirDragY" data-uid="AngeliA.Platformer.Vehicle.AirDragY">AirDragY</h4>
+  <div class="markdown level1 summary"><p>Amount of vertical speed lost every frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AirDragY { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_AirDragY">Rigidbody.AirDragY</a></div>
+  <a id="AngeliA_Platformer_Vehicle_CarryOtherOnTop_" data-uid="AngeliA.Platformer.Vehicle.CarryOtherOnTop*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_CarryOtherOnTop" data-uid="AngeliA.Platformer.Vehicle.CarryOtherOnTop">CarryOtherOnTop</h4>
+  <div class="markdown level1 summary"><p>Trhe if this entity can carry other ICarrier on top</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CarryOtherOnTop { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_CarryOtherOnTop">Rigidbody.CarryOtherOnTop</a></div>
+  <a id="AngeliA_Platformer_Vehicle_Driver_" data-uid="AngeliA.Platformer.Vehicle.Driver*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_Driver" data-uid="AngeliA.Platformer.Vehicle.Driver">Driver</h4>
+  <div class="markdown level1 summary"><p>Character that driving this vehcle. Null when no driver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Character Driver { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_DriverLeaveLocalPosition_" data-uid="AngeliA.Platformer.Vehicle.DriverLeaveLocalPosition*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_DriverLeaveLocalPosition" data-uid="AngeliA.Platformer.Vehicle.DriverLeaveLocalPosition">DriverLeaveLocalPosition</h4>
+  <div class="markdown level1 summary"><p>Position from the vehcile to driver when they leave</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Int2? DriverLeaveLocalPosition { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_DriverLocalPosition_" data-uid="AngeliA.Platformer.Vehicle.DriverLocalPosition*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_DriverLocalPosition" data-uid="AngeliA.Platformer.Vehicle.DriverLocalPosition">DriverLocalPosition</h4>
+  <div class="markdown level1 summary"><p>Position from the vehcile to driver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Int2? DriverLocalPosition { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_FacingRight_" data-uid="AngeliA.Platformer.Vehicle.FacingRight*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_FacingRight" data-uid="AngeliA.Platformer.Vehicle.FacingRight">FacingRight</h4>
+  <div class="markdown level1 summary"><p>True if this entity is facing right side</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool FacingRight { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_FacingRight">Rigidbody.FacingRight</a></div>
+  <a id="AngeliA_Platformer_Vehicle_FillPyhsicsForDriver_" data-uid="AngeliA.Platformer.Vehicle.FillPyhsicsForDriver*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_FillPyhsicsForDriver" data-uid="AngeliA.Platformer.Vehicle.FillPyhsicsForDriver">FillPyhsicsForDriver</h4>
+  <div class="markdown level1 summary"><p>True if driver fill physics collider</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FillPyhsicsForDriver { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_LastDriveChangedFrame_" data-uid="AngeliA.Platformer.Vehicle.LastDriveChangedFrame*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_LastDriveChangedFrame" data-uid="AngeliA.Platformer.Vehicle.LastDriveChangedFrame">LastDriveChangedFrame</h4>
+  <div class="markdown level1 summary"><p>Last time driving state change in global frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastDriveChangedFrame { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_Movement_" data-uid="AngeliA.Platformer.Vehicle.Movement*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_Movement" data-uid="AngeliA.Platformer.Vehicle.Movement">Movement</h4>
+  <div class="markdown level1 summary"><p>Movement that override to the driver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VehicleMovement Movement { get; protected set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_PhysicalLayer_" data-uid="AngeliA.Platformer.Vehicle.PhysicalLayer*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_PhysicalLayer" data-uid="AngeliA.Platformer.Vehicle.PhysicalLayer">PhysicalLayer</h4>
+  <div class="markdown level1 summary"><p>Which physical layer should this entity fill it's collider in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int PhysicalLayer { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_PhysicalLayer">Rigidbody.PhysicalLayer</a></div>
+  <a id="AngeliA_Platformer_Vehicle_SelfCollisionMask_" data-uid="AngeliA.Platformer.Vehicle.SelfCollisionMask*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_SelfCollisionMask" data-uid="AngeliA.Platformer.Vehicle.SelfCollisionMask">SelfCollisionMask</h4>
+  <div class="markdown level1 summary"><p>Intrinsic physics layers this entity should collide with</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SelfCollisionMask { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_SelfCollisionMask">Rigidbody.SelfCollisionMask</a></div>
+  <a id="AngeliA_Platformer_Vehicle_StartDriveCooldown_" data-uid="AngeliA.Platformer.Vehicle.StartDriveCooldown*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_StartDriveCooldown" data-uid="AngeliA.Platformer.Vehicle.StartDriveCooldown">StartDriveCooldown</h4>
+  <div class="markdown level1 summary"><p>How long does it takes to ride again in frames</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int StartDriveCooldown { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_Vehicle_BeforeUpdate_" data-uid="AngeliA.Platformer.Vehicle.BeforeUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_BeforeUpdate" data-uid="AngeliA.Platformer.Vehicle.BeforeUpdate">BeforeUpdate()</h4>
+  <div class="markdown level1 summary"><p>[2/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_BeforeUpdate">Entity.BeforeUpdate()</a></div>
+  <a id="AngeliA_Platformer_Vehicle_CheckForStartDrive_" data-uid="AngeliA.Platformer.Vehicle.CheckForStartDrive*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_CheckForStartDrive_AngeliA_Character__" data-uid="AngeliA.Platformer.Vehicle.CheckForStartDrive(AngeliA.Character@)">CheckForStartDrive(out Character)</h4>
+  <div class="markdown level1 summary"><p>Update function for checking if a driver should start to drive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CheckForStartDrive(out Character driver)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if any driver start to drive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_Vehicle_CheckForStopDrive_" data-uid="AngeliA.Platformer.Vehicle.CheckForStopDrive*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_CheckForStopDrive" data-uid="AngeliA.Platformer.Vehicle.CheckForStopDrive">CheckForStopDrive()</h4>
+  <div class="markdown level1 summary"><p>Update function for checking if the current driver should stop driving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CheckForStopDrive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if stop driving</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_Vehicle_FirstUpdate_" data-uid="AngeliA.Platformer.Vehicle.FirstUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_FirstUpdate" data-uid="AngeliA.Platformer.Vehicle.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_FirstUpdate">Rigidbody.FirstUpdate()</a></div>
+  <a id="AngeliA_Platformer_Vehicle_OnActivated_" data-uid="AngeliA.Platformer.Vehicle.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_OnActivated" data-uid="AngeliA.Platformer.Vehicle.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_OnActivated">Rigidbody.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_Vehicle_OnDamaged_" data-uid="AngeliA.Platformer.Vehicle.OnDamaged*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_OnDamaged_AngeliA_Damage_" data-uid="AngeliA.Platformer.Vehicle.OnDamaged(AngeliA.Damage)">OnDamaged(Damage)</h4>
+  <div class="markdown level1 summary"><p>This function is called when vehicle take damage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDamaged(Damage damage)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Platformer_Vehicle_StartDrive_" data-uid="AngeliA.Platformer.Vehicle.StartDrive*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_StartDrive_AngeliA_Character_" data-uid="AngeliA.Platformer.Vehicle.StartDrive(AngeliA.Character)">StartDrive(Character)</h4>
+  <div class="markdown level1 summary"><p>Make driver start to drive this vehcile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StartDrive(Character driver)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Platformer_Vehicle_StopDrive_" data-uid="AngeliA.Platformer.Vehicle.StopDrive*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_StopDrive" data-uid="AngeliA.Platformer.Vehicle.StopDrive">StopDrive()</h4>
+  <div class="markdown level1 summary"><p>Stop current driver from driving this vehicle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StopDrive()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_TakeDriver_" data-uid="AngeliA.Platformer.Vehicle.TakeDriver*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_TakeDriver" data-uid="AngeliA.Platformer.Vehicle.TakeDriver">TakeDriver()</h4>
+  <div class="markdown level1 summary"><p>Make driver move with the vehicle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void TakeDriver()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Vehicle_Update_" data-uid="AngeliA.Platformer.Vehicle.Update*"></a>
+  <h4 id="AngeliA_Platformer_Vehicle_Update" data-uid="AngeliA.Platformer.Vehicle.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>[3/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_Update">Rigidbody.Update()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

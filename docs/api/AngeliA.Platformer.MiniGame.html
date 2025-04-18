@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MiniGame | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MiniGame | AngeliA ">
+    
+    <meta name="description" content="A game that user can play with an extra in-game window">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.MiniGame">
+
+
+
+  <h1 id="AngeliA_Platformer_MiniGame" data-uid="AngeliA.Platformer.MiniGame" class="text-break">Class MiniGame</h1>
+  <div class="markdown level0 summary"><p>A game that user can play with an extra in-game window</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.IActionTarget.html">IActionTarget</a></div>
+    <div><a class="xref" href="AngeliA.IBlockEntity.html">IBlockEntity</a></div>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_Platformer_MiniGame__ctor_" data-uid="AngeliA.Platformer.MiniGame.#ctor*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame__ctor" data-uid="AngeliA.Platformer.MiniGame.#ctor">MiniGame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MiniGame()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_MiniGame_BadgeCount_" data-uid="AngeliA.Platformer.MiniGame.BadgeCount*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_BadgeCount" data-uid="AngeliA.Platformer.MiniGame.BadgeCount">BadgeCount</h4>
+  <div class="markdown level1 summary"><p>Total badge count the user can get</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int BadgeCount { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_BadgeHints_" data-uid="AngeliA.Platformer.MiniGame.BadgeHints*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_BadgeHints" data-uid="AngeliA.Platformer.MiniGame.BadgeHints">BadgeHints</h4>
+  <div class="markdown level1 summary"><p>Text hint for how to get badges</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual LanguageCode[] BadgeHints { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_DisplayName_" data-uid="AngeliA.Platformer.MiniGame.DisplayName*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_DisplayName" data-uid="AngeliA.Platformer.MiniGame.DisplayName">DisplayName</h4>
+  <div class="markdown level1 summary"><p>Name of the game in English</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string DisplayName { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_IsPlaying_" data-uid="AngeliA.Platformer.MiniGame.IsPlaying*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_IsPlaying" data-uid="AngeliA.Platformer.MiniGame.IsPlaying">IsPlaying</h4>
+  <div class="markdown level1 summary"><p>True if the game is currently playing by the player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsPlaying { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_RequireMouseCursor_" data-uid="AngeliA.Platformer.MiniGame.RequireMouseCursor*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_RequireMouseCursor" data-uid="AngeliA.Platformer.MiniGame.RequireMouseCursor">RequireMouseCursor</h4>
+  <div class="markdown level1 summary"><p>True if the game require mouse cursor display</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool RequireMouseCursor { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_RequireQuitConfirm_" data-uid="AngeliA.Platformer.MiniGame.RequireQuitConfirm*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_RequireQuitConfirm" data-uid="AngeliA.Platformer.MiniGame.RequireQuitConfirm">RequireQuitConfirm</h4>
+  <div class="markdown level1 summary"><p>True if show confirm window when user trying to quit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool RequireQuitConfirm { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_ShowRestartOption_" data-uid="AngeliA.Platformer.MiniGame.ShowRestartOption*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_ShowRestartOption" data-uid="AngeliA.Platformer.MiniGame.ShowRestartOption">ShowRestartOption</h4>
+  <div class="markdown level1 summary"><p>True if show restart button on pause menu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ShowRestartOption { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_WindowRect_" data-uid="AngeliA.Platformer.MiniGame.WindowRect*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_WindowRect" data-uid="AngeliA.Platformer.MiniGame.WindowRect">WindowRect</h4>
+  <div class="markdown level1 summary"><p>UI window position in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IRect WindowRect { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_WindowSize_" data-uid="AngeliA.Platformer.MiniGame.WindowSize*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_WindowSize" data-uid="AngeliA.Platformer.MiniGame.WindowSize">WindowSize</h4>
+  <div class="markdown level1 summary"><p>Size of UI window in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Int2 WindowSize { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_MiniGame_CloseMiniGame_" data-uid="AngeliA.Platformer.MiniGame.CloseMiniGame*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_CloseMiniGame" data-uid="AngeliA.Platformer.MiniGame.CloseMiniGame">CloseMiniGame()</h4>
+  <div class="markdown level1 summary"><p>Quit the game and close the window UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CloseMiniGame()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_DrawBadges_" data-uid="AngeliA.Platformer.MiniGame.DrawBadges*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_DrawBadges_AngeliA_IRect_" data-uid="AngeliA.Platformer.MiniGame.DrawBadges(AngeliA.IRect)">DrawBadges(IRect)</h4>
+  <div class="markdown level1 summary"><p>Draw the badge list panel on screen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DrawBadges(IRect panelRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">panelRect</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_MiniGame_DrawBadges_" data-uid="AngeliA.Platformer.MiniGame.DrawBadges*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_DrawBadges_AngeliA_IRect_AngeliA_Color32_" data-uid="AngeliA.Platformer.MiniGame.DrawBadges(AngeliA.IRect,AngeliA.Color32)">DrawBadges(IRect, Color32)</h4>
+  <div class="markdown level1 summary"><p>Draw the badge list panel on screen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DrawBadges(IRect panelRect, Color32 backgroundColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">panelRect</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_MiniGame_FirstUpdate_" data-uid="AngeliA.Platformer.MiniGame.FirstUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_FirstUpdate" data-uid="AngeliA.Platformer.MiniGame.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_FirstUpdate">Entity.FirstUpdate()</a></div>
+  <a id="AngeliA_Platformer_MiniGame_GameUpdate_" data-uid="AngeliA.Platformer.MiniGame.GameUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_GameUpdate" data-uid="AngeliA.Platformer.MiniGame.GameUpdate">GameUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GameUpdate()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_GiveBadge_" data-uid="AngeliA.Platformer.MiniGame.GiveBadge*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_GiveBadge_System_Int32_System_Boolean_" data-uid="AngeliA.Platformer.MiniGame.GiveBadge(System.Int32,System.Boolean)">GiveBadge(int, bool)</h4>
+  <div class="markdown level1 summary"><p>Give target badge to player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GiveBadge(int index, bool isGold)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Platformer_MiniGame_LateUpdate_" data-uid="AngeliA.Platformer.MiniGame.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_LateUpdate" data-uid="AngeliA.Platformer.MiniGame.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_MiniGame_OnInactivated_" data-uid="AngeliA.Platformer.MiniGame.OnInactivated*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_OnInactivated" data-uid="AngeliA.Platformer.MiniGame.OnInactivated">OnInactivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity leave the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInactivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_OnInactivated">Entity.OnInactivated()</a></div>
+  <a id="AngeliA_Platformer_MiniGame_RestartGame_" data-uid="AngeliA.Platformer.MiniGame.RestartGame*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_RestartGame" data-uid="AngeliA.Platformer.MiniGame.RestartGame">RestartGame()</h4>
+  <div class="markdown level1 summary"><p>Start the game again</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RestartGame()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_StartMiniGame_" data-uid="AngeliA.Platformer.MiniGame.StartMiniGame*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_StartMiniGame" data-uid="AngeliA.Platformer.MiniGame.StartMiniGame">StartMiniGame()</h4>
+  <div class="markdown level1 summary"><p>Open the window UI and start game</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void StartMiniGame()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MiniGame_Unify_" data-uid="AngeliA.Platformer.MiniGame.Unify*"></a>
+  <h4 id="AngeliA_Platformer_MiniGame_Unify_System_Int32_" data-uid="AngeliA.Platformer.MiniGame.Unify(System.Int32)">Unify(int)</h4>
+  <div class="markdown level1 summary"><p>Convert unified size into global size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int Unify(int value)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

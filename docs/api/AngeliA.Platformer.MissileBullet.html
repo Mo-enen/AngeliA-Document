@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MissileBullet | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MissileBullet | AngeliA ">
+    
+    <meta name="description" content="A bullet that find and follow a target to attack them">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.MissileBullet">
+
+
+
+  <h1 id="AngeliA_Platformer_MissileBullet" data-uid="AngeliA.Platformer.MissileBullet" class="text-break">Class MissileBullet</h1>
+  <div class="markdown level0 summary"><p>A bullet that find and follow a target to attack them</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.IDamageReceiver.html">IDamageReceiver</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_MissileBullet_CurrentRotation_" data-uid="AngeliA.Platformer.MissileBullet.CurrentRotation*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_CurrentRotation" data-uid="AngeliA.Platformer.MissileBullet.CurrentRotation">CurrentRotation</h4>
+  <div class="markdown level1 summary"><p>Current flying rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentRotation { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_CurrentVelocity_" data-uid="AngeliA.Platformer.MissileBullet.CurrentVelocity*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_CurrentVelocity" data-uid="AngeliA.Platformer.MissileBullet.CurrentVelocity">CurrentVelocity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int2 CurrentVelocity { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_DestroyOnHitTarget_" data-uid="AngeliA.Platformer.MissileBullet.DestroyOnHitTarget*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_DestroyOnHitTarget" data-uid="AngeliA.Platformer.MissileBullet.DestroyOnHitTarget">DestroyOnHitTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool DestroyOnHitTarget { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_DestroyWhenTakeDamage_" data-uid="AngeliA.Platformer.MissileBullet.DestroyWhenTakeDamage*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_DestroyWhenTakeDamage" data-uid="AngeliA.Platformer.MissileBullet.DestroyWhenTakeDamage">DestroyWhenTakeDamage</h4>
+  <div class="markdown level1 summary"><p>True if this bullet get destroy when something else deal damage to it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool DestroyWhenTakeDamage { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_Duration_" data-uid="AngeliA.Platformer.MissileBullet.Duration*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_Duration" data-uid="AngeliA.Platformer.MissileBullet.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>How long can this bullet exists on stage in frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Duration { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_Duration">Bullet.Duration</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_EnvironmentHitCount_" data-uid="AngeliA.Platformer.MissileBullet.EnvironmentHitCount*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_EnvironmentHitCount" data-uid="AngeliA.Platformer.MissileBullet.EnvironmentHitCount">EnvironmentHitCount</h4>
+  <div class="markdown level1 summary"><p>How many environment collider can this bullet hit without getting despawn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int EnvironmentHitCount { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_EnvironmentHitCount">Bullet.EnvironmentHitCount</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_ExplosionParticleID_" data-uid="AngeliA.Platformer.MissileBullet.ExplosionParticleID*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_ExplosionParticleID" data-uid="AngeliA.Platformer.MissileBullet.ExplosionParticleID">ExplosionParticleID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int ExplosionParticleID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_MissileAcceleration_" data-uid="AngeliA.Platformer.MissileBullet.MissileAcceleration*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_MissileAcceleration" data-uid="AngeliA.Platformer.MissileBullet.MissileAcceleration">MissileAcceleration</h4>
+  <div class="markdown level1 summary"><p>Speed acceleration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int MissileAcceleration { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_MissileFlyingSpeed_" data-uid="AngeliA.Platformer.MissileBullet.MissileFlyingSpeed*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_MissileFlyingSpeed" data-uid="AngeliA.Platformer.MissileBullet.MissileFlyingSpeed">MissileFlyingSpeed</h4>
+  <div class="markdown level1 summary"><p>Forward speed in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int MissileFlyingSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_MissileStartSpeed_" data-uid="AngeliA.Platformer.MissileBullet.MissileStartSpeed*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_MissileStartSpeed" data-uid="AngeliA.Platformer.MissileBullet.MissileStartSpeed">MissileStartSpeed</h4>
+  <div class="markdown level1 summary"><p>Initial speed in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int MissileStartSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_MissileTarget_" data-uid="AngeliA.Platformer.MissileBullet.MissileTarget*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_MissileTarget" data-uid="AngeliA.Platformer.MissileBullet.MissileTarget">MissileTarget</h4>
+  <div class="markdown level1 summary"><p>Current following target entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity MissileTarget { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_OnlyHitTarget_" data-uid="AngeliA.Platformer.MissileBullet.OnlyHitTarget*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_OnlyHitTarget" data-uid="AngeliA.Platformer.MissileBullet.OnlyHitTarget">OnlyHitTarget</h4>
+  <div class="markdown level1 summary"><p>True if this bullet do not hit environment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool OnlyHitTarget { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_ReceiverHitCount_" data-uid="AngeliA.Platformer.MissileBullet.ReceiverHitCount*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_ReceiverHitCount" data-uid="AngeliA.Platformer.MissileBullet.ReceiverHitCount">ReceiverHitCount</h4>
+  <div class="markdown level1 summary"><p>How many target collider can this bullet hit without getting despawn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int ReceiverHitCount { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_ReceiverHitCount">Bullet.ReceiverHitCount</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_SmokeParticleFrequency_" data-uid="AngeliA.Platformer.MissileBullet.SmokeParticleFrequency*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_SmokeParticleFrequency" data-uid="AngeliA.Platformer.MissileBullet.SmokeParticleFrequency">SmokeParticleFrequency</h4>
+  <div class="markdown level1 summary"><p>How many frames does it takes to spawn a smoke particle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int SmokeParticleFrequency { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_SmokeParticleID_" data-uid="AngeliA.Platformer.MissileBullet.SmokeParticleID*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_SmokeParticleID" data-uid="AngeliA.Platformer.MissileBullet.SmokeParticleID">SmokeParticleID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int SmokeParticleID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_TargetHitFrame_" data-uid="AngeliA.Platformer.MissileBullet.TargetHitFrame*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_TargetHitFrame" data-uid="AngeliA.Platformer.MissileBullet.TargetHitFrame">TargetHitFrame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int TargetHitFrame { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_MissileBullet_BeforeUpdate_" data-uid="AngeliA.Platformer.MissileBullet.BeforeUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_BeforeUpdate" data-uid="AngeliA.Platformer.MissileBullet.BeforeUpdate">BeforeUpdate()</h4>
+  <div class="markdown level1 summary"><p>[2/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_BeforeUpdate">Bullet.BeforeUpdate()</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_FindTargetUpdate_" data-uid="AngeliA.Platformer.MissileBullet.FindTargetUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_FindTargetUpdate" data-uid="AngeliA.Platformer.MissileBullet.FindTargetUpdate">FindTargetUpdate()</h4>
+  <div class="markdown level1 summary"><p>Use this function to control how it find target</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void FindTargetUpdate()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_FirstUpdate_" data-uid="AngeliA.Platformer.MissileBullet.FirstUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_FirstUpdate" data-uid="AngeliA.Platformer.MissileBullet.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_FirstUpdate">Entity.FirstUpdate()</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_LateUpdate_" data-uid="AngeliA.Platformer.MissileBullet.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_LateUpdate" data-uid="AngeliA.Platformer.MissileBullet.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_OnActivated_" data-uid="AngeliA.Platformer.MissileBullet.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_OnActivated" data-uid="AngeliA.Platformer.MissileBullet.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_OnActivated">Bullet.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_OnMissileHit_" data-uid="AngeliA.Platformer.MissileBullet.OnMissileHit*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_OnMissileHit_AngeliA_IDamageReceiver_" data-uid="AngeliA.Platformer.MissileBullet.OnMissileHit(AngeliA.IDamageReceiver)">OnMissileHit(IDamageReceiver)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMissileHit(IDamageReceiver receiver)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Platformer_MissileBullet_PerformHitEnvironment_" data-uid="AngeliA.Platformer.MissileBullet.PerformHitEnvironment*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_PerformHitEnvironment_System_Boolean__" data-uid="AngeliA.Platformer.MissileBullet.PerformHitEnvironment(System.Boolean@)">PerformHitEnvironment(out bool)</h4>
+  <div class="markdown level1 summary"><p>This function is called when the bullet hit environment colliders</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PerformHitEnvironment(out bool requireSelfDestroy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">requireSelfDestroy</span></td>
+        <td><p>True if this bullet should be despawn</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_PerformHitEnvironment_System_Boolean__">Bullet.PerformHitEnvironment(out bool)</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_PerformHitReceiver_" data-uid="AngeliA.Platformer.MissileBullet.PerformHitReceiver*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_PerformHitReceiver_AngeliA_IDamageReceiver_System_Boolean__" data-uid="AngeliA.Platformer.MissileBullet.PerformHitReceiver(AngeliA.IDamageReceiver,System.Boolean@)">PerformHitReceiver(IDamageReceiver, out bool)</h4>
+  <div class="markdown level1 summary"><p>This function is called when the bullet hit IDamageReceiver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PerformHitReceiver(IDamageReceiver receiver, out bool requireSelfDestroy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IDamageReceiver.html">IDamageReceiver</a></td>
+        <td><span class="parametername">receiver</span></td>
+        <td><p>The target it hits</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">requireSelfDestroy</span></td>
+        <td><p>True if this bullet should be despawn</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_PerformHitReceiver_AngeliA_IDamageReceiver_System_Boolean__">Bullet.PerformHitReceiver(IDamageReceiver, out bool)</a></div>
+  <a id="AngeliA_Platformer_MissileBullet_SpawnMissileExplosionParticle_" data-uid="AngeliA.Platformer.MissileBullet.SpawnMissileExplosionParticle*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_SpawnMissileExplosionParticle" data-uid="AngeliA.Platformer.MissileBullet.SpawnMissileExplosionParticle">SpawnMissileExplosionParticle()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Particle SpawnMissileExplosionParticle()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_SpawnMissileSmokeParticle_" data-uid="AngeliA.Platformer.MissileBullet.SpawnMissileSmokeParticle*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_SpawnMissileSmokeParticle" data-uid="AngeliA.Platformer.MissileBullet.SpawnMissileSmokeParticle">SpawnMissileSmokeParticle()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Particle SpawnMissileSmokeParticle()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MissileBullet_UpdateMissileMovement_" data-uid="AngeliA.Platformer.MissileBullet.UpdateMissileMovement*"></a>
+  <h4 id="AngeliA_Platformer_MissileBullet_UpdateMissileMovement" data-uid="AngeliA.Platformer.MissileBullet.UpdateMissileMovement">UpdateMissileMovement()</h4>
+  <div class="markdown level1 summary"><p>Use this function to control how it flys</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateMissileMovement()</code></pre>
+  </div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

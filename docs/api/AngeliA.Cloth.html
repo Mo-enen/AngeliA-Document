@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Cloth | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Cloth | AngeliA ">
+    
+    <meta name="description" content="Cloth for pose-style character (not for equipment items). Get instance with Cloth.TryGetCloth(id, out var result)">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Cloth">
+
+
+
+  <h1 id="AngeliA_Cloth" data-uid="AngeliA.Cloth" class="text-break">Class Cloth</h1>
+  <div class="markdown level0 summary"><p>Cloth for pose-style character (not for equipment items). Get instance with Cloth.TryGetCloth(id, out var result)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Cloth_ClothID_" data-uid="AngeliA.Cloth.ClothID*"></a>
+  <h4 id="AngeliA_Cloth_ClothID" data-uid="AngeliA.Cloth.ClothID">ClothID</h4>
+  <div class="markdown level1 summary"><p>Global unique id for this type of cloth</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ClothID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Cloth_ClothName_" data-uid="AngeliA.Cloth.ClothName*"></a>
+  <h4 id="AngeliA_Cloth_ClothName" data-uid="AngeliA.Cloth.ClothName">ClothName</h4>
+  <div class="markdown level1 summary"><p>Type name for this type of cloth</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ClothName { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Cloth_ClothSystemReady_" data-uid="AngeliA.Cloth.ClothSystemReady*"></a>
+  <h4 id="AngeliA_Cloth_ClothSystemReady" data-uid="AngeliA.Cloth.ClothSystemReady">ClothSystemReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ClothSystemReady { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Cloth_ClothType_" data-uid="AngeliA.Cloth.ClothType*"></a>
+  <h4 id="AngeliA_Cloth_ClothType" data-uid="AngeliA.Cloth.ClothType">ClothType</h4>
+  <div class="markdown level1 summary"><p>Where should characters wear this cloth</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ClothType ClothType { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Cloth_SheetIndex_" data-uid="AngeliA.Cloth.SheetIndex*"></a>
+  <h4 id="AngeliA_Cloth_SheetIndex" data-uid="AngeliA.Cloth.SheetIndex">SheetIndex</h4>
+  <div class="markdown level1 summary"><p>Which artwork sheet does this cloth get it's artwork from</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SheetIndex { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Cloth_SpriteLoaded_" data-uid="AngeliA.Cloth.SpriteLoaded*"></a>
+  <h4 id="AngeliA_Cloth_SpriteLoaded" data-uid="AngeliA.Cloth.SpriteLoaded">SpriteLoaded</h4>
+  <div class="markdown level1 summary"><p>True if the artwork sprites are loaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SpriteLoaded { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Cloth_AttachClothOn_" data-uid="AngeliA.Cloth.AttachClothOn*"></a>
+  <h4 id="AngeliA_Cloth_AttachClothOn_AngeliA_BodyPart_AngeliA_AngeSprite_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.Cloth.AttachClothOn(AngeliA.BodyPart,AngeliA.AngeSprite,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">AttachClothOn(BodyPart, AngeSprite, int, int, int, int, int, int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Attach the given artwork sprite as a general cloth to given bodypart. Cloth will use it's own size no matter how big the bodypart is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Cell[] AttachClothOn(BodyPart bodyPart, AngeSprite sprite, int locationX, int locationY, int localZ, int widthAmount = 1000, int heightAmount = 1000, int localRotation = 0, int shiftPixelX = 0, int shiftPixelY = 0, bool defaultHideLimb = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.BodyPart.html">BodyPart</a></td>
+        <td><span class="parametername">bodyPart</span></td>
+        <td><p>Target bodypart</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.AngeSprite.html">AngeSprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Artwork sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">locationX</span></td>
+        <td><p>Position X in bodypart's local space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">locationY</span></td>
+        <td><p>Position Y in bodypart's local space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localZ</span></td>
+        <td><p>Local Z value the sort rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">widthAmount</span></td>
+        <td><p>Horizontal size scaling (0 means 0%, 1000 means 100%)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">heightAmount</span></td>
+        <td><p>Vertical size scaling (0 means 0%, 1000 means 100%)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localRotation</span></td>
+        <td><p>Rotation of the cloth in bodypart's local space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">shiftPixelX</span></td>
+        <td><p>Position offset X</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">shiftPixelY</span></td>
+        <td><p>Position offset Y</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">defaultHideLimb</span></td>
+        <td><p>True if it requires the bodypart to be hiden. Artwork sprite's tag will override this value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Cell.html">Cell</a>[]</td>
+        <td><p>Rendering cells which holds the cloth rendering data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Cloth_CoverClothOn_" data-uid="AngeliA.Cloth.CoverClothOn*"></a>
+  <h4 id="AngeliA_Cloth_CoverClothOn_AngeliA_BodyPart_AngeliA_AngeSprite_" data-uid="AngeliA.Cloth.CoverClothOn(AngeliA.BodyPart,AngeliA.AngeSprite)">CoverClothOn(BodyPart, AngeSprite)</h4>
+  <div class="markdown level1 summary"><p>Cover the given artwork sprite as a general cloth to given bodypart. Size of the sprite will change based on how big the bodypart is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Cell[] CoverClothOn(BodyPart bodyPart, AngeSprite sprite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.BodyPart.html">BodyPart</a></td>
+        <td><span class="parametername">bodyPart</span></td>
+        <td><p>Target bodypart</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.AngeSprite.html">AngeSprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Artwork sprite</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Cell.html">Cell</a>[]</td>
+        <td><p>Rendering cells which holds the cloth rendering data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Cloth_CoverClothOn_" data-uid="AngeliA.Cloth.CoverClothOn*"></a>
+  <h4 id="AngeliA_Cloth_CoverClothOn_AngeliA_BodyPart_AngeliA_AngeSprite_System_Int32_" data-uid="AngeliA.Cloth.CoverClothOn(AngeliA.BodyPart,AngeliA.AngeSprite,System.Int32)">CoverClothOn(BodyPart, AngeSprite, int)</h4>
+  <div class="markdown level1 summary"><p>Cover the given artwork sprite as a general cloth to given bodypart. Size of the sprite will change based on how big the bodypart is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Cell[] CoverClothOn(BodyPart bodyPart, AngeSprite sprite, int localZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.BodyPart.html">BodyPart</a></td>
+        <td><span class="parametername">bodyPart</span></td>
+        <td><p>Target bodypart</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.AngeSprite.html">AngeSprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Artwork sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localZ</span></td>
+        <td><p>Local Z value the sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Cell.html">Cell</a>[]</td>
+        <td><p>Rendering cells which holds the cloth rendering data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Cloth_CoverClothOn_" data-uid="AngeliA.Cloth.CoverClothOn*"></a>
+  <h4 id="AngeliA_Cloth_CoverClothOn_AngeliA_BodyPart_AngeliA_AngeSprite_System_Int32_AngeliA_Color32_System_Boolean_" data-uid="AngeliA.Cloth.CoverClothOn(AngeliA.BodyPart,AngeliA.AngeSprite,System.Int32,AngeliA.Color32,System.Boolean)">CoverClothOn(BodyPart, AngeSprite, int, Color32, bool)</h4>
+  <div class="markdown level1 summary"><p>Cover the given artwork sprite as a general cloth to given bodypart. Size of the sprite will change based on how big the bodypart is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Cell[] CoverClothOn(BodyPart bodyPart, AngeSprite sprite, int localZ, Color32 tint, bool defaultHideLimb = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.BodyPart.html">BodyPart</a></td>
+        <td><span class="parametername">bodyPart</span></td>
+        <td><p>Target bodypart</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.AngeSprite.html">AngeSprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Artwork sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localZ</span></td>
+        <td><p>Local Z value the sort rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">defaultHideLimb</span></td>
+        <td><p>True if it requires the bodypart to be hiden. Artwork sprite's tag will override this value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Cell.html">Cell</a>[]</td>
+        <td><p>Rendering cells which holds the cloth rendering data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Cloth_DrawCloth_" data-uid="AngeliA.Cloth.DrawCloth*"></a>
+  <h4 id="AngeliA_Cloth_DrawCloth_AngeliA_PoseCharacterRenderer_" data-uid="AngeliA.Cloth.DrawCloth(AngeliA.PoseCharacterRenderer)">DrawCloth(PoseCharacterRenderer)</h4>
+  <div class="markdown level1 summary"><p>Draw cloth for the given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DrawCloth(PoseCharacterRenderer renderer)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Cloth_DrawClothGizmos_" data-uid="AngeliA.Cloth.DrawClothGizmos*"></a>
+  <h4 id="AngeliA_Cloth_DrawClothGizmos_AngeliA_IRect_AngeliA_Color32_System_Int32_" data-uid="AngeliA.Cloth.DrawClothGizmos(AngeliA.IRect,AngeliA.Color32,System.Int32)">DrawClothGizmos(IRect, Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Draw cloth as gizmos</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawClothGizmos(IRect rect, Color32 tint, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cell</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Cloth_FillFromSheet_" data-uid="AngeliA.Cloth.FillFromSheet*"></a>
+  <h4 id="AngeliA_Cloth_FillFromSheet_System_String_" data-uid="AngeliA.Cloth.FillFromSheet(System.String)">FillFromSheet(string)</h4>
+  <div class="markdown level1 summary"><p>Load sprite data from Renderer.CurrentSheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FillFromSheet(string name)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Cloth_ForAllCloth_" data-uid="AngeliA.Cloth.ForAllCloth*"></a>
+  <h4 id="AngeliA_Cloth_ForAllCloth" data-uid="AngeliA.Cloth.ForAllCloth">ForAllCloth()</h4>
+  <div class="markdown level1 summary"><p>Iterate through all cloth instance in pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;int, Cloth&gt;&gt; ForAllCloth()</code></pre>
+  </div>
+  <a id="AngeliA_Cloth_GetDefaultClothID_" data-uid="AngeliA.Cloth.GetDefaultClothID*"></a>
+  <h4 id="AngeliA_Cloth_GetDefaultClothID_System_Int32_AngeliA_ClothType_" data-uid="AngeliA.Cloth.GetDefaultClothID(System.Int32,AngeliA.ClothType)">GetDefaultClothID(int, ClothType)</h4>
+  <div class="markdown level1 summary"><p>Get ID of given character's default cloth. Return 0 if not found</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetDefaultClothID(int characterID, ClothType suitType)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Cloth_GetDisplayName_" data-uid="AngeliA.Cloth.GetDisplayName*"></a>
+  <h4 id="AngeliA_Cloth_GetDisplayName_System_Int32__" data-uid="AngeliA.Cloth.GetDisplayName(System.Int32@)">GetDisplayName(out int)</h4>
+  <div class="markdown level1 summary"><p>Get display name for this cloth from language system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDisplayName(out int languageID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Cloth_HasCloth_" data-uid="AngeliA.Cloth.HasCloth*"></a>
+  <h4 id="AngeliA_Cloth_HasCloth_System_Int32_" data-uid="AngeliA.Cloth.HasCloth(System.Int32)">HasCloth(int)</h4>
+  <div class="markdown level1 summary"><p>Does cloth with given id exists in the pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasCloth(int clothID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Cloth_TryGetCloth_" data-uid="AngeliA.Cloth.TryGetCloth*"></a>
+  <h4 id="AngeliA_Cloth_TryGetCloth_System_Int32_AngeliA_Cloth__" data-uid="AngeliA.Cloth.TryGetCloth(System.Int32,AngeliA.Cloth@)">TryGetCloth(int, out Cloth)</h4>
+  <div class="markdown level1 summary"><p>Get cloth instance from pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetCloth(int clothID, out Cloth cloth)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

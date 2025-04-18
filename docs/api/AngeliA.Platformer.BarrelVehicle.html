@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BarrelVehicle | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BarrelVehicle | AngeliA ">
+    
+    <meta name="description" content="A barrel that roll to opposite direction when character walk on it">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.BarrelVehicle">
+
+
+
+  <h1 id="AngeliA_Platformer_BarrelVehicle" data-uid="AngeliA.Platformer.BarrelVehicle" class="text-break">Class BarrelVehicle</h1>
+  <div class="markdown level0 summary"><p>A barrel that roll to opposite direction when character walk on it</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.ICarrier.html">ICarrier</a></div>
+    <div><a class="xref" href="AngeliA.IWithCharacterMovement.html">IWithCharacterMovement</a></div>
+    <div><a class="xref" href="AngeliA.IDamageReceiver.html">IDamageReceiver</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_BarrelVehicle_AirDragX_" data-uid="AngeliA.Platformer.BarrelVehicle.AirDragX*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_AirDragX" data-uid="AngeliA.Platformer.BarrelVehicle.AirDragX">AirDragX</h4>
+  <div class="markdown level1 summary"><p>Amount of horizontal speed lost every frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AirDragX { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.Vehicle.html#AngeliA_Platformer_Vehicle_AirDragX">Vehicle.AirDragX</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_AllowBeingPush_" data-uid="AngeliA.Platformer.BarrelVehicle.AllowBeingPush*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_AllowBeingPush" data-uid="AngeliA.Platformer.BarrelVehicle.AllowBeingPush">AllowBeingPush</h4>
+  <div class="markdown level1 summary"><p>True if this entity can be push by other</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowBeingPush { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_AllowBeingPush">Rigidbody.AllowBeingPush</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_BarrelSize_" data-uid="AngeliA.Platformer.BarrelVehicle.BarrelSize*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_BarrelSize" data-uid="AngeliA.Platformer.BarrelVehicle.BarrelSize">BarrelSize</h4>
+  <div class="markdown level1 summary"><p>Diameter of the barrel in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int BarrelSize { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_BarrelVehicle_DriverLeaveLocalPosition_" data-uid="AngeliA.Platformer.BarrelVehicle.DriverLeaveLocalPosition*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_DriverLeaveLocalPosition" data-uid="AngeliA.Platformer.BarrelVehicle.DriverLeaveLocalPosition">DriverLeaveLocalPosition</h4>
+  <div class="markdown level1 summary"><p>Position from the vehcile to driver when they leave</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Int2? DriverLeaveLocalPosition { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.Vehicle.html#AngeliA_Platformer_Vehicle_DriverLeaveLocalPosition">Vehicle.DriverLeaveLocalPosition</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_DriverLocalPosition_" data-uid="AngeliA.Platformer.BarrelVehicle.DriverLocalPosition*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_DriverLocalPosition" data-uid="AngeliA.Platformer.BarrelVehicle.DriverLocalPosition">DriverLocalPosition</h4>
+  <div class="markdown level1 summary"><p>Position from the vehcile to driver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Int2? DriverLocalPosition { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.Vehicle.html#AngeliA_Platformer_Vehicle_DriverLocalPosition">Vehicle.DriverLocalPosition</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_RollSpeed_" data-uid="AngeliA.Platformer.BarrelVehicle.RollSpeed*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_RollSpeed" data-uid="AngeliA.Platformer.BarrelVehicle.RollSpeed">RollSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int RollSpeed { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_BarrelVehicle_CheckForStartDrive_" data-uid="AngeliA.Platformer.BarrelVehicle.CheckForStartDrive*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_CheckForStartDrive_AngeliA_Character__" data-uid="AngeliA.Platformer.BarrelVehicle.CheckForStartDrive(AngeliA.Character@)">CheckForStartDrive(out Character)</h4>
+  <div class="markdown level1 summary"><p>Update function for checking if a driver should start to drive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool CheckForStartDrive(out Character driver)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if any driver start to drive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.Vehicle.html#AngeliA_Platformer_Vehicle_CheckForStartDrive_AngeliA_Character__">Vehicle.CheckForStartDrive(out Character)</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_CheckForStopDrive_" data-uid="AngeliA.Platformer.BarrelVehicle.CheckForStopDrive*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_CheckForStopDrive" data-uid="AngeliA.Platformer.BarrelVehicle.CheckForStopDrive">CheckForStopDrive()</h4>
+  <div class="markdown level1 summary"><p>Update function for checking if the current driver should stop driving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool CheckForStopDrive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if stop driving</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.Vehicle.html#AngeliA_Platformer_Vehicle_CheckForStopDrive">Vehicle.CheckForStopDrive()</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_LateUpdate_" data-uid="AngeliA.Platformer.BarrelVehicle.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_LateUpdate" data-uid="AngeliA.Platformer.BarrelVehicle.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_OnActivated_" data-uid="AngeliA.Platformer.BarrelVehicle.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_OnActivated" data-uid="AngeliA.Platformer.BarrelVehicle.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.Vehicle.html#AngeliA_Platformer_Vehicle_OnActivated">Vehicle.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_Push_" data-uid="AngeliA.Platformer.BarrelVehicle.Push*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_Push_System_Int32_" data-uid="AngeliA.Platformer.BarrelVehicle.Push(System.Int32)">Push(int)</h4>
+  <div class="markdown level1 summary"><p>This function is called when the entity is being pushed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Push(int speedX)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Rigidbody.html#AngeliA_Rigidbody_Push_System_Int32_">Rigidbody.Push(int)</a></div>
+  <a id="AngeliA_Platformer_BarrelVehicle_Update_" data-uid="AngeliA.Platformer.BarrelVehicle.Update*"></a>
+  <h4 id="AngeliA_Platformer_BarrelVehicle_Update" data-uid="AngeliA.Platformer.BarrelVehicle.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>[3/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.Vehicle.html#AngeliA_Platformer_Vehicle_Update">Vehicle.Update()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

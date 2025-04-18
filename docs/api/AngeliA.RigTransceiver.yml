@@ -1,0 +1,1279 @@
+### YamlMime:ManagedReference
+items:
+- uid: AngeliA.RigTransceiver
+  commentId: T:AngeliA.RigTransceiver
+  id: RigTransceiver
+  parent: AngeliA
+  children:
+  - AngeliA.RigTransceiver.#ctor(System.String)
+  - AngeliA.RigTransceiver.Abort
+  - AngeliA.RigTransceiver.Call(System.Boolean,System.Boolean,System.Int32,System.Int32,System.Byte)
+  - AngeliA.RigTransceiver.CallingMessage
+  - AngeliA.RigTransceiver.ERROR_EXE_FILE_NOT_FOUND
+  - AngeliA.RigTransceiver.ERROR_LIB_FILE_NOT_FOUND
+  - AngeliA.RigTransceiver.ERROR_PROCESS_FAIL_TO_START
+  - AngeliA.RigTransceiver.ERROR_UNKNOWN
+  - AngeliA.RigTransceiver.LastRigViewHeight
+  - AngeliA.RigTransceiver.LastRigViewPos
+  - AngeliA.RigTransceiver.LogWithPrefix
+  - AngeliA.RigTransceiver.Quit
+  - AngeliA.RigTransceiver.Respond(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  - AngeliA.RigTransceiver.RespondMessage
+  - AngeliA.RigTransceiver.RigProcessRunning
+  - AngeliA.RigTransceiver.SetStartViewPos(System.Int32,System.Int32,System.Int32,System.Int32)
+  - AngeliA.RigTransceiver.Start(System.String,System.String)
+  - AngeliA.RigTransceiver.UpdateLastRespondedRender(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: RigTransceiver
+  nameWithType: RigTransceiver
+  fullName: AngeliA.RigTransceiver
+  type: Class
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RigTransceiver
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 9
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public class RigTransceiver
+    content.vb: Public Class RigTransceiver
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.AngeliA.Extension.ForAllFields``1(System.Reflection.BindingFlags,System.Boolean)
+  - System.Object.AngeliA.Extension.ForAllProperties``1
+- uid: AngeliA.RigTransceiver.ERROR_EXE_FILE_NOT_FOUND
+  commentId: F:AngeliA.RigTransceiver.ERROR_EXE_FILE_NOT_FOUND
+  id: ERROR_EXE_FILE_NOT_FOUND
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: ERROR_EXE_FILE_NOT_FOUND
+  nameWithType: RigTransceiver.ERROR_EXE_FILE_NOT_FOUND
+  fullName: AngeliA.RigTransceiver.ERROR_EXE_FILE_NOT_FOUND
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ERROR_EXE_FILE_NOT_FOUND
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 18
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public const int ERROR_EXE_FILE_NOT_FOUND = -100
+    return:
+      type: System.Int32
+    content.vb: Public Const ERROR_EXE_FILE_NOT_FOUND As Integer = -100
+- uid: AngeliA.RigTransceiver.ERROR_PROCESS_FAIL_TO_START
+  commentId: F:AngeliA.RigTransceiver.ERROR_PROCESS_FAIL_TO_START
+  id: ERROR_PROCESS_FAIL_TO_START
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: ERROR_PROCESS_FAIL_TO_START
+  nameWithType: RigTransceiver.ERROR_PROCESS_FAIL_TO_START
+  fullName: AngeliA.RigTransceiver.ERROR_PROCESS_FAIL_TO_START
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ERROR_PROCESS_FAIL_TO_START
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 19
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public const int ERROR_PROCESS_FAIL_TO_START = -101
+    return:
+      type: System.Int32
+    content.vb: Public Const ERROR_PROCESS_FAIL_TO_START As Integer = -101
+- uid: AngeliA.RigTransceiver.ERROR_UNKNOWN
+  commentId: F:AngeliA.RigTransceiver.ERROR_UNKNOWN
+  id: ERROR_UNKNOWN
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: ERROR_UNKNOWN
+  nameWithType: RigTransceiver.ERROR_UNKNOWN
+  fullName: AngeliA.RigTransceiver.ERROR_UNKNOWN
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ERROR_UNKNOWN
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 20
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public const int ERROR_UNKNOWN = -102
+    return:
+      type: System.Int32
+    content.vb: Public Const ERROR_UNKNOWN As Integer = -102
+- uid: AngeliA.RigTransceiver.ERROR_LIB_FILE_NOT_FOUND
+  commentId: F:AngeliA.RigTransceiver.ERROR_LIB_FILE_NOT_FOUND
+  id: ERROR_LIB_FILE_NOT_FOUND
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: ERROR_LIB_FILE_NOT_FOUND
+  nameWithType: RigTransceiver.ERROR_LIB_FILE_NOT_FOUND
+  fullName: AngeliA.RigTransceiver.ERROR_LIB_FILE_NOT_FOUND
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ERROR_LIB_FILE_NOT_FOUND
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 21
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public const int ERROR_LIB_FILE_NOT_FOUND = -103
+    return:
+      type: System.Int32
+    content.vb: Public Const ERROR_LIB_FILE_NOT_FOUND As Integer = -103
+- uid: AngeliA.RigTransceiver.CallingMessage
+  commentId: F:AngeliA.RigTransceiver.CallingMessage
+  id: CallingMessage
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: CallingMessage
+  nameWithType: RigTransceiver.CallingMessage
+  fullName: AngeliA.RigTransceiver.CallingMessage
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: CallingMessage
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 24
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public readonly RigCallingMessage CallingMessage
+    return:
+      type: AngeliA.RigCallingMessage
+    content.vb: Public ReadOnly CallingMessage As RigCallingMessage
+- uid: AngeliA.RigTransceiver.RespondMessage
+  commentId: F:AngeliA.RigTransceiver.RespondMessage
+  id: RespondMessage
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: RespondMessage
+  nameWithType: RigTransceiver.RespondMessage
+  fullName: AngeliA.RigTransceiver.RespondMessage
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RespondMessage
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 25
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public readonly RigRespondMessage RespondMessage
+    return:
+      type: AngeliA.RigRespondMessage
+    content.vb: Public ReadOnly RespondMessage As RigRespondMessage
+- uid: AngeliA.RigTransceiver.RigProcessRunning
+  commentId: P:AngeliA.RigTransceiver.RigProcessRunning
+  id: RigProcessRunning
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: RigProcessRunning
+  nameWithType: RigTransceiver.RigProcessRunning
+  fullName: AngeliA.RigTransceiver.RigProcessRunning
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RigProcessRunning
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 26
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool RigProcessRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property RigProcessRunning As Boolean
+  overload: AngeliA.RigTransceiver.RigProcessRunning*
+- uid: AngeliA.RigTransceiver.LastRigViewPos
+  commentId: P:AngeliA.RigTransceiver.LastRigViewPos
+  id: LastRigViewPos
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: LastRigViewPos
+  nameWithType: RigTransceiver.LastRigViewPos
+  fullName: AngeliA.RigTransceiver.LastRigViewPos
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: LastRigViewPos
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 27
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public Int3? LastRigViewPos { get; }
+    parameters: []
+    return:
+      type: System.Nullable{AngeliA.Int3}
+    content.vb: Public Property LastRigViewPos As Int3?
+  overload: AngeliA.RigTransceiver.LastRigViewPos*
+- uid: AngeliA.RigTransceiver.LastRigViewHeight
+  commentId: P:AngeliA.RigTransceiver.LastRigViewHeight
+  id: LastRigViewHeight
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: LastRigViewHeight
+  nameWithType: RigTransceiver.LastRigViewHeight
+  fullName: AngeliA.RigTransceiver.LastRigViewHeight
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: LastRigViewHeight
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 28
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int? LastRigViewHeight { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property LastRigViewHeight As Integer?
+  overload: AngeliA.RigTransceiver.LastRigViewHeight*
+- uid: AngeliA.RigTransceiver.LogWithPrefix
+  commentId: P:AngeliA.RigTransceiver.LogWithPrefix
+  id: LogWithPrefix
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: LogWithPrefix
+  nameWithType: RigTransceiver.LogWithPrefix
+  fullName: AngeliA.RigTransceiver.LogWithPrefix
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: LogWithPrefix
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 29
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool LogWithPrefix { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LogWithPrefix As Boolean
+  overload: AngeliA.RigTransceiver.LogWithPrefix*
+- uid: AngeliA.RigTransceiver.#ctor(System.String)
+  commentId: M:AngeliA.RigTransceiver.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: RigTransceiver(string)
+  nameWithType: RigTransceiver.RigTransceiver(string)
+  fullName: AngeliA.RigTransceiver.RigTransceiver(string)
+  type: Constructor
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: .ctor
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 53
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public RigTransceiver(string exePath)
+    parameters:
+    - id: exePath
+      type: System.String
+    content.vb: Public Sub New(exePath As String)
+  overload: AngeliA.RigTransceiver.#ctor*
+  nameWithType.vb: RigTransceiver.New(String)
+  fullName.vb: AngeliA.RigTransceiver.New(String)
+  name.vb: New(String)
+- uid: AngeliA.RigTransceiver.Start(System.String,System.String)
+  commentId: M:AngeliA.RigTransceiver.Start(System.String,System.String)
+  id: Start(System.String,System.String)
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: Start(string, string)
+  nameWithType: RigTransceiver.Start(string, string)
+  fullName: AngeliA.RigTransceiver.Start(string, string)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Start
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 69
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int Start(string gameBuildFolder, string universePath)
+    parameters:
+    - id: gameBuildFolder
+      type: System.String
+    - id: universePath
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function Start(gameBuildFolder As String, universePath As String) As Integer
+  overload: AngeliA.RigTransceiver.Start*
+  nameWithType.vb: RigTransceiver.Start(String, String)
+  fullName.vb: AngeliA.RigTransceiver.Start(String, String)
+  name.vb: Start(String, String)
+- uid: AngeliA.RigTransceiver.Abort
+  commentId: M:AngeliA.RigTransceiver.Abort
+  id: Abort
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: Abort()
+  nameWithType: RigTransceiver.Abort()
+  fullName: AngeliA.RigTransceiver.Abort()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Abort
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 118
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void Abort()
+    content.vb: Public Sub Abort()
+  overload: AngeliA.RigTransceiver.Abort*
+- uid: AngeliA.RigTransceiver.Quit
+  commentId: M:AngeliA.RigTransceiver.Quit
+  id: Quit
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: Quit()
+  nameWithType: RigTransceiver.Quit()
+  fullName: AngeliA.RigTransceiver.Quit()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Quit
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 131
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void Quit()
+    content.vb: Public Sub Quit()
+  overload: AngeliA.RigTransceiver.Quit*
+- uid: AngeliA.RigTransceiver.Call(System.Boolean,System.Boolean,System.Int32,System.Int32,System.Byte)
+  commentId: M:AngeliA.RigTransceiver.Call(System.Boolean,System.Boolean,System.Int32,System.Int32,System.Byte)
+  id: Call(System.Boolean,System.Boolean,System.Int32,System.Int32,System.Byte)
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: Call(bool, bool, int, int, byte)
+  nameWithType: RigTransceiver.Call(bool, bool, int, int, byte)
+  fullName: AngeliA.RigTransceiver.Call(bool, bool, int, int, byte)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Call
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 138
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void Call(bool ignoreMouseInput, bool ignoreKeyInput, int paddingLeft, int paddingRight, byte requiringWindowIndex)
+    parameters:
+    - id: ignoreMouseInput
+      type: System.Boolean
+    - id: ignoreKeyInput
+      type: System.Boolean
+    - id: paddingLeft
+      type: System.Int32
+    - id: paddingRight
+      type: System.Int32
+    - id: requiringWindowIndex
+      type: System.Byte
+    content.vb: Public Sub [Call](ignoreMouseInput As Boolean, ignoreKeyInput As Boolean, paddingLeft As Integer, paddingRight As Integer, requiringWindowIndex As Byte)
+  overload: AngeliA.RigTransceiver.Call*
+  nameWithType.vb: RigTransceiver.Call(Boolean, Boolean, Integer, Integer, Byte)
+  fullName.vb: AngeliA.RigTransceiver.Call(Boolean, Boolean, Integer, Integer, Byte)
+  name.vb: Call(Boolean, Boolean, Integer, Integer, Byte)
+- uid: AngeliA.RigTransceiver.Respond(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:AngeliA.RigTransceiver.Respond(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  id: Respond(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: Respond(Universe, int, bool, bool, bool)
+  nameWithType: RigTransceiver.Respond(Universe, int, bool, bool, bool)
+  fullName: AngeliA.RigTransceiver.Respond(AngeliA.Universe, int, bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Respond
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 150
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool Respond(Universe universe, int sheetIndex, bool updateViewCache, bool ignoreRendering, bool ignoreInGameGizmos)
+    parameters:
+    - id: universe
+      type: AngeliA.Universe
+    - id: sheetIndex
+      type: System.Int32
+    - id: updateViewCache
+      type: System.Boolean
+    - id: ignoreRendering
+      type: System.Boolean
+    - id: ignoreInGameGizmos
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function Respond(universe As Universe, sheetIndex As Integer, updateViewCache As Boolean, ignoreRendering As Boolean, ignoreInGameGizmos As Boolean) As Boolean
+  overload: AngeliA.RigTransceiver.Respond*
+  nameWithType.vb: RigTransceiver.Respond(Universe, Integer, Boolean, Boolean, Boolean)
+  fullName.vb: AngeliA.RigTransceiver.Respond(AngeliA.Universe, Integer, Boolean, Boolean, Boolean)
+  name.vb: Respond(Universe, Integer, Boolean, Boolean, Boolean)
+- uid: AngeliA.RigTransceiver.UpdateLastRespondedRender(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:AngeliA.RigTransceiver.UpdateLastRespondedRender(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  id: UpdateLastRespondedRender(AngeliA.Universe,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: UpdateLastRespondedRender(Universe, int, bool, bool, bool)
+  nameWithType: RigTransceiver.UpdateLastRespondedRender(Universe, int, bool, bool, bool)
+  fullName: AngeliA.RigTransceiver.UpdateLastRespondedRender(AngeliA.Universe, int, bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: UpdateLastRespondedRender
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 180
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void UpdateLastRespondedRender(Universe universe, int sheetIndex, bool coverWithBlackTint, bool ignoreInGameGizmos, bool ignoreViewRect)
+    parameters:
+    - id: universe
+      type: AngeliA.Universe
+    - id: sheetIndex
+      type: System.Int32
+    - id: coverWithBlackTint
+      type: System.Boolean
+    - id: ignoreInGameGizmos
+      type: System.Boolean
+    - id: ignoreViewRect
+      type: System.Boolean
+    content.vb: Public Sub UpdateLastRespondedRender(universe As Universe, sheetIndex As Integer, coverWithBlackTint As Boolean, ignoreInGameGizmos As Boolean, ignoreViewRect As Boolean)
+  overload: AngeliA.RigTransceiver.UpdateLastRespondedRender*
+  nameWithType.vb: RigTransceiver.UpdateLastRespondedRender(Universe, Integer, Boolean, Boolean, Boolean)
+  fullName.vb: AngeliA.RigTransceiver.UpdateLastRespondedRender(AngeliA.Universe, Integer, Boolean, Boolean, Boolean)
+  name.vb: UpdateLastRespondedRender(Universe, Integer, Boolean, Boolean, Boolean)
+- uid: AngeliA.RigTransceiver.SetStartViewPos(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:AngeliA.RigTransceiver.SetStartViewPos(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: SetStartViewPos(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: AngeliA.RigTransceiver
+  langs:
+  - csharp
+  - vb
+  name: SetStartViewPos(int, int, int, int)
+  nameWithType: RigTransceiver.SetStartViewPos(int, int, int, int)
+  fullName: AngeliA.RigTransceiver.SetStartViewPos(int, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/Transceiver.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SetStartViewPos
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/Transceiver.cs
+    startLine: 191
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void SetStartViewPos(int viewX, int viewY, int viewZ, int viewHeight)
+    parameters:
+    - id: viewX
+      type: System.Int32
+    - id: viewY
+      type: System.Int32
+    - id: viewZ
+      type: System.Int32
+    - id: viewHeight
+      type: System.Int32
+    content.vb: Public Sub SetStartViewPos(viewX As Integer, viewY As Integer, viewZ As Integer, viewHeight As Integer)
+  overload: AngeliA.RigTransceiver.SetStartViewPos*
+  nameWithType.vb: RigTransceiver.SetStartViewPos(Integer, Integer, Integer, Integer)
+  fullName.vb: AngeliA.RigTransceiver.SetStartViewPos(Integer, Integer, Integer, Integer)
+  name.vb: SetStartViewPos(Integer, Integer, Integer, Integer)
+references:
+- uid: AngeliA
+  commentId: N:AngeliA
+  href: AngeliA.html
+  name: AngeliA
+  nameWithType: AngeliA
+  fullName: AngeliA
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.AngeliA.Extension.ForAllFields``1(System.Reflection.BindingFlags,System.Boolean)
+  commentId: M:AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  name: ForAllFields<T>(object, BindingFlags, bool)
+  nameWithType: Extension.ForAllFields<T>(object, BindingFlags, bool)
+  fullName: AngeliA.Extension.ForAllFields<T>(object, System.Reflection.BindingFlags, bool)
+  nameWithType.vb: Extension.ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  fullName.vb: AngeliA.Extension.ForAllFields(Of T)(Object, System.Reflection.BindingFlags, Boolean)
+  name.vb: ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.AngeliA.Extension.ForAllProperties``1
+  commentId: M:AngeliA.Extension.ForAllProperties``1(System.Object)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.ForAllProperties``1(System.Object)
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  name: ForAllProperties<T>(object)
+  nameWithType: Extension.ForAllProperties<T>(object)
+  fullName: AngeliA.Extension.ForAllProperties<T>(object)
+  nameWithType.vb: Extension.ForAllProperties(Of T)(Object)
+  fullName.vb: AngeliA.Extension.ForAllProperties(Of T)(Object)
+  name.vb: ForAllProperties(Of T)(Object)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  commentId: M:AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  isExternal: true
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  name: ForAllFields<T>(object, BindingFlags, bool)
+  nameWithType: Extension.ForAllFields<T>(object, BindingFlags, bool)
+  fullName: AngeliA.Extension.ForAllFields<T>(object, System.Reflection.BindingFlags, bool)
+  nameWithType.vb: Extension.ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  fullName.vb: AngeliA.Extension.ForAllFields(Of T)(Object, System.Reflection.BindingFlags, Boolean)
+  name.vb: ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: AngeliA.Extension
+  commentId: T:AngeliA.Extension
+  parent: AngeliA
+  href: AngeliA.Extension.html
+  name: Extension
+  nameWithType: Extension
+  fullName: AngeliA.Extension
+- uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+  commentId: M:AngeliA.Extension.ForAllProperties``1(System.Object)
+  isExternal: true
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  name: ForAllProperties<T>(object)
+  nameWithType: Extension.ForAllProperties<T>(object)
+  fullName: AngeliA.Extension.ForAllProperties<T>(object)
+  nameWithType.vb: Extension.ForAllProperties(Of T)(Object)
+  fullName.vb: AngeliA.Extension.ForAllProperties(Of T)(Object)
+  name.vb: ForAllProperties(Of T)(Object)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AngeliA.RigCallingMessage
+  commentId: T:AngeliA.RigCallingMessage
+  parent: AngeliA
+  href: AngeliA.RigCallingMessage.html
+  name: RigCallingMessage
+  nameWithType: RigCallingMessage
+  fullName: AngeliA.RigCallingMessage
+- uid: AngeliA.RigRespondMessage
+  commentId: T:AngeliA.RigRespondMessage
+  parent: AngeliA
+  href: AngeliA.RigRespondMessage.html
+  name: RigRespondMessage
+  nameWithType: RigRespondMessage
+  fullName: AngeliA.RigRespondMessage
+- uid: AngeliA.RigTransceiver.RigProcessRunning*
+  commentId: Overload:AngeliA.RigTransceiver.RigProcessRunning
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_RigProcessRunning
+  name: RigProcessRunning
+  nameWithType: RigTransceiver.RigProcessRunning
+  fullName: AngeliA.RigTransceiver.RigProcessRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AngeliA.RigTransceiver.LastRigViewPos*
+  commentId: Overload:AngeliA.RigTransceiver.LastRigViewPos
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_LastRigViewPos
+  name: LastRigViewPos
+  nameWithType: RigTransceiver.LastRigViewPos
+  fullName: AngeliA.RigTransceiver.LastRigViewPos
+- uid: System.Nullable{AngeliA.Int3}
+  commentId: T:System.Nullable{AngeliA.Int3}
+  parent: System
+  definition: System.Nullable`1
+  href: AngeliA.Int3.html
+  name: Int3?
+  nameWithType: Int3?
+  fullName: AngeliA.Int3?
+  spec.csharp:
+  - uid: AngeliA.Int3
+    name: Int3
+    href: AngeliA.Int3.html
+  - name: '?'
+  spec.vb:
+  - uid: AngeliA.Int3
+    name: Int3
+    href: AngeliA.Int3.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AngeliA.RigTransceiver.LastRigViewHeight*
+  commentId: Overload:AngeliA.RigTransceiver.LastRigViewHeight
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_LastRigViewHeight
+  name: LastRigViewHeight
+  nameWithType: RigTransceiver.LastRigViewHeight
+  fullName: AngeliA.RigTransceiver.LastRigViewHeight
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: AngeliA.RigTransceiver.LogWithPrefix*
+  commentId: Overload:AngeliA.RigTransceiver.LogWithPrefix
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_LogWithPrefix
+  name: LogWithPrefix
+  nameWithType: RigTransceiver.LogWithPrefix
+  fullName: AngeliA.RigTransceiver.LogWithPrefix
+- uid: AngeliA.RigTransceiver.#ctor*
+  commentId: Overload:AngeliA.RigTransceiver.#ctor
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver__ctor_System_String_
+  name: RigTransceiver
+  nameWithType: RigTransceiver.RigTransceiver
+  fullName: AngeliA.RigTransceiver.RigTransceiver
+  nameWithType.vb: RigTransceiver.New
+  fullName.vb: AngeliA.RigTransceiver.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AngeliA.RigTransceiver.Start*
+  commentId: Overload:AngeliA.RigTransceiver.Start
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_Start_System_String_System_String_
+  name: Start
+  nameWithType: RigTransceiver.Start
+  fullName: AngeliA.RigTransceiver.Start
+- uid: AngeliA.RigTransceiver.Abort*
+  commentId: Overload:AngeliA.RigTransceiver.Abort
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_Abort
+  name: Abort
+  nameWithType: RigTransceiver.Abort
+  fullName: AngeliA.RigTransceiver.Abort
+- uid: AngeliA.RigTransceiver.Quit*
+  commentId: Overload:AngeliA.RigTransceiver.Quit
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_Quit
+  name: Quit
+  nameWithType: RigTransceiver.Quit
+  fullName: AngeliA.RigTransceiver.Quit
+- uid: AngeliA.RigTransceiver.Call*
+  commentId: Overload:AngeliA.RigTransceiver.Call
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_Call_System_Boolean_System_Boolean_System_Int32_System_Int32_System_Byte_
+  name: Call
+  nameWithType: RigTransceiver.Call
+  fullName: AngeliA.RigTransceiver.Call
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: AngeliA.RigTransceiver.Respond*
+  commentId: Overload:AngeliA.RigTransceiver.Respond
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_Respond_AngeliA_Universe_System_Int32_System_Boolean_System_Boolean_System_Boolean_
+  name: Respond
+  nameWithType: RigTransceiver.Respond
+  fullName: AngeliA.RigTransceiver.Respond
+- uid: AngeliA.Universe
+  commentId: T:AngeliA.Universe
+  parent: AngeliA
+  href: AngeliA.Universe.html
+  name: Universe
+  nameWithType: Universe
+  fullName: AngeliA.Universe
+- uid: AngeliA.RigTransceiver.UpdateLastRespondedRender*
+  commentId: Overload:AngeliA.RigTransceiver.UpdateLastRespondedRender
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_UpdateLastRespondedRender_AngeliA_Universe_System_Int32_System_Boolean_System_Boolean_System_Boolean_
+  name: UpdateLastRespondedRender
+  nameWithType: RigTransceiver.UpdateLastRespondedRender
+  fullName: AngeliA.RigTransceiver.UpdateLastRespondedRender
+- uid: AngeliA.RigTransceiver.SetStartViewPos*
+  commentId: Overload:AngeliA.RigTransceiver.SetStartViewPos
+  href: AngeliA.RigTransceiver.html#AngeliA_RigTransceiver_SetStartViewPos_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: SetStartViewPos
+  nameWithType: RigTransceiver.SetStartViewPos
+  fullName: AngeliA.RigTransceiver.SetStartViewPos

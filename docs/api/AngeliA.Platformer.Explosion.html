@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Explosion | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Explosion | AngeliA ">
+    
+    <meta name="description" content="General representation of an explosion">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.Explosion">
+
+
+
+  <h1 id="AngeliA_Platformer_Explosion" data-uid="AngeliA.Platformer.Explosion" class="text-break">Class Explosion</h1>
+  <div class="markdown level0 summary"><p>General representation of an explosion</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_Explosion_BreakObjectArtwork_" data-uid="AngeliA.Platformer.Explosion.BreakObjectArtwork*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_BreakObjectArtwork" data-uid="AngeliA.Platformer.Explosion.BreakObjectArtwork">BreakObjectArtwork</h4>
+  <div class="markdown level1 summary"><p>Artwork sprite ID for object break callback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BreakObjectArtwork { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_CollisionMask_" data-uid="AngeliA.Platformer.Explosion.CollisionMask*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_CollisionMask" data-uid="AngeliA.Platformer.Explosion.CollisionMask">CollisionMask</h4>
+  <div class="markdown level1 summary"><p>Cells in which physics layers will be effect by the explosion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CollisionMask { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_Damage_" data-uid="AngeliA.Platformer.Explosion.Damage*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_Damage" data-uid="AngeliA.Platformer.Explosion.Damage">Damage</h4>
+  <div class="markdown level1 summary"><p>How many damage does this explosion deal to the targets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int Damage { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_DestroyBlocks_" data-uid="AngeliA.Platformer.Explosion.DestroyBlocks*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_DestroyBlocks" data-uid="AngeliA.Platformer.Explosion.DestroyBlocks">DestroyBlocks</h4>
+  <div class="markdown level1 summary"><p>True if this explosion break map blocks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool DestroyBlocks { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_Duration_" data-uid="AngeliA.Platformer.Explosion.Duration*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_Duration" data-uid="AngeliA.Platformer.Explosion.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>How many frames does this explosion exists in stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int Duration { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_ExplodedFrame_" data-uid="AngeliA.Platformer.Explosion.ExplodedFrame*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_ExplodedFrame" data-uid="AngeliA.Platformer.Explosion.ExplodedFrame">ExplodedFrame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ExplodedFrame { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_FireColor_" data-uid="AngeliA.Platformer.Explosion.FireColor*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_FireColor" data-uid="AngeliA.Platformer.Explosion.FireColor">FireColor</h4>
+  <div class="markdown level1 summary"><p>Color tint of the fire sprite</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color32 FireColor { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_Radius_" data-uid="AngeliA.Platformer.Explosion.Radius*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_Radius" data-uid="AngeliA.Platformer.Explosion.Radius">Radius</h4>
+  <div class="markdown level1 summary"><p>Size of the explosion in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Radius { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_RingColor_" data-uid="AngeliA.Platformer.Explosion.RingColor*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_RingColor" data-uid="AngeliA.Platformer.Explosion.RingColor">RingColor</h4>
+  <div class="markdown level1 summary"><p>Color tint of the ring sprite</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color32 RingColor { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_Sender_" data-uid="AngeliA.Platformer.Explosion.Sender*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_Sender" data-uid="AngeliA.Platformer.Explosion.Sender">Sender</h4>
+  <div class="markdown level1 summary"><p>Which entity create this explosion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity Sender { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Explosion_WaveColor_" data-uid="AngeliA.Platformer.Explosion.WaveColor*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_WaveColor" data-uid="AngeliA.Platformer.Explosion.WaveColor">WaveColor</h4>
+  <div class="markdown level1 summary"><p>Color tint of the wave sprite</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color32 WaveColor { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_Explosion_BeforeUpdate_" data-uid="AngeliA.Platformer.Explosion.BeforeUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_BeforeUpdate" data-uid="AngeliA.Platformer.Explosion.BeforeUpdate">BeforeUpdate()</h4>
+  <div class="markdown level1 summary"><p>[2/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_BeforeUpdate">Entity.BeforeUpdate()</a></div>
+  <a id="AngeliA_Platformer_Explosion_OnActivated_" data-uid="AngeliA.Platformer.Explosion.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_OnActivated" data-uid="AngeliA.Platformer.Explosion.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_OnActivated">Entity.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_Explosion_OnExplode_" data-uid="AngeliA.Platformer.Explosion.OnExplode*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_OnExplode_AngeliA_IRect_" data-uid="AngeliA.Platformer.Explosion.OnExplode(AngeliA.IRect)">OnExplode(IRect)</h4>
+  <div class="markdown level1 summary"><p>This function is called the this explosion explode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnExplode(IRect range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_Explosion_Update_" data-uid="AngeliA.Platformer.Explosion.Update*"></a>
+  <h4 id="AngeliA_Platformer_Explosion_Update" data-uid="AngeliA.Platformer.Explosion.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>[3/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_Update">Entity.Update()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

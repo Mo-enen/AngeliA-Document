@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class HipCloth | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class HipCloth | AngeliA ">
+    
+    <meta name="description" content="Pants or skirt for a pose-style character. Include hip and legs (no foot)">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.HipCloth">
+
+
+
+  <h1 id="AngeliA_HipCloth" data-uid="AngeliA.HipCloth" class="text-break">Class HipCloth</h1>
+  <div class="markdown level0 summary"><p>Pants or skirt for a pose-style character. Include hip and legs (no foot)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_HipCloth_ClothType_" data-uid="AngeliA.HipCloth.ClothType*"></a>
+  <h4 id="AngeliA_HipCloth_ClothType" data-uid="AngeliA.HipCloth.ClothType">ClothType</h4>
+  <div class="markdown level1 summary"><p>Where should characters wear this cloth</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed ClothType ClothType { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Cloth.html#AngeliA_Cloth_ClothType">Cloth.ClothType</a></div>
+  <a id="AngeliA_HipCloth_CoverLegs_" data-uid="AngeliA.HipCloth.CoverLegs*"></a>
+  <h4 id="AngeliA_HipCloth_CoverLegs" data-uid="AngeliA.HipCloth.CoverLegs">CoverLegs</h4>
+  <div class="markdown level1 summary"><p>True if the pants renders on front of lengs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CoverLegs { get; }</code></pre>
+  </div>
+  <a id="AngeliA_HipCloth_SpriteLoaded_" data-uid="AngeliA.HipCloth.SpriteLoaded*"></a>
+  <h4 id="AngeliA_HipCloth_SpriteLoaded" data-uid="AngeliA.HipCloth.SpriteLoaded">SpriteLoaded</h4>
+  <div class="markdown level1 summary"><p>True if the artwork sprites are loaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SpriteLoaded { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Cloth.html#AngeliA_Cloth_SpriteLoaded">Cloth.SpriteLoaded</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_HipCloth_DrawCloth_" data-uid="AngeliA.HipCloth.DrawCloth*"></a>
+  <h4 id="AngeliA_HipCloth_DrawCloth_AngeliA_PoseCharacterRenderer_" data-uid="AngeliA.HipCloth.DrawCloth(AngeliA.PoseCharacterRenderer)">DrawCloth(PoseCharacterRenderer)</h4>
+  <div class="markdown level1 summary"><p>Draw cloth for the given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawCloth(PoseCharacterRenderer rendering)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Cloth.html#AngeliA_Cloth_DrawCloth_AngeliA_PoseCharacterRenderer_">Cloth.DrawCloth(PoseCharacterRenderer)</a></div>
+  <a id="AngeliA_HipCloth_DrawClothAsPants_" data-uid="AngeliA.HipCloth.DrawClothAsPants*"></a>
+  <h4 id="AngeliA_HipCloth_DrawClothAsPants_AngeliA_PoseCharacterRenderer_AngeliA_OrientedSprite_System_Int32_" data-uid="AngeliA.HipCloth.DrawClothAsPants(AngeliA.PoseCharacterRenderer,AngeliA.OrientedSprite,System.Int32)">DrawClothAsPants(PoseCharacterRenderer, OrientedSprite, int)</h4>
+  <div class="markdown level1 summary"><p>Draw artwork sprite as pants for given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClothAsPants(PoseCharacterRenderer rendering, OrientedSprite clothSprite, int localZ = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">rendering</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.OrientedSprite.html">OrientedSprite</a></td>
+        <td><span class="parametername">clothSprite</span></td>
+        <td><p>Artwork sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localZ</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_HipCloth_DrawClothAsSkirt_" data-uid="AngeliA.HipCloth.DrawClothAsSkirt*"></a>
+  <h4 id="AngeliA_HipCloth_DrawClothAsSkirt_AngeliA_PoseCharacterRenderer_AngeliA_OrientedSprite_System_Int32_System_Int32_" data-uid="AngeliA.HipCloth.DrawClothAsSkirt(AngeliA.PoseCharacterRenderer,AngeliA.OrientedSprite,System.Int32,System.Int32)">DrawClothAsSkirt(PoseCharacterRenderer, OrientedSprite, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw artwork sprite as skirt for given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClothAsSkirt(PoseCharacterRenderer rendering, OrientedSprite clothSprite, int localZ = 6, int motionAmount = 1000)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">rendering</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.OrientedSprite.html">OrientedSprite</a></td>
+        <td><span class="parametername">clothSprite</span></td>
+        <td><p>Artwork sprite (should be a sprite group)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localZ</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">motionAmount</span></td>
+        <td><p>How much does the skirt flow with character movement (0 means 0%, 1000 means 100%)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_HipCloth_DrawClothForLowerLeg_" data-uid="AngeliA.HipCloth.DrawClothForLowerLeg*"></a>
+  <h4 id="AngeliA_HipCloth_DrawClothForLowerLeg_AngeliA_PoseCharacterRenderer_AngeliA_OrientedSprite_AngeliA_OrientedSprite_System_Int32_" data-uid="AngeliA.HipCloth.DrawClothForLowerLeg(AngeliA.PoseCharacterRenderer,AngeliA.OrientedSprite,AngeliA.OrientedSprite,System.Int32)">DrawClothForLowerLeg(PoseCharacterRenderer, OrientedSprite, OrientedSprite, int)</h4>
+  <div class="markdown level1 summary"><p>Draw artwork sprite as cloth only for lower-leg</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClothForLowerLeg(PoseCharacterRenderer rendering, OrientedSprite spriteLeft, OrientedSprite spriteRight, int localZ = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">rendering</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.OrientedSprite.html">OrientedSprite</a></td>
+        <td><span class="parametername">spriteLeft</span></td>
+        <td><p>Artwork sprite for left leg</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.OrientedSprite.html">OrientedSprite</a></td>
+        <td><span class="parametername">spriteRight</span></td>
+        <td><p>Artwork sprite for right leg</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localZ</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_HipCloth_DrawClothForUpperLeg_" data-uid="AngeliA.HipCloth.DrawClothForUpperLeg*"></a>
+  <h4 id="AngeliA_HipCloth_DrawClothForUpperLeg_AngeliA_PoseCharacterRenderer_AngeliA_OrientedSprite_AngeliA_OrientedSprite_System_Int32_" data-uid="AngeliA.HipCloth.DrawClothForUpperLeg(AngeliA.PoseCharacterRenderer,AngeliA.OrientedSprite,AngeliA.OrientedSprite,System.Int32)">DrawClothForUpperLeg(PoseCharacterRenderer, OrientedSprite, OrientedSprite, int)</h4>
+  <div class="markdown level1 summary"><p>Draw artwork sprite as cloth only for upper-leg</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClothForUpperLeg(PoseCharacterRenderer rendering, OrientedSprite spriteLeft, OrientedSprite spriteRight, int localZ = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">rendering</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.OrientedSprite.html">OrientedSprite</a></td>
+        <td><span class="parametername">spriteLeft</span></td>
+        <td><p>Artwork sprite for left leg</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.OrientedSprite.html">OrientedSprite</a></td>
+        <td><span class="parametername">spriteRight</span></td>
+        <td><p>Artwork sprite for right leg</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">localZ</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_HipCloth_DrawClothFromPool_" data-uid="AngeliA.HipCloth.DrawClothFromPool*"></a>
+  <h4 id="AngeliA_HipCloth_DrawClothFromPool_AngeliA_PoseCharacterRenderer_" data-uid="AngeliA.HipCloth.DrawClothFromPool(AngeliA.PoseCharacterRenderer)">DrawClothFromPool(PoseCharacterRenderer)</h4>
+  <div class="markdown level1 summary"><p>Draw pants/skirt for given character from system pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClothFromPool(PoseCharacterRenderer rendering)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_HipCloth_DrawClothGizmos_" data-uid="AngeliA.HipCloth.DrawClothGizmos*"></a>
+  <h4 id="AngeliA_HipCloth_DrawClothGizmos_AngeliA_IRect_AngeliA_Color32_System_Int32_" data-uid="AngeliA.HipCloth.DrawClothGizmos(AngeliA.IRect,AngeliA.Color32,System.Int32)">DrawClothGizmos(IRect, Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Draw cloth as gizmos</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawClothGizmos(IRect rect, Color32 tint, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cell</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Cloth.html#AngeliA_Cloth_DrawClothGizmos_AngeliA_IRect_AngeliA_Color32_System_Int32_">Cloth.DrawClothGizmos(IRect, Color32, int)</a></div>
+  <a id="AngeliA_HipCloth_DrawDoubleClothTailsOnHip_" data-uid="AngeliA.HipCloth.DrawDoubleClothTailsOnHip*"></a>
+  <h4 id="AngeliA_HipCloth_DrawDoubleClothTailsOnHip_AngeliA_PoseCharacterRenderer_AngeliA_OrientedSprite_System_Boolean_" data-uid="AngeliA.HipCloth.DrawDoubleClothTailsOnHip(AngeliA.PoseCharacterRenderer,AngeliA.OrientedSprite,System.Boolean)">DrawDoubleClothTailsOnHip(PoseCharacterRenderer, OrientedSprite, bool)</h4>
+  <div class="markdown level1 summary"><p>Draw two tails as cloth decoration (like Suisei's standard suit from Hololive)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawDoubleClothTailsOnHip(PoseCharacterRenderer rendering, OrientedSprite clothSprite, bool drawOnAllPose = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">rendering</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.OrientedSprite.html">OrientedSprite</a></td>
+        <td><span class="parametername">clothSprite</span></td>
+        <td><p>Artwork sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">drawOnAllPose</span></td>
+        <td><p>Draw this tail even when character is Rolling, Sleeping, Passout and Flying</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_HipCloth_DrawSingleClothTail_" data-uid="AngeliA.HipCloth.DrawSingleClothTail*"></a>
+  <h4 id="AngeliA_HipCloth_DrawSingleClothTail_AngeliA_AngeSprite_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.HipCloth.DrawSingleClothTail(AngeliA.AngeSprite,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">DrawSingleClothTail(AngeSprite, int, int, int, int, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw a single tail as cloth decoration (like Suisei's standard suit from Hololive)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawSingleClothTail(AngeSprite sprite, int globalX, int globalY, int z, int rotation, int deltaY, int scaleX = 1000, int scaleY = 1000, int motionAmount = 1000)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.AngeSprite.html">AngeSprite</a></td>
+        <td><span class="parametername">sprite</span></td>
+        <td><p>Artwork sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">globalX</span></td>
+        <td><p>Pivot position X of the tail in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">globalY</span></td>
+        <td><p>Pivot position Y of the tail in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sorting rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Rotation of this tail</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">deltaY</span></td>
+        <td><p>Character's current movement speed Y</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">scaleX</span></td>
+        <td><p>Horizontal size scale (0 means 0%, 1000 means 100%)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">scaleY</span></td>
+        <td><p>Vertical size scale (0 means 0%, 1000 means 100%)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">motionAmount</span></td>
+        <td><p>How much flow motion should apply from characters movement (0 means 0%, 1000 means 100%)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_HipCloth_FillFromSheet_" data-uid="AngeliA.HipCloth.FillFromSheet*"></a>
+  <h4 id="AngeliA_HipCloth_FillFromSheet_System_String_" data-uid="AngeliA.HipCloth.FillFromSheet(System.String)">FillFromSheet(string)</h4>
+  <div class="markdown level1 summary"><p>Load sprite data from Renderer.CurrentSheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool FillFromSheet(string name)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Cloth.html#AngeliA_Cloth_FillFromSheet_System_String_">Cloth.FillFromSheet(string)</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

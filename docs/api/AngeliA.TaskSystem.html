@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TaskSystem | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TaskSystem | AngeliA ">
+    
+    <meta name="description" content="Core system to handle in-game task that interrupt the gameplay">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.TaskSystem">
+
+
+
+  <h1 id="AngeliA_TaskSystem" data-uid="AngeliA.TaskSystem" class="text-break">Class TaskSystem</h1>
+  <div class="markdown level0 summary"><p>Core system to handle in-game task that interrupt the gameplay</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_TaskSystem_AddToFirst_" data-uid="AngeliA.TaskSystem.AddToFirst*"></a>
+  <h4 id="AngeliA_TaskSystem_AddToFirst_System_Int32_System_Object_" data-uid="AngeliA.TaskSystem.AddToFirst(System.Int32,System.Object)">AddToFirst(int, object)</h4>
+  <div class="markdown level1 summary"><p>Add a new task to first in current queue with custom data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task AddToFirst(int id, object userData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Type ID of the task. Use typeof(YourTask).AngeHash() to cache this ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Custom data of this operation. Use Task.UserData to get this data in the task's internal logic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Task.html">Task</a></td>
+        <td><p>True if successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_TaskSystem_AddToLast_" data-uid="AngeliA.TaskSystem.AddToLast*"></a>
+  <h4 id="AngeliA_TaskSystem_AddToLast_System_Int32_System_Object_" data-uid="AngeliA.TaskSystem.AddToLast(System.Int32,System.Object)">AddToLast(int, object)</h4>
+  <div class="markdown level1 summary"><p>Add a new task to last in current queue with custom data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task AddToLast(int id, object userData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Type ID of the task. Use typeof(YourTask).AngeHash() to cache this ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Custom data of this operation. Use Task.UserData to get this data in the task's internal logic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Task.html">Task</a></td>
+        <td><p>True if successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_TaskSystem_ClearAllTask_" data-uid="AngeliA.TaskSystem.ClearAllTask*"></a>
+  <h4 id="AngeliA_TaskSystem_ClearAllTask" data-uid="AngeliA.TaskSystem.ClearAllTask">ClearAllTask()</h4>
+  <div class="markdown level1 summary"><p>Reset all current performing tasks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearAllTask()</code></pre>
+  </div>
+  <a id="AngeliA_TaskSystem_EndAllTask_" data-uid="AngeliA.TaskSystem.EndAllTask*"></a>
+  <h4 id="AngeliA_TaskSystem_EndAllTask" data-uid="AngeliA.TaskSystem.EndAllTask">EndAllTask()</h4>
+  <div class="markdown level1 summary"><p>Make all current performing task ends</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EndAllTask()</code></pre>
+  </div>
+  <a id="AngeliA_TaskSystem_GetCurrentTask_" data-uid="AngeliA.TaskSystem.GetCurrentTask*"></a>
+  <h4 id="AngeliA_TaskSystem_GetCurrentTask" data-uid="AngeliA.TaskSystem.GetCurrentTask">GetCurrentTask()</h4>
+  <div class="markdown level1 summary"><p>Get instance of current performing task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task GetCurrentTask()</code></pre>
+  </div>
+  <a id="AngeliA_TaskSystem_GetTaskAt_" data-uid="AngeliA.TaskSystem.GetTaskAt*"></a>
+  <h4 id="AngeliA_TaskSystem_GetTaskAt_System_Int32_" data-uid="AngeliA.TaskSystem.GetTaskAt(System.Int32)">GetTaskAt(int)</h4>
+  <div class="markdown level1 summary"><p>Get instance of task inside current performing queue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task GetTaskAt(int index)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_TaskSystem_GetWaitingTaskCount_" data-uid="AngeliA.TaskSystem.GetWaitingTaskCount*"></a>
+  <h4 id="AngeliA_TaskSystem_GetWaitingTaskCount" data-uid="AngeliA.TaskSystem.GetWaitingTaskCount">GetWaitingTaskCount()</h4>
+  <div class="markdown level1 summary"><p>Get how many tasks are currently waiting for the current task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetWaitingTaskCount()</code></pre>
+  </div>
+  <a id="AngeliA_TaskSystem_HasTask_" data-uid="AngeliA.TaskSystem.HasTask*"></a>
+  <h4 id="AngeliA_TaskSystem_HasTask" data-uid="AngeliA.TaskSystem.HasTask">HasTask()</h4>
+  <div class="markdown level1 summary"><p>True if there are any task performing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasTask()</code></pre>
+  </div>
+  <a id="AngeliA_TaskSystem_HasTask_" data-uid="AngeliA.TaskSystem.HasTask*"></a>
+  <h4 id="AngeliA_TaskSystem_HasTask__1" data-uid="AngeliA.TaskSystem.HasTask``1">HasTask&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>True if there are any task in given type performing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasTask&lt;T&gt;() where T : Task</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_TaskSystem_PeekFromPool_" data-uid="AngeliA.TaskSystem.PeekFromPool*"></a>
+  <h4 id="AngeliA_TaskSystem_PeekFromPool_System_Int32_" data-uid="AngeliA.TaskSystem.PeekFromPool(System.Int32)">PeekFromPool(int)</h4>
+  <div class="markdown level1 summary"><p>Get global single instance of the task for given type ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task PeekFromPool(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_TaskSystem_TryAddToFirst_" data-uid="AngeliA.TaskSystem.TryAddToFirst*"></a>
+  <h4 id="AngeliA_TaskSystem_TryAddToFirst_System_Int32_AngeliA_Task__" data-uid="AngeliA.TaskSystem.TryAddToFirst(System.Int32,AngeliA.Task@)">TryAddToFirst(int, out Task)</h4>
+  <div class="markdown level1 summary"><p>Add a new task to first in current queue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddToFirst(int id, out Task task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Type ID of the task. Use typeof(YourTask).AngeHash() to cache this ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Task.html">Task</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>Instance of the task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_TaskSystem_TryAddToFirst_" data-uid="AngeliA.TaskSystem.TryAddToFirst*"></a>
+  <h4 id="AngeliA_TaskSystem_TryAddToFirst_System_Int32_System_Object_AngeliA_Task__" data-uid="AngeliA.TaskSystem.TryAddToFirst(System.Int32,System.Object,AngeliA.Task@)">TryAddToFirst(int, object, out Task)</h4>
+  <div class="markdown level1 summary"><p>Add a new task to first in current queue with custom data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddToFirst(int id, object userData, out Task task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Type ID of the task. Use typeof(YourTask).AngeHash() to cache this ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Custom data of this operation. Use Task.UserData to get this data in the task's internal logic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Task.html">Task</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>Instance of the task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_TaskSystem_TryAddToLast_" data-uid="AngeliA.TaskSystem.TryAddToLast*"></a>
+  <h4 id="AngeliA_TaskSystem_TryAddToLast_System_Int32_AngeliA_Task__" data-uid="AngeliA.TaskSystem.TryAddToLast(System.Int32,AngeliA.Task@)">TryAddToLast(int, out Task)</h4>
+  <div class="markdown level1 summary"><p>Add a new task to last in current queue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddToLast(int id, out Task task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Type ID of the task. Use typeof(YourTask).AngeHash() to cache this ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Task.html">Task</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>Instance of the task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_TaskSystem_TryAddToLast_" data-uid="AngeliA.TaskSystem.TryAddToLast*"></a>
+  <h4 id="AngeliA_TaskSystem_TryAddToLast_System_Int32_System_Object_AngeliA_Task__" data-uid="AngeliA.TaskSystem.TryAddToLast(System.Int32,System.Object,AngeliA.Task@)">TryAddToLast(int, object, out Task)</h4>
+  <div class="markdown level1 summary"><p>Add a new task to last in current queue with custom data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddToLast(int id, object userData, out Task task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Type ID of the task. Use typeof(YourTask).AngeHash() to cache this ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Custom data of this operation. Use Task.UserData to get this data in the task's internal logic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Task.html">Task</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>Instance of the task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

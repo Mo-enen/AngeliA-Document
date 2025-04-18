@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PlayerSystem | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PlayerSystem | AngeliA ">
+    
+    <meta name="description" content="Core system for user character control logic">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.PlayerSystem">
+
+
+
+  <h1 id="AngeliA_PlayerSystem" data-uid="AngeliA.PlayerSystem" class="text-break">Class PlayerSystem</h1>
+  <div class="markdown level0 summary"><p>Core system for user character control logic</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_PlayerSystem_DragPlayerInMiddleButtonToMove_DebugOnly" data-uid="AngeliA.PlayerSystem.DragPlayerInMiddleButtonToMove_DebugOnly">DragPlayerInMiddleButtonToMove_DebugOnly</h4>
+  <div class="markdown level1 summary"><p>True if allow user use middle mouse button to move player for debug. This feature is not include after the game publish.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly FrameBasedBool DragPlayerInMiddleButtonToMove_DebugOnly</code></pre>
+  </div>
+  <h4 id="AngeliA_PlayerSystem_IgnorePlayerView" data-uid="AngeliA.PlayerSystem.IgnorePlayerView">IgnorePlayerView</h4>
+  <div class="markdown level1 summary"><p>True if player system should not change the stage view rect</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly FrameBasedBool IgnorePlayerView</code></pre>
+  </div>
+  <h4 id="AngeliA_PlayerSystem_TargetViewHeight" data-uid="AngeliA.PlayerSystem.TargetViewHeight">TargetViewHeight</h4>
+  <div class="markdown level1 summary"><p>View height in global space the player requiring to have</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly FrameBasedInt TargetViewHeight</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_PlayerSystem_AimViewX_" data-uid="AngeliA.PlayerSystem.AimViewX*"></a>
+  <h4 id="AngeliA_PlayerSystem_AimViewX" data-uid="AngeliA.PlayerSystem.AimViewX">AimViewX</h4>
+  <div class="markdown level1 summary"><p>Target view position in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AimViewX { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_AimViewY_" data-uid="AngeliA.PlayerSystem.AimViewY*"></a>
+  <h4 id="AngeliA_PlayerSystem_AimViewY" data-uid="AngeliA.PlayerSystem.AimViewY">AimViewY</h4>
+  <div class="markdown level1 summary"><p>Target view position in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AimViewY { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_AllowPlayerMenuUI_" data-uid="AngeliA.PlayerSystem.AllowPlayerMenuUI*"></a>
+  <h4 id="AngeliA_PlayerSystem_AllowPlayerMenuUI" data-uid="AngeliA.PlayerSystem.AllowPlayerMenuUI">AllowPlayerMenuUI</h4>
+  <div class="markdown level1 summary"><p>True if user have access to the player menu UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AllowPlayerMenuUI { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_AllowQuickPlayerMenuUI_" data-uid="AngeliA.PlayerSystem.AllowQuickPlayerMenuUI*"></a>
+  <h4 id="AngeliA_PlayerSystem_AllowQuickPlayerMenuUI" data-uid="AngeliA.PlayerSystem.AllowQuickPlayerMenuUI">AllowQuickPlayerMenuUI</h4>
+  <div class="markdown level1 summary"><p>True if user have access to the quick player UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AllowQuickPlayerMenuUI { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_Enable_" data-uid="AngeliA.PlayerSystem.Enable*"></a>
+  <h4 id="AngeliA_PlayerSystem_Enable" data-uid="AngeliA.PlayerSystem.Enable">Enable</h4>
+  <div class="markdown level1 summary"><p>True if the system is online</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Enable { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_HomeUnitPosition_" data-uid="AngeliA.PlayerSystem.HomeUnitPosition*"></a>
+  <h4 id="AngeliA_PlayerSystem_HomeUnitPosition" data-uid="AngeliA.PlayerSystem.HomeUnitPosition">HomeUnitPosition</h4>
+  <div class="markdown level1 summary"><p>Respawn position in unit space when player have no check point activated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Int3 HomeUnitPosition { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_IgnoringAction_" data-uid="AngeliA.PlayerSystem.IgnoringAction*"></a>
+  <h4 id="AngeliA_PlayerSystem_IgnoringAction" data-uid="AngeliA.PlayerSystem.IgnoringAction">IgnoringAction</h4>
+  <div class="markdown level1 summary"><p>True if the system is currently not react to IActionTarget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IgnoringAction { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_IgnoringInput_" data-uid="AngeliA.PlayerSystem.IgnoringInput*"></a>
+  <h4 id="AngeliA_PlayerSystem_IgnoringInput" data-uid="AngeliA.PlayerSystem.IgnoringInput">IgnoringInput</h4>
+  <div class="markdown level1 summary"><p>True if the system is currently not react to user input</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IgnoringInput { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_PlayableCharactersCount_" data-uid="AngeliA.PlayerSystem.PlayableCharactersCount*"></a>
+  <h4 id="AngeliA_PlayerSystem_PlayableCharactersCount" data-uid="AngeliA.PlayerSystem.PlayableCharactersCount">PlayableCharactersCount</h4>
+  <div class="markdown level1 summary"><p>Total count of playable characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PlayableCharactersCount { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_RespawnCpUnitPosition_" data-uid="AngeliA.PlayerSystem.RespawnCpUnitPosition*"></a>
+  <h4 id="AngeliA_PlayerSystem_RespawnCpUnitPosition" data-uid="AngeliA.PlayerSystem.RespawnCpUnitPosition">RespawnCpUnitPosition</h4>
+  <div class="markdown level1 summary"><p>Position in unit space for player respawn when game restart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Int3? RespawnCpUnitPosition { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_Selecting_" data-uid="AngeliA.PlayerSystem.Selecting*"></a>
+  <h4 id="AngeliA_PlayerSystem_Selecting" data-uid="AngeliA.PlayerSystem.Selecting">Selecting</h4>
+  <div class="markdown level1 summary"><p>Instance of the selecting character as player (can be changed or set to null at any moment)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Character Selecting { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_TargetActionEntity_" data-uid="AngeliA.PlayerSystem.TargetActionEntity*"></a>
+  <h4 id="AngeliA_PlayerSystem_TargetActionEntity" data-uid="AngeliA.PlayerSystem.TargetActionEntity">TargetActionEntity</h4>
+  <div class="markdown level1 summary"><p>Current highlighting IActionTarget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IActionTarget TargetActionEntity { get; }</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_UnlockedPlayerCount_" data-uid="AngeliA.PlayerSystem.UnlockedPlayerCount*"></a>
+  <h4 id="AngeliA_PlayerSystem_UnlockedPlayerCount" data-uid="AngeliA.PlayerSystem.UnlockedPlayerCount">UnlockedPlayerCount</h4>
+  <div class="markdown level1 summary"><p>Total count of unlocked player characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UnlockedPlayerCount { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_PlayerSystem_ForAllPlayables_" data-uid="AngeliA.PlayerSystem.ForAllPlayables*"></a>
+  <h4 id="AngeliA_PlayerSystem_ForAllPlayables" data-uid="AngeliA.PlayerSystem.ForAllPlayables">ForAllPlayables()</h4>
+  <div class="markdown level1 summary"><p>Iterate through all playable characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; ForAllPlayables()</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_ForAllUnlockedPlayers_" data-uid="AngeliA.PlayerSystem.ForAllUnlockedPlayers*"></a>
+  <h4 id="AngeliA_PlayerSystem_ForAllUnlockedPlayers" data-uid="AngeliA.PlayerSystem.ForAllUnlockedPlayers">ForAllUnlockedPlayers()</h4>
+  <div class="markdown level1 summary"><p>Iterate through all unlocked playable characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; ForAllUnlockedPlayers()</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_ForceUpdateGroundedForView_" data-uid="AngeliA.PlayerSystem.ForceUpdateGroundedForView*"></a>
+  <h4 id="AngeliA_PlayerSystem_ForceUpdateGroundedForView_System_Int32_" data-uid="AngeliA.PlayerSystem.ForceUpdateGroundedForView(System.Int32)">ForceUpdateGroundedForView(int)</h4>
+  <div class="markdown level1 summary"><p>Make player always mark as grounded for view position for given frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForceUpdateGroundedForView(int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_GetCameraShiftOffset_" data-uid="AngeliA.PlayerSystem.GetCameraShiftOffset*"></a>
+  <h4 id="AngeliA_PlayerSystem_GetCameraShiftOffset_System_Int32_" data-uid="AngeliA.PlayerSystem.GetCameraShiftOffset(System.Int32)">GetCameraShiftOffset(int)</h4>
+  <div class="markdown level1 summary"><p>Get the Y position shift in global space from camera center to player center</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCameraShiftOffset(int cameraHeight)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_GetDefaultPlayerID_" data-uid="AngeliA.PlayerSystem.GetDefaultPlayerID*"></a>
+  <h4 id="AngeliA_PlayerSystem_GetDefaultPlayerID_System_Boolean_" data-uid="AngeliA.PlayerSystem.GetDefaultPlayerID(System.Boolean)">GetDefaultPlayerID(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetDefaultPlayerID(bool forceSelect = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forceSelect</span></td>
+        <td><p>True if return the first founded IPlayable character ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_PlayerSystem_GetPlayerFinalRespawnUnitPosition_" data-uid="AngeliA.PlayerSystem.GetPlayerFinalRespawnUnitPosition*"></a>
+  <h4 id="AngeliA_PlayerSystem_GetPlayerFinalRespawnUnitPosition" data-uid="AngeliA.PlayerSystem.GetPlayerFinalRespawnUnitPosition">GetPlayerFinalRespawnUnitPosition()</h4>
+  <div class="markdown level1 summary"><p>Get the position in unit space for player get respawned when game restart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Int3 GetPlayerFinalRespawnUnitPosition()</code></pre>
+  </div>
+  <a id="AngeliA_PlayerSystem_IgnoreAction_" data-uid="AngeliA.PlayerSystem.IgnoreAction*"></a>
+  <h4 id="AngeliA_PlayerSystem_IgnoreAction_System_Int32_" data-uid="AngeliA.PlayerSystem.IgnoreAction(System.Int32)">IgnoreAction(int)</h4>
+  <div class="markdown level1 summary"><p>Make user not react to IActionTarget for given frames long. Set to -1 to make ignoring stop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnoreAction(int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_IgnoreAttack_" data-uid="AngeliA.PlayerSystem.IgnoreAttack*"></a>
+  <h4 id="AngeliA_PlayerSystem_IgnoreAttack_System_Int32_" data-uid="AngeliA.PlayerSystem.IgnoreAttack(System.Int32)">IgnoreAttack(int)</h4>
+  <div class="markdown level1 summary"><p>Make user can not attack for given frames long. Set to -1 to make ignoring stop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnoreAttack(int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_IgnoreInput_" data-uid="AngeliA.PlayerSystem.IgnoreInput*"></a>
+  <h4 id="AngeliA_PlayerSystem_IgnoreInput_System_Int32_" data-uid="AngeliA.PlayerSystem.IgnoreInput(System.Int32)">IgnoreInput(int)</h4>
+  <div class="markdown level1 summary"><p>Make user input blocked for given frames long. Set to -1 to make ignoring stop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnoreInput(int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_IgnorePlayerMenu_" data-uid="AngeliA.PlayerSystem.IgnorePlayerMenu*"></a>
+  <h4 id="AngeliA_PlayerSystem_IgnorePlayerMenu_System_Int32_" data-uid="AngeliA.PlayerSystem.IgnorePlayerMenu(System.Int32)">IgnorePlayerMenu(int)</h4>
+  <div class="markdown level1 summary"><p>Make user have no access to player menu UI for given frames long. Set to -1 to make ignoring stop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnorePlayerMenu(int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_IgnorePlayerQuickMenu_" data-uid="AngeliA.PlayerSystem.IgnorePlayerQuickMenu*"></a>
+  <h4 id="AngeliA_PlayerSystem_IgnorePlayerQuickMenu_System_Int32_" data-uid="AngeliA.PlayerSystem.IgnorePlayerQuickMenu(System.Int32)">IgnorePlayerQuickMenu(int)</h4>
+  <div class="markdown level1 summary"><p>Make user have no access to quick player menu UI for given frames long. Set to -1 to make ignoring stop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnorePlayerQuickMenu(int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_IsPlayerUnlocked_" data-uid="AngeliA.PlayerSystem.IsPlayerUnlocked*"></a>
+  <h4 id="AngeliA_PlayerSystem_IsPlayerUnlocked_System_Int32_" data-uid="AngeliA.PlayerSystem.IsPlayerUnlocked(System.Int32)">IsPlayerUnlocked(int)</h4>
+  <div class="markdown level1 summary"><p>True if given player character is unlocked</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPlayerUnlocked(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_SelectCharacterAsPlayer_" data-uid="AngeliA.PlayerSystem.SelectCharacterAsPlayer*"></a>
+  <h4 id="AngeliA_PlayerSystem_SelectCharacterAsPlayer_System_Int32_System_Boolean_" data-uid="AngeliA.PlayerSystem.SelectCharacterAsPlayer(System.Int32,System.Boolean)">SelectCharacterAsPlayer(int, bool)</h4>
+  <div class="markdown level1 summary"><p>Set given ID as selecting player character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SelectCharacterAsPlayer(int characterTypeID, bool failbackToDefault = true)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">failbackToDefault</span></td>
+        <td><p>True if use default character as selected when given one not found</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_PlayerSystem_SetCharacterAsPlayer_" data-uid="AngeliA.PlayerSystem.SetCharacterAsPlayer*"></a>
+  <h4 id="AngeliA_PlayerSystem_SetCharacterAsPlayer_AngeliA_Character_" data-uid="AngeliA.PlayerSystem.SetCharacterAsPlayer(AngeliA.Character)">SetCharacterAsPlayer(Character)</h4>
+  <div class="markdown level1 summary"><p>Set given character instance as selected player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCharacterAsPlayer(Character target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_PlayerSystem_UnlockPlayer_" data-uid="AngeliA.PlayerSystem.UnlockPlayer*"></a>
+  <h4 id="AngeliA_PlayerSystem_UnlockPlayer_System_Int32_" data-uid="AngeliA.PlayerSystem.UnlockPlayer(System.Int32)">UnlockPlayer(int)</h4>
+  <div class="markdown level1 summary"><p>Unlock given player character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnlockPlayer(int id)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

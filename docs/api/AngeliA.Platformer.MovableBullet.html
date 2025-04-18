@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MovableBullet | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MovableBullet | AngeliA ">
+    
+    <meta name="description" content="A bullet that moves after being spawned">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.MovableBullet">
+
+
+
+  <h1 id="AngeliA_Platformer_MovableBullet" data-uid="AngeliA.Platformer.MovableBullet" class="text-break">Class MovableBullet</h1>
+  <div class="markdown level0 summary"><p>A bullet that moves after being spawned</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_MovableBullet_AriDrag_" data-uid="AngeliA.Platformer.MovableBullet.AriDrag*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_AriDrag" data-uid="AngeliA.Platformer.MovableBullet.AriDrag">AriDrag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Int2 AriDrag { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_ArtworkID_" data-uid="AngeliA.Platformer.MovableBullet.ArtworkID*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_ArtworkID" data-uid="AngeliA.Platformer.MovableBullet.ArtworkID">ArtworkID</h4>
+  <div class="markdown level1 summary"><p>Artwork sprite ID to render this bullet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ArtworkID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_CurrentRotation_" data-uid="AngeliA.Platformer.MovableBullet.CurrentRotation*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_CurrentRotation" data-uid="AngeliA.Platformer.MovableBullet.CurrentRotation">CurrentRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentRotation { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_Duration_" data-uid="AngeliA.Platformer.MovableBullet.Duration*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_Duration" data-uid="AngeliA.Platformer.MovableBullet.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>How long can this bullet exists on stage in frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Duration { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_Duration">Bullet.Duration</a></div>
+  <a id="AngeliA_Platformer_MovableBullet_EndRotation_" data-uid="AngeliA.Platformer.MovableBullet.EndRotation*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_EndRotation" data-uid="AngeliA.Platformer.MovableBullet.EndRotation">EndRotation</h4>
+  <div class="markdown level1 summary"><p>Bullet will become this rotation after hit target</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int EndRotation { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_EndRotationRandomRange_" data-uid="AngeliA.Platformer.MovableBullet.EndRotationRandomRange*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_EndRotationRandomRange" data-uid="AngeliA.Platformer.MovableBullet.EndRotationRandomRange">EndRotationRandomRange</h4>
+  <div class="markdown level1 summary"><p>Random angle applys to the end rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int EndRotationRandomRange { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_EnvironmentHitCount_" data-uid="AngeliA.Platformer.MovableBullet.EnvironmentHitCount*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_EnvironmentHitCount" data-uid="AngeliA.Platformer.MovableBullet.EnvironmentHitCount">EnvironmentHitCount</h4>
+  <div class="markdown level1 summary"><p>How many environment collider can this bullet hit without getting despawn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int EnvironmentHitCount { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_EnvironmentHitCount">Bullet.EnvironmentHitCount</a></div>
+  <a id="AngeliA_Platformer_MovableBullet_FacingRight_" data-uid="AngeliA.Platformer.MovableBullet.FacingRight*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_FacingRight" data-uid="AngeliA.Platformer.MovableBullet.FacingRight">FacingRight</h4>
+  <div class="markdown level1 summary"><p>True if bullet facing right currently</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FacingRight { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_Gravity_" data-uid="AngeliA.Platformer.MovableBullet.Gravity*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_Gravity" data-uid="AngeliA.Platformer.MovableBullet.Gravity">Gravity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Gravity { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_HitReceiver_" data-uid="AngeliA.Platformer.MovableBullet.HitReceiver*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_HitReceiver" data-uid="AngeliA.Platformer.MovableBullet.HitReceiver">HitReceiver</h4>
+  <div class="markdown level1 summary"><p>True if the bullet already hit a receiver</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HitReceiver { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_InWater_" data-uid="AngeliA.Platformer.MovableBullet.InWater*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_InWater" data-uid="AngeliA.Platformer.MovableBullet.InWater">InWater</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InWater { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_MaxRange_" data-uid="AngeliA.Platformer.MovableBullet.MaxRange*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_MaxRange" data-uid="AngeliA.Platformer.MovableBullet.MaxRange">MaxRange</h4>
+  <div class="markdown level1 summary"><p>Bullet get despawn when fly longer than this range in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MaxRange { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_ReceiverHitCount_" data-uid="AngeliA.Platformer.MovableBullet.ReceiverHitCount*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_ReceiverHitCount" data-uid="AngeliA.Platformer.MovableBullet.ReceiverHitCount">ReceiverHitCount</h4>
+  <div class="markdown level1 summary"><p>How many target collider can this bullet hit without getting despawn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int ReceiverHitCount { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_ReceiverHitCount">Bullet.ReceiverHitCount</a></div>
+  <a id="AngeliA_Platformer_MovableBullet_ResidueID_" data-uid="AngeliA.Platformer.MovableBullet.ResidueID*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_ResidueID" data-uid="AngeliA.Platformer.MovableBullet.ResidueID">ResidueID</h4>
+  <div class="markdown level1 summary"><p>This entity spawns after bullet despawn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ResidueID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_RotateSpeed_" data-uid="AngeliA.Platformer.MovableBullet.RotateSpeed*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_RotateSpeed" data-uid="AngeliA.Platformer.MovableBullet.RotateSpeed">RotateSpeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int RotateSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_Scale_" data-uid="AngeliA.Platformer.MovableBullet.Scale*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_Scale" data-uid="AngeliA.Platformer.MovableBullet.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>Size scale for artwork only. 0 means 0%, 1000 means 100%</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Scale { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_SpeedForward_" data-uid="AngeliA.Platformer.MovableBullet.SpeedForward*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_SpeedForward" data-uid="AngeliA.Platformer.MovableBullet.SpeedForward">SpeedForward</h4>
+  <div class="markdown level1 summary"><p>Movement speed to shooting direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int SpeedForward { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_SpeedSide_" data-uid="AngeliA.Platformer.MovableBullet.SpeedSide*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_SpeedSide" data-uid="AngeliA.Platformer.MovableBullet.SpeedSide">SpeedSide</h4>
+  <div class="markdown level1 summary"><p>Movement speed to 90° of shooting direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int SpeedSide { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_StartRotation_" data-uid="AngeliA.Platformer.MovableBullet.StartRotation*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_StartRotation" data-uid="AngeliA.Platformer.MovableBullet.StartRotation">StartRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int StartRotation { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_Velocity_" data-uid="AngeliA.Platformer.MovableBullet.Velocity*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_Velocity" data-uid="AngeliA.Platformer.MovableBullet.Velocity">Velocity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int2 Velocity { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_WaterSpeedRate_" data-uid="AngeliA.Platformer.MovableBullet.WaterSpeedRate*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_WaterSpeedRate" data-uid="AngeliA.Platformer.MovableBullet.WaterSpeedRate">WaterSpeedRate</h4>
+  <div class="markdown level1 summary"><p>Speed multiply rate when bullet inside water. 0 means 0%, 1000 means 100%</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int WaterSpeedRate { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_MovableBullet_BeforeDespawn_" data-uid="AngeliA.Platformer.MovableBullet.BeforeDespawn*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_BeforeDespawn_AngeliA_IDamageReceiver_" data-uid="AngeliA.Platformer.MovableBullet.BeforeDespawn(AngeliA.IDamageReceiver)">BeforeDespawn(IDamageReceiver)</h4>
+  <div class="markdown level1 summary"><p>This function is called before the bullet get despawn by performing damage logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void BeforeDespawn(IDamageReceiver receiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IDamageReceiver.html">IDamageReceiver</a></td>
+        <td><span class="parametername">receiver</span></td>
+        <td><p>The target it hits</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_BeforeDespawn_AngeliA_IDamageReceiver_">Bullet.BeforeDespawn(IDamageReceiver)</a></div>
+  <a id="AngeliA_Platformer_MovableBullet_BeforeUpdate_" data-uid="AngeliA.Platformer.MovableBullet.BeforeUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_BeforeUpdate" data-uid="AngeliA.Platformer.MovableBullet.BeforeUpdate">BeforeUpdate()</h4>
+  <div class="markdown level1 summary"><p>[2/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_BeforeUpdate">Bullet.BeforeUpdate()</a></div>
+  <a id="AngeliA_Platformer_MovableBullet_GetLastUpdatedTramsform_" data-uid="AngeliA.Platformer.MovableBullet.GetLastUpdatedTramsform*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_GetLastUpdatedTramsform" data-uid="AngeliA.Platformer.MovableBullet.GetLastUpdatedTramsform">GetLastUpdatedTramsform()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected (int startX, int startY, int endX, int endY, int length, int rotation1000, bool beamHitReceiver) GetLastUpdatedTramsform()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_MovableBullet_LateUpdate_" data-uid="AngeliA.Platformer.MovableBullet.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_LateUpdate" data-uid="AngeliA.Platformer.MovableBullet.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_MovableBullet_OnActivated_" data-uid="AngeliA.Platformer.MovableBullet.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_OnActivated" data-uid="AngeliA.Platformer.MovableBullet.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Bullet.html#AngeliA_Bullet_OnActivated">Bullet.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_MovableBullet_StartMove_" data-uid="AngeliA.Platformer.MovableBullet.StartMove*"></a>
+  <h4 id="AngeliA_Platformer_MovableBullet_StartMove_AngeliA_Direction8_System_Int32_System_Int32_" data-uid="AngeliA.Platformer.MovableBullet.StartMove(AngeliA.Direction8,System.Int32,System.Int32)">StartMove(Direction8, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StartMove(Direction8 dir, int speedForward, int speedSide)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

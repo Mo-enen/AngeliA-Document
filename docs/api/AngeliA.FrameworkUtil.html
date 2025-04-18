@@ -1,0 +1,3832 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FrameworkUtil | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FrameworkUtil | AngeliA ">
+    
+    <meta name="description" content="Utility class for the AngeliA framework">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.FrameworkUtil">
+
+
+
+  <h1 id="AngeliA_FrameworkUtil" data-uid="AngeliA.FrameworkUtil" class="text-break">Class FrameworkUtil</h1>
+  <div class="markdown level0 summary"><p>Utility class for the AngeliA framework</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_FrameworkUtil_GAMEPAD_CODE" data-uid="AngeliA.FrameworkUtil.GAMEPAD_CODE">GAMEPAD_CODE</h4>
+  <div class="markdown level1 summary"><p>ID of artwork sprite for gamepad button icons</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Dictionary&lt;GamepadKey, int&gt; GAMEPAD_CODE</code></pre>
+  </div>
+  <h4 id="AngeliA_FrameworkUtil_RUN_CODE_ANALYSIS_SETTING_ID" data-uid="AngeliA.FrameworkUtil.RUN_CODE_ANALYSIS_SETTING_ID">RUN_CODE_ANALYSIS_SETTING_ID</h4>
+  <div class="markdown level1 summary"><p>For remote setting between engine and rigged game</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RUN_CODE_ANALYSIS_SETTING_ID = 895245367</code></pre>
+  </div>
+  <h4 id="AngeliA_FrameworkUtil_RUN_CODE_ANALYSIS_SETTING_SILENTLY_ID" data-uid="AngeliA.FrameworkUtil.RUN_CODE_ANALYSIS_SETTING_SILENTLY_ID">RUN_CODE_ANALYSIS_SETTING_SILENTLY_ID</h4>
+  <div class="markdown level1 summary"><p>For remote setting between engine and rigged game</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int RUN_CODE_ANALYSIS_SETTING_SILENTLY_ID = 895245368</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_FrameworkUtil_BlockRuleToDigit_" data-uid="AngeliA.FrameworkUtil.BlockRuleToDigit*"></a>
+  <h4 id="AngeliA_FrameworkUtil_BlockRuleToDigit_AngeliA_BlockRule_" data-uid="AngeliA.FrameworkUtil.BlockRuleToDigit(AngeliA.BlockRule)">BlockRuleToDigit(BlockRule)</h4>
+  <div class="markdown level1 summary"><p>Convert BlockRule struct into auto tiling rule digit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BlockRuleToDigit(BlockRule ruleStr)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_BreakEntityBlock_" data-uid="AngeliA.FrameworkUtil.BreakEntityBlock*"></a>
+  <h4 id="AngeliA_FrameworkUtil_BreakEntityBlock_AngeliA_IBlockEntity_" data-uid="AngeliA.FrameworkUtil.BreakEntityBlock(AngeliA.IBlockEntity)">BreakEntityBlock(IBlockEntity)</h4>
+  <div class="markdown level1 summary"><p>Remove given block entity from map and invoke corresponding callback functions. (Do not handle item drops)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool BreakEntityBlock(IBlockEntity eBlock)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_BroadcastBuff_" data-uid="AngeliA.FrameworkUtil.BroadcastBuff*"></a>
+  <h4 id="AngeliA_FrameworkUtil_BroadcastBuff_AngeliA_IRect_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.BroadcastBuff(AngeliA.IRect,System.Int32,System.Int32)">BroadcastBuff(IRect, int, int)</h4>
+  <div class="markdown level1 summary"><p>Give buff for all buff holder in given rectangle range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BroadcastBuff(IRect range, int buffID, int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_BroadcastBuff_" data-uid="AngeliA.FrameworkUtil.BroadcastBuff*"></a>
+  <h4 id="AngeliA_FrameworkUtil_BroadcastBuff_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.BroadcastBuff(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">BroadcastBuff(int, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Give buff for all buff holder in given circle range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BroadcastBuff(int x, int y, int radius, int buffID, int duration = 1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_ClampCells_" data-uid="AngeliA.FrameworkUtil.ClampCells*"></a>
+  <h4 id="AngeliA_FrameworkUtil_ClampCells_AngeliA_Cell___AngeliA_IRect_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.ClampCells(AngeliA.Cell[],AngeliA.IRect,System.Int32,System.Int32)">ClampCells(Cell[], IRect, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClampCells(Cell[] cells, IRect rect, int startIndex, int endIndex)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_ClampCells_" data-uid="AngeliA.FrameworkUtil.ClampCells*"></a>
+  <h4 id="AngeliA_FrameworkUtil_ClampCells_System_Span_AngeliA_Cell__AngeliA_IRect_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.ClampCells(System.Span{AngeliA.Cell},AngeliA.IRect,System.Int32,System.Int32)">ClampCells(Span&lt;Cell&gt;, IRect, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClampCells(Span&lt;Cell&gt; cells, IRect rect, int startIndex, int endIndex)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_DeleteAllEmptyMaps_" data-uid="AngeliA.FrameworkUtil.DeleteAllEmptyMaps*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DeleteAllEmptyMaps_System_String_" data-uid="AngeliA.FrameworkUtil.DeleteAllEmptyMaps(System.String)">DeleteAllEmptyMaps(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteAllEmptyMaps(string mapRoot)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_DigitToBlockRule_" data-uid="AngeliA.FrameworkUtil.DigitToBlockRule*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DigitToBlockRule_System_Int32_" data-uid="AngeliA.FrameworkUtil.DigitToBlockRule(System.Int32)">DigitToBlockRule(int)</h4>
+  <div class="markdown level1 summary"><p>Convert auto tiling rule digit into BlockRule struct</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BlockRule DigitToBlockRule(int digit)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_DigitToRuleByte_" data-uid="AngeliA.FrameworkUtil.DigitToRuleByte*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DigitToRuleByte_System_Int32_System_Byte___" data-uid="AngeliA.FrameworkUtil.DigitToRuleByte(System.Int32,System.Byte[])">DigitToRuleByte(int, byte[])</h4>
+  <div class="markdown level1 summary"><p>Convert auto tiling rule digit into byte array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DigitToRuleByte(int digit, byte[] bytes)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_DrawAllCollidersAsGizmos_" data-uid="AngeliA.FrameworkUtil.DrawAllCollidersAsGizmos*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawAllCollidersAsGizmos_System_Int32_AngeliA_Int2_System_Single_System_Boolean_System_Boolean_System_Boolean_System_Boolean_AngeliA_Color32___" data-uid="AngeliA.FrameworkUtil.DrawAllCollidersAsGizmos(System.Int32,AngeliA.Int2,System.Single,System.Boolean,System.Boolean,System.Boolean,System.Boolean,AngeliA.Color32[])">DrawAllCollidersAsGizmos(int, Int2, float, bool, bool, bool, bool, Color32[])</h4>
+  <div class="markdown level1 summary"><p>Display current physics colliders with game gizmos functions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawAllCollidersAsGizmos(int physicsMask = 31, Int2 offset = default, float brightness = 1, bool ignoreNonOnewayTrigger = false, bool ignoreOnewayTrigger = false, bool useTechEffect = false, bool drawVelocity = false, Color32[] layerTints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">physicsMask</span></td>
+        <td><p>Which physics layers are included</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int2.html">Int2</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>Position offset for all gizmos</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">brightness</span></td>
+        <td><p>0 means dark, 1 means normal color</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreNonOnewayTrigger</span></td>
+        <td><p>True if triggers that is not oneway gate are excluded</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreOnewayTrigger</span></td>
+        <td><p>True if oneway gates are excluded</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useTechEffect</span></td>
+        <td><p>True if the gizmos glitchs</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">drawVelocity</span></td>
+        <td><p>True if draw the current velocity for rigidbody</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a>[]</td>
+        <td><span class="parametername">layerTints</span></td>
+        <td><p>Color for specified layers. Set to null to use default.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawClockHands_" data-uid="AngeliA.FrameworkUtil.DrawClockHands*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawClockHands_AngeliA_IRect_System_Int32_System_Int32_System_Int32_AngeliA_Color32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawClockHands(AngeliA.IRect,System.Int32,System.Int32,System.Int32,AngeliA.Color32,System.Int32)">DrawClockHands(IRect, int, int, int, Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Draw clock hands from in-game time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClockHands(IRect rect, int handCode, int thickness, int thicknessSecond, Color32 tint, int z = -2147483648)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect position for clock face in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">handCode</span></td>
+        <td><p>Artwork sprite ID for the hand</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawClockHands_" data-uid="AngeliA.FrameworkUtil.DrawClockHands*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawClockHands_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_AngeliA_Color32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawClockHands(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,AngeliA.Color32,System.Int32)">DrawClockHands(int, int, int, int, int, int, Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Draw clock hands from in-game time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClockHands(int centerX, int centerY, int radius, int handCode, int thickness, int thicknessSecond, Color32 tint, int z = -2147483648)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">centerX</span></td>
+        <td><p>Center position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">centerY</span></td>
+        <td><p>Center position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td><p>Radius of the clock face</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">handCode</span></td>
+        <td><p>Artwork sprite ID for the hand</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawClockPendulum_" data-uid="AngeliA.FrameworkUtil.DrawClockPendulum*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawClockPendulum_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawClockPendulum(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">DrawClockPendulum(int, int, int, int, int, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw the pendulum for clocks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawClockPendulum(int artCodeLeg, int artCodeHead, int x, int y, int length, int thickness, int headSize, int maxRot, int deltaX = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">artCodeLeg</span></td>
+        <td><p>Artwork sprite ID for the long handle part</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">artCodeHead</span></td>
+        <td><p>Artwork sprite ID for the head on the edge</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Center position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Center position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Length of the pendulum in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">thickness</span></td>
+        <td><p>Thichness of the leg in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">headSize</span></td>
+        <td><p>Size of the head in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxRot</span></td>
+        <td><p>Rotation amount</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">deltaX</span></td>
+        <td><p>Extra position shift amount</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawEnvironmentShadow_" data-uid="AngeliA.FrameworkUtil.DrawEnvironmentShadow*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawEnvironmentShadow_AngeliA_Cell_System_Int32_System_Int32_System_Byte_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawEnvironmentShadow(AngeliA.Cell,System.Int32,System.Int32,System.Byte,System.Int32)">DrawEnvironmentShadow(Cell, int, int, byte, int)</h4>
+  <div class="markdown level1 summary"><p>Draw a shadow for given rendering cell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Cell DrawEnvironmentShadow(Cell source, int offsetX = -64, int offsetY = 0, byte alpha = 64, int z = -65520)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Cell.html">Cell</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Target rendering cell</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offsetX</span></td>
+        <td><p>Position offset X in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offsetY</span></td>
+        <td><p>Position offset Y in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z for the shadow</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Cell.html">Cell</a></td>
+        <td><p>Rendering cell of the shadow</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawFrozenEffect_" data-uid="AngeliA.FrameworkUtil.DrawFrozenEffect*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawFrozenEffect_AngeliA_IRect_System_Byte_System_Int32_AngeliA_Int2_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawFrozenEffect(AngeliA.IRect,System.Byte,System.Int32,AngeliA.Int2,System.Int32,System.Int32,System.Int32)">DrawFrozenEffect(IRect, byte, int, Int2, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw effect for frozen zone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawFrozenEffect(IRect rect, byte alpha, int count = 32, Int2 offset = default, int seed = 0, int size = 142, int z = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Position range in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Particle count at same time</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int2.html">Int2</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>Position offset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>Seed to generate random value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size of a single particle</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value to sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawItemUsageBar_" data-uid="AngeliA.FrameworkUtil.DrawItemUsageBar*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawItemUsageBar_AngeliA_IRect_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawItemUsageBar(AngeliA.IRect,System.Int32,System.Int32)">DrawItemUsageBar(IRect, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw usage bar UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawItemUsageBar(IRect rect, int usage, int maxUsage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawLightenEffect_" data-uid="AngeliA.FrameworkUtil.DrawLightenEffect*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawLightenEffect_System_Int32_AngeliA_IRect_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawLightenEffect(System.Int32,AngeliA.IRect,System.Int32,System.Int32)">DrawLightenEffect(int, IRect, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw effect for electric light coming out of an object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLightenEffect(int spriteID, IRect rect, int count = 2, int size = 196)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">spriteID</span></td>
+        <td><p>Artwork sprite ID for a single lighten</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Position range in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Count of sprite at same time</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size of a single sprite</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawLoopingActivatedHighlight_" data-uid="AngeliA.FrameworkUtil.DrawLoopingActivatedHighlight*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawLoopingActivatedHighlight_AngeliA_IRect_AngeliA_Color32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawLoopingActivatedHighlight(AngeliA.IRect,AngeliA.Color32,System.Int32,System.Int32)">DrawLoopingActivatedHighlight(IRect, Color32, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw a highlight effect</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLoopingActivatedHighlight(IRect targetRect, Color32 tint, int lineCount = 4, int duration = 22)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">targetRect</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Duration in frame for a single loop</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawLoopingTriangleMark_" data-uid="AngeliA.FrameworkUtil.DrawLoopingTriangleMark*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawLoopingTriangleMark_AngeliA_IRect_System_Int32_AngeliA_Color32_AngeliA_Direction4_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawLoopingTriangleMark(AngeliA.IRect,System.Int32,AngeliA.Color32,AngeliA.Direction4,System.Int32,System.Int32,System.Int32,System.Int32)">DrawLoopingTriangleMark(IRect, int, Color32, Direction4, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw a direction mark with looping moving triangles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLoopingTriangleMark(IRect range, int frame, Color32 tint, Direction4 direction, int count, int size, int z, int speed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>Rect position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>Current animation frame</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Triangle count</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Triangle size</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">speed</span></td>
+        <td><p>Moving speed of the triangle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawOnFireEffect_" data-uid="AngeliA.FrameworkUtil.DrawOnFireEffect*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawOnFireEffect_System_Int32_AngeliA_IRect_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawOnFireEffect(System.Int32,AngeliA.IRect,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">DrawOnFireEffect(int, IRect, int, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw effect for object on fire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawOnFireEffect(int spriteID, IRect rect, int count = 2, int loop = 40, int size = 200, int seed = 0, int z = 2147483647)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">spriteID</span></td>
+        <td><p>Artwork sprite ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect range in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Rendering sprite count at same time</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">loop</span></td>
+        <td><p>Duration for a single loop</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size of a single sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>Seed to generate random value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawPoisonEffect_" data-uid="AngeliA.FrameworkUtil.DrawPoisonEffect*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawPoisonEffect_System_Int32_AngeliA_IRect_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawPoisonEffect(System.Int32,AngeliA.IRect,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">DrawPoisonEffect(int, IRect, int, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Draw effect for object being poisoned</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPoisonEffect(int spriteID, IRect rect, int loop = 120, int count = 4, int seed = 0, int size = 132, int z = 2147483647)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">spriteID</span></td>
+        <td><p>Artwork sprite ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect range in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">loop</span></td>
+        <td><p>Duration of a single animation loop</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Count of sprites at same time</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>Seed to generate random value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size of a single particle in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawPoseCharacterAsUI_" data-uid="AngeliA.FrameworkUtil.DrawPoseCharacterAsUI*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawPoseCharacterAsUI_AngeliA_IRect_AngeliA_PoseCharacterRenderer_System_Int32_" data-uid="AngeliA.FrameworkUtil.DrawPoseCharacterAsUI(AngeliA.IRect,AngeliA.PoseCharacterRenderer,System.Int32)">DrawPoseCharacterAsUI(IRect, PoseCharacterRenderer, int)</h4>
+  <div class="markdown level1 summary"><p>Display target pose-styled character as UI (like the character preview in player menu)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DrawPoseCharacterAsUI(IRect rect, PoseCharacterRenderer renderer, int animationFrame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect position to display the UI in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">renderer</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">animationFrame</span></td>
+        <td><p>Current frame for animation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the character is rendered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_DrawPoseCharacterAsUI_" data-uid="AngeliA.FrameworkUtil.DrawPoseCharacterAsUI*"></a>
+  <h4 id="AngeliA_FrameworkUtil_DrawPoseCharacterAsUI_AngeliA_IRect_AngeliA_PoseCharacterRenderer_System_Int32_AngeliA_IRect__AngeliA_IRect__" data-uid="AngeliA.FrameworkUtil.DrawPoseCharacterAsUI(AngeliA.IRect,AngeliA.PoseCharacterRenderer,System.Int32,AngeliA.IRect@,AngeliA.IRect@)">DrawPoseCharacterAsUI(IRect, PoseCharacterRenderer, int, out IRect, out IRect)</h4>
+  <div class="markdown level1 summary"><p>Display target pose-styled character as UI (like the character preview in player menu)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DrawPoseCharacterAsUI(IRect rect, PoseCharacterRenderer renderer, int animationFrame, out IRect globalRect, out IRect uiRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Rect position to display the UI in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">renderer</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">animationFrame</span></td>
+        <td><p>Current frame for animation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the character is rendered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_ForAllExistsWorldInRange_" data-uid="AngeliA.FrameworkUtil.ForAllExistsWorldInRange*"></a>
+  <h4 id="AngeliA_FrameworkUtil_ForAllExistsWorldInRange_AngeliA_IBlockSquad_AngeliA_IRect_System_Int32_System_Int32__" data-uid="AngeliA.FrameworkUtil.ForAllExistsWorldInRange(AngeliA.IBlockSquad,AngeliA.IRect,System.Int32,System.Int32@)">ForAllExistsWorldInRange(IBlockSquad, IRect, int, out int)</h4>
+  <div class="markdown level1 summary"><p>Find all existing world position that overlap the given range. (256 results in maximal)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Int3[] ForAllExistsWorldInRange(IBlockSquad squad, IRect overlapUnitRange, int z, out int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the world instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">overlapUnitRange</span></td>
+        <td><p>Target range in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>How many result is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int3.html">Int3</a>[]</td>
+        <td><p>Array that holds the result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_ForAllWorldInRange_" data-uid="AngeliA.FrameworkUtil.ForAllWorldInRange*"></a>
+  <h4 id="AngeliA_FrameworkUtil_ForAllWorldInRange_AngeliA_IRect_System_Int32_System_Int32__" data-uid="AngeliA.FrameworkUtil.ForAllWorldInRange(AngeliA.IRect,System.Int32,System.Int32@)">ForAllWorldInRange(IRect, int, out int)</h4>
+  <div class="markdown level1 summary"><p>Find all world position that overlap the given range. (256 results in maximal)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Int3[] ForAllWorldInRange(IRect overlapUnitRange, int z, out int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">overlapUnitRange</span></td>
+        <td><p>Target range in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>How many result is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int3.html">Int3</a>[]</td>
+        <td><p>Array that holds the result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetAimingBuilderPositionFromKey_" data-uid="AngeliA.FrameworkUtil.GetAimingBuilderPositionFromKey*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetAimingBuilderPositionFromKey_AngeliA_Character_AngeliA_BlockType_System_Int32__System_Int32__System_Boolean__System_Boolean_" data-uid="AngeliA.FrameworkUtil.GetAimingBuilderPositionFromKey(AngeliA.Character,AngeliA.BlockType,System.Int32@,System.Int32@,System.Boolean@,System.Boolean)">GetAimingBuilderPositionFromKey(Character, BlockType, out int, out int, out bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Get aiming position for block building target with keyboard keys</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetAimingBuilderPositionFromKey(Character holder, BlockType blockType, out int targetUnitX, out int targetUnitY, out bool requireEmbedAsElement, bool ignoreValid = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">holder</span></td>
+        <td><p>Character that using the tool</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.BlockType.html">BlockType</a></td>
+        <td><span class="parametername">blockType</span></td>
+        <td><p>Type of building block</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitX</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitY</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">requireEmbedAsElement</span></td>
+        <td><p>True if this block can be embed into other block</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreValid</span></td>
+        <td><p>Set to true to skip block building validation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if valid position is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetAimingBuilderPositionFromMouse_" data-uid="AngeliA.FrameworkUtil.GetAimingBuilderPositionFromMouse*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetAimingBuilderPositionFromMouse_AngeliA_Character_AngeliA_BlockType_System_Int32__System_Int32__System_Boolean__" data-uid="AngeliA.FrameworkUtil.GetAimingBuilderPositionFromMouse(AngeliA.Character,AngeliA.BlockType,System.Int32@,System.Int32@,System.Boolean@)">GetAimingBuilderPositionFromMouse(Character, BlockType, out int, out int, out bool)</h4>
+  <div class="markdown level1 summary"><p>Get aiming position for block building target with mouse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetAimingBuilderPositionFromMouse(Character holder, BlockType blockType, out int targetUnitX, out int targetUnitY, out bool requireEmbedAsElement)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">holder</span></td>
+        <td><p>Character that using the tool</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.BlockType.html">BlockType</a></td>
+        <td><span class="parametername">blockType</span></td>
+        <td><p>Type of building block</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitX</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitY</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">requireEmbedAsElement</span></td>
+        <td><p>True if this block can be embed into other block</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the target is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetAimingPickerPositionFromKey_" data-uid="AngeliA.FrameworkUtil.GetAimingPickerPositionFromKey*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetAimingPickerPositionFromKey_AngeliA_Character_System_Int32__System_Int32__System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.FrameworkUtil.GetAimingPickerPositionFromKey(AngeliA.Character,System.Int32@,System.Int32@,System.Boolean,System.Boolean,System.Boolean)">GetAimingPickerPositionFromKey(Character, out int, out int, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Get aiming position for block picking target with keyboard keys</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetAimingPickerPositionFromKey(Character pHolder, out int targetUnitX, out int targetUnitY, bool allowPickBlockEntity = true, bool allowPickLevelBlock = true, bool allowPickBackgroundBlock = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">pHolder</span></td>
+        <td><p>Character that using the tool</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitX</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitY</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBlockEntity</span></td>
+        <td><p>True if the tool can pick entity blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickLevelBlock</span></td>
+        <td><p>True if the tool can pick level blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBackgroundBlock</span></td>
+        <td><p>True if the tool can pick background blocks</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if valid position is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetAimingPickerPositionFromMouse_" data-uid="AngeliA.FrameworkUtil.GetAimingPickerPositionFromMouse*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetAimingPickerPositionFromMouse_AngeliA_Character_System_Int32_System_Int32__System_Int32__System_Boolean__System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.FrameworkUtil.GetAimingPickerPositionFromMouse(AngeliA.Character,System.Int32,System.Int32@,System.Int32@,System.Boolean@,System.Boolean,System.Boolean,System.Boolean)">GetAimingPickerPositionFromMouse(Character, int, out int, out int, out bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Get aiming position for block picking target with mouse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetAimingPickerPositionFromMouse(Character holder, int unitRange, out int targetUnitX, out int targetUnitY, out bool inRange, bool allowPickBlockEntity = true, bool allowPickLevelBlock = true, bool allowPickBackgroundBlock = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">holder</span></td>
+        <td><p>Character that using the tool</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitRange</span></td>
+        <td><p>Range limitation in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitX</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitY</span></td>
+        <td><p>Result position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">inRange</span></td>
+        <td><p>True if the current mouse cursor is in range</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBlockEntity</span></td>
+        <td><p>True if the tool can pick entity blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickLevelBlock</span></td>
+        <td><p>True if the tool can pick level blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBackgroundBlock</span></td>
+        <td><p>True if the tool can pick background blocks</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if valid position is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetBlockRealName_" data-uid="AngeliA.FrameworkUtil.GetBlockRealName*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetBlockRealName_System_String_" data-uid="AngeliA.FrameworkUtil.GetBlockRealName(System.String)">GetBlockRealName(string)</h4>
+  <div class="markdown level1 summary"><p>Get name of a map block without hashtags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBlockRealName(string name)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_GetEntityPose_" data-uid="AngeliA.FrameworkUtil.GetEntityPose*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetEntityPose_AngeliA_Entity_System_Boolean_System_Int32_AngeliA_Entity__AngeliA_Entity__" data-uid="AngeliA.FrameworkUtil.GetEntityPose(AngeliA.Entity,System.Boolean,System.Int32,AngeliA.Entity@,AngeliA.Entity@)">GetEntityPose(Entity, bool, int, out Entity, out Entity)</h4>
+  <div class="markdown level1 summary"><p>Get FittingPose for given entity type from WorldSquad and stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FittingPose GetEntityPose(Entity entity, bool horizontal, int mask, out Entity left_down, out Entity right_up)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>Target entity</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">horizontal</span></td>
+        <td><p>True if the entity fits horizontaly</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Physics layers to get the entity instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">left_down</span></td>
+        <td><p>Nearby entity instance at left/down</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">right_up</span></td>
+        <td><p>Nearby entity instance at right/up</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetEntityPose_" data-uid="AngeliA.FrameworkUtil.GetEntityPose*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetEntityPose_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.GetEntityPose(System.Int32,System.Int32,System.Int32,System.Boolean)">GetEntityPose(int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Get FittingPose for given position and entity ID from WorldSquad.
+eg. 3 mushroom entities makes a tall mushroom, only the top one is the cap. So your entity renders as cap only when the fitting pose is FittingPose.Up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FittingPose GetEntityPose(int typeID, int unitX, int unitY, bool horizontal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">typeID</span></td>
+        <td><p>Type of the target entity</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">horizontal</span></td>
+        <td><p>True if the entity fits horizontaly</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetFlyingFormation_" data-uid="AngeliA.FrameworkUtil.GetFlyingFormation*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetFlyingFormation_AngeliA_Int2_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.GetFlyingFormation(AngeliA.Int2,System.Int32,System.Int32)">GetFlyingFormation(Int2, int, int)</h4>
+  <div class="markdown level1 summary"><p>Get position for flying entities</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Int2 GetFlyingFormation(Int2 pos, int column, int instanceIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int2.html">Int2</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Center position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>Column of the current element</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">instanceIndex</span></td>
+        <td><p>Local index of the current element</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int2.html">Int2</a></td>
+        <td><p>Final position of this element</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetFrameAmortizedValue_" data-uid="AngeliA.FrameworkUtil.GetFrameAmortizedValue*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetFrameAmortizedValue_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.GetFrameAmortizedValue(System.Int32,System.Int32)">GetFrameAmortizedValue(int, int)</h4>
+  <div class="markdown level1 summary"><p>Used to calculate acceleration with intager. eg. When value is 2000, it means 2 unit every frame. When value is 500, it means 1 unit every 2 frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetFrameAmortizedValue(int value1000, int frame = -2147483648)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_GetGameKeyLabel_" data-uid="AngeliA.FrameworkUtil.GetGameKeyLabel*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetGameKeyLabel_AngeliA_Gamekey_" data-uid="AngeliA.FrameworkUtil.GetGameKeyLabel(AngeliA.Gamekey)">GetGameKeyLabel(Gamekey)</h4>
+  <div class="markdown level1 summary"><p>Get display name for given game-key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetGameKeyLabel(Gamekey key)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_GetGroupInfoFromSpriteRealName_" data-uid="AngeliA.FrameworkUtil.GetGroupInfoFromSpriteRealName*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetGroupInfoFromSpriteRealName_System_String_System_String__System_Int32__" data-uid="AngeliA.FrameworkUtil.GetGroupInfoFromSpriteRealName(System.String,System.String@,System.Int32@)">GetGroupInfoFromSpriteRealName(string, out string, out int)</h4>
+  <div class="markdown level1 summary"><p>Get sprite group infomation from the name of artwork sprite</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetGroupInfoFromSpriteRealName(string realName, out string groupName, out int groupIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">realName</span></td>
+        <td><p>Name without hashtags</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>Name without index</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">groupIndex</span></td>
+        <td><p>Index in group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the data successfuly calculated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetItemTypeIcon_" data-uid="AngeliA.FrameworkUtil.GetItemTypeIcon*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetItemTypeIcon_System_Int32_" data-uid="AngeliA.FrameworkUtil.GetItemTypeIcon(System.Int32)">GetItemTypeIcon(int)</h4>
+  <div class="markdown level1 summary"><p>Get type icon artwork sprite ID for given item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetItemTypeIcon(int itemID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_GetOnewayTag_" data-uid="AngeliA.FrameworkUtil.GetOnewayTag*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetOnewayTag_AngeliA_Direction4_" data-uid="AngeliA.FrameworkUtil.GetOnewayTag(AngeliA.Direction4)">GetOnewayTag(Direction4)</h4>
+  <div class="markdown level1 summary"><p>Get tag for oneway gate that facing to given direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Tag GetOnewayTag(Direction4 gateDirection)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_GetPlayerHoldingHandTool_" data-uid="AngeliA.FrameworkUtil.GetPlayerHoldingHandTool*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetPlayerHoldingHandTool" data-uid="AngeliA.FrameworkUtil.GetPlayerHoldingHandTool">GetPlayerHoldingHandTool()</h4>
+  <div class="markdown level1 summary"><p>Get global single instance of the handtool that player currently equipping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HandTool GetPlayerHoldingHandTool()</code></pre>
+  </div>
+  <a id="AngeliA_FrameworkUtil_GetRuleIndex_" data-uid="AngeliA.FrameworkUtil.GetRuleIndex*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetRuleIndex_System_Collections_Generic_IList_AngeliA_AngeSprite__System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.GetRuleIndex(System.Collections.Generic.IList{AngeliA.AngeSprite},System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">GetRuleIndex(IList&lt;AngeSprite&gt;, int, int, int, int, int, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Find which tile in the given list conforms the auto tiling rule</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetRuleIndex(IList&lt;AngeSprite&gt; sprites, int ruleDigit, int tl, int tm, int tr, int ml, int mr, int bl, int bm, int br)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="AngeliA.AngeSprite.html">AngeSprite</a>&gt;</td>
+        <td><span class="parametername">sprites</span></td>
+        <td><p>Source list</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ruleDigit</span></td>
+        <td><p>Int data of the tiling rule. Get this data with FrameworkUtil.BlockRuleToDigit</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tl</span></td>
+        <td><p>ID for block at top-left</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tm</span></td>
+        <td><p>ID for block at top</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tr</span></td>
+        <td><p>ID for block at top-right</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ml</span></td>
+        <td><p>ID for block at left</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mr</span></td>
+        <td><p>ID for block at right</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bl</span></td>
+        <td><p>ID for block at bottom-left</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bm</span></td>
+        <td><p>ID for block at bottom</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">br</span></td>
+        <td><p>ID for block at bottom-right</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Index of the founded sprite</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetScaledAudioVolume_" data-uid="AngeliA.FrameworkUtil.GetScaledAudioVolume*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetScaledAudioVolume_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.GetScaledAudioVolume(System.Int32,System.Int32)">GetScaledAudioVolume(int, int)</h4>
+  <div class="markdown level1 summary"><p>Scale the given audio volume</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetScaledAudioVolume(int volume, int scale = 1000)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>0 means 0%, 1000 means 100%</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_GetSpriteInfoFromName_" data-uid="AngeliA.FrameworkUtil.GetSpriteInfoFromName*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetSpriteInfoFromName_System_String_System_String__System_Boolean__AngeliA_Tag__AngeliA_BlockRule__System_Boolean__System_Int32__System_Int32__System_Nullable_System_Int32___System_Nullable_System_Int32___" data-uid="AngeliA.FrameworkUtil.GetSpriteInfoFromName(System.String,System.String@,System.Boolean@,AngeliA.Tag@,AngeliA.BlockRule@,System.Boolean@,System.Int32@,System.Int32@,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)">GetSpriteInfoFromName(string, out string, out bool, out Tag, out BlockRule, out bool, out int, out int, out int?, out int?)</h4>
+  <div class="markdown level1 summary"><p>Get infomation from naming tag of an artwork sprite</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetSpriteInfoFromName(string name, out string realName, out bool isTrigger, out Tag tag, out BlockRule rule, out bool noCollider, out int offsetZ, out int aniDuration, out int? pivotX, out int? pivotY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Full name of the artwork sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">realName</span></td>
+        <td><p>Name without hashtag</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isTrigger</span></td>
+        <td><p>True if this sprite is trigger</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Tag.html">Tag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Tag value of this sprite</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.BlockRule.html">BlockRule</a></td>
+        <td><span class="parametername">rule</span></td>
+        <td><p>Rule for auto tiling in map editor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">noCollider</span></td>
+        <td><p>True if this sprite ignore collider</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offsetZ</span></td>
+        <td><p>Z value for sort rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">aniDuration</span></td>
+        <td><p>Duration in frame for animation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_GetSummaryTint_" data-uid="AngeliA.FrameworkUtil.GetSummaryTint*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GetSummaryTint_AngeliA_Color32___" data-uid="AngeliA.FrameworkUtil.GetSummaryTint(AngeliA.Color32[])">GetSummaryTint(Color32[])</h4>
+  <div class="markdown level1 summary"><p>Get average color of given pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32 GetSummaryTint(Color32[] pixels)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_GiveBuffFromMap_" data-uid="AngeliA.FrameworkUtil.GiveBuffFromMap*"></a>
+  <h4 id="AngeliA_FrameworkUtil_GiveBuffFromMap_AngeliA_IWithCharacterBuff_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.GiveBuffFromMap(AngeliA.IWithCharacterBuff,System.Int32,System.Int32,System.Int32,System.Int32)">GiveBuffFromMap(IWithCharacterBuff, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Try get buff from map element at given unit position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GiveBuffFromMap(IWithCharacterBuff wBuff, int unitX = -2147483648, int unitY = -2147483648, int unitZ = -2147483648, int duration = -1)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_HasOnewayTag_" data-uid="AngeliA.FrameworkUtil.HasOnewayTag*"></a>
+  <h4 id="AngeliA_FrameworkUtil_HasOnewayTag_AngeliA_Tag_" data-uid="AngeliA.FrameworkUtil.HasOnewayTag(AngeliA.Tag)">HasOnewayTag(Tag)</h4>
+  <div class="markdown level1 summary"><p>True if the given tag contains oneway gate tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasOnewayTag(Tag tag)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_HasPickableBlockAt_" data-uid="AngeliA.FrameworkUtil.HasPickableBlockAt*"></a>
+  <h4 id="AngeliA_FrameworkUtil_HasPickableBlockAt_System_Int32_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.FrameworkUtil.HasPickableBlockAt(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">HasPickableBlockAt(int, int, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>True if found any block can be pick at given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasPickableBlockAt(int unitX, int unitY, bool allowPickBlockEntity = true, bool allowPickLevelBlock = true, bool allowPickBackgroundBlock = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBlockEntity</span></td>
+        <td><p>True if entity blocks will be picked</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickLevelBlock</span></td>
+        <td><p>True if level blocks will be picked</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBackgroundBlock</span></td>
+        <td><p>True if background blocks will be picked</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_HasSystemNumber_" data-uid="AngeliA.FrameworkUtil.HasSystemNumber*"></a>
+  <h4 id="AngeliA_FrameworkUtil_HasSystemNumber_AngeliA_IBlockSquad_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.HasSystemNumber(AngeliA.IBlockSquad,System.Int32,System.Int32,System.Int32)">HasSystemNumber(IBlockSquad, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>True if there is system number at given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasSystemNumber(IBlockSquad squad, int unitX, int unitY, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_HighlightBlink_" data-uid="AngeliA.FrameworkUtil.HighlightBlink*"></a>
+  <h4 id="AngeliA_FrameworkUtil_HighlightBlink_AngeliA_Cell_System_Single_System_Single_System_Boolean_System_Boolean_" data-uid="AngeliA.FrameworkUtil.HighlightBlink(AngeliA.Cell,System.Single,System.Single,System.Boolean,System.Boolean)">HighlightBlink(Cell, float, float, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Blink the given cell for action target highlighting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HighlightBlink(Cell cell, float pivotX = 0.5, float pivotY = 0, bool horizontal = true, bool vertical = true)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">horizontal</span></td>
+        <td><p>True if the target attached with nearby entity in left or right</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">vertical</span></td>
+        <td><p>True if the target attached with nearby entity in up or down</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeBlockPicked_" data-uid="AngeliA.FrameworkUtil.InvokeBlockPicked*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeBlockPicked_System_Int32_AngeliA_IRect_" data-uid="AngeliA.FrameworkUtil.InvokeBlockPicked(System.Int32,AngeliA.IRect)">InvokeBlockPicked(int, IRect)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for map block get picked</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeBlockPicked(int spriteID, IRect rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">spriteID</span></td>
+        <td><p>Artwork sprite ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Starting rect position in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeCameOutOfWater_" data-uid="AngeliA.FrameworkUtil.InvokeCameOutOfWater*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeCameOutOfWater_AngeliA_Rigidbody_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeCameOutOfWater(AngeliA.Rigidbody,AngeliA.Entity)">InvokeCameOutOfWater(Rigidbody, Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for object get out of water</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeCameOutOfWater(Rigidbody rig, Entity water)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Rigidbody.html">Rigidbody</a></td>
+        <td><span class="parametername">rig</span></td>
+        <td><p>Target object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">water</span></td>
+        <td><p>Water entity instance. Null if water is from map block</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeCheatPerformed_" data-uid="AngeliA.FrameworkUtil.InvokeCheatPerformed*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeCheatPerformed_System_String_" data-uid="AngeliA.FrameworkUtil.InvokeCheatPerformed(System.String)">InvokeCheatPerformed(string)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for a cheat code get performed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeCheatPerformed(string cheatCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">cheatCode</span></td>
+        <td><p>The performed cheat code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeErrorHint_" data-uid="AngeliA.FrameworkUtil.InvokeErrorHint*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeErrorHint_AngeliA_Entity_System_Int32_" data-uid="AngeliA.FrameworkUtil.InvokeErrorHint(AngeliA.Entity,System.Int32)">InvokeErrorHint(Entity, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke animation hint for error</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeErrorHint(Entity holder, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">holder</span></td>
+        <td><p>Entity that get the error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Artwork sprite ID for the icon inside</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeErrorHint_" data-uid="AngeliA.FrameworkUtil.InvokeErrorHint*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeErrorHint_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.InvokeErrorHint(System.Int32,System.Int32,System.Int32)">InvokeErrorHint(int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke animation hint for error</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeErrorHint(int x, int y, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Artwork sprite ID for the icon inside</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeFallIntoWater_" data-uid="AngeliA.FrameworkUtil.InvokeFallIntoWater*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeFallIntoWater_AngeliA_Rigidbody_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeFallIntoWater(AngeliA.Rigidbody,AngeliA.Entity)">InvokeFallIntoWater(Rigidbody, Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for object get into water</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeFallIntoWater(Rigidbody rig, Entity water)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Rigidbody.html">Rigidbody</a></td>
+        <td><span class="parametername">rig</span></td>
+        <td><p>Target object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">water</span></td>
+        <td><p>Water entity instance. Null if water is from map block</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeItemCollected_" data-uid="AngeliA.FrameworkUtil.InvokeItemCollected*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeItemCollected_AngeliA_Entity_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.InvokeItemCollected(AngeliA.Entity,System.Int32,System.Int32)">InvokeItemCollected(Entity, int, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for item get collected by a character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeItemCollected(Entity collector, int id, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">collector</span></td>
+        <td><p>Character that collect the item</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the item</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>How many items get collected</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeItemCollected_" data-uid="AngeliA.FrameworkUtil.InvokeItemCollected*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeItemCollected_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.InvokeItemCollected(System.Int32,System.Int32,System.Int32,System.Int32)">InvokeItemCollected(int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for item get collected by a character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeItemCollected(int id, int x, int y, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the item</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>How many items get collected</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeItemDamage_" data-uid="AngeliA.FrameworkUtil.InvokeItemDamage*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeItemDamage_AngeliA_Character_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.InvokeItemDamage(AngeliA.Character,System.Int32,System.Int32)">InvokeItemDamage(Character, int, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for item being damaged/broken</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeItemDamage(Character holder, int fromID, int toID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">holder</span></td>
+        <td><p>Character that own the item</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromID</span></td>
+        <td><p>ID of the item before it broke</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toID</span></td>
+        <td><p>ID of the item after it broke</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeItemLost_" data-uid="AngeliA.FrameworkUtil.InvokeItemLost*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeItemLost_AngeliA_Character_System_Int32_" data-uid="AngeliA.FrameworkUtil.InvokeItemLost(AngeliA.Character,System.Int32)">InvokeItemLost(Character, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character lost an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeItemLost(Character holder, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">holder</span></td>
+        <td><p>Character that lost the item</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeItemUnlocked_" data-uid="AngeliA.FrameworkUtil.InvokeItemUnlocked*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeItemUnlocked_System_Int32_" data-uid="AngeliA.FrameworkUtil.InvokeItemUnlocked(System.Int32)">InvokeItemUnlocked(int)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for item being unlocked</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeItemUnlocked(int itemID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">itemID</span></td>
+        <td><p>ID of the unlocked item</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeObjectBreak_" data-uid="AngeliA.FrameworkUtil.InvokeObjectBreak*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeObjectBreak_System_Int32_AngeliA_IRect_" data-uid="AngeliA.FrameworkUtil.InvokeObjectBreak(System.Int32,AngeliA.IRect)">InvokeObjectBreak(int, IRect)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for object broke animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeObjectBreak(int spriteID, IRect rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">spriteID</span></td>
+        <td><p>Artwork sprite ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Starting rect position in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeObjectFreeFall_" data-uid="AngeliA.FrameworkUtil.InvokeObjectFreeFall*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeObjectFreeFall_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.InvokeObjectFreeFall(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">InvokeObjectFreeFall(int, int, int, int, int, int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for free fall animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeObjectFreeFall(int spriteID, int x, int y, int speedX = 0, int speedY = 0, int rotation = -2147483648, int rotationSpeed = 0, int gravity = 5, bool flipX = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">spriteID</span></td>
+        <td><p>Artwork sprite ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Start position X in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Start position Y in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">speedX</span></td>
+        <td><p>Initial speed X</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">speedY</span></td>
+        <td><p>Initial speed Y</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Initial rotation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">flipX</span></td>
+        <td><p>True if artwork sprite flip horizontaly</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterCrash_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterCrash*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterCrash_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterCrash(AngeliA.Entity)">InvokeOnCharacterCrash(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character crash</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterCrash(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterFly_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterFly*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterFly_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterFly(AngeliA.Entity)">InvokeOnCharacterFly(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character fly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterFly(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterJump_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterJump*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterJump_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterJump(AngeliA.Entity)">InvokeOnCharacterJump(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character jumps</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterJump(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterPassOut_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterPassOut*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterPassOut_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterPassOut(AngeliA.Entity)">InvokeOnCharacterPassOut(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character get pass out</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterPassOut(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterPound_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterPound*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterPound_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterPound(AngeliA.Entity)">InvokeOnCharacterPound(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character ground pound</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterPound(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterSleeping_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterSleeping*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterSleeping_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterSleeping(AngeliA.Entity)">InvokeOnCharacterSleeping(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for a character is sleeping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterSleeping(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterSlideStepped_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterSlideStepped*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterSlideStepped_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterSlideStepped(AngeliA.Entity)">InvokeOnCharacterSlideStepped(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character slide with a step</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterSlideStepped(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnCharacterTeleport_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterTeleport*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnCharacterTeleport_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnCharacterTeleport(AngeliA.Entity)">InvokeOnCharacterTeleport(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for character perform a teleport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnCharacterTeleport(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_InvokeOnFootStepped_" data-uid="AngeliA.FrameworkUtil.InvokeOnFootStepped*"></a>
+  <h4 id="AngeliA_FrameworkUtil_InvokeOnFootStepped_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.InvokeOnFootStepped(AngeliA.Entity)">InvokeOnFootStepped(Entity)</h4>
+  <div class="markdown level1 summary"><p>Invoke function for a character walks with a foot step</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOnFootStepped(Entity target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_Number_to_SystemNumberID_" data-uid="AngeliA.FrameworkUtil.Number_to_SystemNumberID*"></a>
+  <h4 id="AngeliA_FrameworkUtil_Number_to_SystemNumberID_System_Int32_" data-uid="AngeliA.FrameworkUtil.Number_to_SystemNumberID(System.Int32)">Number_to_SystemNumberID(int)</h4>
+  <div class="markdown level1 summary"><p>Convert number into system number map element ID. 0 by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Number_to_SystemNumberID(int number)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_PaintBlock_" data-uid="AngeliA.FrameworkUtil.PaintBlock*"></a>
+  <h4 id="AngeliA_FrameworkUtil_PaintBlock_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.PaintBlock(System.Int32,System.Int32,System.Int32,System.Boolean)">PaintBlock(int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Paint the map block with BlockColoringSystem at given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PaintBlock(int unitX, int unitY, int blockColorID, bool overrideExistingElement = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">blockColorID</span></td>
+        <td><p>ID of BlockColor's subclass as a map element</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">overrideExistingElement</span></td>
+        <td><p>True if existing map element at given position will be override</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_PerformSpringBounce_" data-uid="AngeliA.FrameworkUtil.PerformSpringBounce*"></a>
+  <h4 id="AngeliA_FrameworkUtil_PerformSpringBounce_AngeliA_Entity_AngeliA_Direction4_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.PerformSpringBounce(AngeliA.Entity,AngeliA.Direction4,System.Int32,System.Int32)">PerformSpringBounce(Entity, Direction4, int, int)</h4>
+  <div class="markdown level1 summary"><p>Bounce entities on stage for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PerformSpringBounce(Entity springEntity, Direction4 direction, int power, int powerSide = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">springEntity</span></td>
+        <td><p>Entity that exists as the spring</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Direction4.html">Direction4</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Direction that the spring power goes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">power</span></td>
+        <td><p>Initial speed for entities get bounced</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">powerSide</span></td>
+        <td><p>Initial speed on side direction for entities get bounced</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if any entity get bounced</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_PerformSpringBounce_" data-uid="AngeliA.FrameworkUtil.PerformSpringBounce*"></a>
+  <h4 id="AngeliA_FrameworkUtil_PerformSpringBounce_AngeliA_Rigidbody_AngeliA_Entity_AngeliA_Direction4_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.PerformSpringBounce(AngeliA.Rigidbody,AngeliA.Entity,AngeliA.Direction4,System.Int32,System.Int32)">PerformSpringBounce(Rigidbody, Entity, Direction4, int, int)</h4>
+  <div class="markdown level1 summary"><p>Bounce the given target for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PerformSpringBounce(Rigidbody target, Entity spring, Direction4 direction, int power, int powerSide = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Rigidbody.html">Rigidbody</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target to get bounce</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Entity.html">Entity</a></td>
+        <td><span class="parametername">spring</span></td>
+        <td><p>Entity that exists as the spring</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Direction4.html">Direction4</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Direction that the spring power goes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">power</span></td>
+        <td><p>Initial speed for entities get bounced</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">powerSide</span></td>
+        <td><p>Initial speed on side direction for entities get bounced</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_PickBlockAt_" data-uid="AngeliA.FrameworkUtil.PickBlockAt*"></a>
+  <h4 id="AngeliA_FrameworkUtil_PickBlockAt_System_Int32_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.FrameworkUtil.PickBlockAt(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">PickBlockAt(int, int, bool, bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Perform a block pick</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PickBlockAt(int unitX, int unitY, bool allowPickBlockEntity = true, bool allowPickLevelBlock = true, bool allowPickBackgroundBlock = true, bool dropItemAfterPicked = true, bool allowMultiplePick = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBlockEntity</span></td>
+        <td><p>True if entity blocks will be picked</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickLevelBlock</span></td>
+        <td><p>True if level blocks will be picked</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowPickBackgroundBlock</span></td>
+        <td><p>True if background blocks will be picked</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">dropItemAfterPicked</span></td>
+        <td><p>True if spawn an ItemHolder with the block</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowMultiplePick</span></td>
+        <td><p>True if pick more than one block with one function call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if any block is picked</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_PlaySoundAtPosition_" data-uid="AngeliA.FrameworkUtil.PlaySoundAtPosition*"></a>
+  <h4 id="AngeliA_FrameworkUtil_PlaySoundAtPosition_System_Int32_AngeliA_Int2_System_Single_System_Single_" data-uid="AngeliA.FrameworkUtil.PlaySoundAtPosition(System.Int32,AngeliA.Int2,System.Single,System.Single)">PlaySoundAtPosition(int, Int2, float, float)</h4>
+  <div class="markdown level1 summary"><p>Play a sound like it cames from the given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlaySoundAtPosition(int id, Int2 globalPosition, float volume = 1, float pitch = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Audio ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int2.html">Int2</a></td>
+        <td><span class="parametername">globalPosition</span></td>
+        <td><p>Position in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_PutBlockTo_" data-uid="AngeliA.FrameworkUtil.PutBlockTo*"></a>
+  <h4 id="AngeliA_FrameworkUtil_PutBlockTo_System_Int32_AngeliA_BlockType_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.PutBlockTo(System.Int32,AngeliA.BlockType,System.Int32,System.Int32)">PutBlockTo(int, BlockType, int, int)</h4>
+  <div class="markdown level1 summary"><p>Build a block into the map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PutBlockTo(int blockID, BlockType blockType, int targetUnitX, int targetUnitY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">blockID</span></td>
+        <td><p>ID of the building block</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.BlockType.html">BlockType</a></td>
+        <td><span class="parametername">blockType</span></td>
+        <td><p>Type of the building block</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetUnitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the block is built</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_ReadSystemNumber_" data-uid="AngeliA.FrameworkUtil.ReadSystemNumber*"></a>
+  <h4 id="AngeliA_FrameworkUtil_ReadSystemNumber_AngeliA_IBlockSquad_System_Int32_System_Int32_System_Int32_AngeliA_Direction4_System_Int32__" data-uid="AngeliA.FrameworkUtil.ReadSystemNumber(AngeliA.IBlockSquad,System.Int32,System.Int32,System.Int32,AngeliA.Direction4,System.Int32@)">ReadSystemNumber(IBlockSquad, int, int, int, Direction4, out int)</h4>
+  <div class="markdown level1 summary"><p>Get system number at given position from map in specified direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReadSystemNumber(IBlockSquad squad, int unitX, int unitY, int z, Direction4 direction, out int number)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Direction4.html">Direction4</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Which direction should it reads</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">number</span></td>
+        <td><p>Result number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the number is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_ReadSystemNumber_" data-uid="AngeliA.FrameworkUtil.ReadSystemNumber*"></a>
+  <h4 id="AngeliA_FrameworkUtil_ReadSystemNumber_AngeliA_IBlockSquad_System_Int32_System_Int32_System_Int32_System_Int32__" data-uid="AngeliA.FrameworkUtil.ReadSystemNumber(AngeliA.IBlockSquad,System.Int32,System.Int32,System.Int32,System.Int32@)">ReadSystemNumber(IBlockSquad, int, int, int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get system number at given position from map. (Left-to-right then up-to-down)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReadSystemNumber(IBlockSquad squad, int unitX, int unitY, int z, out int number)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">number</span></td>
+        <td><p>Result number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the number is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_RedirectForRule_" data-uid="AngeliA.FrameworkUtil.RedirectForRule*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RedirectForRule_AngeliA_IBlockSquad_AngeliA_IRect_System_Int32_" data-uid="AngeliA.FrameworkUtil.RedirectForRule(AngeliA.IBlockSquad,AngeliA.IRect,System.Int32)">RedirectForRule(IBlockSquad, IRect, int)</h4>
+  <div class="markdown level1 summary"><p>Auto tile all map blocks inside given range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RedirectForRule(IBlockSquad squad, IRect unitRange, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">unitRange</span></td>
+        <td><p>Target range in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_RedirectForRule_" data-uid="AngeliA.FrameworkUtil.RedirectForRule*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RedirectForRule_AngeliA_IBlockSquad_System_Int32_System_Int32_System_Int32_AngeliA_BlockType_" data-uid="AngeliA.FrameworkUtil.RedirectForRule(AngeliA.IBlockSquad,System.Int32,System.Int32,System.Int32,AngeliA.BlockType)">RedirectForRule(IBlockSquad, int, int, int, BlockType)</h4>
+  <div class="markdown level1 summary"><p>Auto tile map block in given position and all tiles nearby</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RedirectForRule(IBlockSquad squad, int unitX, int unitY, int z, BlockType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.BlockType.html">BlockType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type of the auto tile block</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_RemapCells_" data-uid="AngeliA.FrameworkUtil.RemapCells*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RemapCells_AngeliA_Cell___System_Int32_System_Int32_AngeliA_IRect_AngeliA_IRect_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.RemapCells(AngeliA.Cell[],System.Int32,System.Int32,AngeliA.IRect,AngeliA.IRect,System.Int32,System.Int32,System.Boolean)">RemapCells(Cell[], int, int, IRect, IRect, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Remap the position and size of given rendering cells</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemapCells(Cell[] cells, int cellIndexStart, int cellIndexEnd, IRect from, IRect to, int fitPivotX = 500, int fitPivotY = 500, bool fit = true)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexStart</span></td>
+        <td><p>Start index of remap logic</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexEnd</span></td>
+        <td><p>End index of remap logic (exclude)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Remap from this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Remap to this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fit</span></td>
+        <td><p>True if keep the aspect ratio by resize the cells</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_RemapCells_" data-uid="AngeliA.FrameworkUtil.RemapCells*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RemapCells_AngeliA_Cell___System_Int32_System_Int32_AngeliA_IRect_AngeliA_IRect_System_Int32__System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.RemapCells(AngeliA.Cell[],System.Int32,System.Int32,AngeliA.IRect,AngeliA.IRect,System.Int32@,System.Int32,System.Int32,System.Boolean)">RemapCells(Cell[], int, int, IRect, IRect, out int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Remap the position and size of given rendering cells</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemapCells(Cell[] cells, int cellIndexStart, int cellIndexEnd, IRect from, IRect to, out int minZ, int fitPivotX = 500, int fitPivotY = 500, bool fit = true)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexStart</span></td>
+        <td><p>Start index of remap logic</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexEnd</span></td>
+        <td><p>End index of remap logic (exclude)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Remap from this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Remap to this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minZ</span></td>
+        <td><p>Minimal Z value for sort rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fit</span></td>
+        <td><p>True if keep the aspect ratio by resize the cells</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_RemapCells_" data-uid="AngeliA.FrameworkUtil.RemapCells*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RemapCells_System_Span_AngeliA_Cell__System_Int32_System_Int32_AngeliA_IRect_AngeliA_IRect_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.RemapCells(System.Span{AngeliA.Cell},System.Int32,System.Int32,AngeliA.IRect,AngeliA.IRect,System.Int32,System.Int32,System.Boolean)">RemapCells(Span&lt;Cell&gt;, int, int, IRect, IRect, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Remap the position and size of given rendering cells</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemapCells(Span&lt;Cell&gt; cells, int cellIndexStart, int cellIndexEnd, IRect from, IRect to, int fitPivotX = 500, int fitPivotY = 500, bool fit = true)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexStart</span></td>
+        <td><p>Start index of remap logic</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexEnd</span></td>
+        <td><p>End index of remap logic (exclude)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Remap from this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Remap to this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fit</span></td>
+        <td><p>True if keep the aspect ratio by resize the cells</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_RemapCells_" data-uid="AngeliA.FrameworkUtil.RemapCells*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RemapCells_System_Span_AngeliA_Cell__System_Int32_System_Int32_AngeliA_IRect_AngeliA_IRect_System_Int32__System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.RemapCells(System.Span{AngeliA.Cell},System.Int32,System.Int32,AngeliA.IRect,AngeliA.IRect,System.Int32@,System.Int32,System.Int32,System.Boolean)">RemapCells(Span&lt;Cell&gt;, int, int, IRect, IRect, out int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Remap the position and size of given rendering cells</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemapCells(Span&lt;Cell&gt; cells, int cellIndexStart, int cellIndexEnd, IRect from, IRect to, out int minZ, int fitPivotX = 500, int fitPivotY = 500, bool fit = true)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexStart</span></td>
+        <td><p>Start index of remap logic</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexEnd</span></td>
+        <td><p>End index of remap logic (exclude)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Remap from this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>Remap to this range (global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minZ</span></td>
+        <td><p>Minimal Z value for sort rendering cells</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fit</span></td>
+        <td><p>True if keep the aspect ratio by resize the cells</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_RemoveFromWorldMemory_" data-uid="AngeliA.FrameworkUtil.RemoveFromWorldMemory*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RemoveFromWorldMemory_AngeliA_Entity_" data-uid="AngeliA.FrameworkUtil.RemoveFromWorldMemory(AngeliA.Entity)">RemoveFromWorldMemory(Entity)</h4>
+  <div class="markdown level1 summary"><p>Remove target entity from world data. Only work when entity spawned from map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromWorldMemory(Entity entity)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_ResetShoulderAndUpperArmPos_" data-uid="AngeliA.FrameworkUtil.ResetShoulderAndUpperArmPos*"></a>
+  <h4 id="AngeliA_FrameworkUtil_ResetShoulderAndUpperArmPos_AngeliA_PoseCharacterRenderer_System_Boolean_System_Boolean_" data-uid="AngeliA.FrameworkUtil.ResetShoulderAndUpperArmPos(AngeliA.PoseCharacterRenderer,System.Boolean,System.Boolean)">ResetShoulderAndUpperArmPos(PoseCharacterRenderer, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Reset the shoulder and upper arm position for given pose-styled character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetShoulderAndUpperArmPos(PoseCharacterRenderer rendering, bool resetLeft = true, bool resetRight = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.PoseCharacterRenderer.html">PoseCharacterRenderer</a></td>
+        <td><span class="parametername">rendering</span></td>
+        <td><p>Target character</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_RuleByteToDigit_" data-uid="AngeliA.FrameworkUtil.RuleByteToDigit*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RuleByteToDigit_System_Byte___" data-uid="AngeliA.FrameworkUtil.RuleByteToDigit(System.Byte[])">RuleByteToDigit(byte[])</h4>
+  <div class="markdown level1 summary"><p>Convert byte array into auto tiling rule digit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RuleByteToDigit(byte[] singleRule)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_RunAngeliaCodeAnalysis_" data-uid="AngeliA.FrameworkUtil.RunAngeliaCodeAnalysis*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RunAngeliaCodeAnalysis_System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.FrameworkUtil.RunAngeliaCodeAnalysis(System.Boolean,System.Boolean,System.Boolean)">RunAngeliaCodeAnalysis(bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Perform analyses for current AngeliA project and log the report</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RunAngeliaCodeAnalysis(bool onlyLogWhenWarningFounded = false, bool fixScriptFileName = false, bool checkNoItemCombination = true)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_RunBuiltInSpriteAnalysys_" data-uid="AngeliA.FrameworkUtil.RunBuiltInSpriteAnalysys*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RunBuiltInSpriteAnalysys_System_Boolean_" data-uid="AngeliA.FrameworkUtil.RunBuiltInSpriteAnalysys(System.Boolean)">RunBuiltInSpriteAnalysys(bool)</h4>
+  <div class="markdown level1 summary"><p>Perform checking logic for checking built-in sprite sync with artwork sheet or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RunBuiltInSpriteAnalysys(bool onlyLogWhenWarningFounded = false)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_RunEmptyScriptFileAnalysis_" data-uid="AngeliA.FrameworkUtil.RunEmptyScriptFileAnalysis*"></a>
+  <h4 id="AngeliA_FrameworkUtil_RunEmptyScriptFileAnalysis_System_String_System_Boolean_" data-uid="AngeliA.FrameworkUtil.RunEmptyScriptFileAnalysis(System.String,System.Boolean)">RunEmptyScriptFileAnalysis(string, bool)</h4>
+  <div class="markdown level1 summary"><p>Check for empty script file in given project root</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RunEmptyScriptFileAnalysis(string rootPath, bool onlyLogWhenWarningFounded = false)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_SearchlightBlockCheck_" data-uid="AngeliA.FrameworkUtil.SearchlightBlockCheck*"></a>
+  <h4 id="AngeliA_FrameworkUtil_SearchlightBlockCheck_AngeliA_IBlockSquad_AngeliA_Int3_System_Nullable_AngeliA_Direction8__System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.SearchlightBlockCheck(AngeliA.IBlockSquad,AngeliA.Int3,System.Nullable{AngeliA.Direction8},System.Int32,System.Boolean)">SearchlightBlockCheck(IBlockSquad, Int3, Direction8?, int, bool)</h4>
+  <div class="markdown level1 summary"><p>True if any block founded inside given range. Search blocks with specific order to lower the CPU usage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SearchlightBlockCheck(IBlockSquad squad, Int3 startUnitPoint, Direction8? direction, int unitDistance = 128, bool reverse = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int3.html">Int3</a></td>
+        <td><span class="parametername">startUnitPoint</span></td>
+        <td><p>Position to start searching in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Direction8.html">Direction8</a>?</td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Direction of the search operation facing. Set to null to make it search in circle range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitDistance</span></td>
+        <td><p>Maximal distance for the search in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">reverse</span></td>
+        <td><p>True if search blocks from far side first</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_SpawnItemFromMap_" data-uid="AngeliA.FrameworkUtil.SpawnItemFromMap*"></a>
+  <h4 id="AngeliA_FrameworkUtil_SpawnItemFromMap_AngeliA_IBlockSquad_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.SpawnItemFromMap(AngeliA.IBlockSquad,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">SpawnItemFromMap(IBlockSquad, int, int, int, int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Spawn item based on items list from map. This is used for the map chest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnItemFromMap(IBlockSquad squad, int unitX, int unitY, int z, int maxDeltaX = 1024, int maxDeltaY = 1024, int placeHolderID = 0, bool spawnEntity = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxDeltaX</span></td>
+        <td><p>Limitation on horizontal checking distance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxDeltaY</span></td>
+        <td><p>Limitation on vertical checking distance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">placeHolderID</span></td>
+        <td><p>Set spawned item into this ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">spawnEntity</span></td>
+        <td><p>True if spawn the entity that paint as map element</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_SpiralSpinningCellEffect_" data-uid="AngeliA.FrameworkUtil.SpiralSpinningCellEffect*"></a>
+  <h4 id="AngeliA_FrameworkUtil_SpiralSpinningCellEffect_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.SpiralSpinningCellEffect(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">SpiralSpinningCellEffect(int, int, int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Draw spinning effect for teleporting with portal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpiralSpinningCellEffect(int localFrame, int pointX, int pointY, int duration, int cellIndexStart, bool reverseSpin = false)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pointX</span></td>
+        <td><p>Center position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pointY</span></td>
+        <td><p>Center position in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Total duration of the animation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cellIndexStart</span></td>
+        <td><p>Start index of target rendering cells in current rendering layer</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_SystemNumberID_to_Number_" data-uid="AngeliA.FrameworkUtil.SystemNumberID_to_Number*"></a>
+  <h4 id="AngeliA_FrameworkUtil_SystemNumberID_to_Number_System_Int32_" data-uid="AngeliA.FrameworkUtil.SystemNumberID_to_Number(System.Int32)">SystemNumberID_to_Number(int)</h4>
+  <div class="markdown level1 summary"><p>Convert system number ID into the number it represents</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SystemNumberID_to_Number(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_Time01_to_TimeDigit_" data-uid="AngeliA.FrameworkUtil.Time01_to_TimeDigit*"></a>
+  <h4 id="AngeliA_FrameworkUtil_Time01_to_TimeDigit_System_Single_System_Int32__System_Int32__System_Int32__" data-uid="AngeliA.FrameworkUtil.Time01_to_TimeDigit(System.Single,System.Int32@,System.Int32@,System.Int32@)">Time01_to_TimeDigit(float, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Convert a float value into time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Time01_to_TimeDigit(float time01, out int hour, out int minute, out int second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">time01</span></td>
+        <td><p>0 means 0:00, 0.5 means 12:00. 1 means 24:00</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_TimeDigit_to_Time01_" data-uid="AngeliA.FrameworkUtil.TimeDigit_to_Time01*"></a>
+  <h4 id="AngeliA_FrameworkUtil_TimeDigit_to_Time01_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.TimeDigit_to_Time01(System.Int32,System.Int32,System.Int32)">TimeDigit_to_Time01(int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Convert time into a float value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float TimeDigit_to_Time01(int hour, int minute, int second)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>0 means 0:00, 0.5 means 12:00. 1 means 24:00</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_TryEjectOutsideGround_" data-uid="AngeliA.FrameworkUtil.TryEjectOutsideGround*"></a>
+  <h4 id="AngeliA_FrameworkUtil_TryEjectOutsideGround_AngeliA_Rigidbody_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.FrameworkUtil.TryEjectOutsideGround(AngeliA.Rigidbody,System.Int32,System.Int32,System.Int32)">TryEjectOutsideGround(Rigidbody, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Move the given rigidbody to closest empty space nearby</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TryEjectOutsideGround(Rigidbody rig, int collisionMask = 0, int unitRange = 2, int speed = 32)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">collisionMask</span></td>
+        <td><p>Which physics layers should count as &quot;Ground&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitRange</span></td>
+        <td><p>How far can it move in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">speed</span></td>
+        <td><p>How fast will it move</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_FrameworkUtil_TryGetEmptyPlaceNearbyForEntity_" data-uid="AngeliA.FrameworkUtil.TryGetEmptyPlaceNearbyForEntity*"></a>
+  <h4 id="AngeliA_FrameworkUtil_TryGetEmptyPlaceNearbyForEntity_System_Int32_System_Int32_System_Int32_System_Int32__System_Int32__System_Int32_System_Boolean_" data-uid="AngeliA.FrameworkUtil.TryGetEmptyPlaceNearbyForEntity(System.Int32,System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32,System.Boolean)">TryGetEmptyPlaceNearbyForEntity(int, int, int, out int, out int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Find an empty place on map nearby given position for placing an entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetEmptyPlaceNearbyForEntity(int unitX, int unitY, int z, out int resultUnitX, out int resultUnitY, int maxRange = 8, bool preferNoSolidLevel = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">resultUnitX</span></td>
+        <td><p>Position founded in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">resultUnitY</span></td>
+        <td><p>Position founded in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxRange</span></td>
+        <td><p>Maximal searching range in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">preferNoSolidLevel</span></td>
+        <td><p>Set to true to put this entity into place without solid level blocks</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the place is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_FrameworkUtil_TryGetOnewayDirection_" data-uid="AngeliA.FrameworkUtil.TryGetOnewayDirection*"></a>
+  <h4 id="AngeliA_FrameworkUtil_TryGetOnewayDirection_AngeliA_Tag_AngeliA_Direction4__" data-uid="AngeliA.FrameworkUtil.TryGetOnewayDirection(AngeliA.Tag,AngeliA.Direction4@)">TryGetOnewayDirection(Tag, out Direction4)</h4>
+  <div class="markdown level1 summary"><p>Get direction from a single oneway gate tag. The tag value can only be a single oneway gate tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetOnewayDirection(Tag tag, out Direction4 direction)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_FrameworkUtil_TryGetSingleSystemNumber_" data-uid="AngeliA.FrameworkUtil.TryGetSingleSystemNumber*"></a>
+  <h4 id="AngeliA_FrameworkUtil_TryGetSingleSystemNumber_AngeliA_IBlockSquad_System_Int32_System_Int32_System_Int32_System_Int32__" data-uid="AngeliA.FrameworkUtil.TryGetSingleSystemNumber(AngeliA.IBlockSquad,System.Int32,System.Int32,System.Int32,System.Int32@)">TryGetSingleSystemNumber(IBlockSquad, int, int, int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get a single digit of system number at given position from map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSingleSystemNumber(IBlockSquad squad, int unitX, int unitY, int z, out int digitValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IBlockSquad.html">IBlockSquad</a></td>
+        <td><span class="parametername">squad</span></td>
+        <td><p>Source of the map blocks</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Target position X in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Target position Y in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">digitValue</span></td>
+        <td><p>Result of the digit</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the digit is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

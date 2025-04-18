@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BodyGadget | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BodyGadget | AngeliA ">
+    
+    <meta name="description" content="Representation of a pose character&#39;s extra body part. Always use instance from pool.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.BodyGadget">
+
+
+
+  <h1 id="AngeliA_BodyGadget" data-uid="AngeliA.BodyGadget" class="text-break">Class BodyGadget</h1>
+  <div class="markdown level0 summary"><p>Representation of a pose character's extra body part. Always use instance from pool.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h5 id="AngeliA_BodyGadget_examples"><strong>Examples</strong></h5>
+  <pre><code class="lang-csharp">BodyGadget.TryGetGadget(id, out var result);</code></pre>
+
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_BodyGadget_BodyGadgetSystemReady_" data-uid="AngeliA.BodyGadget.BodyGadgetSystemReady*"></a>
+  <h4 id="AngeliA_BodyGadget_BodyGadgetSystemReady" data-uid="AngeliA.BodyGadget.BodyGadgetSystemReady">BodyGadgetSystemReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool BodyGadgetSystemReady { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BodyGadget_GadgetID_" data-uid="AngeliA.BodyGadget.GadgetID*"></a>
+  <h4 id="AngeliA_BodyGadget_GadgetID" data-uid="AngeliA.BodyGadget.GadgetID">GadgetID</h4>
+  <div class="markdown level1 summary"><p>Global unique AngeHash of this body gadget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GadgetID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BodyGadget_GadgetName_" data-uid="AngeliA.BodyGadget.GadgetName*"></a>
+  <h4 id="AngeliA_BodyGadget_GadgetName" data-uid="AngeliA.BodyGadget.GadgetName">GadgetName</h4>
+  <div class="markdown level1 summary"><p>Global unique AngeName of this body gadget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GadgetName { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BodyGadget_GadgetType_" data-uid="AngeliA.BodyGadget.GadgetType*"></a>
+  <h4 id="AngeliA_BodyGadget_GadgetType" data-uid="AngeliA.BodyGadget.GadgetType">GadgetType</h4>
+  <div class="markdown level1 summary"><p>Type of this body gadget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract BodyGadgetType GadgetType { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BodyGadget_SheetIndex_" data-uid="AngeliA.BodyGadget.SheetIndex*"></a>
+  <h4 id="AngeliA_BodyGadget_SheetIndex" data-uid="AngeliA.BodyGadget.SheetIndex">SheetIndex</h4>
+  <div class="markdown level1 summary"><p>Which artwork sheet does this body gadget get it's artwork from</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SheetIndex { get; }</code></pre>
+  </div>
+  <a id="AngeliA_BodyGadget_SpriteLoaded_" data-uid="AngeliA.BodyGadget.SpriteLoaded*"></a>
+  <h4 id="AngeliA_BodyGadget_SpriteLoaded" data-uid="AngeliA.BodyGadget.SpriteLoaded">SpriteLoaded</h4>
+  <div class="markdown level1 summary"><p>True if artwork sprite is loaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SpriteLoaded { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_BodyGadget_DrawGadget_" data-uid="AngeliA.BodyGadget.DrawGadget*"></a>
+  <h4 id="AngeliA_BodyGadget_DrawGadget_AngeliA_PoseCharacterRenderer_" data-uid="AngeliA.BodyGadget.DrawGadget(AngeliA.PoseCharacterRenderer)">DrawGadget(PoseCharacterRenderer)</h4>
+  <div class="markdown level1 summary"><p>Render the gadget for the given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DrawGadget(PoseCharacterRenderer renderer)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_BodyGadget_DrawGadgetGizmos_" data-uid="AngeliA.BodyGadget.DrawGadgetGizmos*"></a>
+  <h4 id="AngeliA_BodyGadget_DrawGadgetGizmos_AngeliA_IRect_AngeliA_Color32_System_Int32_" data-uid="AngeliA.BodyGadget.DrawGadgetGizmos(AngeliA.IRect,AngeliA.Color32,System.Int32)">DrawGadgetGizmos(IRect, Color32, int)</h4>
+  <div class="markdown level1 summary"><p>Render the gadget as gizmos</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawGadgetGizmos(IRect rect, Color32 tint, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Global rect position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Color32.html">Color32</a></td>
+        <td><span class="parametername">tint</span></td>
+        <td><p>Color tint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z position for sorting</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_BodyGadget_FillFromSheet_" data-uid="AngeliA.BodyGadget.FillFromSheet*"></a>
+  <h4 id="AngeliA_BodyGadget_FillFromSheet_System_String_" data-uid="AngeliA.BodyGadget.FillFromSheet(System.String)">FillFromSheet(string)</h4>
+  <div class="markdown level1 summary"><p>Load sprite data from Renderer.CurrentSheet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FillFromSheet(string basicName)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_BodyGadget_ForAllGadget_" data-uid="AngeliA.BodyGadget.ForAllGadget*"></a>
+  <h4 id="AngeliA_BodyGadget_ForAllGadget" data-uid="AngeliA.BodyGadget.ForAllGadget">ForAllGadget()</h4>
+  <div class="markdown level1 summary"><p>Iterate through all body gadgets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;int, BodyGadget&gt;&gt; ForAllGadget()</code></pre>
+  </div>
+  <a id="AngeliA_BodyGadget_GetDefaultGadgetID_" data-uid="AngeliA.BodyGadget.GetDefaultGadgetID*"></a>
+  <h4 id="AngeliA_BodyGadget_GetDefaultGadgetID_System_Int32_AngeliA_BodyGadgetType_" data-uid="AngeliA.BodyGadget.GetDefaultGadgetID(System.Int32,AngeliA.BodyGadgetType)">GetDefaultGadgetID(int, BodyGadgetType)</h4>
+  <div class="markdown level1 summary"><p>Get body gadget id of the default gadget for the given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetDefaultGadgetID(int characterID, BodyGadgetType type)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_BodyGadget_GetDisplayName_" data-uid="AngeliA.BodyGadget.GetDisplayName*"></a>
+  <h4 id="AngeliA_BodyGadget_GetDisplayName_System_String_System_Int32__" data-uid="AngeliA.BodyGadget.GetDisplayName(System.String,System.Int32@)">GetDisplayName(string, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDisplayName(string typeName, out int languageID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_BodyGadget_TryGetGadget_" data-uid="AngeliA.BodyGadget.TryGetGadget*"></a>
+  <h4 id="AngeliA_BodyGadget_TryGetGadget_System_Int32_AngeliA_BodyGadget__" data-uid="AngeliA.BodyGadget.TryGetGadget(System.Int32,AngeliA.BodyGadget@)">TryGetGadget(int, out BodyGadget)</h4>
+  <div class="markdown level1 summary"><p>Get body gadget instance from system pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetGadget(int gadgetID, out BodyGadget gadget)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

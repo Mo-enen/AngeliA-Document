@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CraftingUI | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CraftingUI | AngeliA ">
+    
+    <meta name="description" content="UI for the crafting table">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.CraftingUI">
+
+
+
+  <h1 id="AngeliA_Platformer_CraftingUI" data-uid="AngeliA.Platformer.CraftingUI" class="text-break">Class CraftingUI</h1>
+  <div class="markdown level0 summary"><p>UI for the crafting table</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IWindowEntityUI.html">IWindowEntityUI</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_CraftingUI_FrameCode_" data-uid="AngeliA.Platformer.CraftingUI.FrameCode*"></a>
+  <h4 id="AngeliA_Platformer_CraftingUI_FrameCode" data-uid="AngeliA.Platformer.CraftingUI.FrameCode">FrameCode</h4>
+  <div class="markdown level1 summary"><p>Artwork sprite ID for the item field frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteCode FrameCode { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_CraftingUI_ItemFieldSize_" data-uid="AngeliA.Platformer.CraftingUI.ItemFieldSize*"></a>
+  <h4 id="AngeliA_Platformer_CraftingUI_ItemFieldSize" data-uid="AngeliA.Platformer.CraftingUI.ItemFieldSize">ItemFieldSize</h4>
+  <div class="markdown level1 summary"><p>Unified size of a single item field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ItemFieldSize { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.PlayerMenuPartnerUI.html#AngeliA_PlayerMenuPartnerUI_ItemFieldSize">PlayerMenuPartnerUI.ItemFieldSize</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_CraftingUI_DrawPanel_" data-uid="AngeliA.Platformer.CraftingUI.DrawPanel*"></a>
+  <h4 id="AngeliA_Platformer_CraftingUI_DrawPanel_AngeliA_IRect_" data-uid="AngeliA.Platformer.CraftingUI.DrawPanel(AngeliA.IRect)">DrawPanel(IRect)</h4>
+  <div class="markdown level1 summary"><p>This function is called every frame for displaying this panel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawPanel(IRect panelRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">panelRect</span></td>
+        <td><p>Rect position for the range of this panel in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.InventoryPartnerUI.html#AngeliA_InventoryPartnerUI_DrawPanel_AngeliA_IRect_">InventoryPartnerUI.DrawPanel(IRect)</a></div>
+  <a id="AngeliA_Platformer_CraftingUI_EnablePanel_" data-uid="AngeliA.Platformer.CraftingUI.EnablePanel*"></a>
+  <h4 id="AngeliA_Platformer_CraftingUI_EnablePanel" data-uid="AngeliA.Platformer.CraftingUI.EnablePanel">EnablePanel()</h4>
+  <div class="markdown level1 summary"><p>This function is called when the panel start to display</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EnablePanel()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.PlayerMenuPartnerUI.html#AngeliA_PlayerMenuPartnerUI_EnablePanel">PlayerMenuPartnerUI.EnablePanel()</a></div>
+  <a id="AngeliA_Platformer_CraftingUI_SetColumnAndRow_" data-uid="AngeliA.Platformer.CraftingUI.SetColumnAndRow*"></a>
+  <h4 id="AngeliA_Platformer_CraftingUI_SetColumnAndRow_System_Int32_System_Int32_" data-uid="AngeliA.Platformer.CraftingUI.SetColumnAndRow(System.Int32,System.Int32)">SetColumnAndRow(int, int)</h4>
+  <div class="markdown level1 summary"><p>Set inventory column and row count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColumnAndRow(int newColumn, int newRow)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

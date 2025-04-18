@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Summon | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Summon | AngeliA ">
+    
+    <meta name="description" content="Represent a character that summoned by another character">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.Summon">
+
+
+
+  <h1 id="AngeliA_Platformer_Summon" data-uid="AngeliA.Platformer.Summon" class="text-break">Class Summon</h1>
+  <div class="markdown level0 summary"><p>Represent a character that summoned by another character</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.ICarrier.html">ICarrier</a></div>
+    <div><a class="xref" href="AngeliA.IWithCharacterMovement.html">IWithCharacterMovement</a></div>
+    <div><a class="xref" href="AngeliA.IWithCharacterAttackness.html">IWithCharacterAttackness</a></div>
+    <div><a class="xref" href="AngeliA.IWithCharacterHealth.html">IWithCharacterHealth</a></div>
+    <div><a class="xref" href="AngeliA.IWithCharacterBuff.html">IWithCharacterBuff</a></div>
+    <div><a class="xref" href="AngeliA.IWithCharacterRenderer.html">IWithCharacterRenderer</a></div>
+    <div><a class="xref" href="AngeliA.IDamageReceiver.html">IDamageReceiver</a></div>
+    <div><a class="xref" href="AngeliA.IActionTarget.html">IActionTarget</a></div>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_Platformer_Summon__ctor_" data-uid="AngeliA.Platformer.Summon.#ctor*"></a>
+  <h4 id="AngeliA_Platformer_Summon__ctor" data-uid="AngeliA.Platformer.Summon.#ctor">Summon()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Summon()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_Summon_AllowBeingPush_" data-uid="AngeliA.Platformer.Summon.AllowBeingPush*"></a>
+  <h4 id="AngeliA_Platformer_Summon_AllowBeingPush" data-uid="AngeliA.Platformer.Summon.AllowBeingPush">AllowBeingPush</h4>
+  <div class="markdown level1 summary"><p>True if this entity can be push by other</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowBeingPush { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_AllowBeingPush">Character.AllowBeingPush</a></div>
+  <a id="AngeliA_Platformer_Summon_AllowRescueWhenPassout_" data-uid="AngeliA.Platformer.Summon.AllowRescueWhenPassout*"></a>
+  <h4 id="AngeliA_Platformer_Summon_AllowRescueWhenPassout" data-uid="AngeliA.Platformer.Summon.AllowRescueWhenPassout">AllowRescueWhenPassout</h4>
+  <div class="markdown level1 summary"><p>True if the owner can bring back this character after it passout</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowRescueWhenPassout { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Summon_AttackTargetTeam_" data-uid="AngeliA.Platformer.Summon.AttackTargetTeam*"></a>
+  <h4 id="AngeliA_Platformer_Summon_AttackTargetTeam" data-uid="AngeliA.Platformer.Summon.AttackTargetTeam">AttackTargetTeam</h4>
+  <div class="markdown level1 summary"><p>Target team for dealing damage to other</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AttackTargetTeam { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_AttackTargetTeam">Character.AttackTargetTeam</a></div>
+  <a id="AngeliA_Platformer_Summon_CarryOtherOnTop_" data-uid="AngeliA.Platformer.Summon.CarryOtherOnTop*"></a>
+  <h4 id="AngeliA_Platformer_Summon_CarryOtherOnTop" data-uid="AngeliA.Platformer.Summon.CarryOtherOnTop">CarryOtherOnTop</h4>
+  <div class="markdown level1 summary"><p>Trhe if this entity can carry other ICarrier on top</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CarryOtherOnTop { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_CarryOtherOnTop">Character.CarryOtherOnTop</a></div>
+  <a id="AngeliA_Platformer_Summon_Navigation_" data-uid="AngeliA.Platformer.Summon.Navigation*"></a>
+  <h4 id="AngeliA_Platformer_Summon_Navigation" data-uid="AngeliA.Platformer.Summon.Navigation">Navigation</h4>
+  <div class="markdown level1 summary"><p>Behavior object to handle auto movement of this character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SummonNavigation Navigation { get; init; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Summon_Owner_" data-uid="AngeliA.Platformer.Summon.Owner*"></a>
+  <h4 id="AngeliA_Platformer_Summon_Owner" data-uid="AngeliA.Platformer.Summon.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>The character that summons this character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Character Owner { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Summon_RequireOwner_" data-uid="AngeliA.Platformer.Summon.RequireOwner*"></a>
+  <h4 id="AngeliA_Platformer_Summon_RequireOwner" data-uid="AngeliA.Platformer.Summon.RequireOwner">RequireOwner</h4>
+  <div class="markdown level1 summary"><p>True if this character despawn when owner is null or inactivated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool RequireOwner { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Summon_Team_" data-uid="AngeliA.Platformer.Summon.Team*"></a>
+  <h4 id="AngeliA_Platformer_Summon_Team" data-uid="AngeliA.Platformer.Summon.Team">Team</h4>
+  <div class="markdown level1 summary"><p>Target team for taking damage from other</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Team { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_Team">Character.Team</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_Summon_CreateNativeAttackness_" data-uid="AngeliA.Platformer.Summon.CreateNativeAttackness*"></a>
+  <h4 id="AngeliA_Platformer_Summon_CreateNativeAttackness" data-uid="AngeliA.Platformer.Summon.CreateNativeAttackness">CreateNativeAttackness()</h4>
+  <div class="markdown level1 summary"><p>Create new instance for character's intrinsic attackness behaviour</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override CharacterAttackness CreateNativeAttackness()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_CreateNativeAttackness">Character.CreateNativeAttackness()</a></div>
+  <a id="AngeliA_Platformer_Summon_CreateSummon_" data-uid="AngeliA.Platformer.Summon.CreateSummon*"></a>
+  <h4 id="AngeliA_Platformer_Summon_CreateSummon_AngeliA_Character_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.Platformer.Summon.CreateSummon(AngeliA.Character,System.Int32,System.Int32,System.Int32,System.Boolean)">CreateSummon(Character, int, int, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Summon CreateSummon(Character owner, int typeID, int x, int y, bool forceCreate = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>Instance of the summon's owner</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">typeID</span></td>
+        <td><p>Type of the summon</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Position in global space to put this summon</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Position in global space to put this summon</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forceCreate</span></td>
+        <td><p>True if take an existing summon in same type and owner to summon it again</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Platformer.Summon.html">Summon</a></td>
+        <td><p>Instance of the summoned character</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_Summon_CreateSummonNavigation_" data-uid="AngeliA.Platformer.Summon.CreateSummonNavigation*"></a>
+  <h4 id="AngeliA_Platformer_Summon_CreateSummonNavigation" data-uid="AngeliA.Platformer.Summon.CreateSummonNavigation">CreateSummonNavigation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual SummonNavigation CreateSummonNavigation()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Summon_CreateSummon_" data-uid="AngeliA.Platformer.Summon.CreateSummon*"></a>
+  <h4 id="AngeliA_Platformer_Summon_CreateSummon__1_AngeliA_Character_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.Platformer.Summon.CreateSummon``1(AngeliA.Character,System.Int32,System.Int32,System.Boolean)">CreateSummon&lt;T&gt;(Character, int, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CreateSummon&lt;T&gt;(Character owner, int x, int y, bool forceCreate = false) where T : Summon</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>Instance of the summon's owner</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Position in global space to put this summon</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Position in global space to put this summon</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forceCreate</span></td>
+        <td><p>True if take an existing summon in same type and owner to summon it again</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Instance of the summoned character</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the summon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_Summon_FirstUpdate_" data-uid="AngeliA.Platformer.Summon.FirstUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Summon_FirstUpdate" data-uid="AngeliA.Platformer.Summon.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_FirstUpdate">Character.FirstUpdate()</a></div>
+  <a id="AngeliA_Platformer_Summon_LateUpdate_" data-uid="AngeliA.Platformer.Summon.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Summon_LateUpdate" data-uid="AngeliA.Platformer.Summon.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_LateUpdate">Character.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_Summon_OnActivated_" data-uid="AngeliA.Platformer.Summon.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_Summon_OnActivated" data-uid="AngeliA.Platformer.Summon.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_OnActivated">Character.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_Summon_OnDamaged_" data-uid="AngeliA.Platformer.Summon.OnDamaged*"></a>
+  <h4 id="AngeliA_Platformer_Summon_OnDamaged_AngeliA_Damage_" data-uid="AngeliA.Platformer.Summon.OnDamaged(AngeliA.Damage)">OnDamaged(Damage)</h4>
+  <div class="markdown level1 summary"><p>This function is called when character take damage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnDamaged(Damage damage)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_OnDamaged_AngeliA_Damage_">Character.OnDamaged(Damage)</a></div>
+  <a id="AngeliA_Platformer_Summon_OnInactivated_" data-uid="AngeliA.Platformer.Summon.OnInactivated*"></a>
+  <h4 id="AngeliA_Platformer_Summon_OnInactivated" data-uid="AngeliA.Platformer.Summon.OnInactivated">OnInactivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity leave the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInactivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_OnInactivated">Character.OnInactivated()</a></div>
+  <a id="AngeliA_Platformer_Summon_OnSummoned_" data-uid="AngeliA.Platformer.Summon.OnSummoned*"></a>
+  <h4 id="AngeliA_Platformer_Summon_OnSummoned_System_Boolean_" data-uid="AngeliA.Platformer.Summon.OnSummoned(System.Boolean)">OnSummoned(bool)</h4>
+  <div class="markdown level1 summary"><p>This function is called when the character is being summoned</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSummoned(bool create)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">create</span></td>
+        <td><p>True if this character was not on stage before being summon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Platformer_Summon_SetCharacterState_" data-uid="AngeliA.Platformer.Summon.SetCharacterState*"></a>
+  <h4 id="AngeliA_Platformer_Summon_SetCharacterState_AngeliA_CharacterState_" data-uid="AngeliA.Platformer.Summon.SetCharacterState(AngeliA.CharacterState)">SetCharacterState(CharacterState)</h4>
+  <div class="markdown level1 summary"><p>Set character's general game state, ignore when state already is the current one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetCharacterState(CharacterState state)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_SetCharacterState_AngeliA_CharacterState_">Character.SetCharacterState(CharacterState)</a></div>
+  <a id="AngeliA_Platformer_Summon_Update_" data-uid="AngeliA.Platformer.Summon.Update*"></a>
+  <h4 id="AngeliA_Platformer_Summon_Update" data-uid="AngeliA.Platformer.Summon.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>[3/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Character.html#AngeliA_Character_Update">Character.Update()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

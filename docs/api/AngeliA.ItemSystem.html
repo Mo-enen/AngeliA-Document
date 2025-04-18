@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ItemSystem | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ItemSystem | AngeliA ">
+    
+    <meta name="description" content="Core system that handles item related logic">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.ItemSystem">
+
+
+
+  <h1 id="AngeliA_ItemSystem" data-uid="AngeliA.ItemSystem" class="text-break">Class ItemSystem</h1>
+  <div class="markdown level0 summary"><p>Core system that handles item related logic</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_ItemSystem_ItemPoolReady_" data-uid="AngeliA.ItemSystem.ItemPoolReady*"></a>
+  <h4 id="AngeliA_ItemSystem_ItemPoolReady" data-uid="AngeliA.ItemSystem.ItemPoolReady">ItemPoolReady</h4>
+  <div class="markdown level1 summary"><p>True if the system is ready to use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ItemPoolReady { get; }</code></pre>
+  </div>
+  <a id="AngeliA_ItemSystem_ItemUnlockReady_" data-uid="AngeliA.ItemSystem.ItemUnlockReady*"></a>
+  <h4 id="AngeliA_ItemSystem_ItemUnlockReady" data-uid="AngeliA.ItemSystem.ItemUnlockReady">ItemUnlockReady</h4>
+  <div class="markdown level1 summary"><p>True if the item unlock data is loaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ItemUnlockReady { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_ItemSystem_CanUseItem_" data-uid="AngeliA.ItemSystem.CanUseItem*"></a>
+  <h4 id="AngeliA_ItemSystem_CanUseItem_System_Int32_AngeliA_Character_" data-uid="AngeliA.ItemSystem.CanUseItem(System.Int32,AngeliA.Character)">CanUseItem(int, Character)</h4>
+  <div class="markdown level1 summary"><p>True if the item can be use by the given character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanUseItem(int id, Character target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_ClearCombination_" data-uid="AngeliA.ItemSystem.ClearCombination*"></a>
+  <h4 id="AngeliA_ItemSystem_ClearCombination" data-uid="AngeliA.ItemSystem.ClearCombination">ClearCombination()</h4>
+  <div class="markdown level1 summary"><p>Reset the system craft combination pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearCombination()</code></pre>
+  </div>
+  <a id="AngeliA_ItemSystem_DropItemFor_" data-uid="AngeliA.ItemSystem.DropItemFor*"></a>
+  <h4 id="AngeliA_ItemSystem_DropItemFor_AngeliA_Entity_" data-uid="AngeliA.ItemSystem.DropItemFor(AngeliA.Entity)">DropItemFor(Entity)</h4>
+  <div class="markdown level1 summary"><p>Perform an item drop the target entity when the entity is destroyed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DropItemFor(Entity entity)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the item drop successfuly performs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_ItemSystem_DropItemFor_" data-uid="AngeliA.ItemSystem.DropItemFor*"></a>
+  <h4 id="AngeliA_ItemSystem_DropItemFor_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.ItemSystem.DropItemFor(System.Int32,System.Int32,System.Int32)">DropItemFor(int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Perform an item drop the target entity when the entity is destroyed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DropItemFor(int sourceID, int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">sourceID</span></td>
+        <td><p>ID of the target entity</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Position X of the item holder appears in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Position Y of the item holder appears in global space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the item drop successfuly performs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_ItemSystem_ForAllCombinations_" data-uid="AngeliA.ItemSystem.ForAllCombinations*"></a>
+  <h4 id="AngeliA_ItemSystem_ForAllCombinations" data-uid="AngeliA.ItemSystem.ForAllCombinations">ForAllCombinations()</h4>
+  <div class="markdown level1 summary"><p>Iterate through all crafting combination inside the pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;Int4, int&gt;&gt; ForAllCombinations()</code></pre>
+  </div>
+  <h5 id="AngeliA_ItemSystem_ForAllCombinations_examples">Examples</h5>
+  <pre><code class="lang-csharp">using AngeliA;
+
+namespace AngeliaGame;
+
+public class Example {
+
+	[OnGameInitializeLater(4096)]
+	internal static void OnGameUpdate () {
+		Debug.Log("All item combinations inside this game:");
+		foreach (var com in ItemSystem.ForAllCombinations()) {
+			string name0 = ItemSystem.GetItemDisplayName(com.Key.x);
+			string name1 = ItemSystem.GetItemDisplayName(com.Key.y);
+			string name2 = ItemSystem.GetItemDisplayName(com.Key.z);
+			string name3 = ItemSystem.GetItemDisplayName(com.Key.w);
+			string nameResult = ItemSystem.GetItemDisplayName(com.Value);
+			Debug.Log($"{name0} + {name1} + {name2} + {name3} = {nameResult}");
+		}
+	}
+
+}</code></pre>
+
+  <a id="AngeliA_ItemSystem_GetItem_" data-uid="AngeliA.ItemSystem.GetItem*"></a>
+  <h4 id="AngeliA_ItemSystem_GetItem_System_Int32_" data-uid="AngeliA.ItemSystem.GetItem(System.Int32)">GetItem(int)</h4>
+  <div class="markdown level1 summary"><p>Get global single instance of the item from given ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Item GetItem(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_GetItemDescription_" data-uid="AngeliA.ItemSystem.GetItemDescription*"></a>
+  <h4 id="AngeliA_ItemSystem_GetItemDescription_System_Int32_" data-uid="AngeliA.ItemSystem.GetItemDescription(System.Int32)">GetItemDescription(int)</h4>
+  <div class="markdown level1 summary"><p>Get description from the language system from the given item ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetItemDescription(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_GetItemDisplayName_" data-uid="AngeliA.ItemSystem.GetItemDisplayName*"></a>
+  <h4 id="AngeliA_ItemSystem_GetItemDisplayName_System_Int32_" data-uid="AngeliA.ItemSystem.GetItemDisplayName(System.Int32)">GetItemDisplayName(int)</h4>
+  <div class="markdown level1 summary"><p>Get display name from the language system from the given item ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetItemDisplayName(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_GetItemMaxStackCount_" data-uid="AngeliA.ItemSystem.GetItemMaxStackCount*"></a>
+  <h4 id="AngeliA_ItemSystem_GetItemMaxStackCount_System_Int32_" data-uid="AngeliA.ItemSystem.GetItemMaxStackCount(System.Int32)">GetItemMaxStackCount(int)</h4>
+  <div class="markdown level1 summary"><p>Get stack count limit of the given item in inventory panel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetItemMaxStackCount(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_GetRelatedCombinations_" data-uid="AngeliA.ItemSystem.GetRelatedCombinations*"></a>
+  <h4 id="AngeliA_ItemSystem_GetRelatedCombinations_AngeliA_Int4_System_Collections_Generic_List_AngeliA_Int4__System_Int32_" data-uid="AngeliA.ItemSystem.GetRelatedCombinations(AngeliA.Int4,System.Collections.Generic.List{AngeliA.Int4},System.Int32)">GetRelatedCombinations(Int4, List&lt;Int4&gt;, int)</h4>
+  <div class="markdown level1 summary"><p>Get all craft combination that include the given combination. This is for making a helper list for the user to know what items can they craft.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetRelatedCombinations(Int4 combination, List&lt;Int4&gt; output, int materialCountLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int4.html">Int4</a></td>
+        <td><span class="parametername">combination</span></td>
+        <td><p>Current combination the user putted into the crafting fields</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AngeliA.Int4.html">Int4</a>&gt;</td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The helper list data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">materialCountLimit</span></td>
+        <td><p>Combinations which have more source items than this number will be ignored</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_ItemSystem_GetSortedCombination_" data-uid="AngeliA.ItemSystem.GetSortedCombination*"></a>
+  <h4 id="AngeliA_ItemSystem_GetSortedCombination_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.ItemSystem.GetSortedCombination(System.Int32,System.Int32,System.Int32,System.Int32)">GetSortedCombination(int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Sort the given combination to make it always unique no matter what order the source items are</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Int4 GetSortedCombination(int a, int b, int c, int d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Crafting source item ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Crafting source item ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Crafting source item ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>Crafting source item ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int4.html">Int4</a></td>
+        <td><p>Sorted combination ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_ItemSystem_HasItem_" data-uid="AngeliA.ItemSystem.HasItem*"></a>
+  <h4 id="AngeliA_ItemSystem_HasItem_System_Int32_" data-uid="AngeliA.ItemSystem.HasItem(System.Int32)">HasItem(int)</h4>
+  <div class="markdown level1 summary"><p>True if there is an item inside the system pool for the given ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasItem(int id)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_IsEquipment_" data-uid="AngeliA.ItemSystem.IsEquipment*"></a>
+  <h4 id="AngeliA_ItemSystem_IsEquipment_System_Int32_" data-uid="AngeliA.ItemSystem.IsEquipment(System.Int32)">IsEquipment(int)</h4>
+  <div class="markdown level1 summary"><p>True if the given item is equipment type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEquipment(int itemID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_IsEquipment_" data-uid="AngeliA.ItemSystem.IsEquipment*"></a>
+  <h4 id="AngeliA_ItemSystem_IsEquipment_System_Int32_AngeliA_EquipmentType__" data-uid="AngeliA.ItemSystem.IsEquipment(System.Int32,AngeliA.EquipmentType@)">IsEquipment(int, out EquipmentType)</h4>
+  <div class="markdown level1 summary"><p>True if the given item is equipment type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEquipment(int itemID, out EquipmentType type)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_IsItemUnlocked_" data-uid="AngeliA.ItemSystem.IsItemUnlocked*"></a>
+  <h4 id="AngeliA_ItemSystem_IsItemUnlocked_System_Int32_" data-uid="AngeliA.ItemSystem.IsItemUnlocked(System.Int32)">IsItemUnlocked(int)</h4>
+  <div class="markdown level1 summary"><p>True if the given item is unlocked. Locked items will display as &quot;?&quot; in crafting UI helper menu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsItemUnlocked(int itemID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_SetItemUnlocked_" data-uid="AngeliA.ItemSystem.SetItemUnlocked*"></a>
+  <h4 id="AngeliA_ItemSystem_SetItemUnlocked_System_Int32_System_Boolean_" data-uid="AngeliA.ItemSystem.SetItemUnlocked(System.Int32,System.Boolean)">SetItemUnlocked(int, bool)</h4>
+  <div class="markdown level1 summary"><p>Set given item into locked or unlocked. Locked items will display as &quot;?&quot; in crafting UI helper menu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetItemUnlocked(int itemID, bool unlocked)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_ItemSystem_SpawnItem_" data-uid="AngeliA.ItemSystem.SpawnItem*"></a>
+  <h4 id="AngeliA_ItemSystem_SpawnItem_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.ItemSystem.SpawnItem(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">SpawnItem(int, int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Spawn an item holder entity that holds the given item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ItemHolder SpawnItem(int itemID, int x, int y, int count = 1, bool jump = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">itemID</span></td>
+        <td><p>Target item id</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Position X of the item holder in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Position Y of the item holder in global space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Count of the target item inside the item holder. This function always spawn only one item holder entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">jump</span></td>
+        <td><p>True if the item holder entity jump up when it spawns</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.ItemHolder.html">ItemHolder</a></td>
+        <td><p>Instance of the item holder entity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_ItemSystem_TryGetCombination_" data-uid="AngeliA.ItemSystem.TryGetCombination*"></a>
+  <h4 id="AngeliA_ItemSystem_TryGetCombination_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="AngeliA.ItemSystem.TryGetCombination(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">TryGetCombination(int, int, int, int, out int, out int, out int, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get item crafting combination data of the given item ID pair</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetCombination(int item0, int item1, int item2, int item3, out int result, out int resultCount, out int keep0, out int keep1, out int keep2, out int keep3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">item0</span></td>
+        <td><p>Source item ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">item1</span></td>
+        <td><p>Source item ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">item2</span></td>
+        <td><p>Source item ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">item3</span></td>
+        <td><p>Source item ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Result item ID that the given pair will craft into</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">resultCount</span></td>
+        <td><p>How many result item does a single craft will get</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">keep0</span></td>
+        <td><p>Source item ID which do not get consume after craft</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">keep1</span></td>
+        <td><p>Source item ID which do not get consume after craft</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">keep2</span></td>
+        <td><p>Source item ID which do not get consume after craft</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">keep3</span></td>
+        <td><p>Source item ID which do not get consume after craft</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if it is a valid craft combination</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

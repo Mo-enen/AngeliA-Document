@@ -74,6 +74,16 @@
 <p>实体（Entity）是 AngeliA 游戏逻辑的核心载体，在地图中，大多数可与玩家交互的物体均以实体形式存在，例如木箱、角色、子弹等。您可以使用实体调试器来测试舞台上的实体。</p>
 <img src="../../images/EntityTest.png" width="61.8%">
 <img src="../../images/EntityDebuggerTest.gif" width="61.8%">
+<h3 id="实体层">实体层</h3>
+<p>舞台上的实体分别保存在以下层中：<code>UI</code>, <code>Game</code>, <code>Character</code>, <code>Environment</code>, <code>Water</code>, <code>Bullet</code>, <code>Item</code>, <code>Decorate</code>，使用 <code>EntityLayer.XXX</code> 来获取实体层的值。游戏窗口右上方的探查器可以显示当前舞台中的实体数量，进度条代表当前数量占最大限制的比例。</p>
+<img src="../../images/Profiler-Entity.png" width="50%">
+<p>使用 <code>EntityLayerCapacity</code>标签修改实体层的最大限制：</p>
+<pre><code class="lang-C#">using AngeliA;
+
+[assembly: EntityLayerCapacity(EntityLayer.GAME, 1024)]
+[assembly: EntityLayerCapacity(EntityLayer.DECORATE, 256)]
+
+</code></pre>
 <h3 id="回调函数">回调函数</h3>
 <p>实体类通过回调函数接受来自系统的事件，您可以重载这些函数来接收这些事件，所有可用的回调函数分别为：</p>
 <ul>

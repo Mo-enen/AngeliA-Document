@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Launcher | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Launcher | AngeliA ">
+    
+    <meta name="description" content="Entity that spawn a given target entity repeately">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.Launcher">
+
+
+
+  <h1 id="AngeliA_Platformer_Launcher" data-uid="AngeliA.Platformer.Launcher" class="text-break">Class Launcher</h1>
+  <div class="markdown level0 summary"><p>Entity that spawn a given target entity repeately</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.IBlockEntity.html">IBlockEntity</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_Launcher_AllowingAutoLaunch_" data-uid="AngeliA.Platformer.Launcher.AllowingAutoLaunch*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_AllowingAutoLaunch" data-uid="AngeliA.Platformer.Launcher.AllowingAutoLaunch">AllowingAutoLaunch</h4>
+  <div class="markdown level1 summary"><p>True if the launcher perform launch every &quot;LaunchFrequency&quot; frames</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowingAutoLaunch { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_CurrentLaunchedCount_" data-uid="AngeliA.Platformer.Launcher.CurrentLaunchedCount*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_CurrentLaunchedCount" data-uid="AngeliA.Platformer.Launcher.CurrentLaunchedCount">CurrentLaunchedCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int CurrentLaunchedCount { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_FailbackEntityID_" data-uid="AngeliA.Platformer.Launcher.FailbackEntityID*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_FailbackEntityID" data-uid="AngeliA.Platformer.Launcher.FailbackEntityID">FailbackEntityID</h4>
+  <div class="markdown level1 summary"><p>Launching entity with this type ID when the &quot;TargetEntityID&quot; is invalid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FailbackEntityID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_ItemCountPerLaunch_" data-uid="AngeliA.Platformer.Launcher.ItemCountPerLaunch*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_ItemCountPerLaunch" data-uid="AngeliA.Platformer.Launcher.ItemCountPerLaunch">ItemCountPerLaunch</h4>
+  <div class="markdown level1 summary"><p>How many entity does it launch at once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ItemCountPerLaunch { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_KeepLaunchedEntityInMap_" data-uid="AngeliA.Platformer.Launcher.KeepLaunchedEntityInMap*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_KeepLaunchedEntityInMap" data-uid="AngeliA.Platformer.Launcher.KeepLaunchedEntityInMap">KeepLaunchedEntityInMap</h4>
+  <div class="markdown level1 summary"><p>True if the launched entities can reposition and save into the map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool KeepLaunchedEntityInMap { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LastLaunchedFrame_" data-uid="AngeliA.Platformer.Launcher.LastLaunchedFrame*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LastLaunchedFrame" data-uid="AngeliA.Platformer.Launcher.LastLaunchedFrame">LastLaunchedFrame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int LastLaunchedFrame { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LaunchFrequency_" data-uid="AngeliA.Platformer.Launcher.LaunchFrequency*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchFrequency" data-uid="AngeliA.Platformer.Launcher.LaunchFrequency">LaunchFrequency</h4>
+  <div class="markdown level1 summary"><p>How many frames does it takes to launch another entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int LaunchFrequency { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LaunchOffset_" data-uid="AngeliA.Platformer.Launcher.LaunchOffset*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchOffset" data-uid="AngeliA.Platformer.Launcher.LaunchOffset">LaunchOffset</h4>
+  <div class="markdown level1 summary"><p>Starting position offset in global space for the launched entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Int2 LaunchOffset { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LaunchOverlappingElement_" data-uid="AngeliA.Platformer.Launcher.LaunchOverlappingElement*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchOverlappingElement" data-uid="AngeliA.Platformer.Launcher.LaunchOverlappingElement">LaunchOverlappingElement</h4>
+  <div class="markdown level1 summary"><p>True if launcher search entity target ID from overlapping map element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool LaunchOverlappingElement { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LaunchTowardsPlayer_" data-uid="AngeliA.Platformer.Launcher.LaunchTowardsPlayer*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchTowardsPlayer" data-uid="AngeliA.Platformer.Launcher.LaunchTowardsPlayer">LaunchTowardsPlayer</h4>
+  <div class="markdown level1 summary"><p>True if the launcher always launch towards player horizontal location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool LaunchTowardsPlayer { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LaunchVelocity_" data-uid="AngeliA.Platformer.Launcher.LaunchVelocity*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchVelocity" data-uid="AngeliA.Platformer.Launcher.LaunchVelocity">LaunchVelocity</h4>
+  <div class="markdown level1 summary"><p>Starting velocity for the launched entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Int2 LaunchVelocity { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LaunchWhenEntranceBlocked_" data-uid="AngeliA.Platformer.Launcher.LaunchWhenEntranceBlocked*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchWhenEntranceBlocked" data-uid="AngeliA.Platformer.Launcher.LaunchWhenEntranceBlocked">LaunchWhenEntranceBlocked</h4>
+  <div class="markdown level1 summary"><p>True if launcher can launch when the starting position is blocked by other entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool LaunchWhenEntranceBlocked { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_MaxLaunchCount_" data-uid="AngeliA.Platformer.Launcher.MaxLaunchCount*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_MaxLaunchCount" data-uid="AngeliA.Platformer.Launcher.MaxLaunchCount">MaxLaunchCount</h4>
+  <div class="markdown level1 summary"><p>How many entities can it launch every time after the launcher spawned on stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MaxLaunchCount { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_TargetEntityID_" data-uid="AngeliA.Platformer.Launcher.TargetEntityID*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_TargetEntityID" data-uid="AngeliA.Platformer.Launcher.TargetEntityID">TargetEntityID</h4>
+  <div class="markdown level1 summary"><p>Launching entity type ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TargetEntityID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_UseMomentum_" data-uid="AngeliA.Platformer.Launcher.UseMomentum*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_UseMomentum" data-uid="AngeliA.Platformer.Launcher.UseMomentum">UseMomentum</h4>
+  <div class="markdown level1 summary"><p>True if the entity is move by monentum instead of velocity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool UseMomentum { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_Launcher_FirstUpdate_" data-uid="AngeliA.Platformer.Launcher.FirstUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_FirstUpdate" data-uid="AngeliA.Platformer.Launcher.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_FirstUpdate">Entity.FirstUpdate()</a></div>
+  <a id="AngeliA_Platformer_Launcher_LateUpdate_" data-uid="AngeliA.Platformer.Launcher.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LateUpdate" data-uid="AngeliA.Platformer.Launcher.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_Launcher_LaunchEntity_" data-uid="AngeliA.Platformer.Launcher.LaunchEntity*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchEntity" data-uid="AngeliA.Platformer.Launcher.LaunchEntity">LaunchEntity()</h4>
+  <div class="markdown level1 summary"><p>Perform launch for once</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity LaunchEntity()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_LaunchToRightSide_" data-uid="AngeliA.Platformer.Launcher.LaunchToRightSide*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_LaunchToRightSide" data-uid="AngeliA.Platformer.Launcher.LaunchToRightSide">LaunchToRightSide()</h4>
+  <div class="markdown level1 summary"><p>True if the launcher should launch to right currently</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LaunchToRightSide()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_OnActivated_" data-uid="AngeliA.Platformer.Launcher.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_OnActivated" data-uid="AngeliA.Platformer.Launcher.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_OnActivated">Entity.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_Launcher_OnEntityLaunched_" data-uid="AngeliA.Platformer.Launcher.OnEntityLaunched*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_OnEntityLaunched_AngeliA_Entity_System_Int32_System_Int32_" data-uid="AngeliA.Platformer.Launcher.OnEntityLaunched(AngeliA.Entity,System.Int32,System.Int32)">OnEntityLaunched(Entity, int, int)</h4>
+  <div class="markdown level1 summary"><p>This function is called when an entity is launched</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEntityLaunched(Entity entity, int x, int y)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Platformer_Launcher_OnEntityRefresh_" data-uid="AngeliA.Platformer.Launcher.OnEntityRefresh*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_OnEntityRefresh" data-uid="AngeliA.Platformer.Launcher.OnEntityRefresh">OnEntityRefresh()</h4>
+  <div class="markdown level1 summary"><p>This function is called when there are map changes happens nearby and the entity needs to refresh itself</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEntityRefresh()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_Launcher_Update_" data-uid="AngeliA.Platformer.Launcher.Update*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_Update" data-uid="AngeliA.Platformer.Launcher.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>[3/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_Update">Entity.Update()</a></div>
+  <a id="AngeliA_Platformer_Launcher_ValidForLaunch_" data-uid="AngeliA.Platformer.Launcher.ValidForLaunch*"></a>
+  <h4 id="AngeliA_Platformer_Launcher_ValidForLaunch" data-uid="AngeliA.Platformer.Launcher.ValidForLaunch">ValidForLaunch()</h4>
+  <div class="markdown level1 summary"><p>True if the launcher is currently able to launch</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidForLaunch()</code></pre>
+  </div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

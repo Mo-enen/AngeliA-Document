@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class HealWeapon&lt;B&gt; | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class HealWeapon&lt;B&gt; | AngeliA ">
+    
+    <meta name="description" content="Weapon that shoot bullet to heal friendly forces">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.HealWeapon`1">
+
+
+
+  <h1 id="AngeliA_Platformer_HealWeapon_1" data-uid="AngeliA.Platformer.HealWeapon`1" class="text-break">Class HealWeapon&lt;B&gt;</h1>
+  <div class="markdown level0 summary"><p>Weapon that shoot bullet to heal friendly forces</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">B</span></td>
+        <td><p>Type of bullet to spawn</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_HealWeapon_1_AllowManuallyAttack_" data-uid="AngeliA.Platformer.HealWeapon`1.AllowManuallyAttack*"></a>
+  <h4 id="AngeliA_Platformer_HealWeapon_1_AllowManuallyAttack" data-uid="AngeliA.Platformer.HealWeapon`1.AllowManuallyAttack">AllowManuallyAttack</h4>
+  <div class="markdown level1 summary"><p>True if this weapon allows manually attack from character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool AllowManuallyAttack { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_HealWeapon_1_AutoAttackFrequency_" data-uid="AngeliA.Platformer.HealWeapon`1.AutoAttackFrequency*"></a>
+  <h4 id="AngeliA_Platformer_HealWeapon_1_AutoAttackFrequency" data-uid="AngeliA.Platformer.HealWeapon`1.AutoAttackFrequency">AutoAttackFrequency</h4>
+  <div class="markdown level1 summary"><p>Frames it takes to auto attack again. Set to 0 for no auto attack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int AutoAttackFrequency { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_HealWeapon_1_BeforeItemUpdate_FromEquipment_" data-uid="AngeliA.Platformer.HealWeapon`1.BeforeItemUpdate_FromEquipment*"></a>
+  <h4 id="AngeliA_Platformer_HealWeapon_1_BeforeItemUpdate_FromEquipment_AngeliA_Character_" data-uid="AngeliA.Platformer.HealWeapon`1.BeforeItemUpdate_FromEquipment(AngeliA.Character)">BeforeItemUpdate_FromEquipment(Character)</h4>
+  <div class="markdown level1 summary"><p>This function is called every frame when the holder is equipping this item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeItemUpdate_FromEquipment(Character holder)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Item.html#AngeliA_Item_BeforeItemUpdate_FromEquipment_AngeliA_Character_">Item.BeforeItemUpdate_FromEquipment(Character)</a></div>
+  <a id="AngeliA_Platformer_HealWeapon_1_SpawnBullet_" data-uid="AngeliA.Platformer.HealWeapon`1.SpawnBullet*"></a>
+  <h4 id="AngeliA_Platformer_HealWeapon_1_SpawnBullet_AngeliA_Character_" data-uid="AngeliA.Platformer.HealWeapon`1.SpawnBullet(AngeliA.Character)">SpawnBullet(Character)</h4>
+  <div class="markdown level1 summary"><p>Spawn the bullet entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Bullet SpawnBullet(Character sender)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Character.html">Character</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>Character that use the weapon</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Bullet.html">Bullet</a></td>
+        <td><p>Instance of the spawned bullet entity. Return null when invalid</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Weapon.html#AngeliA_Weapon_SpawnBullet_AngeliA_Character_">Weapon.SpawnBullet(Character)</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

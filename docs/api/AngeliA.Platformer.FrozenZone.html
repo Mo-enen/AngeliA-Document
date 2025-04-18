@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FrozenZone | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FrozenZone | AngeliA ">
+    
+    <meta name="description" content="Entity that freeze nearby buff carriers">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.FrozenZone">
+
+
+
+  <h1 id="AngeliA_Platformer_FrozenZone" data-uid="AngeliA.Platformer.FrozenZone" class="text-break">Class FrozenZone</h1>
+  <div class="markdown level0 summary"><p>Entity that freeze nearby buff carriers</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_FrozenZone_Duration_" data-uid="AngeliA.Platformer.FrozenZone.Duration*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_Duration" data-uid="AngeliA.Platformer.FrozenZone.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>Time in frame that target keep being freeze</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Duration { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_FrozenZone_Fullscreen_" data-uid="AngeliA.Platformer.FrozenZone.Fullscreen*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_Fullscreen" data-uid="AngeliA.Platformer.FrozenZone.Fullscreen">Fullscreen</h4>
+  <div class="markdown level1 summary"><p>True if all buff carriers on screen will be freeze while this entity is on stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Fullscreen { get; set; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_FrozenZone_BeforeUpdate_" data-uid="AngeliA.Platformer.FrozenZone.BeforeUpdate*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_BeforeUpdate" data-uid="AngeliA.Platformer.FrozenZone.BeforeUpdate">BeforeUpdate()</h4>
+  <div class="markdown level1 summary"><p>[2/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeforeUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_BeforeUpdate">Entity.BeforeUpdate()</a></div>
+  <a id="AngeliA_Platformer_FrozenZone_FirstUpdate_" data-uid="AngeliA.Platformer.FrozenZone.FirstUpdate*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_FirstUpdate" data-uid="AngeliA.Platformer.FrozenZone.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_FirstUpdate">Entity.FirstUpdate()</a></div>
+  <a id="AngeliA_Platformer_FrozenZone_LateUpdate_" data-uid="AngeliA.Platformer.FrozenZone.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_LateUpdate" data-uid="AngeliA.Platformer.FrozenZone.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_LateUpdate">Entity.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_FrozenZone_OnActivated_" data-uid="AngeliA.Platformer.FrozenZone.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_OnActivated" data-uid="AngeliA.Platformer.FrozenZone.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_OnActivated">Entity.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_FrozenZone_OnTouchingZone_" data-uid="AngeliA.Platformer.FrozenZone.OnTouchingZone*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_OnTouchingZone_AngeliA_Rigidbody_" data-uid="AngeliA.Platformer.FrozenZone.OnTouchingZone(AngeliA.Rigidbody)">OnTouchingZone(Rigidbody)</h4>
+  <div class="markdown level1 summary"><p>This function is called when a target is touching this zone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTouchingZone(Rigidbody rig)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Platformer_FrozenZone_SpreadFrozenZone_" data-uid="AngeliA.Platformer.FrozenZone.SpreadFrozenZone*"></a>
+  <h4 id="AngeliA_Platformer_FrozenZone_SpreadFrozenZone_System_Int32_AngeliA_IRect_System_Int32_" data-uid="AngeliA.Platformer.FrozenZone.SpreadFrozenZone(System.Int32,AngeliA.IRect,System.Int32)">SpreadFrozenZone(int, IRect, int)</h4>
+  <div class="markdown level1 summary"><p>Spawn a frozen zone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpreadFrozenZone(int zoneID, IRect range, int duration = 300)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoneID</span></td>
+        <td><p>Type of the zone</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>Size of the zone</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Time in frame that target keep being freeze</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

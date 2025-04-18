@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CircuitSystem | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CircuitSystem | AngeliA ">
+    
+    <meta name="description" content="Core system for triggering specified function of entities on stage/map">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.CircuitSystem">
+
+
+
+  <h1 id="AngeliA_CircuitSystem" data-uid="AngeliA.CircuitSystem" class="text-break">Class CircuitSystem</h1>
+  <div class="markdown level0 summary"><p>Core system for triggering specified function of entities on stage/map</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_CircuitSystem_BitInt_to_WireConnection_" data-uid="AngeliA.CircuitSystem.BitInt_to_WireConnection*"></a>
+  <h4 id="AngeliA_CircuitSystem_BitInt_to_WireConnection_System_Int32_System_Boolean__System_Boolean__System_Boolean__System_Boolean__" data-uid="AngeliA.CircuitSystem.BitInt_to_WireConnection(System.Int32,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@)">BitInt_to_WireConnection(int, out bool, out bool, out bool, out bool)</h4>
+  <div class="markdown level1 summary"><p>Convert an intager into wire connection info</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BitInt_to_WireConnection(int bitInt, out bool connectL, out bool connectR, out bool connectD, out bool connectU)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CircuitSystem_GetStamp_" data-uid="AngeliA.CircuitSystem.GetStamp*"></a>
+  <h4 id="AngeliA_CircuitSystem_GetStamp_AngeliA_Int3_" data-uid="AngeliA.CircuitSystem.GetStamp(AngeliA.Int3)">GetStamp(Int3)</h4>
+  <div class="markdown level1 summary"><p>Get unique ID for circuit system at given position in unit space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetStamp(Int3 unitPos)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CircuitSystem_IsCircuitOperator_" data-uid="AngeliA.CircuitSystem.IsCircuitOperator*"></a>
+  <h4 id="AngeliA_CircuitSystem_IsCircuitOperator_System_Int32_" data-uid="AngeliA.CircuitSystem.IsCircuitOperator(System.Int32)">IsCircuitOperator(int)</h4>
+  <div class="markdown level1 summary"><p>True if the given ID is a valid circuit operator entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCircuitOperator(int typeID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CircuitSystem_IsWire_" data-uid="AngeliA.CircuitSystem.IsWire*"></a>
+  <h4 id="AngeliA_CircuitSystem_IsWire_System_Int32_" data-uid="AngeliA.CircuitSystem.IsWire(System.Int32)">IsWire(int)</h4>
+  <div class="markdown level1 summary"><p>True if the given ID is registed as wire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsWire(int typeID)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CircuitSystem_OperateCircuit_" data-uid="AngeliA.CircuitSystem.OperateCircuit*"></a>
+  <h4 id="AngeliA_CircuitSystem_OperateCircuit_AngeliA_Int3_System_Int32_AngeliA_Direction5_" data-uid="AngeliA.CircuitSystem.OperateCircuit(AngeliA.Int3,System.Int32,AngeliA.Direction5)">OperateCircuit(Int3, int, Direction5)</h4>
+  <div class="markdown level1 summary"><p>Perform the function from the operator at given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool OperateCircuit(Int3 unitPos, int stamp = -2147483648, Direction5 circuitFrom = Direction5.Center)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int3.html">Int3</a></td>
+        <td><span class="parametername">unitPos</span></td>
+        <td><p>Target position in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">stamp</span></td>
+        <td><p>unique ID for this operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Direction5.html">Direction5</a></td>
+        <td><span class="parametername">circuitFrom</span></td>
+        <td><p>Which direction does the circuit came from. Set to center to make current as original.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_CircuitSystem_RegisterWire_" data-uid="AngeliA.CircuitSystem.RegisterWire*"></a>
+  <h4 id="AngeliA_CircuitSystem_RegisterWire_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.CircuitSystem.RegisterWire(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">RegisterWire(int, bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Register target IMapItem as wire for operating circuit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterWire(int id, bool connectL, bool connectR, bool connectD, bool connectU)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the target entity/element</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">connectL</span></td>
+        <td><p>True if this wire connect to the wire/operator on left</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">connectR</span></td>
+        <td><p>True if this wire connect to the wire/operator on right</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">connectD</span></td>
+        <td><p>True if this wire connect to the wire/operator on bottom</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">connectU</span></td>
+        <td><p>True if this wire connect to the wire/operator on top</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_CircuitSystem_TriggerCircuit_" data-uid="AngeliA.CircuitSystem.TriggerCircuit*"></a>
+  <h4 id="AngeliA_CircuitSystem_TriggerCircuit_System_Int32_System_Int32_System_Int32_System_Int32_AngeliA_Direction5_" data-uid="AngeliA.CircuitSystem.TriggerCircuit(System.Int32,System.Int32,System.Int32,System.Int32,AngeliA.Direction5)">TriggerCircuit(int, int, int, int, Direction5)</h4>
+  <div class="markdown level1 summary"><p>Trigger the system at given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerCircuit(int unitX, int unitY, int unitZ, int stamp = -2147483648, Direction5 startDirection = Direction5.Center)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitX</span></td>
+        <td><p>Position to start circuit trigger in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitY</span></td>
+        <td><p>Position to start circuit trigger in unit space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">unitZ</span></td>
+        <td><p>Position Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">stamp</span></td>
+        <td><p>unique ID for this operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Direction5.html">Direction5</a></td>
+        <td><span class="parametername">startDirection</span></td>
+        <td><p>Only start at this direction (Set to center to start all direction)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_CircuitSystem_TryAddBackgroundTrigger_" data-uid="AngeliA.CircuitSystem.TryAddBackgroundTrigger*"></a>
+  <h4 id="AngeliA_CircuitSystem_TryAddBackgroundTrigger_System_Int32_AngeliA_Int3_" data-uid="AngeliA.CircuitSystem.TryAddBackgroundTrigger(System.Int32,AngeliA.Int3)">TryAddBackgroundTrigger(int, Int3)</h4>
+  <div class="markdown level1 summary"><p>Add a trigger in background thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddBackgroundTrigger(int entityID, Int3 unitPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">entityID</span></td>
+        <td><p>Source ID of this trigger</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int3.html">Int3</a></td>
+        <td><span class="parametername">unitPos</span></td>
+        <td><p>Position in unit space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the capacity is not reached</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_CircuitSystem_TryRemoveBackgroundTrigger_" data-uid="AngeliA.CircuitSystem.TryRemoveBackgroundTrigger*"></a>
+  <h4 id="AngeliA_CircuitSystem_TryRemoveBackgroundTrigger_System_Int32_AngeliA_Int3_" data-uid="AngeliA.CircuitSystem.TryRemoveBackgroundTrigger(System.Int32,AngeliA.Int3)">TryRemoveBackgroundTrigger(int, Int3)</h4>
+  <div class="markdown level1 summary"><p>Remove the given entity from background thread triggers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryRemoveBackgroundTrigger(int entityID, Int3 unitPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">entityID</span></td>
+        <td><p>Source ID of this trigger</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.Int3.html">Int3</a></td>
+        <td><span class="parametername">unitPos</span></td>
+        <td><p>Position in unit space</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the trigger is removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_CircuitSystem_WireConnection_to_BitInt_" data-uid="AngeliA.CircuitSystem.WireConnection_to_BitInt*"></a>
+  <h4 id="AngeliA_CircuitSystem_WireConnection_to_BitInt_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="AngeliA.CircuitSystem.WireConnection_to_BitInt(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">WireConnection_to_BitInt(bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Convert wire connection info into an Intager</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WireConnection_to_BitInt(bool connectL, bool connectR, bool connectD, bool connectU)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CircuitSystem_WireEntityID_to_WireConnection_" data-uid="AngeliA.CircuitSystem.WireEntityID_to_WireConnection*"></a>
+  <h4 id="AngeliA_CircuitSystem_WireEntityID_to_WireConnection_System_Int32_System_Boolean__System_Boolean__System_Boolean__System_Boolean__" data-uid="AngeliA.CircuitSystem.WireEntityID_to_WireConnection(System.Int32,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@)">WireEntityID_to_WireConnection(int, out bool, out bool, out bool, out bool)</h4>
+  <div class="markdown level1 summary"><p>Get connection directions from given wire ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool WireEntityID_to_WireConnection(int id, out bool connectL, out bool connectR, out bool connectD, out bool connectU)</code></pre>
+  </div>
+    
+  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the wire ID is valid</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

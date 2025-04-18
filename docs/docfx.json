@@ -1,28 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
-  "metadata": [
-    {
-      "src": [
-        {
-          "src": "https://github.com/Mo-enen/AngeliA/tree/main/AngeliA%20Framework",
-          "files": [
-            "AngeliA Framework.csproj"
-          ],
-          "exclude": [
-            "**/ThridParty/**"
-          ]
-        },
-        {
-          "src": "https://github.com/Mo-enen/AngeliA/tree/main/AngeliA%20Platformer",
-          "files": [
-            "AngeliA Platformer.csproj"
-          ]
-        }
-      ],
-      "dest": "api",
-      "filter": "filterConfig.yml"
-    }
-  ],
   "build": {
     "content": [
       {

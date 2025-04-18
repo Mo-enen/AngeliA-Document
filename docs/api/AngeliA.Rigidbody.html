@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Rigidbody | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Rigidbody | AngeliA ">
+    
+    <meta name="description" content="Class for the entities which apply general physics by the system">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Rigidbody">
+
+
+
+  <h1 id="AngeliA_Rigidbody" data-uid="AngeliA.Rigidbody" class="text-break">Class Rigidbody</h1>
+  <div class="markdown level0 summary"><p>Class for the entities which apply general physics by the system</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.ICarrier.html">ICarrier</a></div>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="AngeliA_Rigidbody_CollisionMask" data-uid="AngeliA.Rigidbody.CollisionMask">CollisionMask</h4>
+  <div class="markdown level1 summary"><p>Which physics layers should this entity collide with</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt CollisionMask</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_FallingGravityScale" data-uid="AngeliA.Rigidbody.FallingGravityScale">FallingGravityScale</h4>
+  <div class="markdown level1 summary"><p>Amount of gravity apply to this entity when it's moving downward (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt FallingGravityScale</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_GlobalGravity" data-uid="AngeliA.Rigidbody.GlobalGravity">GlobalGravity</h4>
+  <div class="markdown level1 summary"><p>Gravity value that applys to all rigidbody</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly FrameBasedInt GlobalGravity</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_IgnoreGravity" data-uid="AngeliA.Rigidbody.IgnoreGravity">IgnoreGravity</h4>
+  <div class="markdown level1 summary"><p>True if this entity currently should not apply gravity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool IgnoreGravity</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_IgnoreGroundCheck" data-uid="AngeliA.Rigidbody.IgnoreGroundCheck">IgnoreGroundCheck</h4>
+  <div class="markdown level1 summary"><p>If this entity currently check for touching ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool IgnoreGroundCheck</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_IgnoreInsideGround" data-uid="AngeliA.Rigidbody.IgnoreInsideGround">IgnoreInsideGround</h4>
+  <div class="markdown level1 summary"><p>If this entity currently check for stuck inside ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool IgnoreInsideGround</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_IgnoreMomentum" data-uid="AngeliA.Rigidbody.IgnoreMomentum">IgnoreMomentum</h4>
+  <div class="markdown level1 summary"><p>True if this entity currently should not apply any momentum</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool IgnoreMomentum</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_IgnoreOneway" data-uid="AngeliA.Rigidbody.IgnoreOneway">IgnoreOneway</h4>
+  <div class="markdown level1 summary"><p>True if this entity currently should not collide with oneway gates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool IgnoreOneway</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_IgnorePhysics" data-uid="AngeliA.Rigidbody.IgnorePhysics">IgnorePhysics</h4>
+  <div class="markdown level1 summary"><p>True if this entity currently should not apply any physics logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedBool IgnorePhysics</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_MomentumX" data-uid="AngeliA.Rigidbody.MomentumX">MomentumX</h4>
+  <div class="markdown level1 summary"><p>Velocity X that keep applying on this entity. Every frame the value will move to 0 by &quot;decay&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int value, int decay) MomentumX</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_MomentumY" data-uid="AngeliA.Rigidbody.MomentumY">MomentumY</h4>
+  <div class="markdown level1 summary"><p>Velocity Y that keep applying on this entity. Every frame the value will move to 0 by &quot;decay&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int value, int decay) MomentumY</code></pre>
+  </div>
+  <h4 id="AngeliA_Rigidbody_RisingGravityScale" data-uid="AngeliA.Rigidbody.RisingGravityScale">RisingGravityScale</h4>
+  <div class="markdown level1 summary"><p>Amount of gravity apply to this entity when it's moving upward (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FrameBasedInt RisingGravityScale</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Rigidbody_AirDragX_" data-uid="AngeliA.Rigidbody.AirDragX*"></a>
+  <h4 id="AngeliA_Rigidbody_AirDragX" data-uid="AngeliA.Rigidbody.AirDragX">AirDragX</h4>
+  <div class="markdown level1 summary"><p>Amount of horizontal speed lost every frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AirDragX { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_AirDragY_" data-uid="AngeliA.Rigidbody.AirDragY*"></a>
+  <h4 id="AngeliA_Rigidbody_AirDragY" data-uid="AngeliA.Rigidbody.AirDragY">AirDragY</h4>
+  <div class="markdown level1 summary"><p>Amount of vertical speed lost every frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AirDragY { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_AllowBeingPush_" data-uid="AngeliA.Rigidbody.AllowBeingPush*"></a>
+  <h4 id="AngeliA_Rigidbody_AllowBeingPush" data-uid="AngeliA.Rigidbody.AllowBeingPush">AllowBeingPush</h4>
+  <div class="markdown level1 summary"><p>True if this entity can be push by other</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowBeingPush { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_BounceSpeedRate_" data-uid="AngeliA.Rigidbody.BounceSpeedRate*"></a>
+  <h4 id="AngeliA_Rigidbody_BounceSpeedRate" data-uid="AngeliA.Rigidbody.BounceSpeedRate">BounceSpeedRate</h4>
+  <div class="markdown level1 summary"><p>How many speed remain after this entity collide on another entity (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BounceSpeedRate { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_CarryOtherOnTop_" data-uid="AngeliA.Rigidbody.CarryOtherOnTop*"></a>
+  <h4 id="AngeliA_Rigidbody_CarryOtherOnTop" data-uid="AngeliA.Rigidbody.CarryOtherOnTop">CarryOtherOnTop</h4>
+  <div class="markdown level1 summary"><p>Trhe if this entity can carry other ICarrier on top</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CarryOtherOnTop { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_DeltaPositionX_" data-uid="AngeliA.Rigidbody.DeltaPositionX*"></a>
+  <h4 id="AngeliA_Rigidbody_DeltaPositionX" data-uid="AngeliA.Rigidbody.DeltaPositionX">DeltaPositionX</h4>
+  <div class="markdown level1 summary"><p>Changes of position X at current frame in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DeltaPositionX { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_DeltaPositionY_" data-uid="AngeliA.Rigidbody.DeltaPositionY*"></a>
+  <h4 id="AngeliA_Rigidbody_DeltaPositionY" data-uid="AngeliA.Rigidbody.DeltaPositionY">DeltaPositionY</h4>
+  <div class="markdown level1 summary"><p>Changes of position Y at current frame in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DeltaPositionY { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_DestroyWhenInsideGround_" data-uid="AngeliA.Rigidbody.DestroyWhenInsideGround*"></a>
+  <h4 id="AngeliA_Rigidbody_DestroyWhenInsideGround" data-uid="AngeliA.Rigidbody.DestroyWhenInsideGround">DestroyWhenInsideGround</h4>
+  <div class="markdown level1 summary"><p>True if this entity despawns when it's inside ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool DestroyWhenInsideGround { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_EjectWhenInsideGround_" data-uid="AngeliA.Rigidbody.EjectWhenInsideGround*"></a>
+  <h4 id="AngeliA_Rigidbody_EjectWhenInsideGround" data-uid="AngeliA.Rigidbody.EjectWhenInsideGround">EjectWhenInsideGround</h4>
+  <div class="markdown level1 summary"><p>True if this entity try to move out of ground automatically when it stuck inside ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EjectWhenInsideGround { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_FacingRight_" data-uid="AngeliA.Rigidbody.FacingRight*"></a>
+  <h4 id="AngeliA_Rigidbody_FacingRight" data-uid="AngeliA.Rigidbody.FacingRight">FacingRight</h4>
+  <div class="markdown level1 summary"><p>True if this entity is facing right side</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FacingRight { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_GroundedID_" data-uid="AngeliA.Rigidbody.GroundedID*"></a>
+  <h4 id="AngeliA_Rigidbody_GroundedID" data-uid="AngeliA.Rigidbody.GroundedID">GroundedID</h4>
+  <div class="markdown level1 summary"><p>Block ID of the current touching ground block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GroundedID { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_InWater_" data-uid="AngeliA.Rigidbody.InWater*"></a>
+  <h4 id="AngeliA_Rigidbody_InWater" data-uid="AngeliA.Rigidbody.InWater">InWater</h4>
+  <div class="markdown level1 summary"><p>True if this entity is inside water</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InWater { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_IsGrounded_" data-uid="AngeliA.Rigidbody.IsGrounded*"></a>
+  <h4 id="AngeliA_Rigidbody_IsGrounded" data-uid="AngeliA.Rigidbody.IsGrounded">IsGrounded</h4>
+  <div class="markdown level1 summary"><p>True if this entity is touching ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGrounded { get; protected set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_IsInsideGround_" data-uid="AngeliA.Rigidbody.IsInsideGround*"></a>
+  <h4 id="AngeliA_Rigidbody_IsInsideGround" data-uid="AngeliA.Rigidbody.IsInsideGround">IsInsideGround</h4>
+  <div class="markdown level1 summary"><p>True if this entity is stucking inside the ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideGround { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_MaxGravitySpeed_" data-uid="AngeliA.Rigidbody.MaxGravitySpeed*"></a>
+  <h4 id="AngeliA_Rigidbody_MaxGravitySpeed" data-uid="AngeliA.Rigidbody.MaxGravitySpeed">MaxGravitySpeed</h4>
+  <div class="markdown level1 summary"><p>Limitation for speed from gravity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MaxGravitySpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_OffsetX_" data-uid="AngeliA.Rigidbody.OffsetX*"></a>
+  <h4 id="AngeliA_Rigidbody_OffsetX" data-uid="AngeliA.Rigidbody.OffsetX">OffsetX</h4>
+  <div class="markdown level1 summary"><p>Position offset between X value and Rect.x value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OffsetX { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_OffsetY_" data-uid="AngeliA.Rigidbody.OffsetY*"></a>
+  <h4 id="AngeliA_Rigidbody_OffsetY" data-uid="AngeliA.Rigidbody.OffsetY">OffsetY</h4>
+  <div class="markdown level1 summary"><p>Position offset between Y value and Rect.y value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OffsetY { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_PhysicalLayer_" data-uid="AngeliA.Rigidbody.PhysicalLayer*"></a>
+  <h4 id="AngeliA_Rigidbody_PhysicalLayer" data-uid="AngeliA.Rigidbody.PhysicalLayer">PhysicalLayer</h4>
+  <div class="markdown level1 summary"><p>Which physical layer should this entity fill it's collider in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int PhysicalLayer { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_PrevX_" data-uid="AngeliA.Rigidbody.PrevX*"></a>
+  <h4 id="AngeliA_Rigidbody_PrevX" data-uid="AngeliA.Rigidbody.PrevX">PrevX</h4>
+  <div class="markdown level1 summary"><p>Position X for the last frame in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrevX { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_PrevY_" data-uid="AngeliA.Rigidbody.PrevY*"></a>
+  <h4 id="AngeliA_Rigidbody_PrevY" data-uid="AngeliA.Rigidbody.PrevY">PrevY</h4>
+  <div class="markdown level1 summary"><p>Position Y for the last frame in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrevY { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_Rect_" data-uid="AngeliA.Rigidbody.Rect*"></a>
+  <h4 id="AngeliA_Rigidbody_Rect" data-uid="AngeliA.Rigidbody.Rect">Rect</h4>
+  <div class="markdown level1 summary"><p>Rect position of this entity in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IRect Rect { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_Rect">Entity.Rect</a></div>
+  <a id="AngeliA_Rigidbody_RequireDodgeOverlap_" data-uid="AngeliA.Rigidbody.RequireDodgeOverlap*"></a>
+  <h4 id="AngeliA_Rigidbody_RequireDodgeOverlap" data-uid="AngeliA.Rigidbody.RequireDodgeOverlap">RequireDodgeOverlap</h4>
+  <div class="markdown level1 summary"><p>True if this entity do not react to the colliders which already overlaps on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequireDodgeOverlap { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_SelfCollisionMask_" data-uid="AngeliA.Rigidbody.SelfCollisionMask*"></a>
+  <h4 id="AngeliA_Rigidbody_SelfCollisionMask" data-uid="AngeliA.Rigidbody.SelfCollisionMask">SelfCollisionMask</h4>
+  <div class="markdown level1 summary"><p>Intrinsic physics layers this entity should collide with</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int SelfCollisionMask { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_VelocityX_" data-uid="AngeliA.Rigidbody.VelocityX*"></a>
+  <h4 id="AngeliA_Rigidbody_VelocityX" data-uid="AngeliA.Rigidbody.VelocityX">VelocityX</h4>
+  <div class="markdown level1 summary"><p>Horizontal velocity at current frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VelocityX { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_VelocityY_" data-uid="AngeliA.Rigidbody.VelocityY*"></a>
+  <h4 id="AngeliA_Rigidbody_VelocityY" data-uid="AngeliA.Rigidbody.VelocityY">VelocityY</h4>
+  <div class="markdown level1 summary"><p>Vertical velocity at current frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VelocityY { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_WaterFloatSpeed_" data-uid="AngeliA.Rigidbody.WaterFloatSpeed*"></a>
+  <h4 id="AngeliA_Rigidbody_WaterFloatSpeed" data-uid="AngeliA.Rigidbody.WaterFloatSpeed">WaterFloatSpeed</h4>
+  <div class="markdown level1 summary"><p>Amount of upward speed apply when the entity inside water</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int WaterFloatSpeed { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_WaterSpeedRate_" data-uid="AngeliA.Rigidbody.WaterSpeedRate*"></a>
+  <h4 id="AngeliA_Rigidbody_WaterSpeedRate" data-uid="AngeliA.Rigidbody.WaterSpeedRate">WaterSpeedRate</h4>
+  <div class="markdown level1 summary"><p>Amount of speed scales when entity inside water (0 means 0%, 1000 means 100%)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int WaterSpeedRate { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Rigidbody_CancelMakeGrounded_" data-uid="AngeliA.Rigidbody.CancelMakeGrounded*"></a>
+  <h4 id="AngeliA_Rigidbody_CancelMakeGrounded" data-uid="AngeliA.Rigidbody.CancelMakeGrounded">CancelMakeGrounded()</h4>
+  <div class="markdown level1 summary"><p>Stop making this entity marked as touching ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelMakeGrounded()</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_FillAsOnewayUp_" data-uid="AngeliA.Rigidbody.FillAsOnewayUp*"></a>
+  <h4 id="AngeliA_Rigidbody_FillAsOnewayUp_System_Int32_System_Int32_" data-uid="AngeliA.Rigidbody.FillAsOnewayUp(System.Int32,System.Int32)">FillAsOnewayUp(int, int)</h4>
+  <div class="markdown level1 summary"><p>Make this entity fill upward oneway gate into the physics system for given frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillAsOnewayUp(int duration = 0, int priority = 0)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Rigidbody_FillAsTrigger_" data-uid="AngeliA.Rigidbody.FillAsTrigger*"></a>
+  <h4 id="AngeliA_Rigidbody_FillAsTrigger_System_Int32_System_Int32_" data-uid="AngeliA.Rigidbody.FillAsTrigger(System.Int32,System.Int32)">FillAsTrigger(int, int)</h4>
+  <div class="markdown level1 summary"><p>Make this entity fill trigger into the physics system for given frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillAsTrigger(int duration = 0, int priority = 0)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Rigidbody_FirstUpdate_" data-uid="AngeliA.Rigidbody.FirstUpdate*"></a>
+  <h4 id="AngeliA_Rigidbody_FirstUpdate" data-uid="AngeliA.Rigidbody.FirstUpdate">FirstUpdate()</h4>
+  <div class="markdown level1 summary"><p>[1/4] This function is called every frame when entity is in stage. Prioritize using this function to fill collider in to physics system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FirstUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_FirstUpdate">Entity.FirstUpdate()</a></div>
+  <a id="AngeliA_Rigidbody_GroundedCheck_" data-uid="AngeliA.Rigidbody.GroundedCheck*"></a>
+  <h4 id="AngeliA_Rigidbody_GroundedCheck" data-uid="AngeliA.Rigidbody.GroundedCheck">GroundedCheck()</h4>
+  <div class="markdown level1 summary"><p>Function that holds the touching ground checking logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool GroundedCheck()</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_InsideGroundCheck_" data-uid="AngeliA.Rigidbody.InsideGroundCheck*"></a>
+  <h4 id="AngeliA_Rigidbody_InsideGroundCheck" data-uid="AngeliA.Rigidbody.InsideGroundCheck">InsideGroundCheck()</h4>
+  <div class="markdown level1 summary"><p>Function that holds the stuck inside ground checking logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool InsideGroundCheck()</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_MakeGrounded_" data-uid="AngeliA.Rigidbody.MakeGrounded*"></a>
+  <h4 id="AngeliA_Rigidbody_MakeGrounded_System_Int32_System_Int32_" data-uid="AngeliA.Rigidbody.MakeGrounded(System.Int32,System.Int32)">MakeGrounded(int, int)</h4>
+  <div class="markdown level1 summary"><p>Mark this entity as touching ground for given frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeGrounded(int frame = 1, int blockID = 0)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">blockID</span></td>
+        <td><p>Ground block ID</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_Rigidbody_OnActivated_" data-uid="AngeliA.Rigidbody.OnActivated*"></a>
+  <h4 id="AngeliA_Rigidbody_OnActivated" data-uid="AngeliA.Rigidbody.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_OnActivated">Entity.OnActivated()</a></div>
+  <a id="AngeliA_Rigidbody_OnInsideGroundDestroyed_" data-uid="AngeliA.Rigidbody.OnInsideGroundDestroyed*"></a>
+  <h4 id="AngeliA_Rigidbody_OnInsideGroundDestroyed" data-uid="AngeliA.Rigidbody.OnInsideGroundDestroyed">OnInsideGroundDestroyed()</h4>
+  <div class="markdown level1 summary"><p>This function is called when this entity is despawn by being stuck inside ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInsideGroundDestroyed()</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_PerformGroundCheck_" data-uid="AngeliA.Rigidbody.PerformGroundCheck*"></a>
+  <h4 id="AngeliA_Rigidbody_PerformGroundCheck_AngeliA_IRect_AngeliA_PhysicsCell__" data-uid="AngeliA.Rigidbody.PerformGroundCheck(AngeliA.IRect,AngeliA.PhysicsCell@)">PerformGroundCheck(IRect, out PhysicsCell)</h4>
+  <div class="markdown level1 summary"><p>Return true if the entity is touching ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PerformGroundCheck(IRect rect, out PhysicsCell hit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.IRect.html">IRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>Blocks overlap this rect range will be count as touching ground</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AngeliA.PhysicsCell.html">PhysicsCell</a></td>
+        <td><span class="parametername">hit</span></td>
+        <td><p>The physics data from the ground block</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Rigidbody_PerformMove_" data-uid="AngeliA.Rigidbody.PerformMove*"></a>
+  <h4 id="AngeliA_Rigidbody_PerformMove_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.Rigidbody.PerformMove(System.Int32,System.Int32,System.Boolean)">PerformMove(int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Make this entity move with physics rules at this frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerformMove(int speedX, int speedY, bool ignoreCarry = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">speedX</span></td>
+        <td><p>Delta position X</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">speedY</span></td>
+        <td><p>Delta position Y</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreCarry</span></td>
+        <td><p>True if this entity don't carry other on top</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_Rigidbody_Push_" data-uid="AngeliA.Rigidbody.Push*"></a>
+  <h4 id="AngeliA_Rigidbody_Push_System_Int32_" data-uid="AngeliA.Rigidbody.Push(System.Int32)">Push(int)</h4>
+  <div class="markdown level1 summary"><p>This function is called when the entity is being pushed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Push(int speedX)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Rigidbody_RefreshPrevPosition_" data-uid="AngeliA.Rigidbody.RefreshPrevPosition*"></a>
+  <h4 id="AngeliA_Rigidbody_RefreshPrevPosition" data-uid="AngeliA.Rigidbody.RefreshPrevPosition">RefreshPrevPosition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RefreshPrevPosition()</code></pre>
+  </div>
+  <a id="AngeliA_Rigidbody_Update_" data-uid="AngeliA.Rigidbody.Update*"></a>
+  <h4 id="AngeliA_Rigidbody_Update" data-uid="AngeliA.Rigidbody.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>[3/4] This function is called every frame when entity is in stage. Prioritize using this function to update physics logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Entity.html#AngeliA_Entity_Update">Entity.Update()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

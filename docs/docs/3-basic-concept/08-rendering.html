@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>渲染 | AngeliA </title>
+      <title>Rendering | AngeliA </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="渲染 | AngeliA ">
+      <meta name="title" content="Rendering | AngeliA ">
     
     
       <link rel="shortcut icon" href="../../favicon.ico">
@@ -69,8 +69,60 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="渲染">渲染</h1>
+<h1 id="rendering">Rendering</h1>
 
+<p>AngeliA uses a built-in <strong>rendering system</strong> that buffers render units (called <strong>Cells</strong>) generated during each frame. After a Cell is created via code, you can continue to modify its properties—these modifications are applied to the Cell before the final rendering at the end of the frame.<br>
+This design offers great flexibility, allowing you to add shadows to all objects on the map, rotate or move already-rendered Cells, and more.</p>
+<h3 id="drawing-sprites">Drawing Sprites</h3>
+<p>The following code draws a built-in <strong>Entity icon</strong> sprite at the center of the screen. Since rendering is not persistent across frames, the sprite must be redrawn every frame:</p>
+<pre><code class="lang-csharp">using AngeliA;
+
+namespace Test;
+
+public static class Test {
+
+	private static readonly int SpriteID = &quot;Icon.Entity&quot;.AngeHash();
+
+	[OnGameUpdate]
+	internal static void OnGameUpdate () {
+		int x = Renderer.CameraRect.CenterX();
+		int y = Renderer.CameraRect.CenterY();
+		Renderer.Draw(SpriteID, new IRect(x, y, 512, 512));
+	}
+}
+</code></pre>
+<p>Output (cropped view):</p>
+<img src="../../images/Coding-Test.png" width="50%">
+<h3 id="post-processing-modifications">Post-Processing Modifications</h3>
+<p>The following code modifies the position and rotation of all rendered Cells on the <strong>Default</strong> layer:</p>
+<pre><code class="lang-csharp">using AngeliA;
+
+namespace Test;
+
+public static class CellTest {
+
+	[OnGameUpdateLater(4096)]
+	internal static void OnGameUpdateLater () {
+
+		// Get x and y from test window sliders
+		int x = QTest.Int(&quot;x&quot;, 0, -1024, 1024);
+		int y = QTest.Int(&quot;y&quot;, 0, -1024, 1024);
+		int rot = QTest.Int(&quot;rot&quot;, 0, -180, 180);
+
+		// Adjust all rendered Cells on the Default layer
+		if (Renderer.GetCells(RenderLayer.DEFAULT, out var cells, out int count)) {
+			for (int i = 0; i &lt; count; i++) {
+				var cell = cells[i];
+				cell.X += x;
+				cell.Y += y;
+				cell.Rotation += rot;
+			}
+		}
+	}
+}
+</code></pre>
+<p>Output:</p>
+<img src="../../images/CodeResult-RenderingTest.gif" width="61.8%">
 
 </article>
           </div>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Buff | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Buff | AngeliA ">
+    
+    <meta name="description" content="Represent a type of buff">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Buff">
+
+
+
+  <h1 id="AngeliA_Buff" data-uid="AngeliA.Buff" class="text-break">Class Buff</h1>
+  <div class="markdown level0 summary"><p>Represent a type of buff</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_Buff__ctor_" data-uid="AngeliA.Buff.#ctor*"></a>
+  <h4 id="AngeliA_Buff__ctor" data-uid="AngeliA.Buff.#ctor">Buff()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Buff()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Buff_DefaultDuration_" data-uid="AngeliA.Buff.DefaultDuration*"></a>
+  <h4 id="AngeliA_Buff_DefaultDuration" data-uid="AngeliA.Buff.DefaultDuration">DefaultDuration</h4>
+  <div class="markdown level1 summary"><p>How many frames should this buff apply by default</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int DefaultDuration { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Buff_DescriptionID_" data-uid="AngeliA.Buff.DescriptionID*"></a>
+  <h4 id="AngeliA_Buff_DescriptionID" data-uid="AngeliA.Buff.DescriptionID">DescriptionID</h4>
+  <div class="markdown level1 summary"><p>Unique angehash for language system to get the description of this buff</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescriptionID { get; init; }</code></pre>
+  </div>
+  <a id="AngeliA_Buff_NameID_" data-uid="AngeliA.Buff.NameID*"></a>
+  <h4 id="AngeliA_Buff_NameID" data-uid="AngeliA.Buff.NameID">NameID</h4>
+  <div class="markdown level1 summary"><p>Unique angehash for language system to get the display name of this buff</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NameID { get; init; }</code></pre>
+  </div>
+  <a id="AngeliA_Buff_TypeID_" data-uid="AngeliA.Buff.TypeID*"></a>
+  <h4 id="AngeliA_Buff_TypeID" data-uid="AngeliA.Buff.TypeID">TypeID</h4>
+  <div class="markdown level1 summary"><p>Unique angehash of this buff class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TypeID { get; init; }</code></pre>
+  </div>
+  <a id="AngeliA_Buff_TypeName_" data-uid="AngeliA.Buff.TypeName*"></a>
+  <h4 id="AngeliA_Buff_TypeName" data-uid="AngeliA.Buff.TypeName">TypeName</h4>
+  <div class="markdown level1 summary"><p>AngeName of this type of buff</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TypeName { get; init; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Buff_BeforeUpdate_" data-uid="AngeliA.Buff.BeforeUpdate*"></a>
+  <h4 id="AngeliA_Buff_BeforeUpdate_AngeliA_Character_" data-uid="AngeliA.Buff.BeforeUpdate(AngeliA.Character)">BeforeUpdate(Character)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void BeforeUpdate(Character target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Buff_LateUpdate_" data-uid="AngeliA.Buff.LateUpdate*"></a>
+  <h4 id="AngeliA_Buff_LateUpdate_AngeliA_Character_" data-uid="AngeliA.Buff.LateUpdate(AngeliA.Character)">LateUpdate(Character)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LateUpdate(Character target)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Buff_OnCharacterAttack_" data-uid="AngeliA.Buff.OnCharacterAttack*"></a>
+  <h4 id="AngeliA_Buff_OnCharacterAttack_AngeliA_Character_AngeliA_Bullet_" data-uid="AngeliA.Buff.OnCharacterAttack(AngeliA.Character,AngeliA.Bullet)">OnCharacterAttack(Character, Bullet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCharacterAttack(Character target, Bullet bullet)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_Buff_OnCharacterRenderered_" data-uid="AngeliA.Buff.OnCharacterRenderered*"></a>
+  <h4 id="AngeliA_Buff_OnCharacterRenderered_AngeliA_CharacterRenderer_" data-uid="AngeliA.Buff.OnCharacterRenderered(AngeliA.CharacterRenderer)">OnCharacterRenderered(CharacterRenderer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCharacterRenderered(CharacterRenderer renderer)</code></pre>
+  </div>
+    
+  
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

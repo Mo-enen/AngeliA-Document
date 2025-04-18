@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TeleportTask | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TeleportTask | AngeliA ">
+    
+    <meta name="description" content="Task for handle logic during player teleport">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.TeleportTask">
+
+
+
+  <h1 id="AngeliA_TeleportTask" data-uid="AngeliA.TeleportTask" class="text-break">Class TeleportTask</h1>
+  <div class="markdown level0 summary"><p>Task for handle logic during player teleport</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_TeleportTask_Duration_" data-uid="AngeliA.TeleportTask.Duration*"></a>
+  <h4 id="AngeliA_TeleportTask_Duration" data-uid="AngeliA.TeleportTask.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>Teleport takes this frames long to finish</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Duration { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_TeleportTask_TeleportFrom_" data-uid="AngeliA.TeleportTask.TeleportFrom*"></a>
+  <h4 id="AngeliA_TeleportTask_TeleportFrom" data-uid="AngeliA.TeleportTask.TeleportFrom">TeleportFrom</h4>
+  <div class="markdown level1 summary"><p>Teleport from this position in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int2 TeleportFrom { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_TeleportTask_TeleportTo_" data-uid="AngeliA.TeleportTask.TeleportTo*"></a>
+  <h4 id="AngeliA_TeleportTask_TeleportTo" data-uid="AngeliA.TeleportTask.TeleportTo">TeleportTo</h4>
+  <div class="markdown level1 summary"><p>Teleport to this position in global space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Int3 TeleportTo { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_TeleportTask_UseParallax_" data-uid="AngeliA.TeleportTask.UseParallax*"></a>
+  <h4 id="AngeliA_TeleportTask_UseParallax" data-uid="AngeliA.TeleportTask.UseParallax">UseParallax</h4>
+  <div class="markdown level1 summary"><p>True if use the map layer parallax effect during teleport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseParallax { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_TeleportTask_UseVignette_" data-uid="AngeliA.TeleportTask.UseVignette*"></a>
+  <h4 id="AngeliA_TeleportTask_UseVignette" data-uid="AngeliA.TeleportTask.UseVignette">UseVignette</h4>
+  <div class="markdown level1 summary"><p>True if use the vignette effect during teleport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseVignette { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_TeleportTask_WaitDuration_" data-uid="AngeliA.TeleportTask.WaitDuration*"></a>
+  <h4 id="AngeliA_TeleportTask_WaitDuration" data-uid="AngeliA.TeleportTask.WaitDuration">WaitDuration</h4>
+  <div class="markdown level1 summary"><p>Teleport actually start after wait this frames long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WaitDuration { get; set; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_TeleportTask_FrameUpdate_" data-uid="AngeliA.TeleportTask.FrameUpdate*"></a>
+  <h4 id="AngeliA_TeleportTask_FrameUpdate" data-uid="AngeliA.TeleportTask.FrameUpdate">FrameUpdate()</h4>
+  <div class="markdown level1 summary"><p>This function is used to handle the internal logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TaskResult FrameUpdate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.TaskResult.html">TaskResult</a></td>
+        <td><p>&quot;Continue&quot; if the task should keep on after this frame. &quot;End&quot; if the task should end.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Task.html#AngeliA_Task_FrameUpdate">Task.FrameUpdate()</a></div>
+  <a id="AngeliA_TeleportTask_OnStart_" data-uid="AngeliA.TeleportTask.OnStart*"></a>
+  <h4 id="AngeliA_TeleportTask_OnStart" data-uid="AngeliA.TeleportTask.OnStart">OnStart()</h4>
+  <div class="markdown level1 summary"><p>This function is called when this task start</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnStart()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Task.html#AngeliA_Task_OnStart">Task.OnStart()</a></div>
+  <a id="AngeliA_TeleportTask_TeleportFromDoor_" data-uid="AngeliA.TeleportTask.TeleportFromDoor*"></a>
+  <h4 id="AngeliA_TeleportTask_TeleportFromDoor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AngeliA.TeleportTask.TeleportFromDoor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">TeleportFromDoor(int, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Make a teleport for selecting player by using a door</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TeleportTask TeleportFromDoor(int fromX, int fromY, int toX, int toY, int toZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromX</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromY</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toX</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toY</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.TeleportTask.html">TeleportTask</a></td>
+        <td><p>Global single instance of the task unit</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_TeleportTask_TeleportFromPortal_" data-uid="AngeliA.TeleportTask.TeleportFromPortal*"></a>
+  <h4 id="AngeliA_TeleportTask_TeleportFromPortal_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="AngeliA.TeleportTask.TeleportFromPortal(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">TeleportFromPortal(int, int, int, int, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Make a teleport for selecting player by using a portal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TeleportTask TeleportFromPortal(int fromX, int fromY, int toX, int toY, int toZ, bool samePosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromX</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromY</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toX</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toY</span></td>
+        <td><p>(in global space)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">samePosition</span></td>
+        <td><p>True if the X and Y position are the same</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AngeliA.TeleportTask.html">TeleportTask</a></td>
+        <td><p>Global single instance of the task unit</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

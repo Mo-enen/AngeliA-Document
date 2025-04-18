@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class VehicleMovement | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class VehicleMovement | AngeliA ">
+    
+    <meta name="description" content="Movement behavior for vehicle override to their driver">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.VehicleMovement">
+
+
+
+  <h1 id="AngeliA_Platformer_VehicleMovement" data-uid="AngeliA.Platformer.VehicleMovement" class="text-break">Class VehicleMovement</h1>
+  <div class="markdown level0 summary"><p>Movement behavior for vehicle override to their driver</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_Platformer_VehicleMovement__ctor_" data-uid="AngeliA.Platformer.VehicleMovement.#ctor*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement__ctor_AngeliA_Rigidbody_" data-uid="AngeliA.Platformer.VehicleMovement.#ctor(AngeliA.Rigidbody)">VehicleMovement(Rigidbody)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VehicleMovement(Rigidbody rig)</code></pre>
+  </div>
+    
+  
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_VehicleMovement_Driver_" data-uid="AngeliA.Platformer.VehicleMovement.Driver*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Driver" data-uid="AngeliA.Platformer.VehicleMovement.Driver">Driver</h4>
+  <div class="markdown level1 summary"><p>Target character that drive the vehicle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Character Driver { get; set; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_VehicleMovement_SyncFromConfigFile_" data-uid="AngeliA.Platformer.VehicleMovement.SyncFromConfigFile*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_SyncFromConfigFile" data-uid="AngeliA.Platformer.VehicleMovement.SyncFromConfigFile">SyncFromConfigFile</h4>
+  <div class="markdown level1 summary"><p>Does movement config sync with json file in game universe folder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed bool SyncFromConfigFile { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_SyncFromConfigFile">CharacterMovement.SyncFromConfigFile</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_VehicleMovement_Crash_" data-uid="AngeliA.Platformer.VehicleMovement.Crash*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Crash" data-uid="AngeliA.Platformer.VehicleMovement.Crash">Crash()</h4>
+  <div class="markdown level1 summary"><p>Perform crash (call this once when crash start)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Crash()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_Crash">CharacterMovement.Crash()</a></div>
+  <a id="AngeliA_Platformer_VehicleMovement_Dash_" data-uid="AngeliA.Platformer.VehicleMovement.Dash*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Dash" data-uid="AngeliA.Platformer.VehicleMovement.Dash">Dash()</h4>
+  <div class="markdown level1 summary"><p>Perform dash (call this once when dash start)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dash()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_Dash">CharacterMovement.Dash()</a></div>
+  <a id="AngeliA_Platformer_VehicleMovement_HoldJump_" data-uid="AngeliA.Platformer.VehicleMovement.HoldJump*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_HoldJump_System_Boolean_" data-uid="AngeliA.Platformer.VehicleMovement.HoldJump(System.Boolean)">HoldJump(bool)</h4>
+  <div class="markdown level1 summary"><p>Is character holding jump (call this every frame no matter character is jumpping or not)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void HoldJump(bool holding)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_HoldJump_System_Boolean_">CharacterMovement.HoldJump(bool)</a></div>
+  <a id="AngeliA_Platformer_VehicleMovement_InitializeMeta_" data-uid="AngeliA.Platformer.VehicleMovement.InitializeMeta*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_InitializeMeta" data-uid="AngeliA.Platformer.VehicleMovement.InitializeMeta">InitializeMeta()</h4>
+  <div class="markdown level1 summary"><p>Initialize config for the movement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitializeMeta()</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_VehicleMovement_Jump_" data-uid="AngeliA.Platformer.VehicleMovement.Jump*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Jump_System_Boolean_" data-uid="AngeliA.Platformer.VehicleMovement.Jump(System.Boolean)">Jump(bool)</h4>
+  <div class="markdown level1 summary"><p>Perform jump (call this once when jump start)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Jump(bool isSquatJump = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isSquatJump</span></td>
+        <td><p>Is this jump a squat jump or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_Jump_System_Boolean_">CharacterMovement.Jump(bool)</a></div>
+  <a id="AngeliA_Platformer_VehicleMovement_Move_" data-uid="AngeliA.Platformer.VehicleMovement.Move*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Move_AngeliA_Direction3_AngeliA_Direction3_System_Boolean_" data-uid="AngeliA.Platformer.VehicleMovement.Move(AngeliA.Direction3,AngeliA.Direction3,System.Boolean)">Move(Direction3, Direction3, bool)</h4>
+  <div class="markdown level1 summary"><p>Move the character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Move(Direction3 x, Direction3 y, bool walk = false)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">walk</span></td>
+        <td><p>True if character want to walk instead of run</p>
+</td>
+      </tr>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_Move_AngeliA_Direction3_AngeliA_Direction3_System_Boolean_">CharacterMovement.Move(Direction3, Direction3, bool)</a></div>
+  <a id="AngeliA_Platformer_VehicleMovement_Pound_" data-uid="AngeliA.Platformer.VehicleMovement.Pound*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Pound" data-uid="AngeliA.Platformer.VehicleMovement.Pound">Pound()</h4>
+  <div class="markdown level1 summary"><p>Perform pound (call this once when pound start)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Pound()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_Pound">CharacterMovement.Pound()</a></div>
+  <a id="AngeliA_Platformer_VehicleMovement_Rush_" data-uid="AngeliA.Platformer.VehicleMovement.Rush*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Rush" data-uid="AngeliA.Platformer.VehicleMovement.Rush">Rush()</h4>
+  <div class="markdown level1 summary"><p>Perform rush (call this once when rush start)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Rush()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_Rush">CharacterMovement.Rush()</a></div>
+  <a id="AngeliA_Platformer_VehicleMovement_Stop_" data-uid="AngeliA.Platformer.VehicleMovement.Stop*"></a>
+  <h4 id="AngeliA_Platformer_VehicleMovement_Stop" data-uid="AngeliA.Platformer.VehicleMovement.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stop current movement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Stop()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.CharacterMovement.html#AngeliA_CharacterMovement_Stop">CharacterMovement.Stop()</a></div>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

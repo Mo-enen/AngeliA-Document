@@ -1,0 +1,1442 @@
+### YamlMime:ManagedReference
+items:
+- uid: AngeliA.Physics
+  commentId: T:AngeliA.Physics
+  id: Physics
+  parent: AngeliA
+  children:
+  - AngeliA.Physics.FillBlock(System.Int32,System.Int32,AngeliA.IRect,System.Boolean,AngeliA.Tag)
+  - AngeliA.Physics.FillEntity(System.Int32,AngeliA.Entity,System.Boolean,AngeliA.Tag)
+  - AngeliA.Physics.ForcePush(AngeliA.Rigidbody,AngeliA.Direction4,System.Int32)
+  - AngeliA.Physics.GetEntity(System.Int32,AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.GetEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.HasEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.IgnoreOverlap(System.Int32,AngeliA.IRect,AngeliA.OperationMode)
+  - AngeliA.Physics.IsReady
+  - AngeliA.Physics.Move(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  - AngeliA.Physics.MoveIgnoreOneway(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  - AngeliA.Physics.MoveImmediately(System.Int32,AngeliA.Int2,AngeliA.Direction4,System.Int32,AngeliA.Int2,AngeliA.Entity,System.Boolean)
+  - AngeliA.Physics.Overlap(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.Overlap(System.Int32,AngeliA.IRect,AngeliA.PhysicsCell@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.OverlapAll(AngeliA.PhysicsCell[],System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.OverlapAll(System.Int32,AngeliA.IRect,System.Int32@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,AngeliA.OperationMode,AngeliA.Tag)
+  - AngeliA.Physics.RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,System.Boolean,System.Boolean)
+  - AngeliA.Physics.RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Physics
+  nameWithType: Physics
+  fullName: AngeliA.Physics
+  type: Class
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Physics
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 50
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: >-
+    Core system that handles physics of AngeliA games.
+
+    Logic of the system is frame-isolated which means data from prev frame will never effect current frame.
+  example: []
+  syntax:
+    content: public static class Physics
+    content.vb: Public Module Physics
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AngeliA.Physics.IsReady
+  commentId: P:AngeliA.Physics.IsReady
+  id: IsReady
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: IsReady
+  nameWithType: Physics.IsReady
+  fullName: AngeliA.Physics.IsReady
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: IsReady
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 93
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if the system is ready to use.
+  example: []
+  syntax:
+    content: public static bool IsReady { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property IsReady As Boolean
+  overload: AngeliA.Physics.IsReady*
+- uid: AngeliA.Physics.FillBlock(System.Int32,System.Int32,AngeliA.IRect,System.Boolean,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.FillBlock(System.Int32,System.Int32,AngeliA.IRect,System.Boolean,AngeliA.Tag)
+  id: FillBlock(System.Int32,System.Int32,AngeliA.IRect,System.Boolean,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: FillBlock(int, int, IRect, bool, Tag)
+  nameWithType: Physics.FillBlock(int, int, IRect, bool, Tag)
+  fullName: AngeliA.Physics.FillBlock(int, int, AngeliA.IRect, bool, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: FillBlock
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 151
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Add a physics cell for a map block for current frame. Call this function inside Entity.FirstUpdate
+  example: []
+  syntax:
+    content: public static void FillBlock(int layer, int blockID, IRect globalRect, bool isTrigger = false, Tag tag = Tag.None)
+    parameters:
+    - id: layer
+      type: System.Int32
+      description: Which layer to add this cell into. (Use PhysicsLayer.XXX to get this value)
+    - id: blockID
+      type: System.Int32
+      description: ID of the source block
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: isTrigger
+      type: System.Boolean
+      description: True if the cell should mark as trigger
+    - id: tag
+      type: AngeliA.Tag
+      description: What extra info this cell have
+    content.vb: Public Shared Sub FillBlock(layer As Integer, blockID As Integer, globalRect As IRect, isTrigger As Boolean = False, tag As Tag = Tag.None)
+  overload: AngeliA.Physics.FillBlock*
+  nameWithType.vb: Physics.FillBlock(Integer, Integer, IRect, Boolean, Tag)
+  fullName.vb: AngeliA.Physics.FillBlock(Integer, Integer, AngeliA.IRect, Boolean, AngeliA.Tag)
+  name.vb: FillBlock(Integer, Integer, IRect, Boolean, Tag)
+- uid: AngeliA.Physics.FillEntity(System.Int32,AngeliA.Entity,System.Boolean,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.FillEntity(System.Int32,AngeliA.Entity,System.Boolean,AngeliA.Tag)
+  id: FillEntity(System.Int32,AngeliA.Entity,System.Boolean,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: FillEntity(int, Entity, bool, Tag)
+  nameWithType: Physics.FillEntity(int, Entity, bool, Tag)
+  fullName: AngeliA.Physics.FillEntity(int, AngeliA.Entity, bool, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: FillEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 161
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Add a physics cell for an entity for current frame. Call this function inside Entity.FirstUpdate
+  example: []
+  syntax:
+    content: public static void FillEntity(int layer, Entity entity, bool isTrigger = false, Tag tag = Tag.None)
+    parameters:
+    - id: layer
+      type: System.Int32
+      description: Which layer to add this cell into. (Use PhysicsLayer.XXX to get this value)
+    - id: entity
+      type: AngeliA.Entity
+      description: Source entity for this cell
+    - id: isTrigger
+      type: System.Boolean
+      description: True if the cell should mark as trigger
+    - id: tag
+      type: AngeliA.Tag
+      description: What extra info this cell have
+    content.vb: Public Shared Sub FillEntity(layer As Integer, entity As Entity, isTrigger As Boolean = False, tag As Tag = Tag.None)
+  overload: AngeliA.Physics.FillEntity*
+  nameWithType.vb: Physics.FillEntity(Integer, Entity, Boolean, Tag)
+  fullName.vb: AngeliA.Physics.FillEntity(Integer, AngeliA.Entity, Boolean, AngeliA.Tag)
+  name.vb: FillEntity(Integer, Entity, Boolean, Tag)
+- uid: AngeliA.Physics.IgnoreOverlap(System.Int32,AngeliA.IRect,AngeliA.OperationMode)
+  commentId: M:AngeliA.Physics.IgnoreOverlap(System.Int32,AngeliA.IRect,AngeliA.OperationMode)
+  id: IgnoreOverlap(System.Int32,AngeliA.IRect,AngeliA.OperationMode)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: IgnoreOverlap(int, IRect, OperationMode)
+  nameWithType: Physics.IgnoreOverlap(int, IRect, OperationMode)
+  fullName: AngeliA.Physics.IgnoreOverlap(int, AngeliA.IRect, AngeliA.OperationMode)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: IgnoreOverlap
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 170
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Remove all cells that overlap target range
+  example: []
+  syntax:
+    content: public static void IgnoreOverlap(int mask, IRect globalRect, OperationMode mode = OperationMode.ColliderAndTrigger)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    content.vb: Public Shared Sub IgnoreOverlap(mask As Integer, globalRect As IRect, mode As OperationMode = OperationMode.ColliderAndTrigger)
+  overload: AngeliA.Physics.IgnoreOverlap*
+  nameWithType.vb: Physics.IgnoreOverlap(Integer, IRect, OperationMode)
+  fullName.vb: AngeliA.Physics.IgnoreOverlap(Integer, AngeliA.IRect, AngeliA.OperationMode)
+  name.vb: IgnoreOverlap(Integer, IRect, OperationMode)
+- uid: AngeliA.Physics.Overlap(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.Overlap(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  id: Overlap(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: Overlap(int, IRect, Entity, OperationMode, Tag)
+  nameWithType: Physics.Overlap(int, IRect, Entity, OperationMode, Tag)
+  fullName: AngeliA.Physics.Overlap(int, AngeliA.IRect, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Overlap
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 201
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if any cell overlap the given rect
+  example: []
+  syntax:
+    content: public static bool Overlap(int mask, IRect globalRect, Entity ignore = null, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: ignore
+      type: AngeliA.Entity
+      description: Entity that should be excluded
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Overlap(mask As Integer, globalRect As IRect, ignore As Entity = Nothing, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As Boolean
+  overload: AngeliA.Physics.Overlap*
+  nameWithType.vb: Physics.Overlap(Integer, IRect, Entity, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.Overlap(Integer, AngeliA.IRect, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: Overlap(Integer, IRect, Entity, OperationMode, Tag)
+- uid: AngeliA.Physics.Overlap(System.Int32,AngeliA.IRect,AngeliA.PhysicsCell@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.Overlap(System.Int32,AngeliA.IRect,AngeliA.PhysicsCell@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  id: Overlap(System.Int32,AngeliA.IRect,AngeliA.PhysicsCell@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: Overlap(int, IRect, out PhysicsCell, Entity, OperationMode, Tag)
+  nameWithType: Physics.Overlap(int, IRect, out PhysicsCell, Entity, OperationMode, Tag)
+  fullName: AngeliA.Physics.Overlap(int, AngeliA.IRect, out AngeliA.PhysicsCell, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Overlap
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 219
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if any cell overlap the given rect
+  example: []
+  syntax:
+    content: public static bool Overlap(int mask, IRect globalRect, out PhysicsCell info, Entity ignore = null, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: info
+      type: AngeliA.PhysicsCell
+      description: Cell of the overlaping object
+    - id: ignore
+      type: AngeliA.Entity
+      description: Entity that should be excluded
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Overlap(mask As Integer, globalRect As IRect, info As PhysicsCell, ignore As Entity = Nothing, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As Boolean
+  overload: AngeliA.Physics.Overlap*
+  nameWithType.vb: Physics.Overlap(Integer, IRect, PhysicsCell, Entity, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.Overlap(Integer, AngeliA.IRect, AngeliA.PhysicsCell, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: Overlap(Integer, IRect, PhysicsCell, Entity, OperationMode, Tag)
+- uid: AngeliA.Physics.OverlapAll(System.Int32,AngeliA.IRect,System.Int32@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.OverlapAll(System.Int32,AngeliA.IRect,System.Int32@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  id: OverlapAll(System.Int32,AngeliA.IRect,System.Int32@,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: OverlapAll(int, IRect, out int, Entity, OperationMode, Tag)
+  nameWithType: Physics.OverlapAll(int, IRect, out int, Entity, OperationMode, Tag)
+  fullName: AngeliA.Physics.OverlapAll(int, AngeliA.IRect, out int, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: OverlapAll
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 239
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find all cells that overlap with given rect and fill into an array (The array is cached internaly. Max size 1024)
+  example: []
+  syntax:
+    content: public static PhysicsCell[] OverlapAll(int mask, IRect globalRect, out int count, Entity ignore = null, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: count
+      type: System.Int32
+      description: How many cells are founded
+    - id: ignore
+      type: AngeliA.Entity
+      description: Entity that should be excluded
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    return:
+      type: AngeliA.PhysicsCell[]
+      description: Cell array with the results
+    content.vb: Public Shared Function OverlapAll(mask As Integer, globalRect As IRect, count As Integer, ignore As Entity = Nothing, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As PhysicsCell()
+  overload: AngeliA.Physics.OverlapAll*
+  nameWithType.vb: Physics.OverlapAll(Integer, IRect, Integer, Entity, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.OverlapAll(Integer, AngeliA.IRect, Integer, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: OverlapAll(Integer, IRect, Integer, Entity, OperationMode, Tag)
+- uid: AngeliA.Physics.OverlapAll(AngeliA.PhysicsCell[],System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.OverlapAll(AngeliA.PhysicsCell[],System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  id: OverlapAll(AngeliA.PhysicsCell[],System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: OverlapAll(PhysicsCell[], int, IRect, Entity, OperationMode, Tag)
+  nameWithType: Physics.OverlapAll(PhysicsCell[], int, IRect, Entity, OperationMode, Tag)
+  fullName: AngeliA.Physics.OverlapAll(AngeliA.PhysicsCell[], int, AngeliA.IRect, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: OverlapAll
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 258
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find all cells that overlap with given rect and fill into given array
+  example: []
+  syntax:
+    content: public static int OverlapAll(PhysicsCell[] hits, int mask, IRect globalRect, Entity ignore = null, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: hits
+      type: AngeliA.PhysicsCell[]
+      description: The array that will hold the result
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: ignore
+      type: AngeliA.Entity
+      description: Entity that should be excluded
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    return:
+      type: System.Int32
+      description: How many cells are founded
+    content.vb: Public Shared Function OverlapAll(hits As PhysicsCell(), mask As Integer, globalRect As IRect, ignore As Entity = Nothing, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As Integer
+  overload: AngeliA.Physics.OverlapAll*
+  nameWithType.vb: Physics.OverlapAll(PhysicsCell(), Integer, IRect, Entity, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.OverlapAll(AngeliA.PhysicsCell(), Integer, AngeliA.IRect, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: OverlapAll(PhysicsCell(), Integer, IRect, Entity, OperationMode, Tag)
+- uid: AngeliA.Physics.GetEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.GetEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  id: GetEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: GetEntity<T>(IRect, int, Entity, OperationMode, Tag)
+  nameWithType: Physics.GetEntity<T>(IRect, int, Entity, OperationMode, Tag)
+  fullName: AngeliA.Physics.GetEntity<T>(AngeliA.IRect, int, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 281
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get entity instance from stage that overlap given rect
+  example: []
+  syntax:
+    content: public static T GetEntity<T>(IRect globalRect, int mask, Entity ignore = null, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: ignore
+      type: AngeliA.Entity
+      description: Entity that should be excluded
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    typeParameters:
+    - id: T
+      description: Type of the target entity
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function GetEntity(Of T)(globalRect As IRect, mask As Integer, ignore As Entity = Nothing, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As T
+  overload: AngeliA.Physics.GetEntity*
+  nameWithType.vb: Physics.GetEntity(Of T)(IRect, Integer, Entity, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.GetEntity(Of T)(AngeliA.IRect, Integer, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: GetEntity(Of T)(IRect, Integer, Entity, OperationMode, Tag)
+- uid: AngeliA.Physics.GetEntity(System.Int32,AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.GetEntity(System.Int32,AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  id: GetEntity(System.Int32,AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: GetEntity(int, IRect, int, Entity, OperationMode, Tag)
+  nameWithType: Physics.GetEntity(int, IRect, int, Entity, OperationMode, Tag)
+  fullName: AngeliA.Physics.GetEntity(int, AngeliA.IRect, int, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 300
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get entity instance from stage that overlap given rect
+  example: []
+  syntax:
+    content: public static Entity GetEntity(int typeID, IRect globalRect, int mask, Entity ignore = null, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: typeID
+      type: System.Int32
+      description: Type of the target entity
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: ignore
+      type: AngeliA.Entity
+      description: Entity that should be excluded
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    return:
+      type: AngeliA.Entity
+    content.vb: Public Shared Function GetEntity(typeID As Integer, globalRect As IRect, mask As Integer, ignore As Entity = Nothing, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As Entity
+  overload: AngeliA.Physics.GetEntity*
+  nameWithType.vb: Physics.GetEntity(Integer, IRect, Integer, Entity, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.GetEntity(Integer, AngeliA.IRect, Integer, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: GetEntity(Integer, IRect, Integer, Entity, OperationMode, Tag)
+- uid: AngeliA.Physics.HasEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.HasEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  id: HasEntity``1(AngeliA.IRect,System.Int32,AngeliA.Entity,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: HasEntity<T>(IRect, int, Entity, OperationMode, Tag)
+  nameWithType: Physics.HasEntity<T>(IRect, int, Entity, OperationMode, Tag)
+  fullName: AngeliA.Physics.HasEntity<T>(AngeliA.IRect, int, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: HasEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 319
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if any entity instance from stage that overlap given rect
+  example: []
+  syntax:
+    content: 'public static bool HasEntity<T>(IRect globalRect, int mask, Entity ignore = null, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None) where T : Entity'
+    parameters:
+    - id: globalRect
+      type: AngeliA.IRect
+      description: Rect position in global space
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: ignore
+      type: AngeliA.Entity
+      description: Entity that should be excluded
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    typeParameters:
+    - id: T
+      description: Type of the target entity
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasEntity(Of T As Entity)(globalRect As IRect, mask As Integer, ignore As Entity = Nothing, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As Boolean
+  overload: AngeliA.Physics.HasEntity*
+  nameWithType.vb: Physics.HasEntity(Of T)(IRect, Integer, Entity, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.HasEntity(Of T)(AngeliA.IRect, Integer, AngeliA.Entity, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: HasEntity(Of T)(IRect, Integer, Entity, OperationMode, Tag)
+- uid: AngeliA.Physics.RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.OperationMode,AngeliA.Tag)
+  id: RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: RoomCheck(int, IRect, Entity, Direction4, OperationMode, Tag)
+  nameWithType: Physics.RoomCheck(int, IRect, Entity, Direction4, OperationMode, Tag)
+  fullName: AngeliA.Physics.RoomCheck(int, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RoomCheck
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 324
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if there is free room founded at given direction (only Involving solid colliders)
+  example: []
+  syntax:
+    content: public static bool RoomCheck(int mask, IRect rect, Entity entity, Direction4 direction, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: rect
+      type: AngeliA.IRect
+      description: Start location in global space
+    - id: entity
+      type: AngeliA.Entity
+      description: Entity that should be exclude
+    - id: direction
+      type: AngeliA.Direction4
+      description: ''
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RoomCheck(mask As Integer, rect As IRect, entity As Entity, direction As Direction4, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As Boolean
+  overload: AngeliA.Physics.RoomCheck*
+  nameWithType.vb: Physics.RoomCheck(Integer, IRect, Entity, Direction4, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.RoomCheck(Integer, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: RoomCheck(Integer, IRect, Entity, Direction4, OperationMode, Tag)
+- uid: AngeliA.Physics.RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,AngeliA.OperationMode,AngeliA.Tag)
+  commentId: M:AngeliA.Physics.RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,AngeliA.OperationMode,AngeliA.Tag)
+  id: RoomCheck(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,AngeliA.OperationMode,AngeliA.Tag)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: RoomCheck(int, IRect, Entity, Direction4, out PhysicsCell, OperationMode, Tag)
+  nameWithType: Physics.RoomCheck(int, IRect, Entity, Direction4, out PhysicsCell, OperationMode, Tag)
+  fullName: AngeliA.Physics.RoomCheck(int, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, out AngeliA.PhysicsCell, AngeliA.OperationMode, AngeliA.Tag)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RoomCheck
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 337
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if there is free room founded at given direction (only Involving solid colliders)
+  example: []
+  syntax:
+    content: public static bool RoomCheck(int mask, IRect rect, Entity entity, Direction4 direction, out PhysicsCell hit, OperationMode mode = OperationMode.ColliderOnly, Tag tag = Tag.None)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: rect
+      type: AngeliA.IRect
+      description: Start location in global space
+    - id: entity
+      type: AngeliA.Entity
+      description: Entity that should be exclude
+    - id: direction
+      type: AngeliA.Direction4
+      description: ''
+    - id: hit
+      type: AngeliA.PhysicsCell
+      description: Cell of the object that blocks the free room
+    - id: mode
+      type: AngeliA.OperationMode
+      description: What type of cells are included for the operation
+    - id: tag
+      type: AngeliA.Tag
+      description: Only cells with all tags should be included
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RoomCheck(mask As Integer, rect As IRect, entity As Entity, direction As Direction4, hit As PhysicsCell, mode As OperationMode = OperationMode.ColliderOnly, tag As Tag = Tag.None) As Boolean
+  overload: AngeliA.Physics.RoomCheck*
+  nameWithType.vb: Physics.RoomCheck(Integer, IRect, Entity, Direction4, PhysicsCell, OperationMode, Tag)
+  fullName.vb: AngeliA.Physics.RoomCheck(Integer, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, AngeliA.PhysicsCell, AngeliA.OperationMode, AngeliA.Tag)
+  name.vb: RoomCheck(Integer, IRect, Entity, Direction4, PhysicsCell, OperationMode, Tag)
+- uid: AngeliA.Physics.RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,System.Boolean,System.Boolean)
+  commentId: M:AngeliA.Physics.RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,System.Boolean,System.Boolean)
+  id: RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,System.Boolean,System.Boolean)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: RoomCheckOneway(int, IRect, Entity, Direction4, bool, bool)
+  nameWithType: Physics.RoomCheckOneway(int, IRect, Entity, Direction4, bool, bool)
+  fullName: AngeliA.Physics.RoomCheckOneway(int, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RoomCheckOneway
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 341
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if there is free room founded at given direction (only Involving oneway gate)
+  example: []
+  syntax:
+    content: public static bool RoomCheckOneway(int mask, IRect rect, Entity entity, Direction4 direction, bool overlapCheck = false, bool blockOnly = false)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: rect
+      type: AngeliA.IRect
+      description: Start location in global space
+    - id: entity
+      type: AngeliA.Entity
+      description: Entity that should be exclude
+    - id: direction
+      type: AngeliA.Direction4
+      description: ''
+    - id: overlapCheck
+      type: System.Boolean
+      description: True if oneway gates that not blocking the way (only overlap with rect) count as blocked
+    - id: blockOnly
+      type: System.Boolean
+      description: True if ignore oneway gates from entities
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RoomCheckOneway(mask As Integer, rect As IRect, entity As Entity, direction As Direction4, overlapCheck As Boolean = False, blockOnly As Boolean = False) As Boolean
+  overload: AngeliA.Physics.RoomCheckOneway*
+  nameWithType.vb: Physics.RoomCheckOneway(Integer, IRect, Entity, Direction4, Boolean, Boolean)
+  fullName.vb: AngeliA.Physics.RoomCheckOneway(Integer, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, Boolean, Boolean)
+  name.vb: RoomCheckOneway(Integer, IRect, Entity, Direction4, Boolean, Boolean)
+- uid: AngeliA.Physics.RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,System.Boolean,System.Boolean)
+  commentId: M:AngeliA.Physics.RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,System.Boolean,System.Boolean)
+  id: RoomCheckOneway(System.Int32,AngeliA.IRect,AngeliA.Entity,AngeliA.Direction4,AngeliA.PhysicsCell@,System.Boolean,System.Boolean)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: RoomCheckOneway(int, IRect, Entity, Direction4, out PhysicsCell, bool, bool)
+  nameWithType: Physics.RoomCheckOneway(int, IRect, Entity, Direction4, out PhysicsCell, bool, bool)
+  fullName: AngeliA.Physics.RoomCheckOneway(int, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, out AngeliA.PhysicsCell, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RoomCheckOneway
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 355
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if there is free room founded at given direction (only Involving oneway gate)
+  example: []
+  syntax:
+    content: public static bool RoomCheckOneway(int mask, IRect rect, Entity entity, Direction4 direction, out PhysicsCell hit, bool overlapCheck = false, bool blockOnly = false)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: rect
+      type: AngeliA.IRect
+      description: Start location in global space
+    - id: entity
+      type: AngeliA.Entity
+      description: Entity that should be exclude
+    - id: direction
+      type: AngeliA.Direction4
+      description: ''
+    - id: hit
+      type: AngeliA.PhysicsCell
+      description: Cell of the object that blocks the free room
+    - id: overlapCheck
+      type: System.Boolean
+      description: True if oneway gates that not blocking the way (only overlap with rect) count as blocked
+    - id: blockOnly
+      type: System.Boolean
+      description: True if ignore oneway gates from entities
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RoomCheckOneway(mask As Integer, rect As IRect, entity As Entity, direction As Direction4, hit As PhysicsCell, overlapCheck As Boolean = False, blockOnly As Boolean = False) As Boolean
+  overload: AngeliA.Physics.RoomCheckOneway*
+  nameWithType.vb: Physics.RoomCheckOneway(Integer, IRect, Entity, Direction4, PhysicsCell, Boolean, Boolean)
+  fullName.vb: AngeliA.Physics.RoomCheckOneway(Integer, AngeliA.IRect, AngeliA.Entity, AngeliA.Direction4, AngeliA.PhysicsCell, Boolean, Boolean)
+  name.vb: RoomCheckOneway(Integer, IRect, Entity, Direction4, PhysicsCell, Boolean, Boolean)
+- uid: AngeliA.Physics.MoveIgnoreOneway(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  commentId: M:AngeliA.Physics.MoveIgnoreOneway(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  id: MoveIgnoreOneway(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: MoveIgnoreOneway(int, Int2, int, int, Int2, Entity)
+  nameWithType: Physics.MoveIgnoreOneway(int, Int2, int, int, Int2, Entity)
+  fullName: AngeliA.Physics.MoveIgnoreOneway(int, AngeliA.Int2, int, int, AngeliA.Int2, AngeliA.Entity)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: MoveIgnoreOneway
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 386
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Perform move without oneway involved
+  example: []
+  syntax:
+    content: public static Int2 MoveIgnoreOneway(int mask, Int2 from, int speedX, int speedY, Int2 size, Entity entity)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: from
+      type: AngeliA.Int2
+      description: Starting position in global space
+    - id: speedX
+      type: System.Int32
+      description: (in global space)
+    - id: speedY
+      type: System.Int32
+      description: (in global space)
+    - id: size
+      type: AngeliA.Int2
+      description: (in global space)
+    - id: entity
+      type: AngeliA.Entity
+      description: Target that is performing this movement
+    return:
+      type: AngeliA.Int2
+      description: New position in global space after the movement
+    content.vb: Public Shared Function MoveIgnoreOneway(mask As Integer, from As Int2, speedX As Integer, speedY As Integer, size As Int2, entity As Entity) As Int2
+  overload: AngeliA.Physics.MoveIgnoreOneway*
+  nameWithType.vb: Physics.MoveIgnoreOneway(Integer, Int2, Integer, Integer, Int2, Entity)
+  fullName.vb: AngeliA.Physics.MoveIgnoreOneway(Integer, AngeliA.Int2, Integer, Integer, AngeliA.Int2, AngeliA.Entity)
+  name.vb: MoveIgnoreOneway(Integer, Int2, Integer, Integer, Int2, Entity)
+- uid: AngeliA.Physics.Move(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  commentId: M:AngeliA.Physics.Move(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  id: Move(System.Int32,AngeliA.Int2,System.Int32,System.Int32,AngeliA.Int2,AngeliA.Entity)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: Move(int, Int2, int, int, Int2, Entity)
+  nameWithType: Physics.Move(int, Int2, int, int, Int2, Entity)
+  fullName: AngeliA.Physics.Move(int, AngeliA.Int2, int, int, AngeliA.Int2, AngeliA.Entity)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Move
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 399
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Perform move
+  example: []
+  syntax:
+    content: public static Int2 Move(int mask, Int2 from, int speedX, int speedY, Int2 size, Entity entity)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: from
+      type: AngeliA.Int2
+      description: Starting position in global space
+    - id: speedX
+      type: System.Int32
+      description: (in global space)
+    - id: speedY
+      type: System.Int32
+      description: (in global space)
+    - id: size
+      type: AngeliA.Int2
+      description: (in global space)
+    - id: entity
+      type: AngeliA.Entity
+      description: Target that is performing this movement
+    return:
+      type: AngeliA.Int2
+      description: New position in global space after the movement
+    content.vb: Public Shared Function Move(mask As Integer, from As Int2, speedX As Integer, speedY As Integer, size As Int2, entity As Entity) As Int2
+  overload: AngeliA.Physics.Move*
+  nameWithType.vb: Physics.Move(Integer, Int2, Integer, Integer, Int2, Entity)
+  fullName.vb: AngeliA.Physics.Move(Integer, AngeliA.Int2, Integer, Integer, AngeliA.Int2, AngeliA.Entity)
+  name.vb: Move(Integer, Int2, Integer, Integer, Int2, Entity)
+- uid: AngeliA.Physics.MoveImmediately(System.Int32,AngeliA.Int2,AngeliA.Direction4,System.Int32,AngeliA.Int2,AngeliA.Entity,System.Boolean)
+  commentId: M:AngeliA.Physics.MoveImmediately(System.Int32,AngeliA.Int2,AngeliA.Direction4,System.Int32,AngeliA.Int2,AngeliA.Entity,System.Boolean)
+  id: MoveImmediately(System.Int32,AngeliA.Int2,AngeliA.Direction4,System.Int32,AngeliA.Int2,AngeliA.Entity,System.Boolean)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: MoveImmediately(int, Int2, Direction4, int, Int2, Entity, bool)
+  nameWithType: Physics.MoveImmediately(int, Int2, Direction4, int, Int2, Entity, bool)
+  fullName: AngeliA.Physics.MoveImmediately(int, AngeliA.Int2, AngeliA.Direction4, int, AngeliA.Int2, AngeliA.Entity, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: MoveImmediately
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 413
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Perform move without safe checks. (eg. Collide with objects in middle when moving too fast) This version saves CPU usage.
+  example: []
+  syntax:
+    content: public static Int2 MoveImmediately(int mask, Int2 from, Direction4 direction, int speed, Int2 size, Entity entity, bool ignoreOneway = false)
+    parameters:
+    - id: mask
+      type: System.Int32
+      description: What physics layers is included (use PhysicsMask.XXX to get this value)
+    - id: from
+      type: AngeliA.Int2
+      description: Starting position in global space
+    - id: direction
+      type: AngeliA.Direction4
+      description: Which direction to move
+    - id: speed
+      type: System.Int32
+      description: (in global space)
+    - id: size
+      type: AngeliA.Int2
+      description: (in global space)
+    - id: entity
+      type: AngeliA.Entity
+      description: Target that is performing this movement
+    - id: ignoreOneway
+      type: System.Boolean
+      description: True if oneway gates are excluded
+    return:
+      type: AngeliA.Int2
+      description: New position in global space after the movement
+    content.vb: Public Shared Function MoveImmediately(mask As Integer, from As Int2, direction As Direction4, speed As Integer, size As Int2, entity As Entity, ignoreOneway As Boolean = False) As Int2
+  overload: AngeliA.Physics.MoveImmediately*
+  nameWithType.vb: Physics.MoveImmediately(Integer, Int2, Direction4, Integer, Int2, Entity, Boolean)
+  fullName.vb: AngeliA.Physics.MoveImmediately(Integer, AngeliA.Int2, AngeliA.Direction4, Integer, AngeliA.Int2, AngeliA.Entity, Boolean)
+  name.vb: MoveImmediately(Integer, Int2, Direction4, Integer, Int2, Entity, Boolean)
+- uid: AngeliA.Physics.ForcePush(AngeliA.Rigidbody,AngeliA.Direction4,System.Int32)
+  commentId: M:AngeliA.Physics.ForcePush(AngeliA.Rigidbody,AngeliA.Direction4,System.Int32)
+  id: ForcePush(AngeliA.Rigidbody,AngeliA.Direction4,System.Int32)
+  parent: AngeliA.Physics
+  langs:
+  - csharp
+  - vb
+  name: ForcePush(Rigidbody, Direction4, int)
+  nameWithType: Physics.ForcePush(Rigidbody, Direction4, int)
+  fullName: AngeliA.Physics.ForcePush(AngeliA.Rigidbody, AngeliA.Direction4, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Physics.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ForcePush
+    path: ../../AngeliA/AngeliA Framework/src/Core/Physics.cs
+    startLine: 438
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Make a recursive push
+  example: []
+  syntax:
+    content: public static void ForcePush(Rigidbody host, Direction4 direction, int distance)
+    parameters:
+    - id: host
+      type: AngeliA.Rigidbody
+      description: Entity that pushs other
+    - id: direction
+      type: AngeliA.Direction4
+      description: ''
+    - id: distance
+      type: System.Int32
+      description: (in global space)
+    content.vb: Public Shared Sub ForcePush(host As Rigidbody, direction As Direction4, distance As Integer)
+  overload: AngeliA.Physics.ForcePush*
+  nameWithType.vb: Physics.ForcePush(Rigidbody, Direction4, Integer)
+  fullName.vb: AngeliA.Physics.ForcePush(AngeliA.Rigidbody, AngeliA.Direction4, Integer)
+  name.vb: ForcePush(Rigidbody, Direction4, Integer)
+references:
+- uid: AngeliA
+  commentId: N:AngeliA
+  href: AngeliA.html
+  name: AngeliA
+  nameWithType: AngeliA
+  fullName: AngeliA
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AngeliA.Physics.IsReady*
+  commentId: Overload:AngeliA.Physics.IsReady
+  href: AngeliA.Physics.html#AngeliA_Physics_IsReady
+  name: IsReady
+  nameWithType: Physics.IsReady
+  fullName: AngeliA.Physics.IsReady
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AngeliA.Physics.FillBlock*
+  commentId: Overload:AngeliA.Physics.FillBlock
+  href: AngeliA.Physics.html#AngeliA_Physics_FillBlock_System_Int32_System_Int32_AngeliA_IRect_System_Boolean_AngeliA_Tag_
+  name: FillBlock
+  nameWithType: Physics.FillBlock
+  fullName: AngeliA.Physics.FillBlock
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AngeliA.IRect
+  commentId: T:AngeliA.IRect
+  parent: AngeliA
+  href: AngeliA.IRect.html
+  name: IRect
+  nameWithType: IRect
+  fullName: AngeliA.IRect
+- uid: AngeliA.Tag
+  commentId: T:AngeliA.Tag
+  parent: AngeliA
+  href: AngeliA.Tag.html
+  name: Tag
+  nameWithType: Tag
+  fullName: AngeliA.Tag
+- uid: AngeliA.Physics.FillEntity*
+  commentId: Overload:AngeliA.Physics.FillEntity
+  href: AngeliA.Physics.html#AngeliA_Physics_FillEntity_System_Int32_AngeliA_Entity_System_Boolean_AngeliA_Tag_
+  name: FillEntity
+  nameWithType: Physics.FillEntity
+  fullName: AngeliA.Physics.FillEntity
+- uid: AngeliA.Entity
+  commentId: T:AngeliA.Entity
+  parent: AngeliA
+  href: AngeliA.Entity.html
+  name: Entity
+  nameWithType: Entity
+  fullName: AngeliA.Entity
+- uid: AngeliA.Physics.IgnoreOverlap*
+  commentId: Overload:AngeliA.Physics.IgnoreOverlap
+  href: AngeliA.Physics.html#AngeliA_Physics_IgnoreOverlap_System_Int32_AngeliA_IRect_AngeliA_OperationMode_
+  name: IgnoreOverlap
+  nameWithType: Physics.IgnoreOverlap
+  fullName: AngeliA.Physics.IgnoreOverlap
+- uid: AngeliA.OperationMode
+  commentId: T:AngeliA.OperationMode
+  parent: AngeliA
+  href: AngeliA.OperationMode.html
+  name: OperationMode
+  nameWithType: OperationMode
+  fullName: AngeliA.OperationMode
+- uid: AngeliA.Physics.Overlap*
+  commentId: Overload:AngeliA.Physics.Overlap
+  href: AngeliA.Physics.html#AngeliA_Physics_Overlap_System_Int32_AngeliA_IRect_AngeliA_Entity_AngeliA_OperationMode_AngeliA_Tag_
+  name: Overlap
+  nameWithType: Physics.Overlap
+  fullName: AngeliA.Physics.Overlap
+- uid: AngeliA.PhysicsCell
+  commentId: T:AngeliA.PhysicsCell
+  parent: AngeliA
+  href: AngeliA.PhysicsCell.html
+  name: PhysicsCell
+  nameWithType: PhysicsCell
+  fullName: AngeliA.PhysicsCell
+- uid: AngeliA.Physics.OverlapAll*
+  commentId: Overload:AngeliA.Physics.OverlapAll
+  href: AngeliA.Physics.html#AngeliA_Physics_OverlapAll_System_Int32_AngeliA_IRect_System_Int32__AngeliA_Entity_AngeliA_OperationMode_AngeliA_Tag_
+  name: OverlapAll
+  nameWithType: Physics.OverlapAll
+  fullName: AngeliA.Physics.OverlapAll
+- uid: AngeliA.PhysicsCell[]
+  isExternal: true
+  href: AngeliA.PhysicsCell.html
+  name: PhysicsCell[]
+  nameWithType: PhysicsCell[]
+  fullName: AngeliA.PhysicsCell[]
+  nameWithType.vb: PhysicsCell()
+  fullName.vb: AngeliA.PhysicsCell()
+  name.vb: PhysicsCell()
+  spec.csharp:
+  - uid: AngeliA.PhysicsCell
+    name: PhysicsCell
+    href: AngeliA.PhysicsCell.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.PhysicsCell
+    name: PhysicsCell
+    href: AngeliA.PhysicsCell.html
+  - name: (
+  - name: )
+- uid: AngeliA.Physics.GetEntity*
+  commentId: Overload:AngeliA.Physics.GetEntity
+  href: AngeliA.Physics.html#AngeliA_Physics_GetEntity__1_AngeliA_IRect_System_Int32_AngeliA_Entity_AngeliA_OperationMode_AngeliA_Tag_
+  name: GetEntity
+  nameWithType: Physics.GetEntity
+  fullName: AngeliA.Physics.GetEntity
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: AngeliA.Physics.HasEntity*
+  commentId: Overload:AngeliA.Physics.HasEntity
+  href: AngeliA.Physics.html#AngeliA_Physics_HasEntity__1_AngeliA_IRect_System_Int32_AngeliA_Entity_AngeliA_OperationMode_AngeliA_Tag_
+  name: HasEntity
+  nameWithType: Physics.HasEntity
+  fullName: AngeliA.Physics.HasEntity
+- uid: AngeliA.Physics.RoomCheck*
+  commentId: Overload:AngeliA.Physics.RoomCheck
+  href: AngeliA.Physics.html#AngeliA_Physics_RoomCheck_System_Int32_AngeliA_IRect_AngeliA_Entity_AngeliA_Direction4_AngeliA_OperationMode_AngeliA_Tag_
+  name: RoomCheck
+  nameWithType: Physics.RoomCheck
+  fullName: AngeliA.Physics.RoomCheck
+- uid: AngeliA.Direction4
+  commentId: T:AngeliA.Direction4
+  parent: AngeliA
+  href: AngeliA.Direction4.html
+  name: Direction4
+  nameWithType: Direction4
+  fullName: AngeliA.Direction4
+- uid: AngeliA.Physics.RoomCheckOneway*
+  commentId: Overload:AngeliA.Physics.RoomCheckOneway
+  href: AngeliA.Physics.html#AngeliA_Physics_RoomCheckOneway_System_Int32_AngeliA_IRect_AngeliA_Entity_AngeliA_Direction4_System_Boolean_System_Boolean_
+  name: RoomCheckOneway
+  nameWithType: Physics.RoomCheckOneway
+  fullName: AngeliA.Physics.RoomCheckOneway
+- uid: AngeliA.Physics.MoveIgnoreOneway*
+  commentId: Overload:AngeliA.Physics.MoveIgnoreOneway
+  href: AngeliA.Physics.html#AngeliA_Physics_MoveIgnoreOneway_System_Int32_AngeliA_Int2_System_Int32_System_Int32_AngeliA_Int2_AngeliA_Entity_
+  name: MoveIgnoreOneway
+  nameWithType: Physics.MoveIgnoreOneway
+  fullName: AngeliA.Physics.MoveIgnoreOneway
+- uid: AngeliA.Int2
+  commentId: T:AngeliA.Int2
+  parent: AngeliA
+  href: AngeliA.Int2.html
+  name: Int2
+  nameWithType: Int2
+  fullName: AngeliA.Int2
+- uid: AngeliA.Physics.Move*
+  commentId: Overload:AngeliA.Physics.Move
+  href: AngeliA.Physics.html#AngeliA_Physics_Move_System_Int32_AngeliA_Int2_System_Int32_System_Int32_AngeliA_Int2_AngeliA_Entity_
+  name: Move
+  nameWithType: Physics.Move
+  fullName: AngeliA.Physics.Move
+- uid: AngeliA.Physics.MoveImmediately*
+  commentId: Overload:AngeliA.Physics.MoveImmediately
+  href: AngeliA.Physics.html#AngeliA_Physics_MoveImmediately_System_Int32_AngeliA_Int2_AngeliA_Direction4_System_Int32_AngeliA_Int2_AngeliA_Entity_System_Boolean_
+  name: MoveImmediately
+  nameWithType: Physics.MoveImmediately
+  fullName: AngeliA.Physics.MoveImmediately
+- uid: AngeliA.Physics.ForcePush*
+  commentId: Overload:AngeliA.Physics.ForcePush
+  href: AngeliA.Physics.html#AngeliA_Physics_ForcePush_AngeliA_Rigidbody_AngeliA_Direction4_System_Int32_
+  name: ForcePush
+  nameWithType: Physics.ForcePush
+  fullName: AngeliA.Physics.ForcePush
+- uid: AngeliA.Rigidbody
+  commentId: T:AngeliA.Rigidbody
+  parent: AngeliA
+  href: AngeliA.Rigidbody.html
+  name: Rigidbody
+  nameWithType: Rigidbody
+  fullName: AngeliA.Rigidbody

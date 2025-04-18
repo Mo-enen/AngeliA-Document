@@ -1,0 +1,2629 @@
+### YamlMime:ManagedReference
+items:
+- uid: AngeliA.Stage
+  commentId: T:AngeliA.Stage
+  id: Stage
+  parent: AngeliA
+  children:
+  - AngeliA.Stage.AntiSpawnRect
+  - AngeliA.Stage.DespawnAllEntitiesOfType``1(System.Int32)
+  - AngeliA.Stage.DespawnAllNonUiEntities(System.Boolean)
+  - AngeliA.Stage.Enable
+  - AngeliA.Stage.Entities
+  - AngeliA.Stage.EntityCounts
+  - AngeliA.Stage.FindEntity(System.Int32)
+  - AngeliA.Stage.FindEntity``1
+  - AngeliA.Stage.ForAllActiveEntities``1(System.Int32)
+  - AngeliA.Stage.GetCameraCullingPadding
+  - AngeliA.Stage.GetEntityCapacity(System.Int32)
+  - AngeliA.Stage.GetEntityType(System.Int32)
+  - AngeliA.Stage.GetOrSpawnEntity(System.Int32,System.Int32,System.Int32)
+  - AngeliA.Stage.GetOrSpawnEntity``1(System.Int32,System.Int32)
+  - AngeliA.Stage.GetSpawnedEntityCount(System.Int32)
+  - AngeliA.Stage.IsEntityRequireDrawBehind(System.Int32)
+  - AngeliA.Stage.IsEntityRequireReposition(System.Int32)
+  - AngeliA.Stage.IsReady
+  - AngeliA.Stage.IsValidEntityID(System.Int32)
+  - AngeliA.Stage.PeekOrGetEntity(System.Int32)
+  - AngeliA.Stage.PeekOrGetEntity``1
+  - AngeliA.Stage.RemoveStagedEntity(AngeliA.Int3)
+  - AngeliA.Stage.SETTING_SET_VIEW_H
+  - AngeliA.Stage.SETTING_SET_VIEW_X
+  - AngeliA.Stage.SETTING_SET_VIEW_Y
+  - AngeliA.Stage.SETTING_SET_VIEW_Z
+  - AngeliA.Stage.SetViewPositionDelay(System.Int32,System.Int32,System.Int32,System.Int32)
+  - AngeliA.Stage.SetViewRectImmediately(AngeliA.IRect,System.Boolean,System.Boolean)
+  - AngeliA.Stage.SetViewSizeDelay(System.Int32,System.Int32,System.Int32,System.Boolean)
+  - AngeliA.Stage.SetViewXDelay(System.Int32,System.Int32,System.Int32)
+  - AngeliA.Stage.SetViewYDelay(System.Int32,System.Int32,System.Int32)
+  - AngeliA.Stage.SetViewZ(System.Int32,System.Boolean)
+  - AngeliA.Stage.SpawnEntity(System.Int32,System.Int32,System.Int32)
+  - AngeliA.Stage.SpawnEntityFromWorld(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  - AngeliA.Stage.SpawnEntity``1(System.Int32,System.Int32)
+  - AngeliA.Stage.SpawnRect
+  - AngeliA.Stage.TryFindEntity(System.Int32,AngeliA.Entity@)
+  - AngeliA.Stage.TryFindEntityNearby``1(AngeliA.Int2,``0@,System.Func{``0,System.Boolean})
+  - AngeliA.Stage.TryFindEntity``1(``0@)
+  - AngeliA.Stage.TryGetEntities(System.Int32,System.ReadOnlySpan{AngeliA.Entity}@,System.Int32@)
+  - AngeliA.Stage.TryGetStagedEntity(AngeliA.Int3,AngeliA.Entity@)
+  - AngeliA.Stage.TryRepositionEntity(AngeliA.Entity,System.Boolean)
+  - AngeliA.Stage.TrySpawnEntity(System.Int32,System.Int32,System.Int32,AngeliA.Entity@)
+  - AngeliA.Stage.TrySpawnEntity``1(System.Int32,System.Int32,``0@)
+  - AngeliA.Stage.ViewRect
+  - AngeliA.Stage.ViewZ
+  langs:
+  - csharp
+  - vb
+  name: Stage
+  nameWithType: Stage
+  fullName: AngeliA.Stage
+  type: Class
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Stage
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 10
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Core system that handles entity spawning and despawning logic
+  example: []
+  syntax:
+    content: public static class Stage
+    content.vb: Public Module Stage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AngeliA.Stage.SETTING_SET_VIEW_X
+  commentId: F:AngeliA.Stage.SETTING_SET_VIEW_X
+  id: SETTING_SET_VIEW_X
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SETTING_SET_VIEW_X
+  nameWithType: Stage.SETTING_SET_VIEW_X
+  fullName: AngeliA.Stage.SETTING_SET_VIEW_X
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SETTING_SET_VIEW_X
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 108
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: ID for remote setting between engine and rigged game
+  example: []
+  syntax:
+    content: public const int SETTING_SET_VIEW_X = 921736235
+    return:
+      type: System.Int32
+    content.vb: Public Const SETTING_SET_VIEW_X As Integer = 921736235
+- uid: AngeliA.Stage.SETTING_SET_VIEW_Y
+  commentId: F:AngeliA.Stage.SETTING_SET_VIEW_Y
+  id: SETTING_SET_VIEW_Y
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SETTING_SET_VIEW_Y
+  nameWithType: Stage.SETTING_SET_VIEW_Y
+  fullName: AngeliA.Stage.SETTING_SET_VIEW_Y
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SETTING_SET_VIEW_Y
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 112
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: ID for remote setting between engine and rigged game
+  example: []
+  syntax:
+    content: public const int SETTING_SET_VIEW_Y = 921736236
+    return:
+      type: System.Int32
+    content.vb: Public Const SETTING_SET_VIEW_Y As Integer = 921736236
+- uid: AngeliA.Stage.SETTING_SET_VIEW_Z
+  commentId: F:AngeliA.Stage.SETTING_SET_VIEW_Z
+  id: SETTING_SET_VIEW_Z
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SETTING_SET_VIEW_Z
+  nameWithType: Stage.SETTING_SET_VIEW_Z
+  fullName: AngeliA.Stage.SETTING_SET_VIEW_Z
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SETTING_SET_VIEW_Z
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 116
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: ID for remote setting between engine and rigged game
+  example: []
+  syntax:
+    content: public const int SETTING_SET_VIEW_Z = 921736237
+    return:
+      type: System.Int32
+    content.vb: Public Const SETTING_SET_VIEW_Z As Integer = 921736237
+- uid: AngeliA.Stage.SETTING_SET_VIEW_H
+  commentId: F:AngeliA.Stage.SETTING_SET_VIEW_H
+  id: SETTING_SET_VIEW_H
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SETTING_SET_VIEW_H
+  nameWithType: Stage.SETTING_SET_VIEW_H
+  fullName: AngeliA.Stage.SETTING_SET_VIEW_H
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SETTING_SET_VIEW_H
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 120
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: ID for remote setting between engine and rigged game
+  example: []
+  syntax:
+    content: public const int SETTING_SET_VIEW_H = 921736238
+    return:
+      type: System.Int32
+    content.vb: Public Const SETTING_SET_VIEW_H As Integer = 921736238
+- uid: AngeliA.Stage.EntityCounts
+  commentId: P:AngeliA.Stage.EntityCounts
+  id: EntityCounts
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: EntityCounts
+  nameWithType: Stage.EntityCounts
+  fullName: AngeliA.Stage.EntityCounts
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: EntityCounts
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 126
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Current spawned entity count for each layers
+  example: []
+  syntax:
+    content: public static int[] EntityCounts { get; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Property EntityCounts As Integer()
+  overload: AngeliA.Stage.EntityCounts*
+- uid: AngeliA.Stage.Entities
+  commentId: P:AngeliA.Stage.Entities
+  id: Entities
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: Entities
+  nameWithType: Stage.Entities
+  fullName: AngeliA.Stage.Entities
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Entities
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 130
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Current spawned entity instances for each layer
+  example: []
+  syntax:
+    content: public static Entity[][] Entities { get; }
+    parameters: []
+    return:
+      type: AngeliA.Entity[][]
+    content.vb: Public Shared Property Entities As Entity()()
+  overload: AngeliA.Stage.Entities*
+- uid: AngeliA.Stage.SpawnRect
+  commentId: P:AngeliA.Stage.SpawnRect
+  id: SpawnRect
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SpawnRect
+  nameWithType: Stage.SpawnRect
+  fullName: AngeliA.Stage.SpawnRect
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SpawnRect
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 134
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Rect in global space that determine where the entities need to be spawn from map
+  example: []
+  syntax:
+    content: public static IRect SpawnRect { get; }
+    parameters: []
+    return:
+      type: AngeliA.IRect
+    content.vb: Public Shared Property SpawnRect As IRect
+  overload: AngeliA.Stage.SpawnRect*
+- uid: AngeliA.Stage.AntiSpawnRect
+  commentId: P:AngeliA.Stage.AntiSpawnRect
+  id: AntiSpawnRect
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: AntiSpawnRect
+  nameWithType: Stage.AntiSpawnRect
+  fullName: AngeliA.Stage.AntiSpawnRect
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: AntiSpawnRect
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 138
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Rect in global space that determine where a despawned entity should not respawn from map
+  example: []
+  syntax:
+    content: public static IRect AntiSpawnRect { get; }
+    parameters: []
+    return:
+      type: AngeliA.IRect
+    content.vb: Public Shared Property AntiSpawnRect As IRect
+  overload: AngeliA.Stage.AntiSpawnRect*
+- uid: AngeliA.Stage.ViewRect
+  commentId: P:AngeliA.Stage.ViewRect
+  id: ViewRect
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: ViewRect
+  nameWithType: Stage.ViewRect
+  fullName: AngeliA.Stage.ViewRect
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ViewRect
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 142
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Rect in global space that represents player view. Ascpect ratio of this rect keeps the same when user adjust application window size, so the actual rect range for rendering is Renderer.CameraRect.
+  example: []
+  syntax:
+    content: public static IRect ViewRect { get; }
+    parameters: []
+    return:
+      type: AngeliA.IRect
+    content.vb: Public Shared Property ViewRect As IRect
+  overload: AngeliA.Stage.ViewRect*
+- uid: AngeliA.Stage.ViewZ
+  commentId: P:AngeliA.Stage.ViewZ
+  id: ViewZ
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: ViewZ
+  nameWithType: Stage.ViewZ
+  fullName: AngeliA.Stage.ViewZ
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ViewZ
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 146
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Current position Z value
+  example: []
+  syntax:
+    content: public static int ViewZ { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property ViewZ As Integer
+  overload: AngeliA.Stage.ViewZ*
+- uid: AngeliA.Stage.Enable
+  commentId: P:AngeliA.Stage.Enable
+  id: Enable
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: Enable
+  nameWithType: Stage.Enable
+  fullName: AngeliA.Stage.Enable
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Enable
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 150
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True is the system is required for the game
+  example: []
+  syntax:
+    content: public static bool Enable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property Enable As Boolean
+  overload: AngeliA.Stage.Enable*
+- uid: AngeliA.Stage.IsReady
+  commentId: P:AngeliA.Stage.IsReady
+  id: IsReady
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: IsReady
+  nameWithType: Stage.IsReady
+  fullName: AngeliA.Stage.IsReady
+  type: Property
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: IsReady
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 154
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if the system is ready to use
+  example: []
+  syntax:
+    content: public static bool IsReady { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property IsReady As Boolean
+  overload: AngeliA.Stage.IsReady*
+- uid: AngeliA.Stage.SetViewZ(System.Int32,System.Boolean)
+  commentId: M:AngeliA.Stage.SetViewZ(System.Int32,System.Boolean)
+  id: SetViewZ(System.Int32,System.Boolean)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SetViewZ(int, bool)
+  nameWithType: Stage.SetViewZ(int, bool)
+  fullName: AngeliA.Stage.SetViewZ(int, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SetViewZ
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 494
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Set current position Z
+  example: []
+  syntax:
+    content: public static void SetViewZ(int newZ, bool immediately = false)
+    parameters:
+    - id: newZ
+      type: System.Int32
+      description: ''
+    - id: immediately
+      type: System.Boolean
+      description: True if the internal data is immediately change instead of change in the end of the frame
+    content.vb: Public Shared Sub SetViewZ(newZ As Integer, immediately As Boolean = False)
+  overload: AngeliA.Stage.SetViewZ*
+  nameWithType.vb: Stage.SetViewZ(Integer, Boolean)
+  fullName.vb: AngeliA.Stage.SetViewZ(Integer, Boolean)
+  name.vb: SetViewZ(Integer, Boolean)
+- uid: AngeliA.Stage.SetViewRectImmediately(AngeliA.IRect,System.Boolean,System.Boolean)
+  commentId: M:AngeliA.Stage.SetViewRectImmediately(AngeliA.IRect,System.Boolean,System.Boolean)
+  id: SetViewRectImmediately(AngeliA.IRect,System.Boolean,System.Boolean)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SetViewRectImmediately(IRect, bool, bool)
+  nameWithType: Stage.SetViewRectImmediately(IRect, bool, bool)
+  fullName: AngeliA.Stage.SetViewRectImmediately(AngeliA.IRect, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SetViewRectImmediately
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 506
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Set view rect position in global space
+  example: []
+  syntax:
+    content: public static void SetViewRectImmediately(IRect newRect, bool remapAllRenderingCells = false, bool resetDelay = true)
+    parameters:
+    - id: newRect
+      type: AngeliA.IRect
+      description: ''
+    - id: remapAllRenderingCells
+      type: System.Boolean
+      description: True if change position and size for all existing rendering cells
+    - id: resetDelay
+      type: System.Boolean
+      description: True if ignore all existing delay operation of view rect position/size
+    content.vb: Public Shared Sub SetViewRectImmediately(newRect As IRect, remapAllRenderingCells As Boolean = False, resetDelay As Boolean = True)
+  overload: AngeliA.Stage.SetViewRectImmediately*
+  nameWithType.vb: Stage.SetViewRectImmediately(IRect, Boolean, Boolean)
+  fullName.vb: AngeliA.Stage.SetViewRectImmediately(AngeliA.IRect, Boolean, Boolean)
+  name.vb: SetViewRectImmediately(IRect, Boolean, Boolean)
+- uid: AngeliA.Stage.SetViewPositionDelay(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:AngeliA.Stage.SetViewPositionDelay(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: SetViewPositionDelay(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SetViewPositionDelay(int, int, int, int)
+  nameWithType: Stage.SetViewPositionDelay(int, int, int, int)
+  fullName: AngeliA.Stage.SetViewPositionDelay(int, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SetViewPositionDelay
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 561
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Set view rect position at the end of current frame
+  example: []
+  syntax:
+    content: public static void SetViewPositionDelay(int x, int y, int lerp = 1000, int priority = -2147483648)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: ''
+    - id: y
+      type: System.Int32
+      description: ''
+    - id: lerp
+      type: System.Int32
+      description: Smooth amount (0 means no motion applys. 1000 means immediately applys)
+    - id: priority
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub SetViewPositionDelay(x As Integer, y As Integer, lerp As Integer = 1000, priority As Integer = -2147483648)
+  overload: AngeliA.Stage.SetViewPositionDelay*
+  nameWithType.vb: Stage.SetViewPositionDelay(Integer, Integer, Integer, Integer)
+  fullName.vb: AngeliA.Stage.SetViewPositionDelay(Integer, Integer, Integer, Integer)
+  name.vb: SetViewPositionDelay(Integer, Integer, Integer, Integer)
+- uid: AngeliA.Stage.SetViewXDelay(System.Int32,System.Int32,System.Int32)
+  commentId: M:AngeliA.Stage.SetViewXDelay(System.Int32,System.Int32,System.Int32)
+  id: SetViewXDelay(System.Int32,System.Int32,System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SetViewXDelay(int, int, int)
+  nameWithType: Stage.SetViewXDelay(int, int, int)
+  fullName: AngeliA.Stage.SetViewXDelay(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SetViewXDelay
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 574
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Set view rect X at the end of current frame
+  example: []
+  syntax:
+    content: public static void SetViewXDelay(int x, int lerp = 1000, int priority = -2147483648)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: ''
+    - id: lerp
+      type: System.Int32
+      description: Smooth amount (0 means no motion applys. 1000 means immediately applys)
+    - id: priority
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub SetViewXDelay(x As Integer, lerp As Integer = 1000, priority As Integer = -2147483648)
+  overload: AngeliA.Stage.SetViewXDelay*
+  nameWithType.vb: Stage.SetViewXDelay(Integer, Integer, Integer)
+  fullName.vb: AngeliA.Stage.SetViewXDelay(Integer, Integer, Integer)
+  name.vb: SetViewXDelay(Integer, Integer, Integer)
+- uid: AngeliA.Stage.SetViewYDelay(System.Int32,System.Int32,System.Int32)
+  commentId: M:AngeliA.Stage.SetViewYDelay(System.Int32,System.Int32,System.Int32)
+  id: SetViewYDelay(System.Int32,System.Int32,System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SetViewYDelay(int, int, int)
+  nameWithType: Stage.SetViewYDelay(int, int, int)
+  fullName: AngeliA.Stage.SetViewYDelay(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SetViewYDelay
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 586
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Set view rect Y at the end of current frame
+  example: []
+  syntax:
+    content: public static void SetViewYDelay(int y, int lerp = 1000, int priority = -2147483648)
+    parameters:
+    - id: y
+      type: System.Int32
+      description: ''
+    - id: lerp
+      type: System.Int32
+      description: Smooth amount (0 means no motion applys. 1000 means immediately applys)
+    - id: priority
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub SetViewYDelay(y As Integer, lerp As Integer = 1000, priority As Integer = -2147483648)
+  overload: AngeliA.Stage.SetViewYDelay*
+  nameWithType.vb: Stage.SetViewYDelay(Integer, Integer, Integer)
+  fullName.vb: AngeliA.Stage.SetViewYDelay(Integer, Integer, Integer)
+  name.vb: SetViewYDelay(Integer, Integer, Integer)
+- uid: AngeliA.Stage.SetViewSizeDelay(System.Int32,System.Int32,System.Int32,System.Boolean)
+  commentId: M:AngeliA.Stage.SetViewSizeDelay(System.Int32,System.Int32,System.Int32,System.Boolean)
+  id: SetViewSizeDelay(System.Int32,System.Int32,System.Int32,System.Boolean)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SetViewSizeDelay(int, int, int, bool)
+  nameWithType: Stage.SetViewSizeDelay(int, int, int, bool)
+  fullName: AngeliA.Stage.SetViewSizeDelay(int, int, int, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SetViewSizeDelay
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 599
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Set view rect height at the end of current frame
+  example: []
+  syntax:
+    content: public static void SetViewSizeDelay(int height, int lerp = 1000, int priority = -2147483648, bool centralized = false)
+    parameters:
+    - id: height
+      type: System.Int32
+      description: ''
+    - id: lerp
+      type: System.Int32
+      description: ''
+    - id: priority
+      type: System.Int32
+      description: ''
+    - id: centralized
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Sub SetViewSizeDelay(height As Integer, lerp As Integer = 1000, priority As Integer = -2147483648, centralized As Boolean = False)
+  overload: AngeliA.Stage.SetViewSizeDelay*
+  nameWithType.vb: Stage.SetViewSizeDelay(Integer, Integer, Integer, Boolean)
+  fullName.vb: AngeliA.Stage.SetViewSizeDelay(Integer, Integer, Integer, Boolean)
+  name.vb: SetViewSizeDelay(Integer, Integer, Integer, Boolean)
+- uid: AngeliA.Stage.SpawnEntity(System.Int32,System.Int32,System.Int32)
+  commentId: M:AngeliA.Stage.SpawnEntity(System.Int32,System.Int32,System.Int32)
+  id: SpawnEntity(System.Int32,System.Int32,System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SpawnEntity(int, int, int)
+  nameWithType: Stage.SpawnEntity(int, int, int)
+  fullName: AngeliA.Stage.SpawnEntity(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SpawnEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 615
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find an entity with given ID from internal pool and make it into the stage
+  example: []
+  syntax:
+    content: public static Entity SpawnEntity(int typeID, int x, int y)
+    parameters:
+    - id: typeID
+      type: System.Int32
+      description: ID of the entity. Can be cached by typeof(YourEntity).AngeHash()
+    - id: x
+      type: System.Int32
+      description: Initial position in global space
+    - id: y
+      type: System.Int32
+      description: Initial position in global space
+    return:
+      type: AngeliA.Entity
+      description: Instance of the entity. Null when failed
+    content.vb: Public Shared Function SpawnEntity(typeID As Integer, x As Integer, y As Integer) As Entity
+  overload: AngeliA.Stage.SpawnEntity*
+  nameWithType.vb: Stage.SpawnEntity(Integer, Integer, Integer)
+  fullName.vb: AngeliA.Stage.SpawnEntity(Integer, Integer, Integer)
+  name.vb: SpawnEntity(Integer, Integer, Integer)
+- uid: AngeliA.Stage.SpawnEntity``1(System.Int32,System.Int32)
+  commentId: M:AngeliA.Stage.SpawnEntity``1(System.Int32,System.Int32)
+  id: SpawnEntity``1(System.Int32,System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SpawnEntity<T>(int, int)
+  nameWithType: Stage.SpawnEntity<T>(int, int)
+  fullName: AngeliA.Stage.SpawnEntity<T>(int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SpawnEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 623
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find an entity with given ID from internal pool and make it into the stage
+  example: []
+  syntax:
+    content: 'public static T SpawnEntity<T>(int x, int y) where T : Entity'
+    parameters:
+    - id: x
+      type: System.Int32
+      description: Initial position in global space
+    - id: y
+      type: System.Int32
+      description: Initial position in global space
+    typeParameters:
+    - id: T
+      description: Type of the entity
+    return:
+      type: '{T}'
+      description: Instance of the entity. Null when failed
+    content.vb: Public Shared Function SpawnEntity(Of T As Entity)(x As Integer, y As Integer) As T
+  overload: AngeliA.Stage.SpawnEntity*
+  nameWithType.vb: Stage.SpawnEntity(Of T)(Integer, Integer)
+  fullName.vb: AngeliA.Stage.SpawnEntity(Of T)(Integer, Integer)
+  name.vb: SpawnEntity(Of T)(Integer, Integer)
+- uid: AngeliA.Stage.TrySpawnEntity(System.Int32,System.Int32,System.Int32,AngeliA.Entity@)
+  commentId: M:AngeliA.Stage.TrySpawnEntity(System.Int32,System.Int32,System.Int32,AngeliA.Entity@)
+  id: TrySpawnEntity(System.Int32,System.Int32,System.Int32,AngeliA.Entity@)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TrySpawnEntity(int, int, int, out Entity)
+  nameWithType: Stage.TrySpawnEntity(int, int, int, out Entity)
+  fullName: AngeliA.Stage.TrySpawnEntity(int, int, int, out AngeliA.Entity)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TrySpawnEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 632
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find an entity with given ID from internal pool and make it into the stage
+  example: []
+  syntax:
+    content: public static bool TrySpawnEntity(int typeID, int x, int y, out Entity entity)
+    parameters:
+    - id: typeID
+      type: System.Int32
+      description: ID of the entity. Can be cached by typeof(YourEntity).AngeHash()
+    - id: x
+      type: System.Int32
+      description: Initial position in global space
+    - id: y
+      type: System.Int32
+      description: Initial position in global space
+    - id: entity
+      type: AngeliA.Entity
+      description: Instance of the entity
+    return:
+      type: System.Boolean
+      description: True if the entity is spawned
+    content.vb: Public Shared Function TrySpawnEntity(typeID As Integer, x As Integer, y As Integer, entity As Entity) As Boolean
+  overload: AngeliA.Stage.TrySpawnEntity*
+  nameWithType.vb: Stage.TrySpawnEntity(Integer, Integer, Integer, Entity)
+  fullName.vb: AngeliA.Stage.TrySpawnEntity(Integer, Integer, Integer, AngeliA.Entity)
+  name.vb: TrySpawnEntity(Integer, Integer, Integer, Entity)
+- uid: AngeliA.Stage.TrySpawnEntity``1(System.Int32,System.Int32,``0@)
+  commentId: M:AngeliA.Stage.TrySpawnEntity``1(System.Int32,System.Int32,``0@)
+  id: TrySpawnEntity``1(System.Int32,System.Int32,``0@)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TrySpawnEntity<T>(int, int, out T)
+  nameWithType: Stage.TrySpawnEntity<T>(int, int, out T)
+  fullName: AngeliA.Stage.TrySpawnEntity<T>(int, int, out T)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TrySpawnEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 644
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Find an entity with given ID from internal pool and make it into the stage
+  example: []
+  syntax:
+    content: 'public static bool TrySpawnEntity<T>(int x, int y, out T entity) where T : Entity'
+    parameters:
+    - id: x
+      type: System.Int32
+      description: Initial position in global space
+    - id: y
+      type: System.Int32
+      description: Initial position in global space
+    - id: entity
+      type: '{T}'
+      description: Instance of the entity
+    typeParameters:
+    - id: T
+      description: Type of the entity
+    return:
+      type: System.Boolean
+      description: True if the entity is spawned
+    content.vb: Public Shared Function TrySpawnEntity(Of T As Entity)(x As Integer, y As Integer, entity As T) As Boolean
+  overload: AngeliA.Stage.TrySpawnEntity*
+  nameWithType.vb: Stage.TrySpawnEntity(Of T)(Integer, Integer, T)
+  fullName.vb: AngeliA.Stage.TrySpawnEntity(Of T)(Integer, Integer, T)
+  name.vb: TrySpawnEntity(Of T)(Integer, Integer, T)
+- uid: AngeliA.Stage.SpawnEntityFromWorld(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  commentId: M:AngeliA.Stage.SpawnEntityFromWorld(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  id: SpawnEntityFromWorld(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: SpawnEntityFromWorld(int, int, int, int, int, int, bool)
+  nameWithType: Stage.SpawnEntityFromWorld(int, int, int, int, int, int, bool)
+  fullName: AngeliA.Stage.SpawnEntityFromWorld(int, int, int, int, int, int, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SpawnEntityFromWorld
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 664
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: >-
+    Find an entity with given ID from internal pool and make it into the stage.
+
+    This function will make it an entity from map
+  example: []
+  syntax:
+    content: public static Entity SpawnEntityFromWorld(int typeID, int x, int y, int z, int reposDeltaX = 0, int reposDeltaY = 0, bool forceSpawn = false)
+    parameters:
+    - id: typeID
+      type: System.Int32
+      description: ID of the entity. Can be cached by typeof(YourEntity).AngeHash()
+    - id: x
+      type: System.Int32
+      description: Initial position in global space
+    - id: y
+      type: System.Int32
+      description: Initial position in global space
+    - id: z
+      type: System.Int32
+      description: Z of the map position
+    - id: reposDeltaX
+      type: System.Int32
+      description: Offset in global space for entity reposition
+    - id: reposDeltaY
+      type: System.Int32
+      description: Offset in global space for entity reposition
+    - id: forceSpawn
+      type: System.Boolean
+      description: True if ignore the StagedEntityPool check and AntiSpawnRect check
+    return:
+      type: AngeliA.Entity
+      description: Instance of the entity. Null when failed
+    content.vb: Public Shared Function SpawnEntityFromWorld(typeID As Integer, x As Integer, y As Integer, z As Integer, reposDeltaX As Integer = 0, reposDeltaY As Integer = 0, forceSpawn As Boolean = False) As Entity
+  overload: AngeliA.Stage.SpawnEntityFromWorld*
+  nameWithType.vb: Stage.SpawnEntityFromWorld(Integer, Integer, Integer, Integer, Integer, Integer, Boolean)
+  fullName.vb: AngeliA.Stage.SpawnEntityFromWorld(Integer, Integer, Integer, Integer, Integer, Integer, Boolean)
+  name.vb: SpawnEntityFromWorld(Integer, Integer, Integer, Integer, Integer, Integer, Boolean)
+- uid: AngeliA.Stage.FindEntity``1
+  commentId: M:AngeliA.Stage.FindEntity``1
+  id: FindEntity``1
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: FindEntity<T>()
+  nameWithType: Stage.FindEntity<T>()
+  fullName: AngeliA.Stage.FindEntity<T>()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: FindEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 678
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an spawned entity with type of T
+  example: []
+  syntax:
+    content: 'public static T FindEntity<T>() where T : Entity'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function FindEntity(Of T As Entity)() As T
+  overload: AngeliA.Stage.FindEntity*
+  nameWithType.vb: Stage.FindEntity(Of T)()
+  fullName.vb: AngeliA.Stage.FindEntity(Of T)()
+  name.vb: FindEntity(Of T)()
+- uid: AngeliA.Stage.FindEntity(System.Int32)
+  commentId: M:AngeliA.Stage.FindEntity(System.Int32)
+  id: FindEntity(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: FindEntity(int)
+  nameWithType: Stage.FindEntity(int)
+  fullName: AngeliA.Stage.FindEntity(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: FindEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 682
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an spawned entity which have given type ID
+  example: []
+  syntax:
+    content: public static Entity FindEntity(int typeID)
+    parameters:
+    - id: typeID
+      type: System.Int32
+    return:
+      type: AngeliA.Entity
+    content.vb: Public Shared Function FindEntity(typeID As Integer) As Entity
+  overload: AngeliA.Stage.FindEntity*
+  nameWithType.vb: Stage.FindEntity(Integer)
+  fullName.vb: AngeliA.Stage.FindEntity(Integer)
+  name.vb: FindEntity(Integer)
+- uid: AngeliA.Stage.TryFindEntity``1(``0@)
+  commentId: M:AngeliA.Stage.TryFindEntity``1(``0@)
+  id: TryFindEntity``1(``0@)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TryFindEntity<E>(out E)
+  nameWithType: Stage.TryFindEntity<E>(out E)
+  fullName: AngeliA.Stage.TryFindEntity<E>(out E)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TryFindEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 687
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an spawned entity with type of E
+  example: []
+  syntax:
+    content: 'public static bool TryFindEntity<E>(out E result) where E : Entity'
+    parameters:
+    - id: result
+      type: '{E}'
+    typeParameters:
+    - id: E
+    return:
+      type: System.Boolean
+      description: True if the entity founded
+    content.vb: Public Shared Function TryFindEntity(Of E As Entity)(result As E) As Boolean
+  overload: AngeliA.Stage.TryFindEntity*
+  nameWithType.vb: Stage.TryFindEntity(Of E)(E)
+  fullName.vb: AngeliA.Stage.TryFindEntity(Of E)(E)
+  name.vb: TryFindEntity(Of E)(E)
+- uid: AngeliA.Stage.TryFindEntity(System.Int32,AngeliA.Entity@)
+  commentId: M:AngeliA.Stage.TryFindEntity(System.Int32,AngeliA.Entity@)
+  id: TryFindEntity(System.Int32,AngeliA.Entity@)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TryFindEntity(int, out Entity)
+  nameWithType: Stage.TryFindEntity(int, out Entity)
+  fullName: AngeliA.Stage.TryFindEntity(int, out AngeliA.Entity)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TryFindEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 707
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an spawned entity which have given type ID
+  example: []
+  syntax:
+    content: public static bool TryFindEntity(int typeID, out Entity result)
+    parameters:
+    - id: typeID
+      type: System.Int32
+    - id: result
+      type: AngeliA.Entity
+    return:
+      type: System.Boolean
+      description: True if the entity founded
+    content.vb: Public Shared Function TryFindEntity(typeID As Integer, result As Entity) As Boolean
+  overload: AngeliA.Stage.TryFindEntity*
+  nameWithType.vb: Stage.TryFindEntity(Integer, Entity)
+  fullName.vb: AngeliA.Stage.TryFindEntity(Integer, AngeliA.Entity)
+  name.vb: TryFindEntity(Integer, Entity)
+- uid: AngeliA.Stage.TryFindEntityNearby``1(AngeliA.Int2,``0@,System.Func{``0,System.Boolean})
+  commentId: M:AngeliA.Stage.TryFindEntityNearby``1(AngeliA.Int2,``0@,System.Func{``0,System.Boolean})
+  id: TryFindEntityNearby``1(AngeliA.Int2,``0@,System.Func{``0,System.Boolean})
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TryFindEntityNearby<E>(Int2, out E, Func<E, bool>)
+  nameWithType: Stage.TryFindEntityNearby<E>(Int2, out E, Func<E, bool>)
+  fullName: AngeliA.Stage.TryFindEntityNearby<E>(AngeliA.Int2, out E, System.Func<E, bool>)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TryFindEntityNearby
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 739
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get nearest instance of an spawned entity from given position with type of E
+  example: []
+  syntax:
+    content: public static bool TryFindEntityNearby<E>(Int2 pos, out E finalTarget, Func<E, bool> condition = null)
+    parameters:
+    - id: pos
+      type: AngeliA.Int2
+      description: (in global space)
+    - id: finalTarget
+      type: '{E}'
+      description: ''
+    - id: condition
+      type: System.Func{{E},System.Boolean}
+      description: Only include the entity target when this function return true. Set to null to not having extra checking
+    typeParameters:
+    - id: E
+    return:
+      type: System.Boolean
+      description: True if entity founded
+    content.vb: Public Shared Function TryFindEntityNearby(Of E)(pos As Int2, finalTarget As E, condition As Func(Of E, Boolean) = Nothing) As Boolean
+  overload: AngeliA.Stage.TryFindEntityNearby*
+  nameWithType.vb: Stage.TryFindEntityNearby(Of E)(Int2, E, Func(Of E, Boolean))
+  fullName.vb: AngeliA.Stage.TryFindEntityNearby(Of E)(AngeliA.Int2, E, System.Func(Of E, Boolean))
+  name.vb: TryFindEntityNearby(Of E)(Int2, E, Func(Of E, Boolean))
+- uid: AngeliA.Stage.TryGetEntities(System.Int32,System.ReadOnlySpan{AngeliA.Entity}@,System.Int32@)
+  commentId: M:AngeliA.Stage.TryGetEntities(System.Int32,System.ReadOnlySpan{AngeliA.Entity}@,System.Int32@)
+  id: TryGetEntities(System.Int32,System.ReadOnlySpan{AngeliA.Entity}@,System.Int32@)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TryGetEntities(int, out ReadOnlySpan<Entity>, out int)
+  nameWithType: Stage.TryGetEntities(int, out ReadOnlySpan<Entity>, out int)
+  fullName: AngeliA.Stage.TryGetEntities(int, out System.ReadOnlySpan<AngeliA.Entity>, out int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TryGetEntities
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 773
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get all entities inside given layer. The result array referenced by the span is cached. No heap pressure.
+  example: []
+  syntax:
+    content: public static bool TryGetEntities(int layer, out ReadOnlySpan<Entity> entities, out int count)
+    parameters:
+    - id: layer
+      type: System.Int32
+      description: Use EntityLayer.XXX to get this value
+    - id: entities
+      type: System.ReadOnlySpan{AngeliA.Entity}
+      description: Result span
+    - id: count
+      type: System.Int32
+      description: How many entities are inside the result
+    return:
+      type: System.Boolean
+      description: True if the result is founded
+    content.vb: Public Shared Function TryGetEntities(layer As Integer, entities As ReadOnlySpan(Of Entity), count As Integer) As Boolean
+  overload: AngeliA.Stage.TryGetEntities*
+  nameWithType.vb: Stage.TryGetEntities(Integer, ReadOnlySpan(Of Entity), Integer)
+  fullName.vb: AngeliA.Stage.TryGetEntities(Integer, System.ReadOnlySpan(Of AngeliA.Entity), Integer)
+  name.vb: TryGetEntities(Integer, ReadOnlySpan(Of Entity), Integer)
+- uid: AngeliA.Stage.IsValidEntityID(System.Int32)
+  commentId: M:AngeliA.Stage.IsValidEntityID(System.Int32)
+  id: IsValidEntityID(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: IsValidEntityID(int)
+  nameWithType: Stage.IsValidEntityID(int)
+  fullName: AngeliA.Stage.IsValidEntityID(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: IsValidEntityID
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 789
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if the given ID is a valid entity type ID in internal pool
+  example: []
+  syntax:
+    content: public static bool IsValidEntityID(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsValidEntityID(id As Integer) As Boolean
+  overload: AngeliA.Stage.IsValidEntityID*
+  nameWithType.vb: Stage.IsValidEntityID(Integer)
+  fullName.vb: AngeliA.Stage.IsValidEntityID(Integer)
+  name.vb: IsValidEntityID(Integer)
+- uid: AngeliA.Stage.ForAllActiveEntities``1(System.Int32)
+  commentId: M:AngeliA.Stage.ForAllActiveEntities``1(System.Int32)
+  id: ForAllActiveEntities``1(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: ForAllActiveEntities<E>(int)
+  nameWithType: Stage.ForAllActiveEntities<E>(int)
+  fullName: AngeliA.Stage.ForAllActiveEntities<E>(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ForAllActiveEntities
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 797
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Iterate through all active entities inside given layer
+  example: []
+  syntax:
+    content: 'public static IEnumerable<E> ForAllActiveEntities<E>(int entityLayer = -1) where E : Entity'
+    parameters:
+    - id: entityLayer
+      type: System.Int32
+      description: Use EntityLayer.XXX to get this value. Set to -1 to target all layers
+    typeParameters:
+    - id: E
+      description: Type of target entity
+    return:
+      type: System.Collections.Generic.IEnumerable{{E}}
+    content.vb: Public Shared Function ForAllActiveEntities(Of E As Entity)(entityLayer As Integer = -1) As IEnumerable(Of E)
+  overload: AngeliA.Stage.ForAllActiveEntities*
+  nameWithType.vb: Stage.ForAllActiveEntities(Of E)(Integer)
+  fullName.vb: AngeliA.Stage.ForAllActiveEntities(Of E)(Integer)
+  name.vb: ForAllActiveEntities(Of E)(Integer)
+- uid: AngeliA.Stage.GetSpawnedEntityCount(System.Int32)
+  commentId: M:AngeliA.Stage.GetSpawnedEntityCount(System.Int32)
+  id: GetSpawnedEntityCount(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: GetSpawnedEntityCount(int)
+  nameWithType: Stage.GetSpawnedEntityCount(int)
+  fullName: AngeliA.Stage.GetSpawnedEntityCount(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetSpawnedEntityCount
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 816
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get how many entities of given type is on stage currently
+  example: []
+  syntax:
+    content: public static int GetSpawnedEntityCount(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ID of the entity. Can be cached by typeof(YourEntity).AngeHash()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetSpawnedEntityCount(id As Integer) As Integer
+  overload: AngeliA.Stage.GetSpawnedEntityCount*
+  nameWithType.vb: Stage.GetSpawnedEntityCount(Integer)
+  fullName.vb: AngeliA.Stage.GetSpawnedEntityCount(Integer)
+  name.vb: GetSpawnedEntityCount(Integer)
+- uid: AngeliA.Stage.TryGetStagedEntity(AngeliA.Int3,AngeliA.Entity@)
+  commentId: M:AngeliA.Stage.TryGetStagedEntity(AngeliA.Int3,AngeliA.Entity@)
+  id: TryGetStagedEntity(AngeliA.Int3,AngeliA.Entity@)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TryGetStagedEntity(Int3, out Entity)
+  nameWithType: Stage.TryGetStagedEntity(Int3, out Entity)
+  fullName: AngeliA.Stage.TryGetStagedEntity(AngeliA.Int3, out AngeliA.Entity)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TryGetStagedEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 825
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an staged entity by instanceID from StagedEntityPool
+  example: []
+  syntax:
+    content: public static bool TryGetStagedEntity(Int3 instanceID, out Entity instance)
+    parameters:
+    - id: instanceID
+      type: AngeliA.Int3
+      description: Get this from Entity.InstanceID
+    - id: instance
+      type: AngeliA.Entity
+      description: ''
+    return:
+      type: System.Boolean
+      description: True if the result is founded
+    content.vb: Public Shared Function TryGetStagedEntity(instanceID As Int3, instance As Entity) As Boolean
+  overload: AngeliA.Stage.TryGetStagedEntity*
+  nameWithType.vb: Stage.TryGetStagedEntity(Int3, Entity)
+  fullName.vb: AngeliA.Stage.TryGetStagedEntity(AngeliA.Int3, AngeliA.Entity)
+  name.vb: TryGetStagedEntity(Int3, Entity)
+- uid: AngeliA.Stage.DespawnAllEntitiesOfType``1(System.Int32)
+  commentId: M:AngeliA.Stage.DespawnAllEntitiesOfType``1(System.Int32)
+  id: DespawnAllEntitiesOfType``1(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: DespawnAllEntitiesOfType<E>(int)
+  nameWithType: Stage.DespawnAllEntitiesOfType<E>(int)
+  fullName: AngeliA.Stage.DespawnAllEntitiesOfType<E>(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: DespawnAllEntitiesOfType
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 830
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  example: []
+  syntax:
+    content: 'public static void DespawnAllEntitiesOfType<E>(int targetLayer = -1) where E : Entity'
+    parameters:
+    - id: targetLayer
+      type: System.Int32
+      description: Set to -1 to apply on all layers
+    typeParameters:
+    - id: E
+    content.vb: Public Shared Sub DespawnAllEntitiesOfType(Of E As Entity)(targetLayer As Integer = -1)
+  overload: AngeliA.Stage.DespawnAllEntitiesOfType*
+  nameWithType.vb: Stage.DespawnAllEntitiesOfType(Of E)(Integer)
+  fullName.vb: AngeliA.Stage.DespawnAllEntitiesOfType(Of E)(Integer)
+  name.vb: DespawnAllEntitiesOfType(Of E)(Integer)
+- uid: AngeliA.Stage.RemoveStagedEntity(AngeliA.Int3)
+  commentId: M:AngeliA.Stage.RemoveStagedEntity(AngeliA.Int3)
+  id: RemoveStagedEntity(AngeliA.Int3)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: RemoveStagedEntity(Int3)
+  nameWithType: Stage.RemoveStagedEntity(Int3)
+  fullName: AngeliA.Stage.RemoveStagedEntity(AngeliA.Int3)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RemoveStagedEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 850
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Remove entity with given instance ID from StagedEntityPool
+  example: []
+  syntax:
+    content: public static void RemoveStagedEntity(Int3 instanceID)
+    parameters:
+    - id: instanceID
+      type: AngeliA.Int3
+    content.vb: Public Shared Sub RemoveStagedEntity(instanceID As Int3)
+  overload: AngeliA.Stage.RemoveStagedEntity*
+- uid: AngeliA.Stage.DespawnAllNonUiEntities(System.Boolean)
+  commentId: M:AngeliA.Stage.DespawnAllNonUiEntities(System.Boolean)
+  id: DespawnAllNonUiEntities(System.Boolean)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: DespawnAllNonUiEntities(bool)
+  nameWithType: Stage.DespawnAllNonUiEntities(bool)
+  fullName: AngeliA.Stage.DespawnAllNonUiEntities(bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: DespawnAllNonUiEntities
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 860
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  example: []
+  syntax:
+    content: public static void DespawnAllNonUiEntities(bool refreshImmediately = false)
+    parameters:
+    - id: refreshImmediately
+      type: System.Boolean
+      description: True if refresh the active state inside this function
+    content.vb: Public Shared Sub DespawnAllNonUiEntities(refreshImmediately As Boolean = False)
+  overload: AngeliA.Stage.DespawnAllNonUiEntities*
+  nameWithType.vb: Stage.DespawnAllNonUiEntities(Boolean)
+  fullName.vb: AngeliA.Stage.DespawnAllNonUiEntities(Boolean)
+  name.vb: DespawnAllNonUiEntities(Boolean)
+- uid: AngeliA.Stage.PeekOrGetEntity(System.Int32)
+  commentId: M:AngeliA.Stage.PeekOrGetEntity(System.Int32)
+  id: PeekOrGetEntity(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: PeekOrGetEntity(int)
+  nameWithType: Stage.PeekOrGetEntity(int)
+  fullName: AngeliA.Stage.PeekOrGetEntity(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: PeekOrGetEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 881
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an unspawned entity from pool first, if not found, get a spawned one from the stage
+  example: []
+  syntax:
+    content: public static Entity PeekOrGetEntity(int typeID)
+    parameters:
+    - id: typeID
+      type: System.Int32
+    return:
+      type: AngeliA.Entity
+      description: The entity instance. Null if not found
+    content.vb: Public Shared Function PeekOrGetEntity(typeID As Integer) As Entity
+  overload: AngeliA.Stage.PeekOrGetEntity*
+  nameWithType.vb: Stage.PeekOrGetEntity(Integer)
+  fullName.vb: AngeliA.Stage.PeekOrGetEntity(Integer)
+  name.vb: PeekOrGetEntity(Integer)
+- uid: AngeliA.Stage.PeekOrGetEntity``1
+  commentId: M:AngeliA.Stage.PeekOrGetEntity``1
+  id: PeekOrGetEntity``1
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: PeekOrGetEntity<T>()
+  nameWithType: Stage.PeekOrGetEntity<T>()
+  fullName: AngeliA.Stage.PeekOrGetEntity<T>()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: PeekOrGetEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 886
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an unspawned entity from pool first, if not found, get a spawned one from the stage
+  example: []
+  syntax:
+    content: 'public static T PeekOrGetEntity<T>() where T : Entity'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: True if the instance is founded
+    content.vb: Public Shared Function PeekOrGetEntity(Of T As Entity)() As T
+  overload: AngeliA.Stage.PeekOrGetEntity*
+  nameWithType.vb: Stage.PeekOrGetEntity(Of T)()
+  fullName.vb: AngeliA.Stage.PeekOrGetEntity(Of T)()
+  name.vb: PeekOrGetEntity(Of T)()
+- uid: AngeliA.Stage.GetOrSpawnEntity(System.Int32,System.Int32,System.Int32)
+  commentId: M:AngeliA.Stage.GetOrSpawnEntity(System.Int32,System.Int32,System.Int32)
+  id: GetOrSpawnEntity(System.Int32,System.Int32,System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: GetOrSpawnEntity(int, int, int)
+  nameWithType: Stage.GetOrSpawnEntity(int, int, int)
+  fullName: AngeliA.Stage.GetOrSpawnEntity(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetOrSpawnEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 894
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an entity from stage first, if not found, spawn a new one.
+  example: []
+  syntax:
+    content: public static Entity GetOrSpawnEntity(int typeID, int x, int y)
+    parameters:
+    - id: typeID
+      type: System.Int32
+      description: ''
+    - id: x
+      type: System.Int32
+      description: Initial position in global space when spawn a new one
+    - id: y
+      type: System.Int32
+      description: Initial position in global space when spawn a new one
+    return:
+      type: AngeliA.Entity
+      description: The entity instance. Null if not found
+    content.vb: Public Shared Function GetOrSpawnEntity(typeID As Integer, x As Integer, y As Integer) As Entity
+  overload: AngeliA.Stage.GetOrSpawnEntity*
+  nameWithType.vb: Stage.GetOrSpawnEntity(Integer, Integer, Integer)
+  fullName.vb: AngeliA.Stage.GetOrSpawnEntity(Integer, Integer, Integer)
+  name.vb: GetOrSpawnEntity(Integer, Integer, Integer)
+- uid: AngeliA.Stage.GetOrSpawnEntity``1(System.Int32,System.Int32)
+  commentId: M:AngeliA.Stage.GetOrSpawnEntity``1(System.Int32,System.Int32)
+  id: GetOrSpawnEntity``1(System.Int32,System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: GetOrSpawnEntity<T>(int, int)
+  nameWithType: Stage.GetOrSpawnEntity<T>(int, int)
+  fullName: AngeliA.Stage.GetOrSpawnEntity<T>(int, int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetOrSpawnEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 909
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get instance of an entity from stage first, if not found, spawn a new one.
+  example: []
+  syntax:
+    content: 'public static T GetOrSpawnEntity<T>(int x, int y) where T : Entity'
+    parameters:
+    - id: x
+      type: System.Int32
+      description: Initial position in global space when spawn a new one
+    - id: y
+      type: System.Int32
+      description: Initial position in global space when spawn a new one
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: The entity instance. Null if not found
+    content.vb: Public Shared Function GetOrSpawnEntity(Of T As Entity)(x As Integer, y As Integer) As T
+  overload: AngeliA.Stage.GetOrSpawnEntity*
+  nameWithType.vb: Stage.GetOrSpawnEntity(Of T)(Integer, Integer)
+  fullName.vb: AngeliA.Stage.GetOrSpawnEntity(Of T)(Integer, Integer)
+  name.vb: GetOrSpawnEntity(Of T)(Integer, Integer)
+- uid: AngeliA.Stage.IsEntityRequireDrawBehind(System.Int32)
+  commentId: M:AngeliA.Stage.IsEntityRequireDrawBehind(System.Int32)
+  id: IsEntityRequireDrawBehind(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: IsEntityRequireDrawBehind(int)
+  nameWithType: Stage.IsEntityRequireDrawBehind(int)
+  fullName: AngeliA.Stage.IsEntityRequireDrawBehind(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: IsEntityRequireDrawBehind
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 924
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if entity with given type ID should draw inside behind map layer
+  example: []
+  syntax:
+    content: public static bool IsEntityRequireDrawBehind(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsEntityRequireDrawBehind(id As Integer) As Boolean
+  overload: AngeliA.Stage.IsEntityRequireDrawBehind*
+  nameWithType.vb: Stage.IsEntityRequireDrawBehind(Integer)
+  fullName.vb: AngeliA.Stage.IsEntityRequireDrawBehind(Integer)
+  name.vb: IsEntityRequireDrawBehind(Integer)
+- uid: AngeliA.Stage.GetEntityCapacity(System.Int32)
+  commentId: M:AngeliA.Stage.GetEntityCapacity(System.Int32)
+  id: GetEntityCapacity(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: GetEntityCapacity(int)
+  nameWithType: Stage.GetEntityCapacity(int)
+  fullName: AngeliA.Stage.GetEntityCapacity(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetEntityCapacity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 930
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get max size limitation of target entity inside it's entity layer
+  example: []
+  syntax:
+    content: public static int GetEntityCapacity(int typeID)
+    parameters:
+    - id: typeID
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetEntityCapacity(typeID As Integer) As Integer
+  overload: AngeliA.Stage.GetEntityCapacity*
+  nameWithType.vb: Stage.GetEntityCapacity(Integer)
+  fullName.vb: AngeliA.Stage.GetEntityCapacity(Integer)
+  name.vb: GetEntityCapacity(Integer)
+- uid: AngeliA.Stage.IsEntityRequireReposition(System.Int32)
+  commentId: M:AngeliA.Stage.IsEntityRequireReposition(System.Int32)
+  id: IsEntityRequireReposition(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: IsEntityRequireReposition(int)
+  nameWithType: Stage.IsEntityRequireReposition(int)
+  fullName: AngeliA.Stage.IsEntityRequireReposition(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: IsEntityRequireReposition
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 936
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: True if the target entity keep it's position when out of range. This is done by setting the map block data.
+  example: []
+  syntax:
+    content: public static bool IsEntityRequireReposition(int typeID)
+    parameters:
+    - id: typeID
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsEntityRequireReposition(typeID As Integer) As Boolean
+  overload: AngeliA.Stage.IsEntityRequireReposition*
+  nameWithType.vb: Stage.IsEntityRequireReposition(Integer)
+  fullName.vb: AngeliA.Stage.IsEntityRequireReposition(Integer)
+  name.vb: IsEntityRequireReposition(Integer)
+- uid: AngeliA.Stage.GetCameraCullingPadding
+  commentId: M:AngeliA.Stage.GetCameraCullingPadding
+  id: GetCameraCullingPadding
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: GetCameraCullingPadding()
+  nameWithType: Stage.GetCameraCullingPadding()
+  fullName: AngeliA.Stage.GetCameraCullingPadding()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetCameraCullingPadding
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 942
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get current expand padding for camera rect in global space
+  example: []
+  syntax:
+    content: public static Int4 GetCameraCullingPadding()
+    return:
+      type: AngeliA.Int4
+    content.vb: Public Shared Function GetCameraCullingPadding() As Int4
+  overload: AngeliA.Stage.GetCameraCullingPadding*
+- uid: AngeliA.Stage.GetEntityType(System.Int32)
+  commentId: M:AngeliA.Stage.GetEntityType(System.Int32)
+  id: GetEntityType(System.Int32)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: GetEntityType(int)
+  nameWithType: Stage.GetEntityType(int)
+  fullName: AngeliA.Stage.GetEntityType(int)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GetEntityType
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 953
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Get System.Type for given type ID. Null if ID is invalid
+  example: []
+  syntax:
+    content: public static Type GetEntityType(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Type
+    content.vb: Public Shared Function GetEntityType(id As Integer) As Type
+  overload: AngeliA.Stage.GetEntityType*
+  nameWithType.vb: Stage.GetEntityType(Integer)
+  fullName.vb: AngeliA.Stage.GetEntityType(Integer)
+  name.vb: GetEntityType(Integer)
+- uid: AngeliA.Stage.TryRepositionEntity(AngeliA.Entity,System.Boolean)
+  commentId: M:AngeliA.Stage.TryRepositionEntity(AngeliA.Entity,System.Boolean)
+  id: TryRepositionEntity(AngeliA.Entity,System.Boolean)
+  parent: AngeliA.Stage
+  langs:
+  - csharp
+  - vb
+  name: TryRepositionEntity(Entity, bool)
+  nameWithType: Stage.TryRepositionEntity(Entity, bool)
+  fullName: AngeliA.Stage.TryRepositionEntity(AngeliA.Entity, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Core/Stage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TryRepositionEntity
+    path: ../../AngeliA/AngeliA Framework/src/Core/Stage.cs
+    startLine: 966
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  summary: Perform reposition logic of the entity instance.
+  example: []
+  syntax:
+    content: public static void TryRepositionEntity(Entity entity, bool carryThoughZ = false)
+    parameters:
+    - id: entity
+      type: AngeliA.Entity
+      description: ''
+    - id: carryThoughZ
+      type: System.Boolean
+      description: True if the entity is being keep into other map z-layer
+    content.vb: Public Shared Sub TryRepositionEntity(entity As Entity, carryThoughZ As Boolean = False)
+  overload: AngeliA.Stage.TryRepositionEntity*
+  nameWithType.vb: Stage.TryRepositionEntity(Entity, Boolean)
+  fullName.vb: AngeliA.Stage.TryRepositionEntity(AngeliA.Entity, Boolean)
+  name.vb: TryRepositionEntity(Entity, Boolean)
+references:
+- uid: AngeliA
+  commentId: N:AngeliA
+  href: AngeliA.html
+  name: AngeliA
+  nameWithType: AngeliA
+  fullName: AngeliA
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AngeliA.Stage.EntityCounts*
+  commentId: Overload:AngeliA.Stage.EntityCounts
+  href: AngeliA.Stage.html#AngeliA_Stage_EntityCounts
+  name: EntityCounts
+  nameWithType: Stage.EntityCounts
+  fullName: AngeliA.Stage.EntityCounts
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: AngeliA.Stage.Entities*
+  commentId: Overload:AngeliA.Stage.Entities
+  href: AngeliA.Stage.html#AngeliA_Stage_Entities
+  name: Entities
+  nameWithType: Stage.Entities
+  fullName: AngeliA.Stage.Entities
+- uid: AngeliA.Entity[][]
+  isExternal: true
+  href: AngeliA.Entity.html
+  name: Entity[][]
+  nameWithType: Entity[][]
+  fullName: AngeliA.Entity[][]
+  nameWithType.vb: Entity()()
+  fullName.vb: AngeliA.Entity()()
+  name.vb: Entity()()
+  spec.csharp:
+  - uid: AngeliA.Entity
+    name: Entity
+    href: AngeliA.Entity.html
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.Entity
+    name: Entity
+    href: AngeliA.Entity.html
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+- uid: AngeliA.Stage.SpawnRect*
+  commentId: Overload:AngeliA.Stage.SpawnRect
+  href: AngeliA.Stage.html#AngeliA_Stage_SpawnRect
+  name: SpawnRect
+  nameWithType: Stage.SpawnRect
+  fullName: AngeliA.Stage.SpawnRect
+- uid: AngeliA.IRect
+  commentId: T:AngeliA.IRect
+  parent: AngeliA
+  href: AngeliA.IRect.html
+  name: IRect
+  nameWithType: IRect
+  fullName: AngeliA.IRect
+- uid: AngeliA.Stage.AntiSpawnRect*
+  commentId: Overload:AngeliA.Stage.AntiSpawnRect
+  href: AngeliA.Stage.html#AngeliA_Stage_AntiSpawnRect
+  name: AntiSpawnRect
+  nameWithType: Stage.AntiSpawnRect
+  fullName: AngeliA.Stage.AntiSpawnRect
+- uid: AngeliA.Stage.ViewRect*
+  commentId: Overload:AngeliA.Stage.ViewRect
+  href: AngeliA.Stage.html#AngeliA_Stage_ViewRect
+  name: ViewRect
+  nameWithType: Stage.ViewRect
+  fullName: AngeliA.Stage.ViewRect
+- uid: AngeliA.Stage.ViewZ*
+  commentId: Overload:AngeliA.Stage.ViewZ
+  href: AngeliA.Stage.html#AngeliA_Stage_ViewZ
+  name: ViewZ
+  nameWithType: Stage.ViewZ
+  fullName: AngeliA.Stage.ViewZ
+- uid: AngeliA.Stage.Enable*
+  commentId: Overload:AngeliA.Stage.Enable
+  href: AngeliA.Stage.html#AngeliA_Stage_Enable
+  name: Enable
+  nameWithType: Stage.Enable
+  fullName: AngeliA.Stage.Enable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AngeliA.Stage.IsReady*
+  commentId: Overload:AngeliA.Stage.IsReady
+  href: AngeliA.Stage.html#AngeliA_Stage_IsReady
+  name: IsReady
+  nameWithType: Stage.IsReady
+  fullName: AngeliA.Stage.IsReady
+- uid: AngeliA.Stage.SetViewZ*
+  commentId: Overload:AngeliA.Stage.SetViewZ
+  href: AngeliA.Stage.html#AngeliA_Stage_SetViewZ_System_Int32_System_Boolean_
+  name: SetViewZ
+  nameWithType: Stage.SetViewZ
+  fullName: AngeliA.Stage.SetViewZ
+- uid: AngeliA.Stage.SetViewRectImmediately*
+  commentId: Overload:AngeliA.Stage.SetViewRectImmediately
+  href: AngeliA.Stage.html#AngeliA_Stage_SetViewRectImmediately_AngeliA_IRect_System_Boolean_System_Boolean_
+  name: SetViewRectImmediately
+  nameWithType: Stage.SetViewRectImmediately
+  fullName: AngeliA.Stage.SetViewRectImmediately
+- uid: AngeliA.Stage.SetViewPositionDelay*
+  commentId: Overload:AngeliA.Stage.SetViewPositionDelay
+  href: AngeliA.Stage.html#AngeliA_Stage_SetViewPositionDelay_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: SetViewPositionDelay
+  nameWithType: Stage.SetViewPositionDelay
+  fullName: AngeliA.Stage.SetViewPositionDelay
+- uid: AngeliA.Stage.SetViewXDelay*
+  commentId: Overload:AngeliA.Stage.SetViewXDelay
+  href: AngeliA.Stage.html#AngeliA_Stage_SetViewXDelay_System_Int32_System_Int32_System_Int32_
+  name: SetViewXDelay
+  nameWithType: Stage.SetViewXDelay
+  fullName: AngeliA.Stage.SetViewXDelay
+- uid: AngeliA.Stage.SetViewYDelay*
+  commentId: Overload:AngeliA.Stage.SetViewYDelay
+  href: AngeliA.Stage.html#AngeliA_Stage_SetViewYDelay_System_Int32_System_Int32_System_Int32_
+  name: SetViewYDelay
+  nameWithType: Stage.SetViewYDelay
+  fullName: AngeliA.Stage.SetViewYDelay
+- uid: AngeliA.Stage.SetViewSizeDelay*
+  commentId: Overload:AngeliA.Stage.SetViewSizeDelay
+  href: AngeliA.Stage.html#AngeliA_Stage_SetViewSizeDelay_System_Int32_System_Int32_System_Int32_System_Boolean_
+  name: SetViewSizeDelay
+  nameWithType: Stage.SetViewSizeDelay
+  fullName: AngeliA.Stage.SetViewSizeDelay
+- uid: AngeliA.Stage.SpawnEntity*
+  commentId: Overload:AngeliA.Stage.SpawnEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_SpawnEntity_System_Int32_System_Int32_System_Int32_
+  name: SpawnEntity
+  nameWithType: Stage.SpawnEntity
+  fullName: AngeliA.Stage.SpawnEntity
+- uid: AngeliA.Entity
+  commentId: T:AngeliA.Entity
+  parent: AngeliA
+  href: AngeliA.Entity.html
+  name: Entity
+  nameWithType: Entity
+  fullName: AngeliA.Entity
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: AngeliA.Stage.TrySpawnEntity*
+  commentId: Overload:AngeliA.Stage.TrySpawnEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_TrySpawnEntity_System_Int32_System_Int32_System_Int32_AngeliA_Entity__
+  name: TrySpawnEntity
+  nameWithType: Stage.TrySpawnEntity
+  fullName: AngeliA.Stage.TrySpawnEntity
+- uid: AngeliA.Stage.SpawnEntityFromWorld*
+  commentId: Overload:AngeliA.Stage.SpawnEntityFromWorld
+  href: AngeliA.Stage.html#AngeliA_Stage_SpawnEntityFromWorld_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_
+  name: SpawnEntityFromWorld
+  nameWithType: Stage.SpawnEntityFromWorld
+  fullName: AngeliA.Stage.SpawnEntityFromWorld
+- uid: AngeliA.Stage.FindEntity*
+  commentId: Overload:AngeliA.Stage.FindEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_FindEntity__1
+  name: FindEntity
+  nameWithType: Stage.FindEntity
+  fullName: AngeliA.Stage.FindEntity
+- uid: AngeliA.Stage.TryFindEntity*
+  commentId: Overload:AngeliA.Stage.TryFindEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_TryFindEntity__1___0__
+  name: TryFindEntity
+  nameWithType: Stage.TryFindEntity
+  fullName: AngeliA.Stage.TryFindEntity
+- uid: '{E}'
+  commentId: '!:E'
+  definition: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: AngeliA.Stage.TryFindEntityNearby*
+  commentId: Overload:AngeliA.Stage.TryFindEntityNearby
+  href: AngeliA.Stage.html#AngeliA_Stage_TryFindEntityNearby__1_AngeliA_Int2___0__System_Func___0_System_Boolean__
+  name: TryFindEntityNearby
+  nameWithType: Stage.TryFindEntityNearby
+  fullName: AngeliA.Stage.TryFindEntityNearby
+- uid: AngeliA.Int2
+  commentId: T:AngeliA.Int2
+  parent: AngeliA
+  href: AngeliA.Int2.html
+  name: Int2
+  nameWithType: Int2
+  fullName: AngeliA.Int2
+- uid: System.Func{{E},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<E, bool>
+  nameWithType: Func<E, bool>
+  fullName: System.Func<E, bool>
+  nameWithType.vb: Func(Of E, Boolean)
+  fullName.vb: System.Func(Of E, Boolean)
+  name.vb: Func(Of E, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: E
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: E
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: AngeliA.Stage.TryGetEntities*
+  commentId: Overload:AngeliA.Stage.TryGetEntities
+  href: AngeliA.Stage.html#AngeliA_Stage_TryGetEntities_System_Int32_System_ReadOnlySpan_AngeliA_Entity___System_Int32__
+  name: TryGetEntities
+  nameWithType: Stage.TryGetEntities
+  fullName: AngeliA.Stage.TryGetEntities
+- uid: System.ReadOnlySpan{AngeliA.Entity}
+  commentId: T:System.ReadOnlySpan{AngeliA.Entity}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<Entity>
+  nameWithType: ReadOnlySpan<Entity>
+  fullName: System.ReadOnlySpan<AngeliA.Entity>
+  nameWithType.vb: ReadOnlySpan(Of Entity)
+  fullName.vb: System.ReadOnlySpan(Of AngeliA.Entity)
+  name.vb: ReadOnlySpan(Of Entity)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: AngeliA.Entity
+    name: Entity
+    href: AngeliA.Entity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AngeliA.Entity
+    name: Entity
+    href: AngeliA.Entity.html
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AngeliA.Stage.IsValidEntityID*
+  commentId: Overload:AngeliA.Stage.IsValidEntityID
+  href: AngeliA.Stage.html#AngeliA_Stage_IsValidEntityID_System_Int32_
+  name: IsValidEntityID
+  nameWithType: Stage.IsValidEntityID
+  fullName: AngeliA.Stage.IsValidEntityID
+- uid: AngeliA.Stage.ForAllActiveEntities*
+  commentId: Overload:AngeliA.Stage.ForAllActiveEntities
+  href: AngeliA.Stage.html#AngeliA_Stage_ForAllActiveEntities__1_System_Int32_
+  name: ForAllActiveEntities
+  nameWithType: Stage.ForAllActiveEntities
+  fullName: AngeliA.Stage.ForAllActiveEntities
+- uid: System.Collections.Generic.IEnumerable{{E}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<E>
+  nameWithType: IEnumerable<E>
+  fullName: System.Collections.Generic.IEnumerable<E>
+  nameWithType.vb: IEnumerable(Of E)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of E)
+  name.vb: IEnumerable(Of E)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: E
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: E
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AngeliA.Stage.GetSpawnedEntityCount*
+  commentId: Overload:AngeliA.Stage.GetSpawnedEntityCount
+  href: AngeliA.Stage.html#AngeliA_Stage_GetSpawnedEntityCount_System_Int32_
+  name: GetSpawnedEntityCount
+  nameWithType: Stage.GetSpawnedEntityCount
+  fullName: AngeliA.Stage.GetSpawnedEntityCount
+- uid: AngeliA.Stage.TryGetStagedEntity*
+  commentId: Overload:AngeliA.Stage.TryGetStagedEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_TryGetStagedEntity_AngeliA_Int3_AngeliA_Entity__
+  name: TryGetStagedEntity
+  nameWithType: Stage.TryGetStagedEntity
+  fullName: AngeliA.Stage.TryGetStagedEntity
+- uid: AngeliA.Int3
+  commentId: T:AngeliA.Int3
+  parent: AngeliA
+  href: AngeliA.Int3.html
+  name: Int3
+  nameWithType: Int3
+  fullName: AngeliA.Int3
+- uid: AngeliA.Stage.DespawnAllEntitiesOfType*
+  commentId: Overload:AngeliA.Stage.DespawnAllEntitiesOfType
+  href: AngeliA.Stage.html#AngeliA_Stage_DespawnAllEntitiesOfType__1_System_Int32_
+  name: DespawnAllEntitiesOfType
+  nameWithType: Stage.DespawnAllEntitiesOfType
+  fullName: AngeliA.Stage.DespawnAllEntitiesOfType
+- uid: AngeliA.Stage.RemoveStagedEntity*
+  commentId: Overload:AngeliA.Stage.RemoveStagedEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_RemoveStagedEntity_AngeliA_Int3_
+  name: RemoveStagedEntity
+  nameWithType: Stage.RemoveStagedEntity
+  fullName: AngeliA.Stage.RemoveStagedEntity
+- uid: AngeliA.Stage.DespawnAllNonUiEntities*
+  commentId: Overload:AngeliA.Stage.DespawnAllNonUiEntities
+  href: AngeliA.Stage.html#AngeliA_Stage_DespawnAllNonUiEntities_System_Boolean_
+  name: DespawnAllNonUiEntities
+  nameWithType: Stage.DespawnAllNonUiEntities
+  fullName: AngeliA.Stage.DespawnAllNonUiEntities
+- uid: AngeliA.Stage.PeekOrGetEntity*
+  commentId: Overload:AngeliA.Stage.PeekOrGetEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_PeekOrGetEntity_System_Int32_
+  name: PeekOrGetEntity
+  nameWithType: Stage.PeekOrGetEntity
+  fullName: AngeliA.Stage.PeekOrGetEntity
+- uid: AngeliA.Stage.GetOrSpawnEntity*
+  commentId: Overload:AngeliA.Stage.GetOrSpawnEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_GetOrSpawnEntity_System_Int32_System_Int32_System_Int32_
+  name: GetOrSpawnEntity
+  nameWithType: Stage.GetOrSpawnEntity
+  fullName: AngeliA.Stage.GetOrSpawnEntity
+- uid: AngeliA.Stage.IsEntityRequireDrawBehind*
+  commentId: Overload:AngeliA.Stage.IsEntityRequireDrawBehind
+  href: AngeliA.Stage.html#AngeliA_Stage_IsEntityRequireDrawBehind_System_Int32_
+  name: IsEntityRequireDrawBehind
+  nameWithType: Stage.IsEntityRequireDrawBehind
+  fullName: AngeliA.Stage.IsEntityRequireDrawBehind
+- uid: AngeliA.Stage.GetEntityCapacity*
+  commentId: Overload:AngeliA.Stage.GetEntityCapacity
+  href: AngeliA.Stage.html#AngeliA_Stage_GetEntityCapacity_System_Int32_
+  name: GetEntityCapacity
+  nameWithType: Stage.GetEntityCapacity
+  fullName: AngeliA.Stage.GetEntityCapacity
+- uid: AngeliA.Stage.IsEntityRequireReposition*
+  commentId: Overload:AngeliA.Stage.IsEntityRequireReposition
+  href: AngeliA.Stage.html#AngeliA_Stage_IsEntityRequireReposition_System_Int32_
+  name: IsEntityRequireReposition
+  nameWithType: Stage.IsEntityRequireReposition
+  fullName: AngeliA.Stage.IsEntityRequireReposition
+- uid: AngeliA.Stage.GetCameraCullingPadding*
+  commentId: Overload:AngeliA.Stage.GetCameraCullingPadding
+  href: AngeliA.Stage.html#AngeliA_Stage_GetCameraCullingPadding
+  name: GetCameraCullingPadding
+  nameWithType: Stage.GetCameraCullingPadding
+  fullName: AngeliA.Stage.GetCameraCullingPadding
+- uid: AngeliA.Int4
+  commentId: T:AngeliA.Int4
+  parent: AngeliA
+  href: AngeliA.Int4.html
+  name: Int4
+  nameWithType: Int4
+  fullName: AngeliA.Int4
+- uid: AngeliA.Stage.GetEntityType*
+  commentId: Overload:AngeliA.Stage.GetEntityType
+  href: AngeliA.Stage.html#AngeliA_Stage_GetEntityType_System_Int32_
+  name: GetEntityType
+  nameWithType: Stage.GetEntityType
+  fullName: AngeliA.Stage.GetEntityType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: AngeliA.Stage.TryRepositionEntity*
+  commentId: Overload:AngeliA.Stage.TryRepositionEntity
+  href: AngeliA.Stage.html#AngeliA_Stage_TryRepositionEntity_AngeliA_Entity_System_Boolean_
+  name: TryRepositionEntity
+  nameWithType: Stage.TryRepositionEntity
+  fullName: AngeliA.Stage.TryRepositionEntity

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class InventoryFurniture | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class InventoryFurniture | AngeliA ">
+    
+    <meta name="description" content="A type of furniture that player can put items inside">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.Platformer.InventoryFurniture">
+
+
+
+  <h1 id="AngeliA_Platformer_InventoryFurniture" data-uid="AngeliA.Platformer.InventoryFurniture" class="text-break">Class InventoryFurniture</h1>
+  <div class="markdown level0 summary"><p>A type of furniture that player can put items inside</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AngeliA.IMapItem.html">IMapItem</a></div>
+    <div><a class="xref" href="AngeliA.IBlockEntity.html">IBlockEntity</a></div>
+    <div><a class="xref" href="AngeliA.IActionTarget.html">IActionTarget</a></div>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AngeliA_Platformer_InventoryFurniture__ctor_" data-uid="AngeliA.Platformer.InventoryFurniture.#ctor*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture__ctor" data-uid="AngeliA.Platformer.InventoryFurniture.#ctor">InventoryFurniture()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InventoryFurniture()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_Platformer_InventoryFurniture_InventoryColumn_" data-uid="AngeliA.Platformer.InventoryFurniture.InventoryColumn*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_InventoryColumn" data-uid="AngeliA.Platformer.InventoryFurniture.InventoryColumn">InventoryColumn</h4>
+  <div class="markdown level1 summary"><p>Column count of the inventory UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int InventoryColumn { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_InventoryFurniture_InventoryID_" data-uid="AngeliA.Platformer.InventoryFurniture.InventoryID*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_InventoryID" data-uid="AngeliA.Platformer.InventoryFurniture.InventoryID">InventoryID</h4>
+  <div class="markdown level1 summary"><p>ID for inventory system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int InventoryID { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_InventoryFurniture_InventoryRow_" data-uid="AngeliA.Platformer.InventoryFurniture.InventoryRow*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_InventoryRow" data-uid="AngeliA.Platformer.InventoryFurniture.InventoryRow">InventoryRow</h4>
+  <div class="markdown level1 summary"><p>Row count of the inventory UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int InventoryRow { get; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_InventoryFurniture_PartnerID_" data-uid="AngeliA.Platformer.InventoryFurniture.PartnerID*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_PartnerID" data-uid="AngeliA.Platformer.InventoryFurniture.PartnerID">PartnerID</h4>
+  <div class="markdown level1 summary"><p>Type ID of the UI entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int PartnerID { get; init; }</code></pre>
+  </div>
+  <a id="AngeliA_Platformer_InventoryFurniture_UnlockItemInside_" data-uid="AngeliA.Platformer.InventoryFurniture.UnlockItemInside*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_UnlockItemInside" data-uid="AngeliA.Platformer.InventoryFurniture.UnlockItemInside">UnlockItemInside</h4>
+  <div class="markdown level1 summary"><p>True if items inside become unlocked for the player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool UnlockItemInside { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_Platformer_InventoryFurniture_AllowInvoke_" data-uid="AngeliA.Platformer.InventoryFurniture.AllowInvoke*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_AllowInvoke" data-uid="AngeliA.Platformer.InventoryFurniture.AllowInvoke">AllowInvoke()</h4>
+  <div class="markdown level1 summary"><p>True if the player can open the inventory UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowInvoke()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.ActionFurniture.html#AngeliA_Platformer_ActionFurniture_AllowInvoke">ActionFurniture.AllowInvoke()</a></div>
+  <a id="AngeliA_Platformer_InventoryFurniture_Invoke_" data-uid="AngeliA.Platformer.InventoryFurniture.Invoke*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_Invoke" data-uid="AngeliA.Platformer.InventoryFurniture.Invoke">Invoke()</h4>
+  <div class="markdown level1 summary"><p>Open the inventory UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Invoke()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the UI successfuly opens</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.OpenableFurniture.html#AngeliA_Platformer_OpenableFurniture_Invoke">OpenableFurniture.Invoke()</a></div>
+  <a id="AngeliA_Platformer_InventoryFurniture_IsInventoryFurniture_" data-uid="AngeliA.Platformer.InventoryFurniture.IsInventoryFurniture*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_IsInventoryFurniture_System_Int32_System_Int32__" data-uid="AngeliA.Platformer.InventoryFurniture.IsInventoryFurniture(System.Int32,System.Int32@)">IsInventoryFurniture(int, out int)</h4>
+  <div class="markdown level1 summary"><p>True if the given type ID refers to a valid inventory furniture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInventoryFurniture(int typeID, out int capacity)</code></pre>
+  </div>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>Inventory size limit</p>
+</td>
+      </tr>
+    
+  
+  <a id="AngeliA_Platformer_InventoryFurniture_LateUpdate_" data-uid="AngeliA.Platformer.InventoryFurniture.LateUpdate*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_LateUpdate" data-uid="AngeliA.Platformer.InventoryFurniture.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"><p>[4/4] This function is called every frame when entity is in stage. Prioritize using this function to render the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.OpenableFurniture.html#AngeliA_Platformer_OpenableFurniture_LateUpdate">OpenableFurniture.LateUpdate()</a></div>
+  <a id="AngeliA_Platformer_InventoryFurniture_OnActivated_" data-uid="AngeliA.Platformer.InventoryFurniture.OnActivated*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_OnActivated" data-uid="AngeliA.Platformer.InventoryFurniture.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>This function is called when entity enter the stage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActivated()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.OpenableFurniture.html#AngeliA_Platformer_OpenableFurniture_OnActivated">OpenableFurniture.OnActivated()</a></div>
+  <a id="AngeliA_Platformer_InventoryFurniture_SetOpen_" data-uid="AngeliA.Platformer.InventoryFurniture.SetOpen*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_SetOpen_System_Boolean_" data-uid="AngeliA.Platformer.InventoryFurniture.SetOpen(System.Boolean)">SetOpen(bool)</h4>
+  <div class="markdown level1 summary"><p>Set opening state of this furniture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetOpen(bool open)</code></pre>
+  </div>
+    
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AngeliA.Platformer.OpenableFurniture.html#AngeliA_Platformer_OpenableFurniture_SetOpen_System_Boolean_">OpenableFurniture.SetOpen(bool)</a></div>
+  <a id="AngeliA_Platformer_InventoryFurniture_TryGetInventoryUI_" data-uid="AngeliA.Platformer.InventoryFurniture.TryGetInventoryUI*"></a>
+  <h4 id="AngeliA_Platformer_InventoryFurniture_TryGetInventoryUI_System_Int32_AngeliA_InventoryPartnerUI__" data-uid="AngeliA.Platformer.InventoryFurniture.TryGetInventoryUI(System.Int32,AngeliA.InventoryPartnerUI@)">TryGetInventoryUI(int, out InventoryPartnerUI)</h4>
+  <div class="markdown level1 summary"><p>Get the instance of the inventory UI from given furniture ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryGetInventoryUI(int typeID, out InventoryPartnerUI result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">typeID</span></td>
+        <td><p>Type ID of the furniture</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the result is founded</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

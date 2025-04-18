@@ -1,0 +1,2539 @@
+### YamlMime:ManagedReference
+items:
+- uid: AngeliA.RigRespondMessage
+  commentId: T:AngeliA.RigRespondMessage
+  id: RigRespondMessage
+  parent: AngeliA
+  children:
+  - AngeliA.RigRespondMessage.ApplyRenderingToEngine(AngeliA.Universe,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  - AngeliA.RigRespondMessage.ApplyToEngine(AngeliA.RigCallingMessage,System.Boolean)
+  - AngeliA.RigRespondMessage.AudioActionRequirement
+  - AngeliA.RigRespondMessage.CharRequiringCount
+  - AngeliA.RigRespondMessage.EffectEnable
+  - AngeliA.RigRespondMessage.EntityCapacities
+  - AngeliA.RigRespondMessage.EntityUsages
+  - AngeliA.RigRespondMessage.GamePlaying
+  - AngeliA.RigRespondMessage.GlobalFrame
+  - AngeliA.RigRespondMessage.HasEffectParams
+  - AngeliA.RigRespondMessage.IsTyping
+  - AngeliA.RigRespondMessage.Layers
+  - AngeliA.RigRespondMessage.MusicVolume
+  - AngeliA.RigRespondMessage.PlaySoundRequirements
+  - AngeliA.RigRespondMessage.REQUIRE_CHAR_MAX_COUNT
+  - AngeliA.RigRespondMessage.ReadDataFromPipe(System.Byte*)
+  - AngeliA.RigRespondMessage.RenderCapacities
+  - AngeliA.RigRespondMessage.RenderUsages
+  - AngeliA.RigRespondMessage.RequireChars
+  - AngeliA.RigRespondMessage.RequireCharsFontIndex
+  - AngeliA.RigRespondMessage.RequireDoodleRectCount
+  - AngeliA.RigRespondMessage.RequireDoodleRects
+  - AngeliA.RigRespondMessage.RequireDoodleRenderingOffset
+  - AngeliA.RigRespondMessage.RequireDoodleRenderingZoom
+  - AngeliA.RigRespondMessage.RequireDoodleWorldCount
+  - AngeliA.RigRespondMessage.RequireDoodleWorlds
+  - AngeliA.RigRespondMessage.RequireGizmosLineCount
+  - AngeliA.RigRespondMessage.RequireGizmosLines
+  - AngeliA.RigRespondMessage.RequireGizmosRectCount
+  - AngeliA.RigRespondMessage.RequireGizmosRects
+  - AngeliA.RigRespondMessage.RequirePlayMusicFromStart
+  - AngeliA.RigRespondMessage.RequirePlayMusicID
+  - AngeliA.RigRespondMessage.RequirePlaySoundCount
+  - AngeliA.RigRespondMessage.RequireResetDoodle
+  - AngeliA.RigRespondMessage.RequireSetCursorIndex
+  - AngeliA.RigRespondMessage.RequireSetMusicVolume
+  - AngeliA.RigRespondMessage.RequireSetSoundVolume
+  - AngeliA.RigRespondMessage.RequireShowDoodle
+  - AngeliA.RigRespondMessage.Reset(System.Boolean)
+  - AngeliA.RigRespondMessage.SelectingPlayerID
+  - AngeliA.RigRespondMessage.SkyBottom
+  - AngeliA.RigRespondMessage.SkyTop
+  - AngeliA.RigRespondMessage.SoundVolume
+  - AngeliA.RigRespondMessage.TargetFramerate
+  - AngeliA.RigRespondMessage.TransationStart
+  - AngeliA.RigRespondMessage.ViewHeight
+  - AngeliA.RigRespondMessage.ViewWidth
+  - AngeliA.RigRespondMessage.ViewX
+  - AngeliA.RigRespondMessage.ViewY
+  - AngeliA.RigRespondMessage.ViewZ
+  - AngeliA.RigRespondMessage.WriteDataToPipe(System.Byte*)
+  - AngeliA.RigRespondMessage.e_DarkenAmount
+  - AngeliA.RigRespondMessage.e_DarkenStep
+  - AngeliA.RigRespondMessage.e_LightenAmount
+  - AngeliA.RigRespondMessage.e_LightenStep
+  - AngeliA.RigRespondMessage.e_TintColor
+  - AngeliA.RigRespondMessage.e_VigFeather
+  - AngeliA.RigRespondMessage.e_VigOffsetX
+  - AngeliA.RigRespondMessage.e_VigOffsetY
+  - AngeliA.RigRespondMessage.e_VigRadius
+  - AngeliA.RigRespondMessage.e_VigRound
+  langs:
+  - csharp
+  - vb
+  name: RigRespondMessage
+  nameWithType: RigRespondMessage
+  fullName: AngeliA.RigRespondMessage
+  type: Class
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RigRespondMessage
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 5
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public class RigRespondMessage
+    content.vb: Public Class RigRespondMessage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.AngeliA.Extension.ForAllFields``1(System.Reflection.BindingFlags,System.Boolean)
+  - System.Object.AngeliA.Extension.ForAllProperties``1
+- uid: AngeliA.RigRespondMessage.REQUIRE_CHAR_MAX_COUNT
+  commentId: F:AngeliA.RigRespondMessage.REQUIRE_CHAR_MAX_COUNT
+  id: REQUIRE_CHAR_MAX_COUNT
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: REQUIRE_CHAR_MAX_COUNT
+  nameWithType: RigRespondMessage.REQUIRE_CHAR_MAX_COUNT
+  fullName: AngeliA.RigRespondMessage.REQUIRE_CHAR_MAX_COUNT
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: REQUIRE_CHAR_MAX_COUNT
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 86
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public const int REQUIRE_CHAR_MAX_COUNT = 64
+    return:
+      type: System.Int32
+    content.vb: Public Const REQUIRE_CHAR_MAX_COUNT As Integer = 64
+- uid: AngeliA.RigRespondMessage.GlobalFrame
+  commentId: F:AngeliA.RigRespondMessage.GlobalFrame
+  id: GlobalFrame
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: GlobalFrame
+  nameWithType: RigRespondMessage.GlobalFrame
+  fullName: AngeliA.RigRespondMessage.GlobalFrame
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GlobalFrame
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 89
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int GlobalFrame
+    return:
+      type: System.Int32
+    content.vb: Public GlobalFrame As Integer
+- uid: AngeliA.RigRespondMessage.ViewX
+  commentId: F:AngeliA.RigRespondMessage.ViewX
+  id: ViewX
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ViewX
+  nameWithType: RigRespondMessage.ViewX
+  fullName: AngeliA.RigRespondMessage.ViewX
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ViewX
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 90
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int ViewX
+    return:
+      type: System.Int32
+    content.vb: Public ViewX As Integer
+- uid: AngeliA.RigRespondMessage.ViewY
+  commentId: F:AngeliA.RigRespondMessage.ViewY
+  id: ViewY
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ViewY
+  nameWithType: RigRespondMessage.ViewY
+  fullName: AngeliA.RigRespondMessage.ViewY
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ViewY
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 91
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int ViewY
+    return:
+      type: System.Int32
+    content.vb: Public ViewY As Integer
+- uid: AngeliA.RigRespondMessage.ViewZ
+  commentId: F:AngeliA.RigRespondMessage.ViewZ
+  id: ViewZ
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ViewZ
+  nameWithType: RigRespondMessage.ViewZ
+  fullName: AngeliA.RigRespondMessage.ViewZ
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ViewZ
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 92
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int ViewZ
+    return:
+      type: System.Int32
+    content.vb: Public ViewZ As Integer
+- uid: AngeliA.RigRespondMessage.ViewWidth
+  commentId: F:AngeliA.RigRespondMessage.ViewWidth
+  id: ViewWidth
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ViewWidth
+  nameWithType: RigRespondMessage.ViewWidth
+  fullName: AngeliA.RigRespondMessage.ViewWidth
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ViewWidth
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 93
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int ViewWidth
+    return:
+      type: System.Int32
+    content.vb: Public ViewWidth As Integer
+- uid: AngeliA.RigRespondMessage.ViewHeight
+  commentId: F:AngeliA.RigRespondMessage.ViewHeight
+  id: ViewHeight
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ViewHeight
+  nameWithType: RigRespondMessage.ViewHeight
+  fullName: AngeliA.RigRespondMessage.ViewHeight
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ViewHeight
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 94
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int ViewHeight
+    return:
+      type: System.Int32
+    content.vb: Public ViewHeight As Integer
+- uid: AngeliA.RigRespondMessage.RequireSetCursorIndex
+  commentId: F:AngeliA.RigRespondMessage.RequireSetCursorIndex
+  id: RequireSetCursorIndex
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireSetCursorIndex
+  nameWithType: RigRespondMessage.RequireSetCursorIndex
+  fullName: AngeliA.RigRespondMessage.RequireSetCursorIndex
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireSetCursorIndex
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 95
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequireSetCursorIndex
+    return:
+      type: System.Int32
+    content.vb: Public RequireSetCursorIndex As Integer
+- uid: AngeliA.RigRespondMessage.TargetFramerate
+  commentId: F:AngeliA.RigRespondMessage.TargetFramerate
+  id: TargetFramerate
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: TargetFramerate
+  nameWithType: RigRespondMessage.TargetFramerate
+  fullName: AngeliA.RigRespondMessage.TargetFramerate
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TargetFramerate
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 96
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int TargetFramerate
+    return:
+      type: System.Int32
+    content.vb: Public TargetFramerate As Integer
+- uid: AngeliA.RigRespondMessage.SkyTop
+  commentId: F:AngeliA.RigRespondMessage.SkyTop
+  id: SkyTop
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: SkyTop
+  nameWithType: RigRespondMessage.SkyTop
+  fullName: AngeliA.RigRespondMessage.SkyTop
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SkyTop
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 97
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public Color32 SkyTop
+    return:
+      type: AngeliA.Color32
+    content.vb: Public SkyTop As Color32
+- uid: AngeliA.RigRespondMessage.SkyBottom
+  commentId: F:AngeliA.RigRespondMessage.SkyBottom
+  id: SkyBottom
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: SkyBottom
+  nameWithType: RigRespondMessage.SkyBottom
+  fullName: AngeliA.RigRespondMessage.SkyBottom
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SkyBottom
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 98
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public Color32 SkyBottom
+    return:
+      type: AngeliA.Color32
+    content.vb: Public SkyBottom As Color32
+- uid: AngeliA.RigRespondMessage.EffectEnable
+  commentId: F:AngeliA.RigRespondMessage.EffectEnable
+  id: EffectEnable
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: EffectEnable
+  nameWithType: RigRespondMessage.EffectEnable
+  fullName: AngeliA.RigRespondMessage.EffectEnable
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: EffectEnable
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 99
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public byte EffectEnable
+    return:
+      type: System.Byte
+    content.vb: Public EffectEnable As Byte
+- uid: AngeliA.RigRespondMessage.HasEffectParams
+  commentId: F:AngeliA.RigRespondMessage.HasEffectParams
+  id: HasEffectParams
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: HasEffectParams
+  nameWithType: RigRespondMessage.HasEffectParams
+  fullName: AngeliA.RigRespondMessage.HasEffectParams
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: HasEffectParams
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 100
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public byte HasEffectParams
+    return:
+      type: System.Byte
+    content.vb: Public HasEffectParams As Byte
+- uid: AngeliA.RigRespondMessage.e_DarkenAmount
+  commentId: F:AngeliA.RigRespondMessage.e_DarkenAmount
+  id: e_DarkenAmount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_DarkenAmount
+  nameWithType: RigRespondMessage.e_DarkenAmount
+  fullName: AngeliA.RigRespondMessage.e_DarkenAmount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_DarkenAmount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 102
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_DarkenAmount
+    return:
+      type: System.Single
+    content.vb: Public e_DarkenAmount As Single
+- uid: AngeliA.RigRespondMessage.e_DarkenStep
+  commentId: F:AngeliA.RigRespondMessage.e_DarkenStep
+  id: e_DarkenStep
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_DarkenStep
+  nameWithType: RigRespondMessage.e_DarkenStep
+  fullName: AngeliA.RigRespondMessage.e_DarkenStep
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_DarkenStep
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 103
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_DarkenStep
+    return:
+      type: System.Single
+    content.vb: Public e_DarkenStep As Single
+- uid: AngeliA.RigRespondMessage.e_LightenAmount
+  commentId: F:AngeliA.RigRespondMessage.e_LightenAmount
+  id: e_LightenAmount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_LightenAmount
+  nameWithType: RigRespondMessage.e_LightenAmount
+  fullName: AngeliA.RigRespondMessage.e_LightenAmount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_LightenAmount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 104
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_LightenAmount
+    return:
+      type: System.Single
+    content.vb: Public e_LightenAmount As Single
+- uid: AngeliA.RigRespondMessage.e_LightenStep
+  commentId: F:AngeliA.RigRespondMessage.e_LightenStep
+  id: e_LightenStep
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_LightenStep
+  nameWithType: RigRespondMessage.e_LightenStep
+  fullName: AngeliA.RigRespondMessage.e_LightenStep
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_LightenStep
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 105
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_LightenStep
+    return:
+      type: System.Single
+    content.vb: Public e_LightenStep As Single
+- uid: AngeliA.RigRespondMessage.e_TintColor
+  commentId: F:AngeliA.RigRespondMessage.e_TintColor
+  id: e_TintColor
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_TintColor
+  nameWithType: RigRespondMessage.e_TintColor
+  fullName: AngeliA.RigRespondMessage.e_TintColor
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_TintColor
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 106
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public Color32 e_TintColor
+    return:
+      type: AngeliA.Color32
+    content.vb: Public e_TintColor As Color32
+- uid: AngeliA.RigRespondMessage.e_VigRadius
+  commentId: F:AngeliA.RigRespondMessage.e_VigRadius
+  id: e_VigRadius
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_VigRadius
+  nameWithType: RigRespondMessage.e_VigRadius
+  fullName: AngeliA.RigRespondMessage.e_VigRadius
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_VigRadius
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 107
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_VigRadius
+    return:
+      type: System.Single
+    content.vb: Public e_VigRadius As Single
+- uid: AngeliA.RigRespondMessage.e_VigFeather
+  commentId: F:AngeliA.RigRespondMessage.e_VigFeather
+  id: e_VigFeather
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_VigFeather
+  nameWithType: RigRespondMessage.e_VigFeather
+  fullName: AngeliA.RigRespondMessage.e_VigFeather
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_VigFeather
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 108
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_VigFeather
+    return:
+      type: System.Single
+    content.vb: Public e_VigFeather As Single
+- uid: AngeliA.RigRespondMessage.e_VigOffsetX
+  commentId: F:AngeliA.RigRespondMessage.e_VigOffsetX
+  id: e_VigOffsetX
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_VigOffsetX
+  nameWithType: RigRespondMessage.e_VigOffsetX
+  fullName: AngeliA.RigRespondMessage.e_VigOffsetX
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_VigOffsetX
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 109
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_VigOffsetX
+    return:
+      type: System.Single
+    content.vb: Public e_VigOffsetX As Single
+- uid: AngeliA.RigRespondMessage.e_VigOffsetY
+  commentId: F:AngeliA.RigRespondMessage.e_VigOffsetY
+  id: e_VigOffsetY
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_VigOffsetY
+  nameWithType: RigRespondMessage.e_VigOffsetY
+  fullName: AngeliA.RigRespondMessage.e_VigOffsetY
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_VigOffsetY
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 110
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_VigOffsetY
+    return:
+      type: System.Single
+    content.vb: Public e_VigOffsetY As Single
+- uid: AngeliA.RigRespondMessage.e_VigRound
+  commentId: F:AngeliA.RigRespondMessage.e_VigRound
+  id: e_VigRound
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: e_VigRound
+  nameWithType: RigRespondMessage.e_VigRound
+  fullName: AngeliA.RigRespondMessage.e_VigRound
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: e_VigRound
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 111
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float e_VigRound
+    return:
+      type: System.Single
+    content.vb: Public e_VigRound As Single
+- uid: AngeliA.RigRespondMessage.RequirePlayMusicID
+  commentId: F:AngeliA.RigRespondMessage.RequirePlayMusicID
+  id: RequirePlayMusicID
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequirePlayMusicID
+  nameWithType: RigRespondMessage.RequirePlayMusicID
+  fullName: AngeliA.RigRespondMessage.RequirePlayMusicID
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequirePlayMusicID
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 113
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequirePlayMusicID
+    return:
+      type: System.Int32
+    content.vb: Public RequirePlayMusicID As Integer
+- uid: AngeliA.RigRespondMessage.RequirePlayMusicFromStart
+  commentId: F:AngeliA.RigRespondMessage.RequirePlayMusicFromStart
+  id: RequirePlayMusicFromStart
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequirePlayMusicFromStart
+  nameWithType: RigRespondMessage.RequirePlayMusicFromStart
+  fullName: AngeliA.RigRespondMessage.RequirePlayMusicFromStart
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequirePlayMusicFromStart
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 114
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool RequirePlayMusicFromStart
+    return:
+      type: System.Boolean
+    content.vb: Public RequirePlayMusicFromStart As Boolean
+- uid: AngeliA.RigRespondMessage.AudioActionRequirement
+  commentId: F:AngeliA.RigRespondMessage.AudioActionRequirement
+  id: AudioActionRequirement
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: AudioActionRequirement
+  nameWithType: RigRespondMessage.AudioActionRequirement
+  fullName: AngeliA.RigRespondMessage.AudioActionRequirement
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: AudioActionRequirement
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 115
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public byte AudioActionRequirement
+    return:
+      type: System.Byte
+    content.vb: Public AudioActionRequirement As Byte
+- uid: AngeliA.RigRespondMessage.RequireSetMusicVolume
+  commentId: F:AngeliA.RigRespondMessage.RequireSetMusicVolume
+  id: RequireSetMusicVolume
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireSetMusicVolume
+  nameWithType: RigRespondMessage.RequireSetMusicVolume
+  fullName: AngeliA.RigRespondMessage.RequireSetMusicVolume
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireSetMusicVolume
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 116
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequireSetMusicVolume
+    return:
+      type: System.Int32
+    content.vb: Public RequireSetMusicVolume As Integer
+- uid: AngeliA.RigRespondMessage.RequirePlaySoundCount
+  commentId: F:AngeliA.RigRespondMessage.RequirePlaySoundCount
+  id: RequirePlaySoundCount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequirePlaySoundCount
+  nameWithType: RigRespondMessage.RequirePlaySoundCount
+  fullName: AngeliA.RigRespondMessage.RequirePlaySoundCount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequirePlaySoundCount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 118
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequirePlaySoundCount
+    return:
+      type: System.Int32
+    content.vb: Public RequirePlaySoundCount As Integer
+- uid: AngeliA.RigRespondMessage.PlaySoundRequirements
+  commentId: F:AngeliA.RigRespondMessage.PlaySoundRequirements
+  id: PlaySoundRequirements
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: PlaySoundRequirements
+  nameWithType: RigRespondMessage.PlaySoundRequirements
+  fullName: AngeliA.RigRespondMessage.PlaySoundRequirements
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: PlaySoundRequirements
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 119
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public RigRespondMessage.PlaySoundRequirement[] PlaySoundRequirements
+    return:
+      type: AngeliA.RigRespondMessage.PlaySoundRequirement[]
+    content.vb: Public PlaySoundRequirements As RigRespondMessage.PlaySoundRequirement()
+- uid: AngeliA.RigRespondMessage.RequireSetSoundVolume
+  commentId: F:AngeliA.RigRespondMessage.RequireSetSoundVolume
+  id: RequireSetSoundVolume
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireSetSoundVolume
+  nameWithType: RigRespondMessage.RequireSetSoundVolume
+  fullName: AngeliA.RigRespondMessage.RequireSetSoundVolume
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireSetSoundVolume
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 120
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequireSetSoundVolume
+    return:
+      type: System.Int32
+    content.vb: Public RequireSetSoundVolume As Integer
+- uid: AngeliA.RigRespondMessage.CharRequiringCount
+  commentId: F:AngeliA.RigRespondMessage.CharRequiringCount
+  id: CharRequiringCount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: CharRequiringCount
+  nameWithType: RigRespondMessage.CharRequiringCount
+  fullName: AngeliA.RigRespondMessage.CharRequiringCount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: CharRequiringCount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 122
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int CharRequiringCount
+    return:
+      type: System.Int32
+    content.vb: Public CharRequiringCount As Integer
+- uid: AngeliA.RigRespondMessage.RequireChars
+  commentId: F:AngeliA.RigRespondMessage.RequireChars
+  id: RequireChars
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireChars
+  nameWithType: RigRespondMessage.RequireChars
+  fullName: AngeliA.RigRespondMessage.RequireChars
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireChars
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 123
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public char[] RequireChars
+    return:
+      type: System.Char[]
+    content.vb: Public RequireChars As Char()
+- uid: AngeliA.RigRespondMessage.RequireCharsFontIndex
+  commentId: F:AngeliA.RigRespondMessage.RequireCharsFontIndex
+  id: RequireCharsFontIndex
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireCharsFontIndex
+  nameWithType: RigRespondMessage.RequireCharsFontIndex
+  fullName: AngeliA.RigRespondMessage.RequireCharsFontIndex
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireCharsFontIndex
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 124
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int[] RequireCharsFontIndex
+    return:
+      type: System.Int32[]
+    content.vb: Public RequireCharsFontIndex As Integer()
+- uid: AngeliA.RigRespondMessage.RequireGizmosRectCount
+  commentId: F:AngeliA.RigRespondMessage.RequireGizmosRectCount
+  id: RequireGizmosRectCount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireGizmosRectCount
+  nameWithType: RigRespondMessage.RequireGizmosRectCount
+  fullName: AngeliA.RigRespondMessage.RequireGizmosRectCount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireGizmosRectCount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 126
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequireGizmosRectCount
+    return:
+      type: System.Int32
+    content.vb: Public RequireGizmosRectCount As Integer
+- uid: AngeliA.RigRespondMessage.RequireGizmosRects
+  commentId: F:AngeliA.RigRespondMessage.RequireGizmosRects
+  id: RequireGizmosRects
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireGizmosRects
+  nameWithType: RigRespondMessage.RequireGizmosRects
+  fullName: AngeliA.RigRespondMessage.RequireGizmosRects
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireGizmosRects
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 127
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public RigRespondMessage.GizmosRectData[] RequireGizmosRects
+    return:
+      type: AngeliA.RigRespondMessage.GizmosRectData[]
+    content.vb: Public RequireGizmosRects As RigRespondMessage.GizmosRectData()
+- uid: AngeliA.RigRespondMessage.RequireGizmosLineCount
+  commentId: F:AngeliA.RigRespondMessage.RequireGizmosLineCount
+  id: RequireGizmosLineCount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireGizmosLineCount
+  nameWithType: RigRespondMessage.RequireGizmosLineCount
+  fullName: AngeliA.RigRespondMessage.RequireGizmosLineCount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireGizmosLineCount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 128
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequireGizmosLineCount
+    return:
+      type: System.Int32
+    content.vb: Public RequireGizmosLineCount As Integer
+- uid: AngeliA.RigRespondMessage.RequireGizmosLines
+  commentId: F:AngeliA.RigRespondMessage.RequireGizmosLines
+  id: RequireGizmosLines
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireGizmosLines
+  nameWithType: RigRespondMessage.RequireGizmosLines
+  fullName: AngeliA.RigRespondMessage.RequireGizmosLines
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireGizmosLines
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 129
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public RigRespondMessage.GizmosLineData[] RequireGizmosLines
+    return:
+      type: AngeliA.RigRespondMessage.GizmosLineData[]
+    content.vb: Public RequireGizmosLines As RigRespondMessage.GizmosLineData()
+- uid: AngeliA.RigRespondMessage.RequireShowDoodle
+  commentId: F:AngeliA.RigRespondMessage.RequireShowDoodle
+  id: RequireShowDoodle
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireShowDoodle
+  nameWithType: RigRespondMessage.RequireShowDoodle
+  fullName: AngeliA.RigRespondMessage.RequireShowDoodle
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireShowDoodle
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 130
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool RequireShowDoodle
+    return:
+      type: System.Boolean
+    content.vb: Public RequireShowDoodle As Boolean
+- uid: AngeliA.RigRespondMessage.RequireResetDoodle
+  commentId: F:AngeliA.RigRespondMessage.RequireResetDoodle
+  id: RequireResetDoodle
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireResetDoodle
+  nameWithType: RigRespondMessage.RequireResetDoodle
+  fullName: AngeliA.RigRespondMessage.RequireResetDoodle
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireResetDoodle
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 131
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool RequireResetDoodle
+    return:
+      type: System.Boolean
+    content.vb: Public RequireResetDoodle As Boolean
+- uid: AngeliA.RigRespondMessage.RequireDoodleRenderingOffset
+  commentId: F:AngeliA.RigRespondMessage.RequireDoodleRenderingOffset
+  id: RequireDoodleRenderingOffset
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireDoodleRenderingOffset
+  nameWithType: RigRespondMessage.RequireDoodleRenderingOffset
+  fullName: AngeliA.RigRespondMessage.RequireDoodleRenderingOffset
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireDoodleRenderingOffset
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 132
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public Float2 RequireDoodleRenderingOffset
+    return:
+      type: AngeliA.Float2
+    content.vb: Public RequireDoodleRenderingOffset As Float2
+- uid: AngeliA.RigRespondMessage.RequireDoodleRenderingZoom
+  commentId: F:AngeliA.RigRespondMessage.RequireDoodleRenderingZoom
+  id: RequireDoodleRenderingZoom
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireDoodleRenderingZoom
+  nameWithType: RigRespondMessage.RequireDoodleRenderingZoom
+  fullName: AngeliA.RigRespondMessage.RequireDoodleRenderingZoom
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireDoodleRenderingZoom
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 133
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public float RequireDoodleRenderingZoom
+    return:
+      type: System.Single
+    content.vb: Public RequireDoodleRenderingZoom As Single
+- uid: AngeliA.RigRespondMessage.RequireDoodleRectCount
+  commentId: F:AngeliA.RigRespondMessage.RequireDoodleRectCount
+  id: RequireDoodleRectCount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireDoodleRectCount
+  nameWithType: RigRespondMessage.RequireDoodleRectCount
+  fullName: AngeliA.RigRespondMessage.RequireDoodleRectCount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireDoodleRectCount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 134
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequireDoodleRectCount
+    return:
+      type: System.Int32
+    content.vb: Public RequireDoodleRectCount As Integer
+- uid: AngeliA.RigRespondMessage.RequireDoodleRects
+  commentId: F:AngeliA.RigRespondMessage.RequireDoodleRects
+  id: RequireDoodleRects
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireDoodleRects
+  nameWithType: RigRespondMessage.RequireDoodleRects
+  fullName: AngeliA.RigRespondMessage.RequireDoodleRects
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireDoodleRects
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 135
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public RigRespondMessage.DoodleRectData[] RequireDoodleRects
+    return:
+      type: AngeliA.RigRespondMessage.DoodleRectData[]
+    content.vb: Public RequireDoodleRects As RigRespondMessage.DoodleRectData()
+- uid: AngeliA.RigRespondMessage.RequireDoodleWorldCount
+  commentId: F:AngeliA.RigRespondMessage.RequireDoodleWorldCount
+  id: RequireDoodleWorldCount
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireDoodleWorldCount
+  nameWithType: RigRespondMessage.RequireDoodleWorldCount
+  fullName: AngeliA.RigRespondMessage.RequireDoodleWorldCount
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireDoodleWorldCount
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 136
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int RequireDoodleWorldCount
+    return:
+      type: System.Int32
+    content.vb: Public RequireDoodleWorldCount As Integer
+- uid: AngeliA.RigRespondMessage.RequireDoodleWorlds
+  commentId: F:AngeliA.RigRespondMessage.RequireDoodleWorlds
+  id: RequireDoodleWorlds
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RequireDoodleWorlds
+  nameWithType: RigRespondMessage.RequireDoodleWorlds
+  fullName: AngeliA.RigRespondMessage.RequireDoodleWorlds
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RequireDoodleWorlds
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 137
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public RigRespondMessage.DoodleWorldData[] RequireDoodleWorlds
+    return:
+      type: AngeliA.RigRespondMessage.DoodleWorldData[]
+    content.vb: Public RequireDoodleWorlds As RigRespondMessage.DoodleWorldData()
+- uid: AngeliA.RigRespondMessage.Layers
+  commentId: F:AngeliA.RigRespondMessage.Layers
+  id: Layers
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: Layers
+  nameWithType: RigRespondMessage.Layers
+  fullName: AngeliA.RigRespondMessage.Layers
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Layers
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 139
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public RigRespondMessage.RenderingLayerData[] Layers
+    return:
+      type: AngeliA.RigRespondMessage.RenderingLayerData[]
+    content.vb: Public Layers As RigRespondMessage.RenderingLayerData()
+- uid: AngeliA.RigRespondMessage.RenderUsages
+  commentId: F:AngeliA.RigRespondMessage.RenderUsages
+  id: RenderUsages
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RenderUsages
+  nameWithType: RigRespondMessage.RenderUsages
+  fullName: AngeliA.RigRespondMessage.RenderUsages
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RenderUsages
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 140
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int[] RenderUsages
+    return:
+      type: System.Int32[]
+    content.vb: Public RenderUsages As Integer()
+- uid: AngeliA.RigRespondMessage.EntityUsages
+  commentId: F:AngeliA.RigRespondMessage.EntityUsages
+  id: EntityUsages
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: EntityUsages
+  nameWithType: RigRespondMessage.EntityUsages
+  fullName: AngeliA.RigRespondMessage.EntityUsages
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: EntityUsages
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 141
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int[] EntityUsages
+    return:
+      type: System.Int32[]
+    content.vb: Public EntityUsages As Integer()
+- uid: AngeliA.RigRespondMessage.RenderCapacities
+  commentId: F:AngeliA.RigRespondMessage.RenderCapacities
+  id: RenderCapacities
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: RenderCapacities
+  nameWithType: RigRespondMessage.RenderCapacities
+  fullName: AngeliA.RigRespondMessage.RenderCapacities
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: RenderCapacities
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 142
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int[] RenderCapacities
+    return:
+      type: System.Int32[]
+    content.vb: Public RenderCapacities As Integer()
+- uid: AngeliA.RigRespondMessage.EntityCapacities
+  commentId: F:AngeliA.RigRespondMessage.EntityCapacities
+  id: EntityCapacities
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: EntityCapacities
+  nameWithType: RigRespondMessage.EntityCapacities
+  fullName: AngeliA.RigRespondMessage.EntityCapacities
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: EntityCapacities
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 143
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int[] EntityCapacities
+    return:
+      type: System.Int32[]
+    content.vb: Public EntityCapacities As Integer()
+- uid: AngeliA.RigRespondMessage.GamePlaying
+  commentId: F:AngeliA.RigRespondMessage.GamePlaying
+  id: GamePlaying
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: GamePlaying
+  nameWithType: RigRespondMessage.GamePlaying
+  fullName: AngeliA.RigRespondMessage.GamePlaying
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: GamePlaying
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 145
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool GamePlaying
+    return:
+      type: System.Boolean
+    content.vb: Public GamePlaying As Boolean
+- uid: AngeliA.RigRespondMessage.MusicVolume
+  commentId: F:AngeliA.RigRespondMessage.MusicVolume
+  id: MusicVolume
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: MusicVolume
+  nameWithType: RigRespondMessage.MusicVolume
+  fullName: AngeliA.RigRespondMessage.MusicVolume
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: MusicVolume
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 146
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int MusicVolume
+    return:
+      type: System.Int32
+    content.vb: Public MusicVolume As Integer
+- uid: AngeliA.RigRespondMessage.SoundVolume
+  commentId: F:AngeliA.RigRespondMessage.SoundVolume
+  id: SoundVolume
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: SoundVolume
+  nameWithType: RigRespondMessage.SoundVolume
+  fullName: AngeliA.RigRespondMessage.SoundVolume
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SoundVolume
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 147
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int SoundVolume
+    return:
+      type: System.Int32
+    content.vb: Public SoundVolume As Integer
+- uid: AngeliA.RigRespondMessage.IsTyping
+  commentId: F:AngeliA.RigRespondMessage.IsTyping
+  id: IsTyping
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: IsTyping
+  nameWithType: RigRespondMessage.IsTyping
+  fullName: AngeliA.RigRespondMessage.IsTyping
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: IsTyping
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 148
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public bool IsTyping
+    return:
+      type: System.Boolean
+    content.vb: Public IsTyping As Boolean
+- uid: AngeliA.RigRespondMessage.SelectingPlayerID
+  commentId: F:AngeliA.RigRespondMessage.SelectingPlayerID
+  id: SelectingPlayerID
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: SelectingPlayerID
+  nameWithType: RigRespondMessage.SelectingPlayerID
+  fullName: AngeliA.RigRespondMessage.SelectingPlayerID
+  type: Field
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: SelectingPlayerID
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 149
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public int SelectingPlayerID
+    return:
+      type: System.Int32
+    content.vb: Public SelectingPlayerID As Integer
+- uid: AngeliA.RigRespondMessage.TransationStart
+  commentId: M:AngeliA.RigRespondMessage.TransationStart
+  id: TransationStart
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: TransationStart()
+  nameWithType: RigRespondMessage.TransationStart()
+  fullName: AngeliA.RigRespondMessage.TransationStart()
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: TransationStart
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 166
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void TransationStart()
+    content.vb: Public Sub TransationStart()
+  overload: AngeliA.RigRespondMessage.TransationStart*
+- uid: AngeliA.RigRespondMessage.Reset(System.Boolean)
+  commentId: M:AngeliA.RigRespondMessage.Reset(System.Boolean)
+  id: Reset(System.Boolean)
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: Reset(bool)
+  nameWithType: RigRespondMessage.Reset(bool)
+  fullName: AngeliA.RigRespondMessage.Reset(bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: Reset
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 175
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void Reset(bool clearLastRendering = false)
+    parameters:
+    - id: clearLastRendering
+      type: System.Boolean
+    content.vb: Public Sub Reset(clearLastRendering As Boolean = False)
+  overload: AngeliA.RigRespondMessage.Reset*
+  nameWithType.vb: RigRespondMessage.Reset(Boolean)
+  fullName.vb: AngeliA.RigRespondMessage.Reset(Boolean)
+  name.vb: Reset(Boolean)
+- uid: AngeliA.RigRespondMessage.ApplyToEngine(AngeliA.RigCallingMessage,System.Boolean)
+  commentId: M:AngeliA.RigRespondMessage.ApplyToEngine(AngeliA.RigCallingMessage,System.Boolean)
+  id: ApplyToEngine(AngeliA.RigCallingMessage,System.Boolean)
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ApplyToEngine(RigCallingMessage, bool)
+  nameWithType: RigRespondMessage.ApplyToEngine(RigCallingMessage, bool)
+  fullName: AngeliA.RigRespondMessage.ApplyToEngine(AngeliA.RigCallingMessage, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ApplyToEngine
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 205
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void ApplyToEngine(RigCallingMessage callingMessage, bool ignoreMouseInput)
+    parameters:
+    - id: callingMessage
+      type: AngeliA.RigCallingMessage
+    - id: ignoreMouseInput
+      type: System.Boolean
+    content.vb: Public Sub ApplyToEngine(callingMessage As RigCallingMessage, ignoreMouseInput As Boolean)
+  overload: AngeliA.RigRespondMessage.ApplyToEngine*
+  nameWithType.vb: RigRespondMessage.ApplyToEngine(RigCallingMessage, Boolean)
+  fullName.vb: AngeliA.RigRespondMessage.ApplyToEngine(AngeliA.RigCallingMessage, Boolean)
+  name.vb: ApplyToEngine(RigCallingMessage, Boolean)
+- uid: AngeliA.RigRespondMessage.ApplyRenderingToEngine(AngeliA.Universe,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  commentId: M:AngeliA.RigRespondMessage.ApplyRenderingToEngine(AngeliA.Universe,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  id: ApplyRenderingToEngine(AngeliA.Universe,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ApplyRenderingToEngine(Universe, int, int, int, bool, bool)
+  nameWithType: RigRespondMessage.ApplyRenderingToEngine(Universe, int, int, int, bool, bool)
+  fullName: AngeliA.RigRespondMessage.ApplyRenderingToEngine(AngeliA.Universe, int, int, int, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ApplyRenderingToEngine
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 273
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void ApplyRenderingToEngine(Universe universe, int sheetIndex, int leftPadding, int rightPadding, bool ignoreInGameGizmos, bool ignoreViewRect)
+    parameters:
+    - id: universe
+      type: AngeliA.Universe
+    - id: sheetIndex
+      type: System.Int32
+    - id: leftPadding
+      type: System.Int32
+    - id: rightPadding
+      type: System.Int32
+    - id: ignoreInGameGizmos
+      type: System.Boolean
+    - id: ignoreViewRect
+      type: System.Boolean
+    content.vb: Public Sub ApplyRenderingToEngine(universe As Universe, sheetIndex As Integer, leftPadding As Integer, rightPadding As Integer, ignoreInGameGizmos As Boolean, ignoreViewRect As Boolean)
+  overload: AngeliA.RigRespondMessage.ApplyRenderingToEngine*
+  nameWithType.vb: RigRespondMessage.ApplyRenderingToEngine(Universe, Integer, Integer, Integer, Boolean, Boolean)
+  fullName.vb: AngeliA.RigRespondMessage.ApplyRenderingToEngine(AngeliA.Universe, Integer, Integer, Integer, Boolean, Boolean)
+  name.vb: ApplyRenderingToEngine(Universe, Integer, Integer, Integer, Boolean, Boolean)
+- uid: AngeliA.RigRespondMessage.ReadDataFromPipe(System.Byte*)
+  commentId: M:AngeliA.RigRespondMessage.ReadDataFromPipe(System.Byte*)
+  id: ReadDataFromPipe(System.Byte*)
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: ReadDataFromPipe(byte*)
+  nameWithType: RigRespondMessage.ReadDataFromPipe(byte*)
+  fullName: AngeliA.RigRespondMessage.ReadDataFromPipe(byte*)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: ReadDataFromPipe
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 440
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void ReadDataFromPipe(byte* pointer)
+    parameters:
+    - id: pointer
+      type: System.Byte*
+    content.vb: Public Sub ReadDataFromPipe(pointer As Byte*)
+  overload: AngeliA.RigRespondMessage.ReadDataFromPipe*
+  nameWithType.vb: RigRespondMessage.ReadDataFromPipe(Byte*)
+  fullName.vb: AngeliA.RigRespondMessage.ReadDataFromPipe(Byte*)
+  name.vb: ReadDataFromPipe(Byte*)
+- uid: AngeliA.RigRespondMessage.WriteDataToPipe(System.Byte*)
+  commentId: M:AngeliA.RigRespondMessage.WriteDataToPipe(System.Byte*)
+  id: WriteDataToPipe(System.Byte*)
+  parent: AngeliA.RigRespondMessage
+  langs:
+  - csharp
+  - vb
+  name: WriteDataToPipe(byte*)
+  nameWithType: RigRespondMessage.WriteDataToPipe(byte*)
+  fullName: AngeliA.RigRespondMessage.WriteDataToPipe(byte*)
+  type: Method
+  source:
+    remote:
+      path: AngeliA Framework/src/Transceiver/RespondMessage.cs
+      branch: main
+      repo: https://github.com/Mo-enen/AngeliA.git
+    id: WriteDataToPipe
+    path: ../../AngeliA/AngeliA Framework/src/Transceiver/RespondMessage.cs
+    startLine: 675
+  assemblies:
+  - AngeliA Framework
+  namespace: AngeliA
+  syntax:
+    content: public void WriteDataToPipe(byte* pointer)
+    parameters:
+    - id: pointer
+      type: System.Byte*
+    content.vb: Public Sub WriteDataToPipe(pointer As Byte*)
+  overload: AngeliA.RigRespondMessage.WriteDataToPipe*
+  nameWithType.vb: RigRespondMessage.WriteDataToPipe(Byte*)
+  fullName.vb: AngeliA.RigRespondMessage.WriteDataToPipe(Byte*)
+  name.vb: WriteDataToPipe(Byte*)
+references:
+- uid: AngeliA
+  commentId: N:AngeliA
+  href: AngeliA.html
+  name: AngeliA
+  nameWithType: AngeliA
+  fullName: AngeliA
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.AngeliA.Extension.ForAllFields``1(System.Reflection.BindingFlags,System.Boolean)
+  commentId: M:AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  name: ForAllFields<T>(object, BindingFlags, bool)
+  nameWithType: Extension.ForAllFields<T>(object, BindingFlags, bool)
+  fullName: AngeliA.Extension.ForAllFields<T>(object, System.Reflection.BindingFlags, bool)
+  nameWithType.vb: Extension.ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  fullName.vb: AngeliA.Extension.ForAllFields(Of T)(Object, System.Reflection.BindingFlags, Boolean)
+  name.vb: ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.AngeliA.Extension.ForAllProperties``1
+  commentId: M:AngeliA.Extension.ForAllProperties``1(System.Object)
+  parent: AngeliA.Extension
+  definition: AngeliA.Extension.ForAllProperties``1(System.Object)
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  name: ForAllProperties<T>(object)
+  nameWithType: Extension.ForAllProperties<T>(object)
+  fullName: AngeliA.Extension.ForAllProperties<T>(object)
+  nameWithType.vb: Extension.ForAllProperties(Of T)(Object)
+  fullName.vb: AngeliA.Extension.ForAllProperties(Of T)(Object)
+  name.vb: ForAllProperties(Of T)(Object)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  commentId: M:AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+  isExternal: true
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  name: ForAllFields<T>(object, BindingFlags, bool)
+  nameWithType: Extension.ForAllFields<T>(object, BindingFlags, bool)
+  fullName: AngeliA.Extension.ForAllFields<T>(object, System.Reflection.BindingFlags, bool)
+  nameWithType.vb: Extension.ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  fullName.vb: AngeliA.Extension.ForAllFields(Of T)(Object, System.Reflection.BindingFlags, Boolean)
+  name.vb: ForAllFields(Of T)(Object, BindingFlags, Boolean)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllFields``1(System.Object,System.Reflection.BindingFlags,System.Boolean)
+    name: ForAllFields
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllFields__1_System_Object_System_Reflection_BindingFlags_System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: AngeliA.Extension
+  commentId: T:AngeliA.Extension
+  parent: AngeliA
+  href: AngeliA.Extension.html
+  name: Extension
+  nameWithType: Extension
+  fullName: AngeliA.Extension
+- uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+  commentId: M:AngeliA.Extension.ForAllProperties``1(System.Object)
+  isExternal: true
+  href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  name: ForAllProperties<T>(object)
+  nameWithType: Extension.ForAllProperties<T>(object)
+  fullName: AngeliA.Extension.ForAllProperties<T>(object)
+  nameWithType.vb: Extension.ForAllProperties(Of T)(Object)
+  fullName.vb: AngeliA.Extension.ForAllProperties(Of T)(Object)
+  name.vb: ForAllProperties(Of T)(Object)
+  spec.csharp:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AngeliA.Extension.ForAllProperties``1(System.Object)
+    name: ForAllProperties
+    href: AngeliA.Extension.html#AngeliA_Extension_ForAllProperties__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AngeliA.Color32
+  commentId: T:AngeliA.Color32
+  parent: AngeliA
+  href: AngeliA.Color32.html
+  name: Color32
+  nameWithType: Color32
+  fullName: AngeliA.Color32
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AngeliA.RigRespondMessage.PlaySoundRequirement[]
+  isExternal: true
+  href: AngeliA.RigRespondMessage.PlaySoundRequirement.html
+  name: PlaySoundRequirement[]
+  nameWithType: RigRespondMessage.PlaySoundRequirement[]
+  fullName: AngeliA.RigRespondMessage.PlaySoundRequirement[]
+  nameWithType.vb: RigRespondMessage.PlaySoundRequirement()
+  fullName.vb: AngeliA.RigRespondMessage.PlaySoundRequirement()
+  name.vb: PlaySoundRequirement()
+  spec.csharp:
+  - uid: AngeliA.RigRespondMessage.PlaySoundRequirement
+    name: PlaySoundRequirement
+    href: AngeliA.RigRespondMessage.PlaySoundRequirement.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.RigRespondMessage.PlaySoundRequirement
+    name: PlaySoundRequirement
+    href: AngeliA.RigRespondMessage.PlaySoundRequirement.html
+  - name: (
+  - name: )
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: AngeliA.RigRespondMessage.GizmosRectData[]
+  isExternal: true
+  href: AngeliA.RigRespondMessage.GizmosRectData.html
+  name: GizmosRectData[]
+  nameWithType: RigRespondMessage.GizmosRectData[]
+  fullName: AngeliA.RigRespondMessage.GizmosRectData[]
+  nameWithType.vb: RigRespondMessage.GizmosRectData()
+  fullName.vb: AngeliA.RigRespondMessage.GizmosRectData()
+  name.vb: GizmosRectData()
+  spec.csharp:
+  - uid: AngeliA.RigRespondMessage.GizmosRectData
+    name: GizmosRectData
+    href: AngeliA.RigRespondMessage.GizmosRectData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.RigRespondMessage.GizmosRectData
+    name: GizmosRectData
+    href: AngeliA.RigRespondMessage.GizmosRectData.html
+  - name: (
+  - name: )
+- uid: AngeliA.RigRespondMessage.GizmosLineData[]
+  isExternal: true
+  href: AngeliA.RigRespondMessage.GizmosLineData.html
+  name: GizmosLineData[]
+  nameWithType: RigRespondMessage.GizmosLineData[]
+  fullName: AngeliA.RigRespondMessage.GizmosLineData[]
+  nameWithType.vb: RigRespondMessage.GizmosLineData()
+  fullName.vb: AngeliA.RigRespondMessage.GizmosLineData()
+  name.vb: GizmosLineData()
+  spec.csharp:
+  - uid: AngeliA.RigRespondMessage.GizmosLineData
+    name: GizmosLineData
+    href: AngeliA.RigRespondMessage.GizmosLineData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.RigRespondMessage.GizmosLineData
+    name: GizmosLineData
+    href: AngeliA.RigRespondMessage.GizmosLineData.html
+  - name: (
+  - name: )
+- uid: AngeliA.Float2
+  commentId: T:AngeliA.Float2
+  parent: AngeliA
+  href: AngeliA.Float2.html
+  name: Float2
+  nameWithType: Float2
+  fullName: AngeliA.Float2
+- uid: AngeliA.RigRespondMessage.DoodleRectData[]
+  isExternal: true
+  href: AngeliA.RigRespondMessage.DoodleRectData.html
+  name: DoodleRectData[]
+  nameWithType: RigRespondMessage.DoodleRectData[]
+  fullName: AngeliA.RigRespondMessage.DoodleRectData[]
+  nameWithType.vb: RigRespondMessage.DoodleRectData()
+  fullName.vb: AngeliA.RigRespondMessage.DoodleRectData()
+  name.vb: DoodleRectData()
+  spec.csharp:
+  - uid: AngeliA.RigRespondMessage.DoodleRectData
+    name: DoodleRectData
+    href: AngeliA.RigRespondMessage.DoodleRectData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.RigRespondMessage.DoodleRectData
+    name: DoodleRectData
+    href: AngeliA.RigRespondMessage.DoodleRectData.html
+  - name: (
+  - name: )
+- uid: AngeliA.RigRespondMessage.DoodleWorldData[]
+  isExternal: true
+  href: AngeliA.RigRespondMessage.DoodleWorldData.html
+  name: DoodleWorldData[]
+  nameWithType: RigRespondMessage.DoodleWorldData[]
+  fullName: AngeliA.RigRespondMessage.DoodleWorldData[]
+  nameWithType.vb: RigRespondMessage.DoodleWorldData()
+  fullName.vb: AngeliA.RigRespondMessage.DoodleWorldData()
+  name.vb: DoodleWorldData()
+  spec.csharp:
+  - uid: AngeliA.RigRespondMessage.DoodleWorldData
+    name: DoodleWorldData
+    href: AngeliA.RigRespondMessage.DoodleWorldData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.RigRespondMessage.DoodleWorldData
+    name: DoodleWorldData
+    href: AngeliA.RigRespondMessage.DoodleWorldData.html
+  - name: (
+  - name: )
+- uid: AngeliA.RigRespondMessage.RenderingLayerData[]
+  isExternal: true
+  href: AngeliA.RigRespondMessage.RenderingLayerData.html
+  name: RenderingLayerData[]
+  nameWithType: RigRespondMessage.RenderingLayerData[]
+  fullName: AngeliA.RigRespondMessage.RenderingLayerData[]
+  nameWithType.vb: RigRespondMessage.RenderingLayerData()
+  fullName.vb: AngeliA.RigRespondMessage.RenderingLayerData()
+  name.vb: RenderingLayerData()
+  spec.csharp:
+  - uid: AngeliA.RigRespondMessage.RenderingLayerData
+    name: RenderingLayerData
+    href: AngeliA.RigRespondMessage.RenderingLayerData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AngeliA.RigRespondMessage.RenderingLayerData
+    name: RenderingLayerData
+    href: AngeliA.RigRespondMessage.RenderingLayerData.html
+  - name: (
+  - name: )
+- uid: AngeliA.RigRespondMessage.TransationStart*
+  commentId: Overload:AngeliA.RigRespondMessage.TransationStart
+  href: AngeliA.RigRespondMessage.html#AngeliA_RigRespondMessage_TransationStart
+  name: TransationStart
+  nameWithType: RigRespondMessage.TransationStart
+  fullName: AngeliA.RigRespondMessage.TransationStart
+- uid: AngeliA.RigRespondMessage.Reset*
+  commentId: Overload:AngeliA.RigRespondMessage.Reset
+  href: AngeliA.RigRespondMessage.html#AngeliA_RigRespondMessage_Reset_System_Boolean_
+  name: Reset
+  nameWithType: RigRespondMessage.Reset
+  fullName: AngeliA.RigRespondMessage.Reset
+- uid: AngeliA.RigRespondMessage.ApplyToEngine*
+  commentId: Overload:AngeliA.RigRespondMessage.ApplyToEngine
+  href: AngeliA.RigRespondMessage.html#AngeliA_RigRespondMessage_ApplyToEngine_AngeliA_RigCallingMessage_System_Boolean_
+  name: ApplyToEngine
+  nameWithType: RigRespondMessage.ApplyToEngine
+  fullName: AngeliA.RigRespondMessage.ApplyToEngine
+- uid: AngeliA.RigCallingMessage
+  commentId: T:AngeliA.RigCallingMessage
+  parent: AngeliA
+  href: AngeliA.RigCallingMessage.html
+  name: RigCallingMessage
+  nameWithType: RigCallingMessage
+  fullName: AngeliA.RigCallingMessage
+- uid: AngeliA.RigRespondMessage.ApplyRenderingToEngine*
+  commentId: Overload:AngeliA.RigRespondMessage.ApplyRenderingToEngine
+  href: AngeliA.RigRespondMessage.html#AngeliA_RigRespondMessage_ApplyRenderingToEngine_AngeliA_Universe_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_
+  name: ApplyRenderingToEngine
+  nameWithType: RigRespondMessage.ApplyRenderingToEngine
+  fullName: AngeliA.RigRespondMessage.ApplyRenderingToEngine
+- uid: AngeliA.Universe
+  commentId: T:AngeliA.Universe
+  parent: AngeliA
+  href: AngeliA.Universe.html
+  name: Universe
+  nameWithType: Universe
+  fullName: AngeliA.Universe
+- uid: AngeliA.RigRespondMessage.ReadDataFromPipe*
+  commentId: Overload:AngeliA.RigRespondMessage.ReadDataFromPipe
+  href: AngeliA.RigRespondMessage.html#AngeliA_RigRespondMessage_ReadDataFromPipe_System_Byte__
+  name: ReadDataFromPipe
+  nameWithType: RigRespondMessage.ReadDataFromPipe
+  fullName: AngeliA.RigRespondMessage.ReadDataFromPipe
+- uid: System.Byte*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte*
+  nameWithType: byte*
+  fullName: byte*
+  nameWithType.vb: Byte*
+  fullName.vb: Byte*
+  name.vb: Byte*
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '*'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '*'
+- uid: AngeliA.RigRespondMessage.WriteDataToPipe*
+  commentId: Overload:AngeliA.RigRespondMessage.WriteDataToPipe
+  href: AngeliA.RigRespondMessage.html#AngeliA_RigRespondMessage_WriteDataToPipe_System_Byte__
+  name: WriteDataToPipe
+  nameWithType: RigRespondMessage.WriteDataToPipe
+  fullName: AngeliA.RigRespondMessage.WriteDataToPipe

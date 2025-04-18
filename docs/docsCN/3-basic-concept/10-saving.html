@@ -71,6 +71,45 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="存档">存档</h1>
 
+<p>玩家的游戏存档保存在 <code>C:\ Users \ {UserName} \ AppData \ Local \ {DevName} \ {ProjectName} \ Saving</code> 文件夹里，其中的 <code>DevName</code> 和 <code>ProjectName</code> 可在引擎程序的工程窗口中设置，修改后将重新创建游戏存档。</p>
+<img src="../../images/SavingNameArg.png" width="61.8%">
+<h3 id="存档系统">存档系统</h3>
+<p>存档系统会将全局变量自动保存至 Saving 文件夹下的 <code>Saving.txt</code> 文件中，槽位变量保存至 <code>Saving\Slot_X\Saving.txt</code> 中。以下代码通过存档系统创建、修改并输出了三个变量，A为全局存档，B和C为槽位存档：</p>
+<pre><code class="lang-C#">using AngeliA;
+
+namespace Test;
+
+public static class InputTest {
+
+	private static readonly SavingInt DataA = new(&quot;Unique.Key.A&quot;, defaultValue: 0, SavingLocation.Global);
+	private static readonly SavingBool DataB = new(&quot;Unique.Key.B&quot;, defaultValue: true, SavingLocation.Slot);
+	private static readonly SavingString DataC = new(&quot;Unique.Key.C&quot;, defaultValue: &quot;&quot;, SavingLocation.Slot);
+
+	[OnGameInitialize]
+	internal static void OnGameInitialize () {
+
+		Debug.Log(DataA, DataB, DataC);
+
+		DataA.Value = 5;
+		DataB.Value = false;
+		DataC.Value = &quot;new value&quot;;
+
+		Debug.Log(DataA, DataB, DataC);
+
+	}
+
+}
+</code></pre>
+<p>首次运行结果：</p>
+<blockquote>
+<p>0 True
+5 False new value</p>
+</blockquote>
+<p>再次启动游戏后的运行结果：</p>
+<blockquote>
+<p>5 False new value
+5 False new value</p>
+</blockquote>
 
 </article>
           </div>

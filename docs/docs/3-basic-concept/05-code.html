@@ -73,7 +73,6 @@
 
 <p>An AngeliA project is essentially a C# project. We recommend using <strong>Visual Studio</strong> or <strong>Visual Studio Code</strong> for development. You may freely modify the <code>.csproj</code> file to customize your project settings—the engine will not alter this file. It is recommended to place all your custom code inside the <code>src</code> folder. If you wish to add additional folders to the project, place them under the <code>Universe</code> directory. You can retrieve this path using <code>Universe.BuiltIn.UniverseRoot</code>.</p>
 <img src="../../images/ProjectFolder.png" width="61.8%">
-<hr>
 <h3 id="static-events">Static Events</h3>
 <p>By adding the <code>[OnGameInitialize]</code> attribute to a static method in any class, the method will be invoked when the game initializes. Similarly, <code>[OnGameUpdate]</code> will cause the method to be called once per frame. For a full list of available event attributes, see the <a href="https://mo-enen.github.io/AngeliA/docs/4-cheat-sheet.html">Cheat Sheet</a>.</p>
 <pre><code class="lang-csharp">using AngeliA;
@@ -102,7 +101,6 @@ Game Update 2
 Game Update 3
 ...
 </code></pre>
-<hr>
 <h3 id="rendering-a-sprite">Rendering a Sprite</h3>
 <p>The following code draws a built-in <code>Entity</code> icon in the center of the screen. Since rendering is not persistent between frames, you must redraw it every frame.</p>
 <pre><code class="lang-csharp">using AngeliA;
@@ -124,7 +122,6 @@ public static class Test {
 </code></pre>
 <p><strong>Runtime Result (cropped view):</strong></p>
 <img src="../../images/Coding-Test.png" width="50%">
-<hr>
 <h3 id="spawning-an-entity">Spawning an Entity</h3>
 <p>The following code spawns a test entity at the mouse position when the player clicks. Once spawned, the entity remains active on the stage until it moves out of view and is automatically unloaded. You can also manually unload it using <code>entity.Active = false;</code>.</p>
 <pre><code class="lang-csharp">using AngeliA;

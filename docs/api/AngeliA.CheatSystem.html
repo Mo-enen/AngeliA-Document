@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CheatSystem | AngeliA </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CheatSystem | AngeliA ">
+    
+    <meta name="description" content="Core system to invoke function when user type cheat code during gameplay. Works like NES games. (it does nothing with anti-cheat)">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="AngeliA">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="AngeliA.CheatSystem">
+
+
+
+  <h1 id="AngeliA_CheatSystem" data-uid="AngeliA.CheatSystem" class="text-break">Class CheatSystem</h1>
+  <div class="markdown level0 summary"><p>Core system to invoke function when user type cheat code during gameplay. Works like NES games. (it does nothing with anti-cheat)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="AngeliA_CheatSystem_CheatCodeCount_" data-uid="AngeliA.CheatSystem.CheatCodeCount*"></a>
+  <h4 id="AngeliA_CheatSystem_CheatCodeCount" data-uid="AngeliA.CheatSystem.CheatCodeCount">CheatCodeCount</h4>
+  <div class="markdown level1 summary"><p>Total loaded cheat code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CheatCodeCount { get; }</code></pre>
+  </div>
+  <a id="AngeliA_CheatSystem_CurrentParam_" data-uid="AngeliA.CheatSystem.CurrentParam*"></a>
+  <h4 id="AngeliA_CheatSystem_CurrentParam" data-uid="AngeliA.CheatSystem.CurrentParam">CurrentParam</h4>
+  <div class="markdown level1 summary"><p>Custom data from cheat code when it's invoking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object CurrentParam { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AngeliA_CheatSystem_ForAllCheatCodes_" data-uid="AngeliA.CheatSystem.ForAllCheatCodes*"></a>
+  <h4 id="AngeliA_CheatSystem_ForAllCheatCodes" data-uid="AngeliA.CheatSystem.ForAllCheatCodes">ForAllCheatCodes()</h4>
+  <div class="markdown level1 summary"><p>Interate through all loaded cheat code inside the system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ForAllCheatCodes()</code></pre>
+  </div>
+  <a id="AngeliA_CheatSystem_GetCodeAt_" data-uid="AngeliA.CheatSystem.GetCodeAt*"></a>
+  <h4 id="AngeliA_CheatSystem_GetCodeAt_System_Int32_" data-uid="AngeliA.CheatSystem.GetCodeAt(System.Int32)">GetCodeAt(int)</h4>
+  <div class="markdown level1 summary"><p>Get cheat code at given index inside system list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCodeAt(int index)</code></pre>
+  </div>
+    
+  
+  <a id="AngeliA_CheatSystem_SetCheatCodeEnable_" data-uid="AngeliA.CheatSystem.SetCheatCodeEnable*"></a>
+  <h4 id="AngeliA_CheatSystem_SetCheatCodeEnable_System_String_System_Boolean_" data-uid="AngeliA.CheatSystem.SetCheatCodeEnable(System.String,System.Boolean)">SetCheatCodeEnable(string, bool)</h4>
+  <div class="markdown level1 summary"><p>Make given cheat code enable or disable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCheatCodeEnable(string code, bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The target cheat code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AngeliA_CheatSystem_TryAddCheatAction_" data-uid="AngeliA.CheatSystem.TryAddCheatAction*"></a>
+  <h4 id="AngeliA_CheatSystem_TryAddCheatAction_System_String_System_Reflection_MethodInfo_System_Object_" data-uid="AngeliA.CheatSystem.TryAddCheatAction(System.String,System.Reflection.MethodInfo,System.Object)">TryAddCheatAction(string, MethodInfo, object)</h4>
+  <div class="markdown level1 summary"><p>Add given cheat code into system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddCheatAction(string code, MethodInfo method, object param = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>Code that user need to type. Ignore cases</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>Method that invokes when cheat code get triggered</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>Custom data for this cheat code. Get this data inside the &quot;method&quot; with CheatSystem.CurrentParam</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the data is successfuly added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      🐄🐦‍⬛🧦🐈🎃💓🌹☕🏴‍☠️🐤
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

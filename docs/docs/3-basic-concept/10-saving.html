@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>存档 | AngeliA </title>
+      <title>Save System | AngeliA </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="存档 | AngeliA ">
+      <meta name="title" content="Save System | AngeliA ">
     
     
       <link rel="shortcut icon" href="../../favicon.ico">
@@ -69,8 +69,49 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="存档">存档</h1>
+<h1 id="save-system">Save System</h1>
 
+<p>Player save data is stored in the following directory:
+<code>C:\Users\{UserName}\AppData\Local\{DevName}\{ProjectName}\Saving</code> Here, <code>DevName</code> and <code>ProjectName</code> are defined in the engine's project settings window.
+Modifying these values will create a new save directory for the game.</p>
+<img src="../../images/SavingNameArg.png" width="61.8%">
+<h3 id="save-system-overview">Save System Overview</h3>
+<p>The save system automatically stores <strong>global variables</strong> in <code>Saving\Saving.txt</code>, and <strong>slot-specific variables</strong> in <code>Saving\Slot_X\Saving.txt</code>.</p>
+<p>The following example demonstrates how to create, modify, and log three saved variables using the save system.
+<code>A</code> is a global save variable, while <code>B</code> and <code>C</code> are slot-based save variables:</p>
+<pre><code class="lang-csharp">using AngeliA;
+
+namespace Test;
+
+public static class InputTest {
+
+	private static readonly SavingInt DataA = new(&quot;Unique.Key.A&quot;, defaultValue: 0, SavingLocation.Global);
+	private static readonly SavingBool DataB = new(&quot;Unique.Key.B&quot;, defaultValue: true, SavingLocation.Slot);
+	private static readonly SavingString DataC = new(&quot;Unique.Key.C&quot;, defaultValue: &quot;&quot;, SavingLocation.Slot);
+
+	[OnGameInitialize]
+	internal static void OnGameInitialize () {
+
+		Debug.Log(DataA, DataB, DataC);
+
+		DataA.Value = 5;
+		DataB.Value = false;
+		DataC.Value = &quot;new value&quot;;
+
+		Debug.Log(DataA, DataB, DataC);
+	}
+}
+</code></pre>
+<p><strong>First run output:</strong></p>
+<blockquote>
+<p>0 True
+5 False new value</p>
+</blockquote>
+<p><strong>Output on the next game launch:</strong></p>
+<blockquote>
+<p>5 False new value
+5 False new value</p>
+</blockquote>
 
 </article>
           </div>
