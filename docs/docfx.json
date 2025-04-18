@@ -4,7 +4,7 @@
     {
       "src": [
         {
-          "src": "../AngeliA Framework",
+          "src": "https://github.com/Mo-enen/AngeliA/tree/main/AngeliA%20Framework",
           "files": [
             "AngeliA Framework.csproj"
           ],
@@ -13,7 +13,7 @@
           ]
         },
         {
-          "src": "../AngeliA Platformer",
+          "src": "https://github.com/Mo-enen/AngeliA/tree/main/AngeliA%20Platformer",
           "files": [
             "AngeliA Platformer.csproj"
           ]
