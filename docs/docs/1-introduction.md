@@ -37,4 +37,4 @@ The engine comes with a built-in pixel art editor, making it easy to create and 
 
 ### License Compliance
 
-This project is developed solely by [Moenen](https://github.com/Mo-enen) and is licensed under the [MIT License](https://github.com/Mo-enen/AngeliA/blob/main/License.txt). You are free to use it for almost any purpose, but you must give proper credit as outlined in the [License Compliance Guide](https://mo-enen.github.io/AngeliA/docs/2-comply-with-the-license.html).
+This project is developed solely by [Moenen](https://github.com/Mo-enen) and is licensed under the [MIT License](https://github.com/Mo-enen/AngeliA/blob/main/License.txt). You are free to use it for almost any purpose, but you must give proper credit as outlined in the [License Compliance Guide](https://mo-enen.github.io/AngeliA-Document/docs/2-comply-with-the-license.html).
